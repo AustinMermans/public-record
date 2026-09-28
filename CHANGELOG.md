@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.5.1 — 2026-09-28
+
 - Headline-number drill-downs on the publication, Economy, Funding and Outlook fronts. Native links open the corresponding preferred-measure history, funding calculation or forecast panel; keyboard focus, Back/reload and copied detail URLs are preserved. Missing values remain noninteractive.
 
 ## 1.5.0 — 2026-09-28
