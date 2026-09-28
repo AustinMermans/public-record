@@ -21,6 +21,28 @@ test('GDP annualization and payroll delta',()=>{
  assert.ok(Math.abs(transformSeries({transform:'qoq',observations:[['2026-01-01',100],['2026-04-01',101]]}).points[0][1]-4.060401)<1e-8);
  assert.equal(transformSeries({transform:'change',observations:[['2026-07-01',159000],['2026-08-01',159162]],unit:'Thousands'}).points[0][1],162);
 });
+test('quarterly annualization skips a missing quarter and resumes on adjacent periods',()=>{
+ const s={frequency:'Quarterly · seasonally adjusted annual rate',transform:'qoq',observations:[['2025-10-01',100],['2026-04-01',110],['2026-07-01',111]]};
+ const points=transformSeries(s).points;
+ assert.equal(points.length,1);assert.equal(points[0][0],'2026-07-01');
+ assert.ok(Math.abs(points[0][1]-100*((111/110)**4-1))<1e-9);
+ assert.deepEqual(transformSeries({...s,observations:[['2026-01-01',100],['2026-07-01',110]]}).points,[]);
+});
+test('quarterly annualization crosses the year boundary and rejects invalid denominator',()=>{
+ const s={transform:'qoq',observations:[['2025-10-01',100],['2026-01-01',101]]};
+ assert.ok(Math.abs(transformSeries(s).points[0][1]-4.060401)<1e-8);
+ assert.deepEqual(transformSeries({...s,observations:[['2025-10-01',0],['2026-01-01',101]]}).points,[]);
+});
+test('monthly changes skip gaps, preserve zero values and cross calendar years',()=>{
+ const s={frequency:'Monthly · seasonally adjusted',transform:'change',unit:'Thousands',observations:[['2025-11-01',100],['2026-01-01',120],['2026-02-01',130]]};
+ assert.deepEqual(transformSeries(s).points,[['2026-02-01',10]]);
+ assert.deepEqual(transformSeries({...s,observations:[['2025-12-01',0],['2026-01-01',10]]}).points,[['2026-01-01',10]]);
+});
+test('quarterly differences require adjacent quarters; daily changes allow nonbusiness days',()=>{
+ const s={frequency:'Quarterly',transform:'change',unit:'Dollars',observations:[['2025-09-30',100],['2026-03-31',120],['2026-06-30',130]]};
+ assert.deepEqual(transformSeries(s).points,[['2026-06-30',10]]);
+ assert.deepEqual(transformSeries({...s,frequency:'Daily',observations:[['2026-09-25',4],['2026-09-28',4.1]]}).points.map(p=>[p[0],Number(p[1].toFixed(3))]),[['2026-09-28',0.1]]);
+});
 test('exposure matches disclose exact field and literal term, no regex',()=>{
  const r={title:'Semiconductor disclosures',summary:'Patent grant',agencies:['Commerce Department']};
  assert.deepEqual(matchLens(r,['patent','commerce']),[{term:'patent',field:'summary'},{term:'commerce',field:'agency'}]);

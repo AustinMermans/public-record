@@ -24,3 +24,9 @@ test('chart supplies one full plot target and access to every observation', () =
   assert.doesNotMatch(html,/data-point=/);
   assert.match(chartMarkup([],{}),/Not enough observations/);
 });
+test('multiple charts use distinct accessible control IDs',()=>{
+  const points=[['2026-09-24',1],['2026-09-25',2]],opts={width:400,label:'Spread',unit:'Basis points',esc:String,nf:String,tick:String};
+  const a=chartMarkup(points,{...opts,idPrefix:'funding'}),b=chartMarkup(points,{...opts,idPrefix:'stress'});
+  assert.match(a,/for="funding-observation"/);assert.match(b,/aria-describedby="stress-help"/);
+  assert.doesNotMatch(a+b,/id="chart-observation"/);
+});

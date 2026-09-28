@@ -1,5 +1,19 @@
 # Independent product reviews
 
+## Funding and daily-data gate — 1.4.0, September 28, 2026
+
+The independent PM, econometric, source-rights and UI gates approved the bounded increment with P0=0, P1=0, P2=0, P3=0 after corrections. This does **not** approve completion of the full investor-hub goal; see GOAL-AUDIT.md. The codex-bus CLI dependency remains unavailable, so the bounded adversarial-review process used native subagents.
+
+The econometric reviewer independently reconciled all 800 New York Fed rate observations, all retained percentiles/volumes/revision flags, all 397 common-date spreads and all 60,894 OFR values against raw-response receipts. September 25 SOFR 3.90% minus EFFR 3.88% equals 2 bp. September 24 OFR FSI is −2.398 points, a +0.265-point change from the previous observation. A historical source discrepancy on November 1, 2018 is now explicitly recorded and displayed without modifying source values. Floating-point residue no longer creates a fictitious zero-size spread move.
+
+The PM approved the on-page comparison, distribution/volume context and global-stress decomposition as useful daily research inputs. A separate independent PM check verified the econometric implementer's missing-month/quarter guards and definition-boundary logic: all 1,051 payroll changes and 317 GDP growth values reconciled, removed-period fixtures suppressed false growth, and a unit change created one boundary rather than hundreds of revisions.
+
+The source-rights reviewer checked rate-specific notices, nonaffiliation and SOFR third-party acknowledgment on both-rate displays, the Economy ledger and CSV exports; source permissions remain separate from this project's licenses. The seven-day cron was independently parsed. This is a bounded implementation review, not legal-counsel certification.
+
+The UI reviewer inspected desktop/mobile chart screenshots, unique control IDs, date/value/unit readouts, source-specific export-link labels and resize-state code. Host browser checks covered 320/390/768/1280/1920px without page overflow, keyboard Home/Arrow/Latest, distinct chart controls, and pin/focus preservation during 390→1280px resizing. Real rate CSV export and non-FRED vintage handling were also tested. Touch emulation is not physical-device or screen-reader certification.
+
+Validation: 48 Python and 34 JavaScript tests pass, JavaScript syntax and build checks pass. Hosted deployment and refresh evidence are recorded separately after publication; local approval alone is not deployment proof.
+
 ## Publication desks and search gate — 1.3.0, September 28, 2026
 
 Independent UI/UX and content/identity reviewers approved at P0=0, P1=0, P2=0, P3=0. The UI review corrected lost search-result pagination on Back/reload/share and removed a duplicate company directory that obscured profile-to-filings navigation. The content review corrected URL deduplication that suppressed distinct docket entries, aligned profile continuation with its exact lexical-mention set, and updated front-page selection methodology. Regression tests now retain all 6,093 captured disclosure IDs and independently searchable entries sharing a docket URL.

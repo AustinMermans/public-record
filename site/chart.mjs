@@ -21,7 +21,7 @@ export function chartGeometry(points, width) {
     y: v => T + (max - v) / (max - min) * (height - T - B)};
 }
 
-export function chartMarkup(points, {width, label, unit, esc, nf, tick}) {
+export function chartMarkup(points, {width, label, unit, esc, nf, tick, idPrefix='chart'}) {
   if (points.length < 2) return '<div class="empty">Not enough observations to draw this window.</div>';
   const g = chartGeometry(points, width), {height, L, R, T, B, min, max, x, y} = g;
   let svg = '';
@@ -39,15 +39,15 @@ export function chartMarkup(points, {width, label, unit, esc, nf, tick}) {
   svg += `<path class="trace" d="${path}"/><g class="chart-cursor" aria-hidden="true"><line class="crosshair" y1="${T}" y2="${height - B}"/><circle r="5"/></g><rect class="chart-hit" x="${L}" y="${T}" width="${width - L - R}" height="${height - T - B}" fill="transparent"/>`;
   return `<svg class="chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="${esc(label)}; ${esc(unit)}. Explore exact values with the observation slider below.">${svg}</svg>
     <div class="chart-inspection"><div class="chart-readout"></div><span class="chart-selection-state meta"></span></div>
-    <div class="chart-scrubber"><button type="button" data-chart-step="-1" aria-label="Previous observation">←</button><label class="sr-only" for="chart-observation">Inspect observation</label><input id="chart-observation" type="range" min="0" max="${points.length - 1}" step="1" value="${points.length - 1}" aria-describedby="chart-help"><button type="button" data-chart-step="1" aria-label="Next observation">→</button><button type="button" id="chart-latest">Latest</button></div>
-    <p class="meta chart-help" id="chart-help">Hover to inspect · click or tap to pin · slider or arrow buttons to step</p><span class="sr-only" id="chart-announcement" role="status"></span>`;
+    <div class="chart-scrubber"><button type="button" data-chart-step="-1" aria-label="Previous observation">←</button><label class="sr-only" for="${esc(idPrefix)}-observation">Inspect observation</label><input class="chart-observation" id="${esc(idPrefix)}-observation" type="range" min="0" max="${points.length - 1}" step="1" value="${points.length - 1}" aria-describedby="${esc(idPrefix)}-help"><button type="button" data-chart-step="1" aria-label="Next observation">→</button><button type="button" class="chart-latest" id="${esc(idPrefix)}-latest">Latest</button></div>
+    <p class="meta chart-help" id="${esc(idPrefix)}-help">Hover to inspect · click or tap to pin · slider or arrow buttons to step</p><span class="sr-only chart-announcement" id="${esc(idPrefix)}-announcement" role="status"></span>`;
 }
 
 export function bindChart(container, points, {label, unit, nf, selection}) {
   const svg = container.querySelector('svg.chart');
   if (!svg || points.length < 2) return;
   const g = chartGeometry(points, svg.viewBox.baseVal.width);
-  const slider = container.querySelector('#chart-observation');
+  const slider = container.querySelector('.chart-observation');
   const hit = container.querySelector('.chart-hit');
   let index = selection ? nearestIndex(g.dates, Date.parse(selection.date)) : points.length - 1;
   let pinned = selection?.pinned || false;
@@ -61,7 +61,7 @@ export function bindChart(container, points, {label, unit, nf, selection}) {
     container.querySelector('.chart-selection-state').textContent = pinned ? 'Pinned' : index === points.length - 1 ? 'Latest in view' : 'Inspecting';
     slider.value = index; slider.setAttribute('aria-valuetext', text);
     for (const btn of container.querySelectorAll('[data-chart-step]')) btn.disabled = Number(btn.dataset.chartStep) < 0 ? index === 0 : index === points.length - 1;
-    if (announce) container.querySelector('#chart-announcement').textContent = text + (pinned ? ' · pinned' : ' · latest in view');
+    if (announce) container.querySelector('.chart-announcement').textContent = text + (pinned ? ' · pinned' : ' · latest in view');
   }
   function atPointer(e) {
     const rect = svg.getBoundingClientRect(), local = (e.clientX - rect.left) * g.width / rect.width;
@@ -75,7 +75,7 @@ export function bindChart(container, points, {label, unit, nf, selection}) {
   // Avoid the page's filter-change handler rebuilding this focused control.
   slider.addEventListener('change', e => e.stopPropagation());
   for (const btn of container.querySelectorAll('[data-chart-step]')) btn.addEventListener('click', () => {pinned = true; show(index + Number(btn.dataset.chartStep), true);});
-  container.querySelector('#chart-latest').addEventListener('click', () => {pinned = false; show(points.length - 1, true);});
+  container.querySelector('.chart-latest').addEventListener('click', () => {pinned = false; show(points.length - 1, true);});
   show(index);
   return () => ({date: points[index][0], pinned});
 }
