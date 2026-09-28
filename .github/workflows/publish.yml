@@ -42,7 +42,12 @@ jobs:
           node --check site/app.js
       - name: Collect public sources
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh)
-        run: python scripts/collect.py
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: |
+          python scripts/collect.py
+          python scripts/research.py
+          python scripts/corporate.py
       - name: Validate and build the publication
         run: python scripts/build.py
       - name: Preserve the source capture

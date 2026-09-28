@@ -26,6 +26,24 @@ def validate(data):
 def main():
     data=json.loads((ROOT/'data/current.json').read_text()); validate(data)
     data['version']=(ROOT/'VERSION').read_text().strip()
+    research=ROOT/'data/research/current.json'
+    corporate=ROOT/'data/corporate/current.json'
+    if corporate.exists():
+        data['corporate']=json.loads(corporate.read_text())
+        for company in data['corporate']['companies']:
+            assert len({f['id'] for f in company['filings']})==len(company['filings'])
+            for filing in company['filings']:
+                assert filing['url'].startswith('https://www.sec.gov/Archives/edgar/data/'+str(int(company['cik']))+'/')
+                datetime.fromisoformat(filing['filed'])
+    if research.exists():
+        data['research']=json.loads(research.read_text())
+        for v in data['research']['vintages']:
+            if v['status']=='ok':
+                assert v['observations'] and v['observations'][-1][0]<=v['as_of']
+                assert v['observations']==sorted(v['observations'])
+                assert len(dict(v['observations']))==len(v['observations'])
+        for f in data['research']['forecasts']:
+            if f.get('published_at'):assert f['published_at']<=data['research']['captured_at'][:10]
     out=ROOT/'dist';out.mkdir(exist_ok=True)
     for p in (ROOT/'site').iterdir():
         if p.is_file(): shutil.copy2(p,out/p.name)

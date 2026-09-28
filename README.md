@@ -7,11 +7,12 @@ A source-linked observatory for US economic releases, regulation, corporate disc
 ## Read the edition
 
 - **Front page:** economic context, upcoming catalysts and a balanced selection across disclosure channels.
-- **Calendar:** searchable official schedules, regulatory publication dates and filtered iCalendar exports.
-- **Economy:** 13 historical series with explicit units, transformations, source links and CSV exports.
+- **Calendar:** month grid and selected-day agenda, filters, official schedules and filtered iCalendar exports.
+- **Economy:** 13 series with full available history, transformations and CSV exports. Optional ALFRED vintages for GDP, payrolls, unemployment and CPI, with then/now comparisons.
+- **Business:** a six-company SEC filing dashboard with separate annual, quarterly, current-event, proxy and ownership quotas, amendment labels and 8-K item descriptions.
 - **Disclosures:** government and selected court records, original documents, local reading lists and saved keyword lenses with transparent match reasons.
 - **Changes:** differences between successful captures, separating new documents, revisions and schedule changes.
-- **Outlook and sources:** forecast/research references, collector health and coverage boundaries.
+- **Outlook and sources:** extracted FOMC projections and GDPNow figures, further references, collector health and coverage boundaries.
 
 The editorial direction is a newspaper-like research publication, not a directory of APIs. Subject desks and cross-cutting dossiers should connect siloed evidence while keeping facts, interpretation and unresolved questions distinct. See [the editorial architecture](docs/EDITORIAL.md) for the next-stage design; planned desks are not claims of current ingestion.
 
@@ -21,6 +22,9 @@ Python 3.11+ and Node 22+. No application dependencies or API keys are required 
 
 ```sh
 python3 scripts/collect.py
+python3 scripts/research.py
+# SEC_USER_AGENT must identify the project and an authorized contact address.
+python3 scripts/corporate.py
 python3 -m unittest discover -s tests
 node --test tests/*.test.mjs
 python3 scripts/build.py
@@ -39,4 +43,8 @@ Repository and GitHub Pages contain public-source records only. Scheduled collec
 
 The publication workflow refreshes sources at **13:43 and 21:43 UTC, Monday–Friday**, subject to GitHub Actions availability/delays. It is not a real-time service. Manual dispatch can also refresh. Tests and data validation precede deployment; source evidence is committed before the site is published. Failed collectors retain their last successful data with explicit stale/unavailable labels.
 
-At launch, BLS calendar and SEC current-filing requests are blocked from the collection environment. Direct source links remain available. Court feeds are partial, Federal Register published coverage is latest-100, and forecasts, patents and prediction markets are reference-only. FRED history is currently revised history, not original-release vintages. See [methodology](docs/METHODOLOGY.md) and [independent reviews](docs/REVIEWS.md).
+The BLS calendar request remains blocked from the collection environment; other sources can independently become stale or unavailable. SEC access requires the identifying contact supplied through the `SEC_USER_AGENT` Actions secret/environment variable. It is never sent to non-SEC sources. Company requests are sequential, at most two per second, and the workflows are serialized. Court feeds are partial and Federal Register published coverage is latest-100. FOMC/GDPNow figures are ingested; other forecast providers, patents, political donations, transaction-level insider analysis and prediction-market overlays are not yet ingested. ALFRED dates are sampled vintages, not every original release. See [methodology](docs/METHODOLOGY.md) and [independent reviews](docs/REVIEWS.md).
+
+## License and citation
+
+**Attributed noncommercial reuse only, under the applicable scoped license.** Original software uses [PolyForm Noncommercial 1.0.0](LICENSES/PolyForm-Noncommercial-1.0.0.md); original writing and visualization output use [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). Third-party source data is not relicensed. Commercial use outside these grants requires separate permission. This is source-available, not open-source. See [LICENSE](LICENSE), [reuse guidance](docs/REUSE.md) and [CITATION.cff](CITATION.cff).

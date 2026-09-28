@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.1.0 — 2026-09-28
+
+- Month calendar with selected-day agenda, filters and month export; trimmed front-page and section copy.
+- Full available FRED history. Optional ALFRED button for four series and seven sampled dates, matched-period comparisons and vintage-aware exports. GDP levels with different price bases are not subtracted.
+- Extracted FOMC projection medians and Atlanta Fed GDPNow estimates, with publication/capture dates, target periods and source evidence.
+- Plain-language court-entry explanations and publisher summaries, without unsupported merits claims.
+- SEC identifying contact configured privately; current 8-K feed restored. Six-company filing dashboard, authoritative CIK matching, acceptance times, category quotas, amendments and 8-K item descriptions.
+- Attributed noncommercial licensing: PolyForm Noncommercial 1.0.0 for original code, CC BY-NC 4.0 for original writing/visualization output; citation metadata and visible reuse page. Third-party data excluded.
+- Independent content, PM and UI reviews; expanded tests and browser interaction/export checks.
+
 ## 1.0.0 — 2026-09-28
 
 First reviewed live GitHub Pages edition. All three core and extension review gates approved. Initial deployment and a complete GitHub-hosted collection/archive/publication run succeeded; public data and application assets were checked against the reviewed build. The site URL is in the README and repository description/homepage. Known coverage gaps and reference-only channels remain explicit. Subject-desk and cross-source dossier design is documented for subsequent editions.
