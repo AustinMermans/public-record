@@ -1,5 +1,13 @@
 # Independent product reviews
 
+## Publication desks and search gate — 1.3.0, September 28, 2026
+
+Independent UI/UX and content/identity reviewers approved at P0=0, P1=0, P2=0, P3=0. The UI review corrected lost search-result pagination on Back/reload/share and removed a duplicate company directory that obscured profile-to-filings navigation. The content review corrected URL deduplication that suppressed distinct docket entries, aligned profile continuation with its exact lexical-mention set, and updated front-page selection methodology. Regression tests now retain all 6,093 captured disclosure IDs and independently searchable entries sharing a docket URL.
+
+The content reviewer verified all 25 unique configured CIKs, all raw-response hashes, and exact reparse equality for all 1,375 selected filings. The new and predecessor Exxon registrants remain separate. News coverage is explicitly official Fed announcements; politician/vote/campaign data is explicitly not ingested. These are not certifications of each filing's substantive accuracy or completeness.
+
+Host browser checks passed global search → company profile → company-filtered filings; paginated search reload and Back restoration; empty search results; exact Apple mention scope and scope reload; the formerly hidden Huizhong Geng petition; and ten new routes at 320, 390, 768, 1280 and 1920px without page-level horizontal overflow. The reviewers inspected desktop/mobile screenshots. The suite passed 29 Python and 22 JavaScript tests. Touch emulation and viewport checks are not a physical-device or screen-reader certification.
+
 ## Chart interaction gate — 1.2.0, September 28, 2026
 
 An independent UI/UX reviewer approved with P0=0, P1=0, P2=0, P3=0 after identifying and verifying a fix for lost pins on responsive resizing. The review covered the integrated chart module, range controls, accessible inspection controls, units/vintage context, URL restoration, and desktop/mobile screenshots. The reviewer independently ran the 15 JavaScript tests and syntax check. The local codex-bus CLI dependency was unavailable (ENOENT), so the review used a native subagent with the same bounded critic/fixer gate.

@@ -6,15 +6,18 @@ A source-linked observatory for US economic releases, regulation, corporate disc
 
 ## Read the edition
 
-- **Front page:** economic context, upcoming catalysts and a balanced selection across disclosure channels.
+- **Front page and desks:** cross-section publication front page; separate Economy, Business, Government & Politics, Disclosures, Outlook and Changes landing pages, with deeper tools and breadcrumbs.
+- **Search:** name, ticker, CIK, topic and filing-form search across captured metadata. Company profiles rank ahead of documents; filters, pages and company-name scopes are shareable. This is not full-document or whole-web search.
 - **Calendar:** month grid and selected-day agenda, filters, official schedules and filtered iCalendar exports.
 - **Economy:** 13 series with full available history, transformations and CSV exports. Optional ALFRED vintages for GDP, payrolls, unemployment and CPI, with then/now comparisons.
-- **Business:** a six-company SEC filing dashboard with separate annual, quarterly, current-event, proxy and ownership quotas, amendment labels and 8-K item descriptions.
+- **Business:** 25 SEC registrant profiles and a filing dashboard with annual, quarterly, current-event, proxy and ownership quotas, amendment labels and 8-K item descriptions. CIK-linked filings are separate from unverified name matches. The current and prior Exxon registrants remain distinct.
+- **Government & Politics:** institutional coverage from Federal Reserve communications and Federal Register activity. Politician profiles, votes and political-finance data remain planned.
+- **News & announcements:** captured Federal Reserve press releases; explicitly official communications, not independent reporting or a comprehensive news service.
 - **Disclosures:** government and selected court records, original documents, local reading lists and saved keyword lenses with transparent match reasons.
 - **Changes:** differences between successful captures, separating new documents, revisions and schedule changes.
 - **Outlook and sources:** extracted FOMC projections and GDPNow figures, further references, collector health and coverage boundaries.
 
-The editorial direction is a newspaper-like research publication, not a directory of APIs. Subject desks and cross-cutting dossiers should connect siloed evidence while keeping facts, interpretation and unresolved questions distinct. See [the editorial architecture](docs/EDITORIAL.md) for the next-stage design; planned desks are not claims of current ingestion.
+The editorial direction is a newspaper-like research publication, not a directory of APIs. Subject desks connect the existing evidence; full cross-source dossiers and additional reporting feeds remain future work. Keep facts, interpretation and unresolved questions distinct. See [the editorial architecture](docs/EDITORIAL.md) and [company coverage](docs/COMPANY-COVERAGE.md).
 
 ## Development
 

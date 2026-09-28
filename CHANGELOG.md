@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.3.0 — 2026-09-28
+
+- Cross-section publication front page and separate Economy, Business, Government & Politics, Disclosures, Outlook, Changes, and official-announcement fronts. Existing analytical tool URLs remain valid, with desk breadcrumbs.
+- Global snapshot search across company profiles, filings, disclosures, indicators, calendar events and research. Result filters, pagination and scope survive share/reload/navigation. Distinct court entries sharing a docket URL remain independently searchable.
+- Company profiles distinguish authoritative CIK-linked filings from explicitly unverified lexical mentions. Profile continuation preserves its exact mention set.
+- Expanded to 25 SEC registrants and 1,375 selected filings in the release capture; all 25 company requests succeeded. New and predecessor Exxon registrants remain separate.
+- News currently means captured official Federal Reserve announcements, not independent reporting. Politician profiles, votes and political-finance datasets are not yet ingested.
+- Independent UI/UX and content/identity approval after search-state and shared-docket indexing corrections; responsive checks across 320–1920px.
+
 ## 1.2.0 — 2026-09-28
 
 - Economic charts support whole-plot hover/tap inspection, a visible crosshair, pinned values, a keyboard-accessible observation slider, previous/next buttons and a latest-point reset.

@@ -8,7 +8,12 @@ ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'data/corporate'
 STAMP=datetime.now(timezone.utc).isoformat(timespec='seconds')
 # CIKs anchor identity. Tickers/names are read from SEC, never used for joins.
-UNIVERSE=['0000320193','0000789019','0001018724','0000019617','0000104169','0000034088']
+# Cross-sector expansion checked against SEC company_tickers.json on 2026-09-28.
+# Retain Exxon Mobil's prior registrant separately from the new XOM holding company.
+UNIVERSE=['0000320193','0000789019','0001018724','0000019617','0000104169','0000034088',
+          '0001045810','0001652044','0001326801','0001318605','0001067983','0000059478',
+          '0001403161','0002115436','0000200406','0000070858','0000021344','0000018230',
+          '0000080424','0000731766','0000040545','0000354950','0001707925','0000753308','0001045609']
 ITEMS={'1.01':'Material agreement','1.02':'Agreement terminated','1.03':'Bankruptcy or receivership','2.01':'Acquisition or asset disposal','2.02':'Results of operations and financial condition','2.03':'New financial obligation','2.05':'Exit or disposal costs','2.06':'Material impairment','3.01':'Listing or delisting notice','3.02':'Unregistered equity sale','4.01':'Auditor change','4.02':'Prior financial statements should not be relied on','5.02':'Director or executive change / compensation','5.07':'Shareholder vote','7.01':'Regulation FD disclosure','8.01':'Other events','9.01':'Financial statements and exhibits'}
 FORMS={'10-K':'Annual business and financial report','10-Q':'Quarterly financial report','8-K':'Current-event report','DEF 14A':'Proxy statement: voting, governance and compensation','4':'Insider ownership transaction report','3':'Initial insider ownership report','5':'Annual insider ownership report','S-3':'Securities registration','S-8':'Employee-plan securities registration','144':'Notice of proposed securities sale'}
 
