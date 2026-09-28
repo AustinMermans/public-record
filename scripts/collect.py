@@ -1,6 +1,7 @@
 """Bounded public-source collectors. No credentials; failure is data, never an empty success."""
 from __future__ import annotations
 import csv, hashlib, html, io, json, math, os, re, subprocess, sys
+from collection_errors import safe_sec_error
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
@@ -225,7 +226,7 @@ def collect(s):
     except Exception as exc:
         if previous:
             status.update({k:previous['source'][k] for k in ('sha256','raw_path') if k in previous['source']})
-        status.update(status='stale' if previous else 'unavailable',error=str(exc)[:250],last_success=previous['source'].get('last_success') if previous else None,count=previous['source'].get('count',0) if previous else 0)
+        status.update(status='stale' if previous else 'unavailable',error=safe_sec_error(exc) if s['id']=='sec' else str(exc)[:250],last_success=previous['source'].get('last_success') if previous else None,count=previous['source'].get('count',0) if previous else 0)
         result={**(previous or {}),'source':status}
     print(s['id'],status['status'],status['count'],flush=True)
     return result

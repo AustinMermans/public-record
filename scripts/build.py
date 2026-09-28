@@ -3,6 +3,7 @@ import json, shutil
 from pathlib import Path
 from datetime import datetime
 from versioning import validate_release
+from validate_financials import validate_financials
 ROOT=Path(__file__).resolve().parents[1]
 
 def validate(data):
@@ -29,6 +30,7 @@ def main():
     data['version']=validate_release(ROOT)
     research=ROOT/'data/research/current.json'
     corporate=ROOT/'data/corporate/current.json'
+    financials=ROOT/'data/financials/current.json'
     if corporate.exists():
         data['corporate']=json.loads(corporate.read_text())
         for company in data['corporate']['companies']:
@@ -36,6 +38,12 @@ def main():
             for filing in company['filings']:
                 assert filing['url'].startswith('https://www.sec.gov/Archives/edgar/data/'+str(int(company['cik']))+'/')
                 datetime.fromisoformat(filing['filed'])
+    if financials.exists():
+        data['financials']=json.loads(financials.read_text())
+        validate_financials(data['financials'],data.get('corporate',{}).get('companies',[]))
+        financial_changes=data['financials'].get('changes',{})
+        for key in ('items','baselines','skipped'):
+            data['changes'][key].extend(financial_changes.get(key,[]))
     if research.exists():
         data['research']=json.loads(research.read_text())
         for v in data['research']['vintages']:

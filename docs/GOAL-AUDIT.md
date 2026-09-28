@@ -1,16 +1,16 @@
 # Investor-hub completion audit
 
-Updated for the v1.4.0 candidate, September 28, 2026. **Full goal: not approved.** A reviewed application increment is not proof that the entire product is complete.
+Updated for the reviewed v1.5.0 issuer-financials increment, September 28, 2026. **Full goal: not approved.** A reviewed application increment is not proof that the entire product is complete. Publication receipts are recorded separately in REVIEWS.md.
 
 ## Acceptance requirements
 
 | Requirement | Current evidence and remaining work |
 | --- | --- |
-| Data refresh at least daily | Seven-day twice-daily workflow now implemented. Hosted expanded-feed refresh and live payload verification are release gates. Future scheduler execution is not guaranteed by configuration. |
+| Data refresh at least daily | Seven-day twice-daily workflow is live. Hosted expanded-feed refresh 36496725413 succeeded and its published payload matched the rebuilt capture. Future scheduler execution is not guaranteed by configuration. |
 | At least ten high-value source sites, keyless first | Ten successful provider families appear below, counting repeated endpoints and related feeds once. This inventory is not an assertion that the best ten investor data needs are covered. Fiscal, banking and broader forecasts remain material gaps. |
-| Useful without opening every source | Macro charts, calendar, extracted FOMC/GDPNow, plain-language disclosure entries, company filing profiles and funding/stress comparisons are implemented. Issuer financial substance and deeper cross-source synthesis remain incomplete. |
+| Useful without opening every source | Macro charts, calendar, extracted FOMC/GDPNow, plain-language disclosure entries, company filing profiles, filing-anchored financial screens and funding/stress comparisons are implemented. Financial screens are partial, not complete valuation/credit models; deeper cross-source synthesis remains incomplete. |
 | Historical and forward-looking context | Revised macro history and sampled ALFRED vintages; FOMC projections and GDPNow. Original-release surprise histories, broader forecast panels and prediction-market history are incomplete. |
-| Reviewer validation | PM, econometric and narrow source-rights reviewers approve the v1.4 funding increment, not the full goal. Fresh final product approval is still required after remaining gaps are resolved. |
+| Reviewer validation | PM/source, pipeline correctness and UI reviewers approve the bounded v1.5 issuer-financials increment. Earlier funding/source-rights approval remains scoped to v1.4. Fresh final product approval is still required after remaining gaps are resolved. |
 | Responsive and accessible experience | Browser checks across 320–1920px, keyboard chart controls and resize-state preservation. Physical-device and screen-reader certification are not claimed. |
 | Versioned, attributable publication | Semantic versions, changelog/citation/build consistency, source links and scoped noncommercial licenses. Tags follow verified deployments. |
 
@@ -25,7 +25,7 @@ This is a dated inventory, not a live status display. The Sources page and raw r
 | Federal Reserve Board | federalreserve.gov | FOMC calendar, projections and official announcements. |
 | TreasuryDirect | treasurydirect.gov | Announced Treasury auctions, not comprehensive fiscal accounts. |
 | Federal Register | federalregister.gov | Published rules/notices and public inspection; not legal-effect certification. |
-| SEC | sec.gov / data.sec.gov | Selected company filings and current 8-K feed; normalized company financials still missing. |
+| SEC | sec.gov / data.sec.gov | Selected filings, current 8-K feed and standardized companyfacts screens; missing latest-filing facts and issuer-specific KPIs remain explicit. |
 | Federal district courts | ecf.cand / ecf.nysd / ecf.cacd.uscourts.gov | Three partial rolling feeds, procedural explanations; not complete dockets. |
 | Atlanta Fed | atlantafed.org | Extracted GDPNow estimate, horizon and publication date. |
 | New York Fed | newyorkfed.org / markets.newyorkfed.org | Overnight funding levels, distributions, volumes and same-date comparisons. |
@@ -35,9 +35,9 @@ BLS's direct calendar remains unavailable in the current collection environment 
 
 ## Next high-value iterations
 
-1. **Issuer financial substance:** SEC companyfacts with correct fiscal durations, units, restatements and industry-specific displays. Do not apply industrial leverage heuristics to banks.
+1. **Issuer depth after the initial financial screen:** verified issuer-specific KPIs, segments and debt context where valuable; do not present the selected standardized facts as complete coverage. Broader sources below take priority over multiplying generic ratios.
 2. **Fiscal and banking conditions:** Treasury financing/deficit/interest flows with fiscal-year alignment; FDIC aggregates with verified units, institution population and stock/flow definitions. Debt-stock changes are not deficits; bank ratios cannot be summed or naively averaged.
-3. **Changes across the whole publication:** company filings and research updates must join the currently core-only comparison ledger, with independent prior-success baselines.
+3. **Changes across the whole publication:** company filings and research updates must join the core and issuer-financial comparison ledger, with independent prior-success baselines.
 4. **Broader outlook and release coverage:** Philadelphia Fed forecasts, an accessible official BLS schedule, and energy/inventory information when source access and publication rights permit.
 5. **Cross-source synthesis and final review:** investor tasks across macro, equity and credit, direct provenance, freshness at the point of use, and fresh PM/econometric/UI approval of the full site.
 

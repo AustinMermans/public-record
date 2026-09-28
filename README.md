@@ -31,6 +31,7 @@ python3 scripts/collect.py
 python3 scripts/research.py
 # SEC_USER_AGENT must identify the project and an authorized contact address.
 python3 scripts/corporate.py
+python3 scripts/collect_financials.py
 python3 -m unittest discover -s tests
 node --test tests/*.test.mjs
 python3 scripts/build.py
@@ -38,6 +39,8 @@ python3 -m http.server 8040 --directory dist
 ```
 
 Source responses and collection receipts live in `data/`; only normalized public records and site assets enter `dist/`. Collection failures are explicit and retain the last successful snapshot. Observed snapshots are not historical ALFRED vintages. See `docs/METHODOLOGY.md`.
+
+Company profiles include filing-anchored financial screens with distinct quarter/YTD/balance-sheet periods, source-linked comparatives and calculation inputs. Availability depends on standard facts in the controlling filing, not merely a successful download. See [issuer financials methodology](docs/FINANCIALS.md).
 
 ## Versioning
 
