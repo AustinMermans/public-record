@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Build-time consistency checks for application version, citation metadata and the latest released changelog entry, with regression tests and an explicit release/tag verification procedure.
+
 ## 1.3.0 — 2026-09-28
 
 - Cross-section publication front page and separate Economy, Business, Government & Politics, Disclosures, Outlook, Changes, and official-announcement fronts. Existing analytical tool URLs remain valid, with desk breadcrumbs.

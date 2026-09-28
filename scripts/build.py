@@ -2,6 +2,7 @@
 import json, shutil
 from pathlib import Path
 from datetime import datetime
+from versioning import validate_release
 ROOT=Path(__file__).resolve().parents[1]
 
 def validate(data):
@@ -25,7 +26,7 @@ def validate(data):
 
 def main():
     data=json.loads((ROOT/'data/current.json').read_text()); validate(data)
-    data['version']=(ROOT/'VERSION').read_text().strip()
+    data['version']=validate_release(ROOT)
     research=ROOT/'data/research/current.json'
     corporate=ROOT/'data/corporate/current.json'
     if corporate.exists():

@@ -38,7 +38,9 @@ Source responses and collection receipts live in `data/`; only normalized public
 
 ## Versioning
 
-Semantic Versioning: `v0.0.0` is the founding specification. Development proceeds on reviewed feature branches; core and extension releases are tagged in the `0.x` series. `v1.0.0` is reserved for reviewed functionality verified on GitHub Pages. Conventional commit prefixes (`feat`, `fix`, `docs`, `test`, `chore`) describe each change. Main remains deployable; data-only refreshes do not change the application version.
+Public Record uses Semantic Versioning. `v0.0.0` was the founding specification; `v1.0.0` was the first reviewed edition verified on GitHub Pages. New capabilities use minor releases (`1.4.0`), compatible corrections use patch releases (`1.3.1`), and incompatible changes to supported public data or URL contracts require a major release. Work proceeds on feature/fix branches with conventional commits. Data-only refreshes do not change the application version: capture timestamps identify the data edition.
+
+`VERSION`, `CITATION.cff`, and the latest released changelog entry must agree; the build enforces this. Pending work belongs under **Unreleased**, not in a shipped release's notes. Version tags are immutable and published only after the reviewed deployment is verified. See the [release procedure](docs/RELEASING.md).
 
 ## Publication
 
