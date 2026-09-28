@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.0 — 2026-09-28
+
+First reviewed live GitHub Pages edition. All three core and extension review gates approved. Initial deployment and a complete GitHub-hosted collection/archive/publication run succeeded; public data and application assets were checked against the reviewed build. The site URL is in the README and repository description/homepage. Known coverage gaps and reference-only channels remain explicit. Subject-desk and cross-source dossier design is documented for subsequent editions.
+
 ## 0.0.0 — 2026-09-28
 
 Founding product contract, source hierarchy and versioning policy. The owner subsequently authorized a public repository to support GitHub Pages on the current plan.

@@ -30,4 +30,8 @@ Validation: 18 Python tests and 6 JavaScript tests passed. Browser tests covered
 
 Nonblocking next-release opportunities: field-level metadata diffs; lenses on the change page; broader overview change summaries; one evidence-joined dossier before broadening subject desks. The later newspaper-style editorial direction is recorded in EDITORIAL.md as a design, not misrepresented as shipped coverage.
 
-Live deployment evidence will be appended before 1.0.0.
+## Live publication gate — September 28, 2026
+
+Initial GitHub Pages publication [run 36488493922](https://github.com/AustinMermans/public-record/actions/runs/36488493922) succeeded. A complete GitHub-hosted collection, validation, evidence commit and deployment [run 36488551477](https://github.com/AustinMermans/public-record/actions/runs/36488551477) also succeeded. The public release receipt reported capture 2026-09-28T21:48:59Z with 5,746 records, 540 calendar events (including captured history and expected regulatory publication) and 13 series. Twenty-two of 24 collectors succeeded; BLS calendar and SEC current filings remain explicit unavailable channels.
+
+The public data.json and app.js SHA-256 values matched the locally reconstructed build. The live front page rendered the captured data, coverage gaps and source links. The README link, repository homepage/description, HTTPS Pages endpoint and remote feature branches/tags were verified. These checks authorize the 1.0.0 application-version promotion; they do not certify every source document's substance or future availability.
