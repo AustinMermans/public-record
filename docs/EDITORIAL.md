@@ -4,6 +4,8 @@ Direction agreed during the September 28, 2026 build: a newspaper-like public-re
 
 ## Two navigation dimensions
 
+Version 1.3 implements a cross-section front page and separate Economy, Business, Government & Politics, Disclosures, Outlook, Changes and official-announcement fronts, plus shared search/calendar tools. These fronts organize existing source coverage; they do not imply that the longer-term datasets below have all been ingested. The user explicitly requested a Changes landing page as well as its ledger.
+
 Subject desks answer **what is happening?** Research tools answer **how can I investigate it?** Keep them distinct: a calendar, search, saved lenses, change log and source-health register are shared tools, not competing subject categories.
 
 | Provisional desk | Reader question | Existing foundation | Next coverage gap |
@@ -42,7 +44,7 @@ Market prices can provide context, but should not become the organizing principl
 
 ## Highest-value next increment
 
-Build one narrow, source-verified dossier before adding five broad but thin desks. Pair reliable corporate identity/filing coverage with existing regulatory and court evidence. Validate the joins and narrative against a human-readable evidence table. Extend saved lenses to capture changes so a returning reader can ask, “What changed in the subjects I follow?” Add new feeds when they close a demonstrated blind spot, not merely because an API exists.
+With the user-requested desk structure in place, deepen it with one narrow, source-verified dossier. Pair reliable corporate identity/filing coverage with existing regulatory and court evidence. Validate the joins and narrative against a human-readable evidence table. Extend saved lenses to capture changes so a returning reader can ask, “What changed in the subjects I follow?” Add new feeds when they close a demonstrated blind spot, not merely because an API exists.
 
 ## Readability update and next data layers
 
