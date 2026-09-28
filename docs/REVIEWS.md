@@ -22,4 +22,12 @@ Responsive charts use container width and fewer mobile ticks; mobile labels rema
 2. Content recommendation: compare successive successful source captures, distinguishing new documents, schedule changes, new periods and revisions. Never interpret a record leaving a rolling feed as withdrawal.
 3. Design recommendation: preserve research-view state in shareable URLs where appropriate.
 
-Final extension review and deployment evidence will be appended before 1.0.0.
+## Extension gate — 0.2.0, September 28, 2026
+
+All three reviewers explicitly approved the extensions with no remaining P0/P1/P2 findings. Content independently reconstructed the corrected first capture from retained raw evidence and reproduced all 267 newly captured documents and 26 metadata changes in the second capture, with no missing or spurious differences. PM verified literal match explanations and the distinction between research leads and inferred exposure. Design verified clean desktop/mobile screenshots and corrected lens-deletion focus and announcements; parent browser assertions independently exercised the interactions. Local-only saved-list sharing caveat and final deletion-status wording were also corrected.
+
+Validation: 18 Python tests and 6 JavaScript tests passed. Browser tests covered navigation, shareable calendar/series state after reload, lens creation and exact match reasons, record dialog, lens deletion focus and announcement, 390px responsive chart/no page overflow, and real ICS/CSV downloads. Ordinary screenshots were used for final visual review after asynchronous route/resize settling.
+
+Nonblocking next-release opportunities: field-level metadata diffs; lenses on the change page; broader overview change summaries; one evidence-joined dossier before broadening subject desks. The later newspaper-style editorial direction is recorded in EDITORIAL.md as a design, not misrepresented as shipped coverage.
+
+Live deployment evidence will be appended before 1.0.0.

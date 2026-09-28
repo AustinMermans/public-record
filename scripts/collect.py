@@ -226,6 +226,8 @@ def collect(s):
 
 def main():
     DATA.mkdir(exist_ok=True)
+    from changes import compare
+    previous=json.loads((DATA/'current.json').read_text()) if (DATA/'current.json').exists() else None
     with ThreadPoolExecutor(max_workers=4) as pool: results=list(pool.map(collect,SOURCES))
     bundle={'schema_version':1,'captured_at':STAMP,'sources':[r['source'] for r in results]}
     for k in ('records','events','series'):
@@ -233,6 +235,7 @@ def main():
         bundle[k]=list({x['id']:x for x in items}.values())
     bundle['records'].sort(key=lambda x:date_order(x['date']),reverse=True)
     bundle['events'].sort(key=lambda x:date_order(x['date']))
+    bundle['changes']=compare(previous,bundle)
     # Capture history starts here; never backfill a fictitious vintage.
     archive=DATA/'snapshots';archive.mkdir(exist_ok=True)
     text=json.dumps(bundle,ensure_ascii=False,separators=(',',':'))

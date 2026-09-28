@@ -1,0 +1,64 @@
+name: Collect, validate & publish Public Record
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      refresh:
+        description: Refresh source data before publishing
+        type: boolean
+        default: true
+  schedule:
+    # Bounded twice-weekday collection; not a real-time service.
+    - cron: '43 13,21 * * 1-5'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: public-record-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test collection and arithmetic
+        run: |
+          python -m unittest discover -s tests
+          node --test tests/*.test.mjs
+          node --check site/app.js
+      - name: Collect public sources
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh)
+        run: python scripts/collect.py
+      - name: Validate and build the publication
+        run: python scripts/build.py
+      - name: Preserve the source capture
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if ! git diff --cached --quiet; then
+            git commit -m "data: capture public-source observations"
+            git push origin HEAD:main
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: Publish the validated site
+        id: deployment
+        uses: actions/deploy-pages@v4

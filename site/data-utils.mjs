@@ -25,3 +25,8 @@ export function transformSeries(s,mode='default'){
   const map=new Map(a.map(p=>[p[0].slice(0,7),p[1]]));
   return {points:a.flatMap(p=>{const prior=(Number(p[0].slice(0,4))-1)+p[0].slice(4,7);const v=map.get(prior);return v?[[p[0],100*(p[1]/v-1)]]:[];}),unit:'Percent · year-on-year',label:'Year-on-year'};
 }
+export function matchLens(record,terms){
+  const fields={title:record.title||'',summary:record.summary||'',agency:(record.agencies||[]).join(' '),publisher:record.publisher||''};
+  return terms.flatMap(term=>Object.entries(fields).filter(([,value])=>value.toLowerCase().includes(term.toLowerCase())).map(([field])=>({term,field})));
+}
+export function parseTerms(value){return [...new Set(value.split(',').map(x=>x.trim().toLowerCase()).filter(Boolean))].slice(0,12).map(x=>x.slice(0,60));}

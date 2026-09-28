@@ -23,3 +23,11 @@ Each collector fails independently. A failure retains its own prior successful p
 ## Selection
 
 Overview comparisons use explicit arithmetic. Economic mechanism text is labelled context, not a causal test. The overview disclosure table selects one latest record per available channel; the complete captured stream is chronological. A high-volume court cannot crowd every agency off the homepage. Source outages, stale captures, frequency mismatches and partial history remain visible.
+
+## Research workflows
+
+Capture comparisons use each source's own previous successful timestamp. Unavailable current sources are excluded. Newly captured records may have existed before either capture. A record leaving a rolling feed is not treated as withdrawal. Economic comparisons distinguish new periods, added historical observations and changed values. The initial corrected baseline was reconstructed from the retained raw responses with the current parser; the earlier original snapshot remains available as captured.
+
+Exposure lenses are case-insensitive literal substring matches over title, summary, agency and publisher. They do not infer exposure, entity identity or materiality. Lens definitions and reading lists stay in browser local storage and may be lost if storage is cleared or unavailable. Shareable URLs preserve public filters, not those local contents.
+
+The capture archive currently has no automatic deletion; raw responses are content-addressed. Storage growth must be reviewed before expanding cadence or source volume. Source access, redistribution rights and operational reliability are separate acceptance checks for every new feed.
