@@ -8,12 +8,13 @@ from pathlib import Path
 from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
 import xml.etree.ElementTree as ET
+from investor_sources import SOURCES as INVESTOR_SOURCES, parse_nyfed, parse_ofr
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data'
 NOW = datetime.now(timezone.utc)
 STAMP = NOW.isoformat(timespec='seconds')
-UA = 'PublicRecord/0.1 (public disclosure research; github.com/AustinMermans/public-record)'
+UA = 'PublicRecord/'+(ROOT/'VERSION').read_text().strip()+' (public disclosure research; github.com/AustinMermans/public-record)'
 
 # Unit, adjustment and transformation are explicit; no proprietary series.
 SERIES = [
@@ -47,7 +48,7 @@ SOURCES = [
  source('cand','US District Court · Northern California','Legal','https://ecf.cand.uscourts.gov/cgi-bin/rss_outside.pl','rss','Selected court, rolling RSS window; docket links may require PACER. Event coverage is not a complete docket.',3),
  source('nysd','US District Court · Southern New York','Legal','https://ecf.nysd.uscourts.gov/cgi-bin/rss_outside.pl','rss','Selected court, rolling RSS window; docket links may require PACER. Event coverage is not a complete docket.',3),
  source('cacd','US District Court · Central California','Legal','https://ecf.cacd.uscourts.gov/cgi-bin/rss_outside.pl','rss','Selected court, rolling RSS window; docket links may require PACER. Event coverage is not a complete docket.',3),
-] + [source('fred-'+s[0],s[1],'Economy',f'https://fred.stlouisfed.org/graph/fredgraph.csv?id={s[0]}','fred','Full available current revised history via FRED; capture time is not original release time.',1) | {'spec':s} for s in SERIES]
+] + INVESTOR_SOURCES + [source('fred-'+s[0],s[1],'Economy',f'https://fred.stlouisfed.org/graph/fredgraph.csv?id={s[0]}','fred','Full available current revised history via FRED; capture time is not original release time.',1) | {'spec':s} for s in SERIES]
 
 def clean(value):
     return re.sub(r'\s+', ' ', html.unescape(re.sub('<[^>]+>',' ',str(value or '')))).strip()
@@ -196,6 +197,7 @@ def parse_fred(body,s):
     return {'series':[dict(id=sid,name=name,domain=domain,publisher=publisher,unit=unit,frequency=frequency,transform=transform,observations=out,url=f'https://fred.stlouisfed.org/series/{sid}',download_url=s['url'],captured_at=STAMP,source_id=s['id'],vintage='Current revised history, captured '+STAMP[:10])]}
 
 PARSERS={'ics':parse_ics,'fomc':parse_fomc,'rss':parse_rss,'inspection':parse_register,'register':parse_register,'treasury':parse_treasury,'fred':parse_fred}
+PARSERS.update(nyfed=lambda body,s:parse_nyfed(body,s,STAMP),ofr=lambda body,s:parse_ofr(body,s,STAMP))
 
 def collect(s):
     cache=DATA/'cache'/(s['id']+'.json')

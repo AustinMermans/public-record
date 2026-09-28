@@ -1,7 +1,7 @@
-import {recordExplanation} from './editorial.mjs';
+import {recordExplanation, easternDay} from './editorial.mjs';
 const esc = v => String(v ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const ext = (u,t) => /^https?:\/\//.test(u||'') ? `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(t)} ↗</a>` : esc(t);
-const date = d => d ? String(d).slice(0,10) : 'Date not supplied';
+const date = d => d ? easternDay(String(d)) : 'Date not supplied';
 export const normalize = v => String(v||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const contains = (text, term) => (' '+normalize(text)+' ').includes(' '+normalize(term)+' ');
 const profileUrl = c => '#company?cik='+encodeURIComponent(c.cik);

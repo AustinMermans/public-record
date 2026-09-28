@@ -1,5 +1,16 @@
 # Changelog
 
+## Unreleased
+
+## 1.4.0 — 2026-09-28
+
+- Seven-day collection at 13:43 and 21:43 UTC, replacing the weekday-only schedule.
+- Funding & credit desk: direct New York Fed SOFR/EFFR history, date-aligned basis-point spread, volumes and rate percentiles; OFR global stress history, recent change and market/regional contributions. Added 11 numerical series to the explorer and source ledger.
+- Explicit source-quality reconciliation exceptions, source notices in displays/exports, bounded-history and global-versus-US labels. No implied policy forecasts, default probabilities or corporate credit spreads.
+- Missing-month/quarter arithmetic guards and measurement-definition boundaries in the capture ledger. Court dates now use Eastern dates consistently across search, fronts and details; linked-document numbering no longer implies docket numbering.
+- Multiple charts have distinct accessible controls and preserve observation selection/focus during resizing. Independent PM, econometric and source-rights review; full-product completion remains open.
+- Build-time consistency checks for application version, citation metadata and the latest released changelog entry, with regression tests and an explicit release/tag verification procedure.
+
 ## 1.3.0 — 2026-09-28
 
 - Cross-section publication front page and separate Economy, Business, Government & Politics, Disclosures, Outlook, Changes, and official-announcement fronts. Existing analytical tool URLs remain valid, with desk breadcrumbs.

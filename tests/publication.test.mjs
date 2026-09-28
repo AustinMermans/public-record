@@ -1,11 +1,22 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {normalize,buildSearchIndex,searchIndex,companyMentions,companyPage,deskPage,publicationHome} from '../site/publication.mjs';
+import {normalize,buildSearchIndex,searchIndex,companyMentions,companyPage,deskPage,publicationHome,searchResults} from '../site/publication.mjs';
 const d=JSON.parse(fs.readFileSync(new URL('../data/current.json',import.meta.url)));
 d.corporate=JSON.parse(fs.readFileSync(new URL('../data/corporate/current.json',import.meta.url)));
 d.research=JSON.parse(fs.readFileSync(new URL('../data/research/current.json',import.meta.url)));
 const index=buildSearchIndex(d),apple=d.corporate.companies.find(c=>c.cik==='0000320193');
+test('publication dates use Eastern days for timestamps and preserve date-only records',()=>{
+  const record={id:'rollover',source_id:'court',domain:'Legal',kind:'Docket entry',title:'Example v. Example',summary:'[Notice of Appearance]',publisher:'Example court',url:'https://court.example/entry',date:'2026-09-28T03:59:18+00:00'};
+  const fixture={...d,sources:[],records:[record]};
+  const context={kpi:()=>'',brief:()=>'',agenda:()=>'',nextEvents:()=>[]};
+  assert.match(deskPage(fixture,'disclosures-home',context),/2026-09-27/);
+  assert.doesNotMatch(deskPage(fixture,'disclosures-home',context),/2026-09-28/);
+  for(const [input,expected] of [['2026-09-28T03:59:18+00:00','2026-09-27'],['2026-01-01T04:30:00+00:00','2025-12-31'],['2026-09-28','2026-09-28']]) {
+    const html=searchResults([{kind:'record',title:'Test entry',url:record.url,date:input}]);
+    assert.match(html,new RegExp(expected));
+  }
+});
 test('search ranks exact ticker/CIK profiles first and supports filing terms',()=>{
   for(const q of ['AAPL','0000320193','320193','Apple'])assert.equal(searchIndex(index,q)[0].url,'#company?cik=0000320193');
   const filings=searchIndex(index,'AAPL 10-K','filing');

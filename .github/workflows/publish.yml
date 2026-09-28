@@ -9,8 +9,8 @@ on:
         type: boolean
         default: true
   schedule:
-    # Bounded twice-weekday collection; not a real-time service.
-    - cron: '43 13,21 * * 1-5'
+    # Seven-day collection, including weekends; not a real-time service.
+    - cron: '43 13,21 * * *'
 permissions:
   contents: write
   pages: write

@@ -1,4 +1,19 @@
 """Compare observed source captures, never infer changes from an unavailable feed."""
+import json
+
+# Retrieval metadata is deliberately excluded. Changes in a measurement's
+# definition require a new baseline, even if the series ID remains unchanged.
+DEFINITION_FIELDS=('unit','frequency','adjustment','seasonal_adjustment','basis',
+                   'definition','definition_version','methodology','methodology_version',
+                   'geography','universe','stock_flow','price_basis','base_year')
+
+def definition_label(series,fields):
+    def value(key):
+        item=series.get(key)
+        if item is None:return 'not specified'
+        return json.dumps(item,sort_keys=True,ensure_ascii=False) if isinstance(item,(dict,list)) else str(item)
+    return '; '.join(f'{key}: {value(key)}' for key in fields)
+
 def compare(previous,current):
     result={'from_capture':previous.get('captured_at') if previous else None,'to_capture':current['captured_at'],'items':[],'baselines':[],'skipped':[]}
     old_sources={s['id']:s for s in (previous or {}).get('sources',[])}
@@ -24,6 +39,13 @@ def compare(previous,current):
         for series in (x for x in current.get('series',[]) if x['source_id']==sid):
             old_series=before_series.get(series['id'])
             if not old_series:continue
+            changed_fields=[key for key in DEFINITION_FIELDS if old_series.get(key)!=series.get(key)]
+            if changed_fields:
+                append('Series definition changed',series['name'],series['url'],
+                       series_id=series['id'],changed_fields=changed_fields,comparison_boundary=True,
+                       before=definition_label(old_series,changed_fields),after=definition_label(series,changed_fields),
+                       summary='Numerical changes suppressed; this capture establishes a new definition baseline.')
+                continue
             old_values=dict(old_series['observations']);last=max(old_values)
             for date,value in series['observations']:
                 if date not in old_values:
