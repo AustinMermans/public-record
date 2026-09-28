@@ -1,6 +1,6 @@
 """Bounded public-source collectors. No credentials; failure is data, never an empty success."""
 from __future__ import annotations
-import csv, hashlib, html, io, json, math, re, subprocess, sys
+import csv, hashlib, html, io, json, math, os, re, subprocess, sys
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
@@ -47,7 +47,7 @@ SOURCES = [
  source('cand','US District Court · Northern California','Legal','https://ecf.cand.uscourts.gov/cgi-bin/rss_outside.pl','rss','Selected court, rolling RSS window; docket links may require PACER. Event coverage is not a complete docket.',3),
  source('nysd','US District Court · Southern New York','Legal','https://ecf.nysd.uscourts.gov/cgi-bin/rss_outside.pl','rss','Selected court, rolling RSS window; docket links may require PACER. Event coverage is not a complete docket.',3),
  source('cacd','US District Court · Central California','Legal','https://ecf.cacd.uscourts.gov/cgi-bin/rss_outside.pl','rss','Selected court, rolling RSS window; docket links may require PACER. Event coverage is not a complete docket.',3),
-] + [source('fred-'+s[0],s[1],'Economy',f'https://fred.stlouisfed.org/graph/fredgraph.csv?id={s[0]}&cosd=2015-01-01','fred','Current revised history via FRED; capture time is not original release time.',1) | {'spec':s} for s in SERIES]
+] + [source('fred-'+s[0],s[1],'Economy',f'https://fred.stlouisfed.org/graph/fredgraph.csv?id={s[0]}','fred','Full available current revised history via FRED; capture time is not original release time.',1) | {'spec':s} for s in SERIES]
 
 def clean(value):
     return re.sub(r'\s+', ' ', html.unescape(re.sub('<[^>]+>',' ',str(value or '')))).strip()
@@ -203,7 +203,11 @@ def collect(s):
     status={k:v for k,v in s.items() if k not in ('parser','spec')}
     status.update(attempted_at=STAMP)
     try:
-        r=subprocess.run(['curl','--http1.1','--fail','--location','--silent','--show-error','--max-time','40','--retry','1','--retry-delay','2','--user-agent',UA,s['url']],capture_output=True,timeout=90)
+        agent=UA
+        if s['id']=='sec':
+            agent=os.environ.get('SEC_USER_AGENT','')
+            if '@' not in agent:raise ValueError('SEC identifying contact is not configured')
+        r=subprocess.run(['curl','--http1.1','--fail','--location','--silent','--show-error','--max-time','40','--retry','1','--retry-delay','2','--user-agent',agent,s['url']],capture_output=True,timeout=90)
         if r.returncode: raise ValueError(r.stderr.decode(errors='replace').strip()[:250])
         encoding=re.search(br'encoding=[\"\']([^\"\']+)',r.stdout[:200])
         codec=encoding.group(1).decode('ascii') if encoding else 'utf-8-sig'

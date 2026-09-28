@@ -1,0 +1,29 @@
+# Public Record licensing
+
+Copyright (c) 2026 Austin Mermans, to the extent of rights held.
+
+Original software (scripts/, site/ source code, tests/ and workflow code) is
+licensed under the unmodified PolyForm Noncommercial License 1.0.0 in
+LICENSES/PolyForm-Noncommercial-1.0.0.md.
+
+Required Notice: Public Record by Austin Mermans (https://austinmermans.github.io/public-record/), copyright (c) 2026 Austin Mermans.
+
+Original editorial writing, documentation and original visualization output
+are licensed under Creative Commons Attribution-NonCommercial 4.0 International:
+https://creativecommons.org/licenses/by-nc/4.0/
+Full terms: https://creativecommons.org/licenses/by-nc/4.0/legalcode.en
+
+These are separate licenses for separate material, not a choice of licenses
+for the same material. Noncommercial software uses are defined by PolyForm;
+noncommercial editorial/visual uses are defined by CC BY-NC. This project is
+source-available, not open-source. Commercial use outside the licenses requires
+separate permission from the rights holder.
+
+Third-party data, source documents, quotations, dependencies and license texts
+are excluded from these grants and remain subject to their own rights and terms.
+No ownership is claimed over public-domain facts or US government works.
+Data downloaded into data/ is not relicensed by this notice. Applicable legal
+exceptions, including fair use, are not restricted. No endorsement is implied.
+
+Attribution information and a suggested citation are in CITATION.cff and
+docs/REUSE.md. The applicable full license text controls over summaries.

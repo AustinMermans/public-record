@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite Public Record when using its original analysis, visualizations or software, and cite the underlying data publishers separately. See LICENSE for the noncommercial reuse terms."
+type: software
+title: "Public Record: US economic and public-disclosure observatory"
+authors:
+  - family-names: Mermans
+    given-names: Austin
+url: "https://austinmermans.github.io/public-record/"
+repository-code: "https://github.com/AustinMermans/public-record"
+version: 1.1.0
+date-released: 2026-09-28

@@ -1,5 +1,13 @@
 # Independent product reviews
 
+## Readable-record gate — 1.1.0, September 28, 2026
+
+Content, portfolio-manager and UI reviewers approved with no P0/P1/P2 findings after correction. Content independently recomputed all 28 ALFRED vintages from their hashed raw responses and both forecast objects; found and closed a four-versus-five-horizon SEP parser defect. Corporate CIK/form/item/link bindings were independently matched to all six original responses. Subsequent per-category quotas preserve operating reports alongside ownership entries; a fixture verifies that 80 ownership entries cannot crowd out an annual report. Acceptance times are retained when supplied.
+
+The designer reviewed desktop/mobile calendar, ALFRED, Outlook and Business screenshots. Keyboard focus is restored after month/day/vintage actions; a persistent calendar status announces selected-day counts. Parent browser tests covered date selection and source-backed day contents, responsive overflow, vintage state after reload, GDP base mismatch protection, actual vintage CSV download, five-row projection table, company/form filtering and legal explanations. The final code suite contains 29 Python and 12 JavaScript tests.
+
+Political disclosures, full-document case/filing analysis, remaining forecast providers and historical prediction-market overlays are not represented as completed work. Current legal explanations describe procedure and feed content only. Licensing scope reflects the owner's explicit noncommercial-attribution choice; this review does not certify legal enforceability.
+
 ## Core gate — 0.1.0, September 28, 2026
 
 Three separate subagents reviewed content/data integrity, portfolio-manager utility, and design/accessibility. Each initially requested changes; each subsequently explicitly approved the corrected core with no remaining P0/P1/P2 findings in its scope.

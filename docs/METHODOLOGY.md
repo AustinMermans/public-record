@@ -14,7 +14,7 @@ The initial universe is 13 public series from BLS, BEA, Census/HUD, DOL and the 
 
 ## Legal and disclosure
 
-Public inspection contains prepublication filings. Read an official PDF before relying on legal effect. Published Federal Register coverage is a bounded latest-100 sample, explicitly not exhaustive. Court coverage is restricted to three selected RSS channels and their observed windows. Feed volumes cannot be compared as legal-risk incidence. Court records are entry metadata, not full dockets or judgments. SEC 8-K availability is monitored; errors are reported rather than hidden. Patents, forecasts and prediction markets are explicitly linked research references until ingestion is established.
+Public inspection contains prepublication filings. Read an official PDF before relying on legal effect. Published Federal Register coverage is a bounded latest-100 sample, explicitly not exhaustive. Court coverage is restricted to three selected RSS channels and their observed windows. Feed volumes cannot be compared as legal-risk incidence. Court records are entry metadata, not full dockets or judgments. Rule-based explanations clarify supported procedural labels; they do not infer allegations, judicial reasoning, or outcomes. SEC 8-K availability is monitored; errors are reported rather than hidden. Patents, prediction markets and unimplemented forecast channels remain linked references. FOMC projection medians and GDPNow figures are now extracted separately with evidence receipts.
 
 ## Resilience and history
 
@@ -31,3 +31,17 @@ Capture comparisons use each source's own previous successful timestamp. Unavail
 Exposure lenses are case-insensitive literal substring matches over title, summary, agency and publisher. They do not infer exposure, entity identity or materiality. Lens definitions and reading lists stay in browser local storage and may be lost if storage is cleared or unavailable. Shareable URLs preserve public filters, not those local contents.
 
 The capture archive currently has no automatic deletion; raw responses are content-addressed. Storage growth must be reviewed before expanding cadence or source volume. Source access, redistribution rights and operational reliability are separate acceptance checks for every new feed.
+
+## ALFRED and forecasts
+
+Current FRED downloads have no arbitrary 2015 cutoff. Each series begins at its earliest available observation. The optional ALFRED view currently covers GDP, unemployment, payrolls and CPI at July 30, 2020 and year-end dates from 2020 onward. Its selector is the exact collected universe. Each CSV header must identify the requested series and vintage date; future observations, invalid values and duplicate dates are rejected. Historical requests are cached with immutable retrieval receipts. ALFRED as-of data is not a reconstruction of every first release or an intraday information set.
+
+Historical chart windows are anchored to the selected vintage date. Transformations use only that vintage's observations. Then/now comparisons align observation periods, not publication dates. GDP units change from chained 2012 to chained 2017 dollars on September 28, 2023 according to the ALFRED metadata; levels across different bases are not subtracted. Growth-rate differences are percentage points. Original source: https://alfred.stlouisfed.org/series?seid=GDPC1 .
+
+FOMC medians are parsed from the latest dated accessible projections linked by the official meeting calendar. Three- and four-year horizon layouts are supported; blank longer-run core PCE stays missing. GDP and inflation are Q4/Q4 projections, unemployment a Q4 average, and the funds rate a year-end target midpoint. GDPNow is a model estimate for a named quarter, in quarterly annualized growth; it is not directly comparable to a Q4/Q4 annual projection. Forecast failures preserve prior successful data with stale status and original retrieval/publication times.
+
+## Corporate coverage
+
+The initial universe is Apple, Microsoft, Amazon, JPMorgan Chase, Walmart and Exxon Mobil, identified by CIK and checked against SEC response identity. It is a starter cross-industry sample, not a screen or investment recommendation. Each recent-submissions response contributes up to 6 annual, 12 quarterly, 20 current-event, 4 proxy, 12 ownership and 6 other selected-form entries; amendments count within quotas. This prevents ownership filings crowding out operating reports but does not provide complete company history. Acceptance timestamps are retained for ordering when provided. Filing, transaction and report-period dates are distinct.
+
+Form and 8-K item descriptions label disclosure categories; no full-document conclusion is claimed. Form 4 is not automatically an open-market purchase. Original and amended forms are retained as separate records and must not be summed as independent economic events. Contact-bearing user agents are restricted to SEC requests, with a private workflow secret and conservative sequential pacing.
