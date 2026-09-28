@@ -1,0 +1,15 @@
+const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+export const indicatorHref = id => '#economy?series='+encodeURIComponent(id)+'&transform=default&period=all';
+
+export function metricLink(href, label, value, suffix='') {
+  const text = esc(value ?? '—') + (suffix ? `<small>${esc(suffix)}</small>` : '');
+  if (value === null || value === undefined || value === '—' || !/^#(?:economy|funding|outlook)\?/.test(href||'')) return text;
+  return `<a class="metric-link" href="${esc(href)}" aria-label="${esc(label+': '+value+suffix+'. View detail')}">${text}</a>`;
+}
+
+export function detailTarget(route, query) {
+  if (route === 'funding' && query.get('view') === 'spread') return 'funding-comparison';
+  if (route === 'outlook' && ['gdpnow','sep'].includes(query.get('forecast'))) return 'forecast-'+query.get('forecast');
+  return null;
+}

@@ -1,5 +1,17 @@
 # Independent product reviews
 
+## Headline drill-down gate — 1.5.1, September 28, 2026
+
+Independent UI/code review approved the clickable-number follow-up with no P0/P1/P2 findings. Numerical transformations and source data are unchanged. Native, visibly underlined links with descriptive names connect macro values to the matching preferred-measure full history; funding values to their individual series or spread calculation; and Outlook numbers to their corresponding report. Zero remains clickable, missing values do not become dead links, and modified clicks retain browser behavior.
+
+Host browser verification confirmed the front-page CPI number opens CPIAUCSL at 3.35 percent year-on-year rather than the raw price-index level; Back returns to the front page. Keyboard Enter on the funding spread focuses its calculation/history section, and reloading the detail URL restores that target. GDPNow's number focuses the matching report and preserves its forecast query when copying the view link. All four fronts have no page overflow at 320/768/1280px. The code review also checked guarded post-render focus, forecast-panel targets, native-anchor accessibility and escaping. Validation: 95 Python and 48 JavaScript tests pass; source data and financial normalization are unchanged. Public deployment is a separate gate.
+
+### Verified v1.5.0 publication
+
+The [initial publication](https://github.com/AustinMermans/public-record/actions/runs/36499276640) and [full hosted refresh](https://github.com/AustinMermans/public-record/actions/runs/36499374361) succeeded. The hosted capture commit `844a4e3d5ff7804a92f7d58771228d9379bddea6` was pulled and rebuilt. Public data.json, release.json, app.js, financials.mjs, publication.mjs and style.css matched byte-for-byte. The live browser rendered Apple’s actual quarter and YTD sections at v1.5.0.
+
+All 25 financial requests succeeded at capture 2026-09-28T23:44:06Z; 20 current profiles remained partial and five lacked supported current facts. Core capture contained 7,353 disclosures, 540 calendar events and 24 series. BLS was unavailable; the SEC rolling 8-K feed and Northern California court feed were stale. These are separate from successful company submissions/companyfacts requests. Immutable v1.5.0 tags the verified hosted commit; the [release](https://github.com/AustinMermans/public-record/releases/tag/v1.5.0) links the site and both runs.
+
 ## Issuer financials gate — 1.5.0, September 28, 2026
 
 Independent PM/source review and the separate root-pipeline correctness review approved their bounded scopes with no P0/P1/P2/P3 findings remaining. UI review approved with no P0/P1/P2 findings and one nonblocking P3: expanded mobile calculation evidence is readable but narrow; a future full-row treatment could shorten its vertical footprint. This gate is local approval, not deployment evidence or full-product completion.

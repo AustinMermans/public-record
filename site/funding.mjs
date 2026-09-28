@@ -1,5 +1,6 @@
 import {escapeText as esc} from './editorial.mjs';
 import {chartMarkup, bindChart} from './chart.mjs';
+import {indicatorHref, metricLink} from './metric-links.mjs';
 
 const nf=(v,n=2)=>Number(v).toLocaleString('en-US',{minimumFractionDigits:n,maximumFractionDigits:n});
 const link=(u,t)=>`<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(t)} ↗</a>`;
@@ -31,7 +32,7 @@ export function receipt(d,s,now=new Date()){
   return `<p class="meta ${warn?'warning':''}">Observation ${esc(last(s)?.[0]||'unavailable')} · Retrieved ${esc(s.captured_at)}${warn?' · '+esc(source?.status!=='ok'?(source?.status||'unavailable'):'retrieval older than 36 hours'):''}<br>${link(s.url,s.publisher)} · ${explore(s)}</p>`;
 }
 
-const metric=(label,value,unit,description)=>`<div class="kpi"><div class="kpi-label">${esc(label)}</div><div class="kpi-value">${value===undefined?'—':nf(value)}<small>${esc(unit)}</small></div><p class="kpi-meta">${esc(description)}</p></div>`;
+const metric=(label,value,unit,description,href)=>`<div class="kpi"><div class="kpi-label">${esc(label)}</div><div class="kpi-value">${metricLink(href,label,value===undefined?'—':nf(value),unit)}</div><p class="kpi-meta">${esc(description)}</p></div>`;
 
 export function fundingPage(d){
   const sofr=find(d,'NYFED-SOFR'),effr=find(d,'NYFED-EFFR'),fsi=find(d,'OFR-FSI');
@@ -44,8 +45,8 @@ export function fundingPage(d){
     return `<tr><td>${s?`<a href="#economy?series=${s.id}&period=all">${esc(s.name.replace(' contribution to global stress',''))}</a>`:esc(id)}</td><td class="numeric">${value?nf(value[1],3):'—'}</td></tr>`;
   }).join('');
   return `<div class="page-title"><div><div class="section-no">Funding & credit desk</div><h1>The cost of overnight money</h1><p>Money-market pricing and global financial stress. Not a corporate-bond spread or default-risk model.</p></div></div>
-  <div class="kpis">${metric('SOFR',sd?.rate,'%',day?'Secured overnight funding · '+day:'No common effective date')}${metric('EFFR',ed?.rate,'%',day?'Unsecured federal funds · '+day:'No common effective date')}${metric('SOFR − EFFR',p?.[1],' bp',day?'Same-date comparison · '+day:'No aligned observations')}${metric('Global financial stress',point?.[1],'',point?'Index points · '+point[0]:'Unavailable')}</div>
-  <section class="section"><div class="section-head"><h2>Secured versus unsecured funding</h2>${explore(sofr)}</div>
+  <div class="kpis">${metric('SOFR',sd?.rate,'%',day?'Secured overnight funding · '+day:'No common effective date',indicatorHref('NYFED-SOFR'))}${metric('EFFR',ed?.rate,'%',day?'Unsecured federal funds · '+day:'No common effective date',indicatorHref('NYFED-EFFR'))}${metric('SOFR − EFFR',p?.[1],' bp',day?'Same-date comparison · '+day:'No aligned observations','#funding?view=spread')}${metric('Global financial stress',point?.[1],'',point?'Index points · '+point[0]:'Unavailable',indicatorHref('OFR-FSI'))}</div>
+  <section class="section" id="funding-comparison"><div class="section-head"><h2>Secured versus unsecured funding</h2>${explore(sofr)}</div>
   ${p?`<p>The secured rate was <strong>${nf(Math.abs(p[1]))} basis points ${p[1]>=0?'above':'below'}</strong> the effective federal funds rate on ${esc(day)}.${delta===null?'':` The spread ${delta===0?'was unchanged':delta>0?'increased by '+nf(delta)+' bp':'decreased by '+nf(-delta)+' bp'} from the previous common observation (${esc(prior[0])}).`}</p>`:'<p class="warning">A same-date comparison is unavailable.</p>'}
   <p class="meta">Public Record calculation: (SOFR − EFFR) × 100. Effective dates must match; holidays and missing observations are not filled. These are realized overnight rates, not forecasts of policy.</p>
   <div id="funding-spread-chart" class="chart-container"></div>
