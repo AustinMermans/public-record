@@ -1,6 +1,8 @@
 # Public Record
 
-A source-linked observatory for US economic releases, regulation, corporate disclosure, and legal activity. Private source repository; public, read-only GitHub Pages publication.
+**Dashboard: [austinmermans.github.io/public-record](https://austinmermans.github.io/public-record/)**
+
+A source-linked observatory for US economic releases, regulation, corporate disclosure, and legal activity. Public source repository and read-only GitHub Pages publication, as authorized by the owner.
 
 ## Development
 
@@ -21,4 +23,4 @@ Semantic Versioning: `v0.0.0` is the founding specification. Development proceed
 
 ## Publication
 
-The source repository must remain private. GitHub Pages is public and contains public-source records only. Scheduled collection is bounded, cached, and observable. No investment recommendations or trade execution are provided.
+Repository and GitHub Pages contain public-source records only. Scheduled collection is bounded, cached, and observable. No investment recommendations or trade execution are provided.
