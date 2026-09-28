@@ -1,12 +1,12 @@
 # Investor-hub completion audit
 
-Updated for the v1.4.0 candidate, September 28, 2026. **Full goal: not approved.** A reviewed application increment is not proof that the entire product is complete.
+Updated after the verified v1.4.0 release, September 28, 2026. **Full goal: not approved.** A reviewed application increment is not proof that the entire product is complete.
 
 ## Acceptance requirements
 
 | Requirement | Current evidence and remaining work |
 | --- | --- |
-| Data refresh at least daily | Seven-day twice-daily workflow now implemented. Hosted expanded-feed refresh and live payload verification are release gates. Future scheduler execution is not guaranteed by configuration. |
+| Data refresh at least daily | Seven-day twice-daily workflow is live. Hosted expanded-feed refresh 36496725413 succeeded and its published payload matched the rebuilt capture. Future scheduler execution is not guaranteed by configuration. |
 | At least ten high-value source sites, keyless first | Ten successful provider families appear below, counting repeated endpoints and related feeds once. This inventory is not an assertion that the best ten investor data needs are covered. Fiscal, banking and broader forecasts remain material gaps. |
 | Useful without opening every source | Macro charts, calendar, extracted FOMC/GDPNow, plain-language disclosure entries, company filing profiles and funding/stress comparisons are implemented. Issuer financial substance and deeper cross-source synthesis remain incomplete. |
 | Historical and forward-looking context | Revised macro history and sampled ALFRED vintages; FOMC projections and GDPNow. Original-release surprise histories, broader forecast panels and prediction-market history are incomplete. |

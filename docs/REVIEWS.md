@@ -14,6 +14,12 @@ The UI reviewer inspected desktop/mobile chart screenshots, unique control IDs, 
 
 Validation: 48 Python and 34 JavaScript tests pass, JavaScript syntax and build checks pass. Hosted deployment and refresh evidence are recorded separately after publication; local approval alone is not deployment proof.
 
+### Verified v1.4 publication
+
+The [initial deployment](https://github.com/AustinMermans/public-record/actions/runs/36496677174) and [full hosted refresh](https://github.com/AustinMermans/public-record/actions/runs/36496725413) succeeded. The latter captured core data at 2026-09-28T23:12:31Z: 24 series, 7,062 disclosures and 540 calendar events. All three new numeric feeds, both extracted forecast providers and all 25 company submissions succeeded. BLS calendar remained unavailable; SEC's rolling current-feed and the Northern California court feed retained their prior successful capture after timeout/reset failures. The source-level stale labels were preserved.
+
+The hosted data commit `03b0067401c3fc039e2a57c0875b47767178e106` was pulled, rebuilt and compared with the public payload. Public data matched; app.js, funding.mjs, chart.mjs and release.json hashes matched. Live browser inspection confirmed v1.4.0, the 2 bp spread, −2.398-point global stress reading and no duplicate chart-control IDs. Immutable tag v1.4.0 points to that verified data commit; the GitHub release links both workflow runs. These checks establish this release, not full-goal completion or guaranteed future scheduler execution.
+
 ## Publication desks and search gate — 1.3.0, September 28, 2026
 
 Independent UI/UX and content/identity reviewers approved at P0=0, P1=0, P2=0, P3=0. The UI review corrected lost search-result pagination on Back/reload/share and removed a duplicate company directory that obscured profile-to-filings navigation. The content review corrected URL deduplication that suppressed distinct docket entries, aligned profile continuation with its exact lexical-mention set, and updated front-page selection methodology. Regression tests now retain all 6,093 captured disclosure IDs and independently searchable entries sharing a docket URL.
