@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib,json,os,subprocess,time
 from datetime import datetime,timezone
 from pathlib import Path
+from collection_errors import safe_sec_error
 
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'data/corporate'
@@ -51,7 +52,7 @@ def main():
             if not raw.exists():raw.write_bytes(p.stdout)
             company.update(status='ok',captured_at=STAMP,url=url,sha256=digest,raw_path=str(raw.relative_to(ROOT)))
             file.write_text(json.dumps(company,separators=(',',':')))
-        except Exception as exc:company=dict(old or {'cik':cik,'url':url,'filings':[]},status='stale' if old else 'unavailable',error=str(exc),attempted_at=STAMP)
+        except Exception as exc:company=dict(old or {'cik':cik,'url':url,'filings':[]},status='stale' if old else 'unavailable',error=safe_sec_error(exc),attempted_at=STAMP)
         companies.append(company);time.sleep(.6)
         print(cik,company['status'],len(company['filings']))
     text=json.dumps(dict(captured_at=STAMP,companies=companies),separators=(',',':'))

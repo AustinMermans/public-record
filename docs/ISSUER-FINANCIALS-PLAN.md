@@ -1,6 +1,6 @@
 # Issuer financials — next reviewed increment
 
-Proposed v1.5.0 scope, recommended by the PM after v1.4 approval. **Not implemented or shipped.** Reader job: understand what changed in reported operations, cash generation and the balance sheet without a compulsory filing click. Keep the existing 25 CIKs before expanding the universe further.
+Proposed v1.5.0 scope, recommended by the PM after v1.4 approval. **Implemented on the feature branch; publication gate pending.** Reader job: understand what changed in reported operations, cash generation and the balance sheet without a compulsory filing click. Keep the existing 25 CIKs before expanding the universe further. See [the implemented methodology](FINANCIALS.md); this plan is not proof of deployment.
 
 ## Source and collection
 

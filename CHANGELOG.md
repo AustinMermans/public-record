@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Filing-anchored issuer financial screens: quarterly operations, YTD cash generation, instant balance sheets, matched comparatives and bounded annual history. Separate banking/specialist treatment, source-linked values and disclosed calculation inputs.
+- Serialized keyless SEC companyfacts collection with lossless hashed evidence, stale-success retention, honest source/processing clocks and explicit current-fact gaps. Build validation binds values to displayed periods and controlling filings.
+- Issuer financial changes distinguish new periods, reported revisions, recalculations and definition boundaries; input concepts participate in derived-measure definitions.
+- Responsive financial tables and keyboard-accessible annual-history scrolling. SEC error records no longer serialize private request arguments, including in the existing submissions/current-feed collectors.
+
 ## 1.4.0 — 2026-09-28
 
 - Seven-day collection at 13:43 and 21:43 UTC, replacing the weekday-only schedule.
