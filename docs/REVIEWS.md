@@ -1,5 +1,22 @@
 # Independent product reviews
 
+## Chart interaction gate — 1.2.0, September 28, 2026
+
+An independent UI/UX reviewer approved with P0=0, P1=0, P2=0, P3=0 after identifying and verifying a fix for lost pins on responsive resizing. The review covered the integrated chart module, range controls, accessible inspection controls, units/vintage context, URL restoration, and desktop/mobile screenshots. The reviewer independently ran the 15 JavaScript tests and syntax check. The local codex-bus CLI dependency was unavailable (ENOENT), so the review used a native subagent with the same bounded critic/fixer gate.
+
+Host browser checks exercised keyboard stepping with retained focus; full-plot pointer inspection and click-to-pin; latest reset; range pressed state and reload/share restoration; height-only resize and orientation changes with pin/focus preservation; mobile page overflow; and touch-emulated historical GDP selection/stepping. The full suite passed 29 Python and 15 JavaScript tests. Screenshots are local QA artifacts under output/playwright/chart-*-v12.png. Touch emulation is not a physical-device or screen-reader certification.
+
+### Ongoing UI/UX release checks
+
+For releases that change charts, navigation, filtering or responsive layout, request a focused UI/UX reviewer before publication. Review the actual interaction, not only a screenshot:
+
+- Inspect an ordinary point and an endpoint by mouse, keyboard and touch. Confirm dates, values and units match the plotted data.
+- Change range, series, measure and vintage; distinguish intentional resets from accidental loss of work.
+- Pin an observation, rotate/resize, and check both the selection and keyboard focus.
+- Reload a shared view and verify its filters, range and vintage. A temporary inspection pin is local to the current view, not a promised URL feature.
+- Check narrow screens, overflow, control target sizes, focus visibility, readable states and source links.
+- Resolve substantive findings, rerun regression checks, and record the review scope and any limitations here.
+
 ## Readable-record gate — 1.1.0, September 28, 2026
 
 Content, portfolio-manager and UI reviewers approved with no P0/P1/P2 findings after correction. Content independently recomputed all 28 ALFRED vintages from their hashed raw responses and both forecast objects; found and closed a four-versus-five-horizon SEP parser defect. Corporate CIK/form/item/link bindings were independently matched to all six original responses. Subsequent per-category quotas preserve operating reports alongside ownership entries; a fixture verifies that 80 ownership entries cannot crowd out an annual report. Acceptance times are retained when supplied.

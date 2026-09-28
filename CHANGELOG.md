@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.0 — 2026-09-28
+
+- Economic charts support whole-plot hover/tap inspection, a visible crosshair, pinned values, a keyboard-accessible observation slider, previous/next buttons and a latest-point reset.
+- Every plotted observation is inspectable; displayed values are never interpolated. Readouts include period and unit.
+- One-click 1/3/5/10/20-year and full-history ranges retain shareable URL state.
+- Pinned observations and chart-control focus survive responsive resizing; height-only mobile toolbar changes do not redraw the chart.
+- Focused independent UI/UX approval and desktop, keyboard, mobile-touch, historical-vintage and rotation checks. Added a repeatable interaction-review checklist.
+
 ## 1.1.0 — 2026-09-28
 
 - Month calendar with selected-day agenda, filters and month export; trimmed front-page and section copy.
