@@ -1,5 +1,17 @@
 # Independent product reviews
 
+## Issuer financials gate — 1.5.0, September 28, 2026
+
+Independent PM/source review and the separate root-pipeline correctness review approved their bounded scopes with no P0/P1/P2/P3 findings remaining. UI review approved with no P0/P1/P2 findings and one nonblocking P3: expanded mobile calculation evidence is readable but narrow; a future full-row treatment could shorten its vertical footprint. This gate is local approval, not deployment evidence or full-product completion.
+
+The PM verified raw hashes and CIK identity for Apple, Walmart, Caterpillar, JPMorgan, Prologis, Berkshire, UnitedHealth and NextEra; checked 398 exact source-input memberships and independently recomputed 18 derived outputs. Corrected Walmart/Berkshire revenue scope, actual fiscal dates, parent/inclusive equity labels and UnitedHealth temporary equity. Missing latest-report facts remain missing. The source capture contains 25 successfully retrieved companyfacts payloads: 20 partially populated current screens and five without supported current-period facts (Visa, Coca-Cola, Prologis, NextEra and the predecessor Exxon registrant). Retrieval success is not current-fact availability.
+
+The correctness critic found and then verified fixes for private User-Agent exposure through timeout exception text, incomplete derived-definition comparisons, insufficient period/anchor validation and reparse clocks falsely advancing retrieval time. Fake-contact sentinel tests now cover timeout, arbitrary process errors and stderr; the same protection was applied to existing corporate and SEC-current-feed collectors. Recalculations are distinct from issuer-reported revisions, and source clocks remain distinct from processing clocks. The normalizer implementer did not independently approve its own normalization; that numerical audit was performed by the PM reviewer.
+
+UI checks confirmed linked reported values, disclosed calculation inputs, exact periods/units, collapsed annual history and explicit missing/current-fact states. Host browser measurements at 320/390/768/1280/1920px found no page overflow. A desktop label-wrapping defect was corrected; refreshed screenshots were independently inspected. Expanding annual history then pressing Tab focused the named scroll region, and ArrowRight moved scrollLeft from 0 to 38.5px. Native calculation disclosures were exercised. Browser emulation is not physical-device or screen-reader certification.
+
+Validation: 95 Python and 43 JavaScript tests pass, including 18 normalization fixtures and nine financial renderer tests. Syntax, metadata consistency, build and diff checks pass. The existing codex-bus CLI dependency was unavailable (missing executable), so the iterative correctness review used the existing native subagent, retained the same critic across fix/review rounds and recorded the bounded verdicts here.
+
 ## Funding and daily-data gate — 1.4.0, September 28, 2026
 
 The independent PM, econometric, source-rights and UI gates approved the bounded increment with P0=0, P1=0, P2=0, P3=0 after corrections. This does **not** approve completion of the full investor-hub goal; see GOAL-AUDIT.md. The codex-bus CLI dependency remains unavailable, so the bounded adversarial-review process used native subagents.

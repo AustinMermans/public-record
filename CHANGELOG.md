@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.5.0 — 2026-09-28
+
 - Filing-anchored issuer financial screens: quarterly operations, YTD cash generation, instant balance sheets, matched comparatives and bounded annual history. Separate banking/specialist treatment, source-linked values and disclosed calculation inputs.
 - Serialized keyless SEC companyfacts collection with lossless hashed evidence, stale-success retention, honest source/processing clocks and explicit current-fact gaps. Build validation binds values to displayed periods and controlling filings.
 - Issuer financial changes distinguish new periods, reported revisions, recalculations and definition boundaries; input concepts participate in derived-measure definitions.
