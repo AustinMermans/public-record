@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## 1.5.1 — 2026-09-28
+
+- Headline-number drill-downs on the publication, Economy, Funding and Outlook fronts. Native links open the corresponding preferred-measure history, funding calculation or forecast panel; keyboard focus, Back/reload and copied detail URLs are preserved. Missing values remain noninteractive.
+
 ## 1.5.0 — 2026-09-28
 
 - Filing-anchored issuer financial screens: quarterly operations, YTD cash generation, instant balance sheets, matched comparatives and bounded annual history. Separate banking/specialist treatment, source-linked values and disclosed calculation inputs.

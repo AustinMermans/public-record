@@ -31,10 +31,10 @@ export function recordExplanation(r){
 }
 export function forecastPanels(research){
  const cards=(research?.forecasts||[]).map(f=>{
-  if(!f.published_at)return `<article class="research-card"><h2>${f.id==='sep'?'FOMC projections':'GDPNow'}</h2><p>Collection unavailable.</p>${link(f.url,'Source')}</article>`;
+  if(!f.published_at)return `<article class="research-card" id="forecast-${esc(f.id)}"><h2>${f.id==='sep'?'FOMC projections':'GDPNow'}</h2><p>Collection unavailable.</p>${link(f.url,'Source')}</article>`;
   const evidence=`<div class="meta">Published ${esc(f.published_at)} · ${link(f.url,'Source')} ${f.status!=='ok'?`· <span class="warning">${esc(f.status)}</span>`:''}<br>Retrieved ${esc(f.captured_at)}${f.attempted_at?' · attempted '+esc(f.attempted_at):''}</div>`;
-  if(f.id==='gdpnow')return `<article class="research-card nowcast-card"><div class="section-no">Model estimate / ${esc(f.target)}</div><h2>${esc(f.title)}</h2><div class="forecast-value">${f.value.toFixed(1)}<small>%</small></div><p>Real GDP growth · quarterly annualized</p>${evidence}<p class="meta">${esc(f.basis)}</p></article>`;
-  return `<article class="research-card sep-card"><div class="section-no">Official projections / participant medians</div><h2>${esc(f.title)}</h2>${evidence}<div class="table-wrap"><table><thead><tr><th>Percent</th>${f.horizons.map(h=>`<th class="numeric">${esc(h)}</th>`).join('')}</tr></thead><tbody>${f.rows.map(r=>`<tr><td>${esc(r.name)}</td>${r.values.map(v=>`<td class="numeric">${v===null?'—':v.toFixed(1)}</td>`).join('')}</tr>`).join('')}</tbody></table></div><p class="meta">${esc(f.basis)}</p></article>`;
+  if(f.id==='gdpnow')return `<article class="research-card nowcast-card" id="forecast-gdpnow"><div class="section-no">Model estimate / ${esc(f.target)}</div><h2>${esc(f.title)}</h2><div class="forecast-value">${f.value.toFixed(1)}<small>%</small></div><p>Real GDP growth · quarterly annualized</p>${evidence}<p class="meta">${esc(f.basis)}</p></article>`;
+  return `<article class="research-card sep-card" id="forecast-${esc(f.id)}"><div class="section-no">Official projections / participant medians</div><h2>${esc(f.title)}</h2>${evidence}<div class="table-wrap"><table><thead><tr><th>Percent</th>${f.horizons.map(h=>`<th class="numeric">${esc(h)}</th>`).join('')}</tr></thead><tbody>${f.rows.map(r=>`<tr><td>${esc(r.name)}</td>${r.values.map(v=>`<td class="numeric">${v===null?'—':v.toFixed(1)}</td>`).join('')}</tr>`).join('')}</tbody></table></div><p class="meta">${esc(f.basis)}</p></article>`;
  });
  return `<div class="forecast-grid">${cards.join('')}</div>`;
 }
