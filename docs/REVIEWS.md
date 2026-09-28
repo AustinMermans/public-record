@@ -6,6 +6,10 @@ Independent UI/code review approved the clickable-number follow-up with no P0/P1
 
 Host browser verification confirmed the front-page CPI number opens CPIAUCSL at 3.35 percent year-on-year rather than the raw price-index level; Back returns to the front page. Keyboard Enter on the funding spread focuses its calculation/history section, and reloading the detail URL restores that target. GDPNow's number focuses the matching report and preserves its forecast query when copying the view link. All four fronts have no page overflow at 320/768/1280px. The code review also checked guarded post-render focus, forecast-panel targets, native-anchor accessibility and escaping. Validation: 95 Python and 48 JavaScript tests pass; source data and financial normalization are unchanged. Public deployment is a separate gate.
 
+### Verified v1.5.1 publication
+
+The [patch deployment](https://github.com/AustinMermans/public-record/actions/runs/36500351702) succeeded from `7c8f15e42a628f8e176f7d040822bb1da6c44f5c`. Public release.json, data.json, app.js, metric-links.mjs, funding.mjs, publication.mjs, editorial.mjs and style.css matched the reviewed build byte-for-byte. A live front-page click on unemployment opened UNRATE, full history and the correct 4.10 percent current level; the live footer showed v1.5.1. Immutable v1.5.1 points to that deployment commit. The [release notes](https://github.com/AustinMermans/public-record/releases/tag/v1.5.1) link the site and workflow evidence. No new source capture was claimed by this navigation-only patch.
+
 ### Verified v1.5.0 publication
 
 The [initial publication](https://github.com/AustinMermans/public-record/actions/runs/36499276640) and [full hosted refresh](https://github.com/AustinMermans/public-record/actions/runs/36499374361) succeeded. The hosted capture commit `844a4e3d5ff7804a92f7d58771228d9379bddea6` was pulled and rebuilt. Public data.json, release.json, app.js, financials.mjs, publication.mjs and style.css matched byte-for-byte. The live browser rendered Apple’s actual quarter and YTD sections at v1.5.0.
