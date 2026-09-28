@@ -6,6 +6,8 @@ Every normalized record preserves its source ID, URL, source date (if supplied),
 
 iCalendar unfolding and timezone-aware conversion preserve scheduled times. Date-only events remain date-only. FOMC meeting end dates come from the Fed's calendar, not a fabricated time-of-day assumption. Treasury times are competitive bidding deadlines; announced offering amounts are not actual issuance proceeds. Public-inspection expected publication dates are not effective dates. Past calendar dates do not certify release.
 
+For sorting only, date-only records precede timed records on their Eastern calendar day. This convention does not assert an intraday publication time. Publisher calendar UIDs persist across rescheduling; Treasury event identity includes CUSIP, announcement date and issue date to distinguish reopenings. Court entry identity uses publisher GUIDs, retaining distinct descriptions and document links when multiple RSS items describe the same entry.
+
 ## Economics
 
 The initial universe is 13 public series from BLS, BEA, Census/HUD, DOL and the Federal Reserve, distributed through FRED. Each carries units, frequency, seasonal adjustment and a preferred transformation. CPI and core CPI growth use seasonally adjusted indices and may differ from headline NSA year-over-year releases. Payroll growth is calculated from latest revised levels; it is not a first-release surprise. GDP uses quarterly real levels and annualized compound growth. No model or analyst consensus is inferred.

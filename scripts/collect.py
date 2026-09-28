@@ -90,7 +90,10 @@ def parse_ics(body,s):
             date=d.replace(tzinfo=zone).isoformat()
         title=fields['SUMMARY'][1].replace('\\,',',').replace('\\n',' ').replace('\\;',';')
         link=fields.get('URL',('',s['url']))[1]
-        out.append(record(s,title,link,date,'Scheduled release',schedule_uid=fields.get('UID',('',key(title,date)))[1],summary='Publisher schedule; actual and consensus values are not supplied by this feed.'))
+        uid=fields.get('UID',('',key(title,date)))[1]
+        item=record(s,title,link,date,'Scheduled release',schedule_uid=uid,summary='Publisher schedule; actual and consensus values are not supplied by this feed.')
+        item['id']=key(s['id'],uid)
+        out.append(item)
     if not out: raise ValueError('No calendar events parsed')
     return {'events':out}
 
@@ -124,8 +127,25 @@ def parse_rss(body,s):
         title=get('title'); date=iso(get('pubDate') or get('updated') or get('published'))
         if not title or not safe_url(link): raise ValueError('Feed entry missing title or source link')
         kind='Docket entry' if s['domain']=='Legal' else '8-K filing' if s['id']=='sec' else 'Press release'
-        out.append(record(s,title,link,date,kind,summary=clean(get('description') or get('summary'))[:600]))
-    return {'records':out}
+        description=get('description') or get('summary')
+        item=record(s,title,link,date,kind,summary=clean(description)[:1200])
+        item['document_urls']=list(dict.fromkeys(urljoin(link,html.unescape(u)) for u in re.findall(r'href=[\"\']([^\"\']+)',description) if safe_url(urljoin(link,html.unescape(u)))))
+        guid=get('guid') or get('id')
+        # A docket may have several entries with an identical case title and timestamp.
+        # Preserve the publisher entry identity instead of deduplicating by case URL.
+        if guid: item.update(id=key(s['id'],guid),source_entry_id=guid)
+        out.append(item)
+    merged={}
+    for item in out:
+        if item['id'] not in merged:
+            item['entry_descriptions']=[item['summary']] if item['summary'] else []
+            merged[item['id']]=item
+        else:
+            existing=merged[item['id']]
+            existing['entry_descriptions']=list(dict.fromkeys(existing['entry_descriptions']+([item['summary']] if item['summary'] else [])))
+            existing['document_urls']=list(dict.fromkeys(existing['document_urls']+item['document_urls']))
+            existing['summary']=' · '.join(existing['entry_descriptions'])
+    return {'records':list(merged.values()),'feed_entry_count':len(out)}
 
 def parse_register(body,s):
     data=json.loads(body); items=data['results']; out=[]; events=[]
@@ -152,9 +172,12 @@ def parse_treasury(body,s):
             date=datetime.combine(datetime.fromisoformat(day).date(),t,ZoneInfo('America/New_York')).isoformat()
         pdf=d.get('pdfFilenameAnnouncement')
         link='https://www.treasurydirect.gov/auctions/announcements-data-results/announcement-results-press-releases/'
-        if pdf: link='https://www.treasurydirect.gov/auctions/announcements-data-results/announcement-results-press-releases/'+pdf
-        amount=float(d.get('offeringAmount') or 0)/1e9
-        out.append(record(s,f"{d['securityTerm']} Treasury {d['securityType']} auction",link,date,'Treasury auction',summary=f"CUSIP {d['cusip']} · announced offering ${amount:g}bn. Time is the competitive bid deadline.",cusip=d['cusip'],offering_billions=amount))
+        if pdf: link=f"https://www.treasurydirect.gov/instit/annceresult/press/preanre/{d['announcementDate'][:4]}/{pdf}"
+        amount=float(d['offeringAmount'])/1e9 if d.get('offeringAmount') else None
+        amount_text=f'${amount:g}bn' if amount is not None else 'not supplied'
+        item=record(s,f"{d['securityTerm']} Treasury {d['securityType']} auction",link,date,'Treasury auction',summary=f"CUSIP {d['cusip']} · announced offering {amount_text}. Time is the competitive bid deadline.",cusip=d['cusip'],offering_billions=amount)
+        item['id']=key(s['id'],d['cusip'],d['announcementDate'],d['issueDate'])
+        out.append(item)
     return {'events':out}
 
 def parse_fred(body,s):
@@ -182,7 +205,9 @@ def collect(s):
     try:
         r=subprocess.run(['curl','--http1.1','--fail','--location','--silent','--show-error','--max-time','40','--retry','1','--retry-delay','2','--user-agent',UA,s['url']],capture_output=True,timeout=90)
         if r.returncode: raise ValueError(r.stderr.decode(errors='replace').strip()[:250])
-        body=r.stdout.decode('utf-8-sig',errors='replace')
+        encoding=re.search(br'encoding=[\"\']([^\"\']+)',r.stdout[:200])
+        codec=encoding.group(1).decode('ascii') if encoding else 'utf-8-sig'
+        body=r.stdout.decode(codec,errors='strict')
         parsed=PARSERS[s['parser']](body,s)
         digest=hashlib.sha256(r.stdout).hexdigest()
         # Content-addressed raw responses keep audit evidence without repeated identical files.
@@ -192,6 +217,8 @@ def collect(s):
         result={'source':status,**parsed}
         cache.parent.mkdir(parents=True,exist_ok=True); cache.write_text(json.dumps(result,ensure_ascii=False))
     except Exception as exc:
+        if previous:
+            status.update({k:previous['source'][k] for k in ('sha256','raw_path') if k in previous['source']})
         status.update(status='stale' if previous else 'unavailable',error=str(exc)[:250],last_success=previous['source'].get('last_success') if previous else None,count=previous['source'].get('count',0) if previous else 0)
         result={**(previous or {}),'source':status}
     print(s['id'],status['status'],status['count'],flush=True)
@@ -204,13 +231,19 @@ def main():
     for k in ('records','events','series'):
         items=[x for r in results for x in r.get(k,[])]
         bundle[k]=list({x['id']:x for x in items}.values())
-    bundle['records'].sort(key=lambda x:x['date'] or '',reverse=True)
-    bundle['events'].sort(key=lambda x:x['date'] or '')
+    bundle['records'].sort(key=lambda x:date_order(x['date']),reverse=True)
+    bundle['events'].sort(key=lambda x:date_order(x['date']))
     # Capture history starts here; never backfill a fictitious vintage.
     archive=DATA/'snapshots';archive.mkdir(exist_ok=True)
     text=json.dumps(bundle,ensure_ascii=False,separators=(',',':'))
     (archive/(NOW.strftime('%Y%m%dT%H%M%SZ')+'.json')).write_text(text)
     (DATA/'current.json').write_text(text)
     if not bundle['events'] or not bundle['series']: raise SystemExit('Core calendar or economic history absent; do not publish')
+
+def date_order(value):
+    if not value:return float('-inf')
+    d=datetime.fromisoformat(value)
+    if not d.tzinfo:d=d.replace(tzinfo=ZoneInfo('America/New_York'))
+    return d.timestamp()
 
 if __name__=='__main__': main()
