@@ -6,8 +6,22 @@ import {companyPage,buildSearchIndex} from '../site/publication.mjs';
 import {detailTarget} from '../site/metric-links.mjs';
 import {changeEdition} from '../site/changes.mjs';
 
-const d=JSON.parse(readFileSync(new URL('../dist/data.json',import.meta.url)));
 const cik='0000320193';
+const read=path=>JSON.parse(readFileSync(new URL(path,import.meta.url)));
+const d={...read('../data/current.json'),corporate:read('../data/corporate/current.json'),business_briefs:read('../data/business_briefs/current.json'),financials:read('../data/financials/current.json')};
+const apple=d.corporate.companies.find(c=>c.cik===cik);
+const accession='0000320193-26-000018';
+const filing=apple.filings.find(f=>f.id===accession);
+const brief=d.business_briefs.briefs.find(b=>b.cik===cik&&b.accession===accession);
+const financial=d.financials.companies.find(f=>f.cik===cik);
+const section=financial.sections.find(s=>s.id==='operating'&&s.period_type==='quarter');
+const figures=section.rows.filter(r=>['revenue','net_income'].includes(r.id)).map(r=>({id:r.id,label:r.label,current:r.current,prior:r.prior}));
+const event={accession,filed:filing.filed,url:filing.url,headline:brief.headline,excerpt:brief.excerpt,exhibit_url:brief.source.url,captured_at:brief.captured_at};
+d.earnings_dossiers={dossiers:[
+  {cik,status:'matched',event,period_end:section.end,period_basis:'Issuer exhibit explicitly names the quarter end. Prior-year comparisons are presented in this 10-Q.',financial:{anchor:financial.anchor,figures,captured_at:financial.captured_at,boundary:financial.boundary,profile_type:financial.profile_type}},
+  {cik:'0000789019',status:'quarter_facts_unavailable',reason:'A matching quarterly fact set from a controlling periodic filing is unavailable.',event:{accession:'microsoft-fixture',filed:'2026-07-29',url:'https://www.sec.gov/Archives/microsoft.htm',headline:'Microsoft reports fourth quarter results',excerpt:'Revenue increased.',exhibit_url:'https://www.sec.gov/Archives/microsoft-exhibit.htm',captured_at:'2026-09-29T20:00:00Z'}},
+  {cik:'0001318605',status:'metadata_only',reason:'Exact issuer exhibit text was not verified.',event:{accession:'tesla-fixture',filed:'2026-07-01',url:'https://www.sec.gov/Archives/tesla.htm'}}
+]};
 
 test('source-matched Apple read exposes issuer and quarterly filing separately',()=>{
   const item=dossierFor(d,cik);
