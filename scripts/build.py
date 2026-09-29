@@ -8,6 +8,7 @@ from change_edition import assemble_changes
 from fiscal import validate_fiscal
 from banking import validate_banking
 from spf import validate_capture as validate_spf
+from business_briefs import validate_capture as validate_business_briefs
 from publication_changes import compare_spf
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -43,6 +44,12 @@ def main():
             for filing in company['filings']:
                 assert filing['url'].startswith('https://www.sec.gov/Archives/edgar/data/'+str(int(company['cik']))+'/')
                 datetime.fromisoformat(filing['filed'])
+    business_briefs=ROOT/'data/business_briefs/current.json'
+    if business_briefs.exists():
+        if 'corporate' not in data:
+            raise ValueError('Business briefs require corporate coverage')
+        data['business_briefs']=json.loads(business_briefs.read_text())
+        validate_business_briefs(data['business_briefs'],ROOT,data['corporate'])
     if financials.exists():
         data['financials']=json.loads(financials.read_text())
         validate_financials(data['financials'],data.get('corporate',{}).get('companies',[]))
@@ -71,6 +78,15 @@ def main():
         data['banking']=json.loads(banking.read_text())
         validate_banking(data['banking'], raw_root=ROOT)
     data['changes']=assemble_changes(data)
+    if business_briefs.exists():
+        b=data['business_briefs']
+        counts={status:sum(x['status']==status for x in b['briefs']) for status in ('ok','stale','metadata_only')}
+        data['sources'].append(dict(id='sec-business-briefs',name='SEC EDGAR · Issuer Item 2.02 exhibits',
+            domain='Business',url='https://www.sec.gov/edgar/search/',
+            status='ok' if counts['ok']==len(b['briefs']) else ('partial' if counts['ok'] or counts['stale'] else 'unavailable'),
+            last_success=max((x['captured_at'] for x in b['briefs'] if x.get('captured_at')),default=None),
+            attempted_at=b.get('attempted_at'),count=counts['ok'],
+            note=f"Newest two selected Item 2.02 8-Ks per covered issuer; exact EX-99.1 text only. {counts['ok']} current, {counts['stale']} stale, {counts['metadata_only']} metadata-only. Not independent news or a complete filing feed."))
     if fiscal.exists():
         f=data['fiscal']
         data['sources'].append(dict(id='treasury-mts',name='US Treasury · Monthly Treasury Statement',

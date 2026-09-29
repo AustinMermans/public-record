@@ -1,0 +1,240 @@
+<HTML><HEAD><TITLE>SEC EDGAR Submission 0000200406-26-000076</TITLE>
+<!--
+<SEC-HEADER>0000200406-26-000076.hdr.sgml : 20260414
+<ACCEPTANCE-DATETIME>20260414073525
+<ACCESSION-NUMBER>0000200406-26-000076
+<TYPE>8-K
+<PUBLIC-DOCUMENT-COUNT>19
+<PERIOD>20260414
+<ITEMS>2.02
+<ITEMS>8.01
+<ITEMS>9.01
+<FILING-DATE>20260414
+<DATE-OF-FILING-DATE-CHANGE>20260414
+<FILER>
+<COMPANY-DATA>
+<CONFORMED-NAME>JOHNSON & JOHNSON
+<CIK>0000200406
+<ASSIGNED-SIC>2834
+<ORGANIZATION-NAME>03 Life Sciences
+<IRS-NUMBER>221024240
+<STATE-OF-INCORPORATION>NJ
+<FISCAL-YEAR-END>1228
+</COMPANY-DATA>
+<FILING-VALUES>
+<FORM-TYPE>8-K
+<ACT>34
+<FILE-NUMBER>001-03215
+<FILM-NUMBER>26859172
+</FILING-VALUES>
+<BUSINESS-ADDRESS>
+<STREET1>ONE JOHNSON & JOHNSON PLZ
+<CITY>NEW BRUNSWICK
+<STATE>NJ
+<ZIP>08933
+<PHONE>732-524-2455
+</BUSINESS-ADDRESS>
+<MAIL-ADDRESS>
+<STREET1>ONE JOHNSON & JOHNSON PLZ
+<CITY>NEW BRUNSWICK
+<STATE>NJ
+<ZIP>08933
+</MAIL-ADDRESS>
+</FILER>
+</SEC-HEADER>
+-->
+</HEAD><BODY>
+<PRE>&lt;SEC-DOCUMENT&gt;0000200406-26-000076-index.html : 20260414
+&lt;SEC-HEADER&gt;0000200406-26-000076.hdr.sgml : 20260414
+&lt;ACCEPTANCE-DATETIME&gt;20260414073525
+ACCESSION NUMBER:		0000200406-26-000076
+CONFORMED SUBMISSION TYPE:	8-K
+PUBLIC DOCUMENT COUNT:		19
+CONFORMED PERIOD OF REPORT:	20260414
+ITEM INFORMATION:		Results of Operations and Financial Condition
+ITEM INFORMATION:		Other Events
+ITEM INFORMATION:		Financial Statements and Exhibits
+FILED AS OF DATE:		20260414
+DATE AS OF CHANGE:		20260414
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			JOHNSON &amp; JOHNSON
+		CENTRAL INDEX KEY:			0000200406
+		STANDARD INDUSTRIAL CLASSIFICATION:	PHARMACEUTICAL PREPARATIONS [2834]
+		ORGANIZATION NAME:           	03 Life Sciences
+		EIN:				221024240
+		STATE OF INCORPORATION:			NJ
+		FISCAL YEAR END:			1228
+
+	FILING VALUES:
+		FORM TYPE:		8-K
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	001-03215
+		FILM NUMBER:		26859172
+
+	BUSINESS ADDRESS:	
+		STREET 1:		ONE JOHNSON &amp; JOHNSON PLZ
+		CITY:			NEW BRUNSWICK
+		STATE:			NJ
+		ZIP:			08933
+		BUSINESS PHONE:		732-524-2455
+
+	MAIL ADDRESS:	
+		STREET 1:		ONE JOHNSON &amp; JOHNSON PLZ
+		CITY:			NEW BRUNSWICK
+		STATE:			NJ
+		ZIP:			08933
+&lt;/SEC-HEADER&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;8-K
+&lt;SEQUENCE&gt;1
+&lt;FILENAME&gt;jnj-20260414.htm
+&lt;DESCRIPTION&gt;8-K
+&lt;TEXT&gt;
+<a href="jnj-20260414.htm">Document 1 - file: jnj-20260414.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-99.1
+&lt;SEQUENCE&gt;2
+&lt;FILENAME&gt;a2026q1exhibit991.htm
+&lt;DESCRIPTION&gt;EX-99.1
+&lt;TEXT&gt;
+<a href="a2026q1exhibit991.htm">Document 2 - file: a2026q1exhibit991.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-99.2
+&lt;SEQUENCE&gt;3
+&lt;FILENAME&gt;a2026q1exhibit992.htm
+&lt;DESCRIPTION&gt;EX-99.2
+&lt;TEXT&gt;
+<a href="a2026q1exhibit992.htm">Document 3 - file: a2026q1exhibit992.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-99.3
+&lt;SEQUENCE&gt;4
+&lt;FILENAME&gt;a2026q1exhibit993.htm
+&lt;DESCRIPTION&gt;EX-99.3
+&lt;TEXT&gt;
+<a href="a2026q1exhibit993.htm">Document 4 - file: a2026q1exhibit993.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.SCH
+&lt;SEQUENCE&gt;5
+&lt;FILENAME&gt;jnj-20260414.xsd
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION SCHEMA DOCUMENT
+&lt;TEXT&gt;
+<a href="jnj-20260414.xsd">Document 5 - file: jnj-20260414.xsd</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.DEF
+&lt;SEQUENCE&gt;6
+&lt;FILENAME&gt;jnj-20260414_def.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION DEFINITION LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="jnj-20260414_def.xml">Document 6 - file: jnj-20260414_def.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.LAB
+&lt;SEQUENCE&gt;7
+&lt;FILENAME&gt;jnj-20260414_lab.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION LABEL LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="jnj-20260414_lab.xml">Document 7 - file: jnj-20260414_lab.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.PRE
+&lt;SEQUENCE&gt;8
+&lt;FILENAME&gt;jnj-20260414_pre.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="jnj-20260414_pre.xml">Document 8 - file: jnj-20260414_pre.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;9
+&lt;FILENAME&gt;image_0.jpg
+&lt;TEXT&gt;
+<a href="image_0.jpg">Document 9 - file: image_0.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;10
+&lt;FILENAME&gt;image_1a.jpg
+&lt;TEXT&gt;
+<a href="image_1a.jpg">Document 10 - file: image_1a.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;11
+&lt;FILENAME&gt;jnjlogoa.jpg
+&lt;TEXT&gt;
+<a href="jnjlogoa.jpg">Document 11 - file: jnjlogoa.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;12
+&lt;FILENAME&gt;jnjlogob.jpg
+&lt;TEXT&gt;
+<a href="jnjlogob.jpg">Document 12 - file: jnjlogob.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;14
+&lt;FILENAME&gt;R1.htm
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="R1.htm">Document 14 - file: R1.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;15
+&lt;FILENAME&gt;report.css
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="report.css">Document 15 - file: report.css</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;16
+&lt;FILENAME&gt;Show.js
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="Show.js">Document 16 - file: Show.js</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;18
+&lt;FILENAME&gt;FilingSummary.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/FilingSummary.xml">Document 18 - file: FilingSummary.html</a><br>
+<a href="FilingSummary.xml">Document 18 - RAW XML: FilingSummary.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;JSON
+&lt;SEQUENCE&gt;20
+&lt;FILENAME&gt;MetaLinks.json
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="MetaLinks.json">Document 20 - file: MetaLinks.json</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;ZIP
+&lt;SEQUENCE&gt;21
+&lt;FILENAME&gt;0000200406-26-000076-xbrl.zip
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="0000200406-26-000076-xbrl.zip">Document 21 - file: 0000200406-26-000076-xbrl.zip</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;22
+&lt;FILENAME&gt;jnj-20260414_htm.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/jnj-20260414_htm.xml">Document 22 - file: jnj-20260414_htm.html</a><br>
+<a href="jnj-20260414_htm.xml">Document 22 - RAW XML: jnj-20260414_htm.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;/SEC-DOCUMENT&gt;</PRE><script type="text/javascript"  src="/_wPxOk28cEV9nzCHB4rN9sbjkGs/ENfEmwfpt48hfXG5/GzM7GGwHGgM/ES/JHClNELCo"></script></BODY></HTML>

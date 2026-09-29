@@ -1,0 +1,518 @@
+<HTML><HEAD><TITLE>SEC EDGAR Submission 0000104169-26-000145</TITLE>
+<!--
+<SEC-HEADER>0000104169-26-000145.hdr.sgml : 20260820
+<ACCEPTANCE-DATETIME>20260820065901
+<ACCESSION-NUMBER>0000104169-26-000145
+<TYPE>8-K
+<PUBLIC-DOCUMENT-COUNT>58
+<PERIOD>20260820
+<ITEMS>2.02
+<ITEMS>9.01
+<FILING-DATE>20260820
+<DATE-OF-FILING-DATE-CHANGE>20260820
+<FILER>
+<COMPANY-DATA>
+<CONFORMED-NAME>Walmart Inc.
+<CIK>0000104169
+<ASSIGNED-SIC>5331
+<ORGANIZATION-NAME>07 Trade & Services
+<IRS-NUMBER>710415188
+<STATE-OF-INCORPORATION>DE
+<FISCAL-YEAR-END>0131
+</COMPANY-DATA>
+<FILING-VALUES>
+<FORM-TYPE>8-K
+<ACT>34
+<FILE-NUMBER>001-06991
+<FILM-NUMBER>261297202
+</FILING-VALUES>
+<BUSINESS-ADDRESS>
+<STREET1>1 CUSTOMER DRIVE
+<CITY>BENTONVILLE
+<STATE>AR
+<ZIP>72716
+<PHONE>5012734000
+</BUSINESS-ADDRESS>
+<MAIL-ADDRESS>
+<STREET1>1 CUSTOMER DRIVE
+<CITY>BENTONVILLE
+<STATE>AR
+<ZIP>72716
+</MAIL-ADDRESS>
+<FORMER-COMPANY>
+<FORMER-CONFORMED-NAME>WAL MART STORES INC
+<DATE-CHANGED>19920703
+</FORMER-COMPANY>
+</FILER>
+</SEC-HEADER>
+-->
+</HEAD><BODY>
+<PRE>&lt;SEC-DOCUMENT&gt;0000104169-26-000145-index.html : 20260820
+&lt;SEC-HEADER&gt;0000104169-26-000145.hdr.sgml : 20260820
+&lt;ACCEPTANCE-DATETIME&gt;20260820065901
+ACCESSION NUMBER:		0000104169-26-000145
+CONFORMED SUBMISSION TYPE:	8-K
+PUBLIC DOCUMENT COUNT:		58
+CONFORMED PERIOD OF REPORT:	20260820
+ITEM INFORMATION:		Results of Operations and Financial Condition
+ITEM INFORMATION:		Financial Statements and Exhibits
+FILED AS OF DATE:		20260820
+DATE AS OF CHANGE:		20260820
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			Walmart Inc.
+		CENTRAL INDEX KEY:			0000104169
+		STANDARD INDUSTRIAL CLASSIFICATION:	RETAIL-VARIETY STORES [5331]
+		ORGANIZATION NAME:           	07 Trade &amp; Services
+		EIN:				710415188
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			0131
+
+	FILING VALUES:
+		FORM TYPE:		8-K
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	001-06991
+		FILM NUMBER:		261297202
+
+	BUSINESS ADDRESS:	
+		STREET 1:		1 CUSTOMER DRIVE
+		CITY:			BENTONVILLE
+		STATE:			AR
+		ZIP:			72716
+		BUSINESS PHONE:		5012734000
+
+	MAIL ADDRESS:	
+		STREET 1:		1 CUSTOMER DRIVE
+		CITY:			BENTONVILLE
+		STATE:			AR
+		ZIP:			72716
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	WAL MART STORES INC
+		DATE OF NAME CHANGE:	19920703
+&lt;/SEC-HEADER&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;8-K
+&lt;SEQUENCE&gt;1
+&lt;FILENAME&gt;wmt-20260820.htm
+&lt;DESCRIPTION&gt;8-K
+&lt;TEXT&gt;
+<a href="wmt-20260820.htm">Document 1 - file: wmt-20260820.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-99.1
+&lt;SEQUENCE&gt;2
+&lt;FILENAME&gt;earningsreleasefy27q2.htm
+&lt;DESCRIPTION&gt;EX-99.1
+&lt;TEXT&gt;
+<a href="earningsreleasefy27q2.htm">Document 2 - file: earningsreleasefy27q2.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-99.2
+&lt;SEQUENCE&gt;3
+&lt;FILENAME&gt;earningspresentationfy27.htm
+&lt;DESCRIPTION&gt;EX-99.2
+&lt;TEXT&gt;
+<a href="earningspresentationfy27.htm">Document 3 - file: earningspresentationfy27.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.SCH
+&lt;SEQUENCE&gt;4
+&lt;FILENAME&gt;wmt-20260820.xsd
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION SCHEMA DOCUMENT
+&lt;TEXT&gt;
+<a href="wmt-20260820.xsd">Document 4 - file: wmt-20260820.xsd</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.DEF
+&lt;SEQUENCE&gt;5
+&lt;FILENAME&gt;wmt-20260820_def.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION DEFINITION LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="wmt-20260820_def.xml">Document 5 - file: wmt-20260820_def.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.LAB
+&lt;SEQUENCE&gt;6
+&lt;FILENAME&gt;wmt-20260820_lab.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION LABEL LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="wmt-20260820_lab.xml">Document 6 - file: wmt-20260820_lab.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.PRE
+&lt;SEQUENCE&gt;7
+&lt;FILENAME&gt;wmt-20260820_pre.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="wmt-20260820_pre.xml">Document 7 - file: wmt-20260820_pre.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;8
+&lt;FILENAME&gt;earningspresentationfy27001.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27001.jpg">Document 8 - file: earningspresentationfy27001.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;9
+&lt;FILENAME&gt;earningspresentationfy27002.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27002.jpg">Document 9 - file: earningspresentationfy27002.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;10
+&lt;FILENAME&gt;earningspresentationfy27003.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27003.jpg">Document 10 - file: earningspresentationfy27003.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;11
+&lt;FILENAME&gt;earningspresentationfy27004.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27004.jpg">Document 11 - file: earningspresentationfy27004.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;12
+&lt;FILENAME&gt;earningspresentationfy27005.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27005.jpg">Document 12 - file: earningspresentationfy27005.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;13
+&lt;FILENAME&gt;earningspresentationfy27006.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27006.jpg">Document 13 - file: earningspresentationfy27006.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;14
+&lt;FILENAME&gt;earningspresentationfy27007.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27007.jpg">Document 14 - file: earningspresentationfy27007.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;15
+&lt;FILENAME&gt;earningspresentationfy27008.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27008.jpg">Document 15 - file: earningspresentationfy27008.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;16
+&lt;FILENAME&gt;earningspresentationfy27009.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27009.jpg">Document 16 - file: earningspresentationfy27009.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;17
+&lt;FILENAME&gt;earningspresentationfy27010.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27010.jpg">Document 17 - file: earningspresentationfy27010.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;18
+&lt;FILENAME&gt;earningspresentationfy27011.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27011.jpg">Document 18 - file: earningspresentationfy27011.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;19
+&lt;FILENAME&gt;earningspresentationfy27012.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27012.jpg">Document 19 - file: earningspresentationfy27012.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;20
+&lt;FILENAME&gt;earningspresentationfy27013.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27013.jpg">Document 20 - file: earningspresentationfy27013.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;21
+&lt;FILENAME&gt;earningspresentationfy27014.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27014.jpg">Document 21 - file: earningspresentationfy27014.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;22
+&lt;FILENAME&gt;earningspresentationfy27015.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27015.jpg">Document 22 - file: earningspresentationfy27015.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;23
+&lt;FILENAME&gt;earningspresentationfy27016.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27016.jpg">Document 23 - file: earningspresentationfy27016.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;24
+&lt;FILENAME&gt;earningspresentationfy27017.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27017.jpg">Document 24 - file: earningspresentationfy27017.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;25
+&lt;FILENAME&gt;earningspresentationfy27018.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27018.jpg">Document 25 - file: earningspresentationfy27018.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;26
+&lt;FILENAME&gt;earningspresentationfy27019.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27019.jpg">Document 26 - file: earningspresentationfy27019.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;27
+&lt;FILENAME&gt;earningspresentationfy27020.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27020.jpg">Document 27 - file: earningspresentationfy27020.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;28
+&lt;FILENAME&gt;earningspresentationfy27021.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27021.jpg">Document 28 - file: earningspresentationfy27021.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;29
+&lt;FILENAME&gt;earningspresentationfy27022.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27022.jpg">Document 29 - file: earningspresentationfy27022.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;30
+&lt;FILENAME&gt;earningspresentationfy27023.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27023.jpg">Document 30 - file: earningspresentationfy27023.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;31
+&lt;FILENAME&gt;earningspresentationfy27024.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27024.jpg">Document 31 - file: earningspresentationfy27024.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;32
+&lt;FILENAME&gt;earningspresentationfy27025.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27025.jpg">Document 32 - file: earningspresentationfy27025.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;33
+&lt;FILENAME&gt;earningspresentationfy27026.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27026.jpg">Document 33 - file: earningspresentationfy27026.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;34
+&lt;FILENAME&gt;earningspresentationfy27027.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27027.jpg">Document 34 - file: earningspresentationfy27027.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;35
+&lt;FILENAME&gt;earningspresentationfy27028.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27028.jpg">Document 35 - file: earningspresentationfy27028.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;36
+&lt;FILENAME&gt;earningspresentationfy27029.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27029.jpg">Document 36 - file: earningspresentationfy27029.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;37
+&lt;FILENAME&gt;earningspresentationfy27030.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27030.jpg">Document 37 - file: earningspresentationfy27030.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;38
+&lt;FILENAME&gt;earningspresentationfy27031.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27031.jpg">Document 38 - file: earningspresentationfy27031.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;39
+&lt;FILENAME&gt;earningspresentationfy27032.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27032.jpg">Document 39 - file: earningspresentationfy27032.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;40
+&lt;FILENAME&gt;earningspresentationfy27033.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27033.jpg">Document 40 - file: earningspresentationfy27033.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;41
+&lt;FILENAME&gt;earningspresentationfy27034.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27034.jpg">Document 41 - file: earningspresentationfy27034.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;42
+&lt;FILENAME&gt;earningspresentationfy27035.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27035.jpg">Document 42 - file: earningspresentationfy27035.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;43
+&lt;FILENAME&gt;earningspresentationfy27036.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27036.jpg">Document 43 - file: earningspresentationfy27036.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;44
+&lt;FILENAME&gt;earningspresentationfy27037.jpg
+&lt;TEXT&gt;
+<a href="earningspresentationfy27037.jpg">Document 44 - file: earningspresentationfy27037.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;45
+&lt;FILENAME&gt;electricbikesfordeliverya.jpg
+&lt;TEXT&gt;
+<a href="electricbikesfordeliverya.jpg">Document 45 - file: electricbikesfordeliverya.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;46
+&lt;FILENAME&gt;imagea.jpg
+&lt;TEXT&gt;
+<a href="imagea.jpg">Document 46 - file: imagea.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;47
+&lt;FILENAME&gt;screenshot2026-08x10182353a.jpg
+&lt;TEXT&gt;
+<a href="screenshot2026-08x10182353a.jpg">Document 47 - file: screenshot2026-08x10182353a.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;48
+&lt;FILENAME&gt;sparka.jpg
+&lt;TEXT&gt;
+<a href="sparka.jpg">Document 48 - file: sparka.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;49
+&lt;FILENAME&gt;wmt-20260820_g1.jpg
+&lt;TEXT&gt;
+<a href="wmt-20260820_g1.jpg">Document 49 - file: wmt-20260820_g1.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;50
+&lt;FILENAME&gt;wmt-sparkxsparkyellowxrgb0a.gif
+&lt;TEXT&gt;
+<a href="wmt-sparkxsparkyellowxrgb0a.gif">Document 50 - file: wmt-sparkxsparkyellowxrgb0a.gif</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;51
+&lt;FILENAME&gt;wmtus_freshxstore5477-019xa.jpg
+&lt;TEXT&gt;
+<a href="wmtus_freshxstore5477-019xa.jpg">Document 51 - file: wmtus_freshxstore5477-019xa.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;53
+&lt;FILENAME&gt;R1.htm
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="R1.htm">Document 53 - file: R1.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;54
+&lt;FILENAME&gt;report.css
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="report.css">Document 54 - file: report.css</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;55
+&lt;FILENAME&gt;Show.js
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="Show.js">Document 55 - file: Show.js</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;57
+&lt;FILENAME&gt;FilingSummary.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/FilingSummary.xml">Document 57 - file: FilingSummary.html</a><br>
+<a href="FilingSummary.xml">Document 57 - RAW XML: FilingSummary.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;JSON
+&lt;SEQUENCE&gt;59
+&lt;FILENAME&gt;MetaLinks.json
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="MetaLinks.json">Document 59 - file: MetaLinks.json</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;ZIP
+&lt;SEQUENCE&gt;60
+&lt;FILENAME&gt;0000104169-26-000145-xbrl.zip
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="0000104169-26-000145-xbrl.zip">Document 60 - file: 0000104169-26-000145-xbrl.zip</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;61
+&lt;FILENAME&gt;wmt-20260820_htm.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/wmt-20260820_htm.xml">Document 61 - file: wmt-20260820_htm.html</a><br>
+<a href="wmt-20260820_htm.xml">Document 61 - RAW XML: wmt-20260820_htm.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;/SEC-DOCUMENT&gt;</PRE><script type="text/javascript"  src="/_wPxOk28cEV9nzCHB4rN9sbjkGs/ENfEmwfpt48hfXG5/GzM7GGwHGgM/ES/JHClNELCo"></script></BODY></HTML>

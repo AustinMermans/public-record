@@ -39,6 +39,19 @@ test('search ranks exact ticker/CIK profiles first and supports filing terms',()
   assert.ok(filings.length);assert.ok(filings.every(r=>r.title.includes('10-K')));
   assert.equal(searchIndex(index,'', '').length,0);
 });
+test('source-bound exhibit text is searchable and opens a local filing brief with the SEC source alongside',()=>{
+  const f=apple.filings.find(f=>f.form==='8-K'&&f.items?.includes('2.02'));
+  assert.ok(f);
+  const base=`https://www.sec.gov/Archives/edgar/data/${Number(apple.cik)}/${f.id.replaceAll('-','')}/`;
+  const fixture={...d,business_briefs:{briefs:[{cik:apple.cik,accession:f.id,filing_url:f.url,status:'ok',headline:'Apple announces exemplary services growth',excerpt:'Services revenue advanced in the reported quarter.',source:{url:base+'ex991.htm'}}]}};
+  const hits=searchIndex(buildSearchIndex(fixture),'exemplary services','filing');
+  assert.equal(hits.length,1);
+  assert.equal(hits[0].url,'#company?cik='+apple.cik+'&filing='+encodeURIComponent(f.id));
+  assert.equal(hits[0].source,base+'ex991.htm');
+  assert.match(searchResults(hits),/SEC source/);
+  const wrong={...fixture,business_briefs:{briefs:[{...fixture.business_briefs.briefs[0],source:{url:'https://example.com/other.htm'}}]}};
+  assert.equal(searchIndex(buildSearchIndex(wrong),'exemplary services','filing').length,0);
+});
 test('matching treats names/tickers as complete tokens, not substrings',()=>{
   assert.equal(normalize('Berkshire-Hathaway, Inc.'),'berkshire hathaway inc');
   assert.equal(searchIndex([{kind:'record',text:'pineapple',title:'Pineapple'}],'apple').length,0);
@@ -68,6 +81,20 @@ test('all desk fronts render and shared homepage spans subjects',()=>{
   for(const title of ['Business','Economy','Government','Disclosures','Outlook','Changes','News'])assert.ok(html.includes(title));
   assert.match(deskPage(d,'news',ctx),/not independent news reporting/);
   assert.match(deskPage(d,'government',ctx),/not yet collected/);
+});
+test('site front page selects a verified issuer report ahead of a newer generic filing',()=>{
+  const f=apple.filings.find(f=>f.form==='8-K'&&f.items?.includes('2.02'));
+  const base=`https://www.sec.gov/Archives/edgar/data/${Number(apple.cik)}/${f.id.replaceAll('-','')}/`;
+  const brief={cik:apple.cik,accession:f.id,filing_url:f.url,status:'ok',headline:'Apple reports source-verified results',excerpt:'Apple posted revenue of $109 billion.',source:{url:base+'ex991.htm'}};
+  const fixture={...d,business_briefs:{briefs:[brief]}};
+  const html=publicationHome(fixture,{kpi:()=>'',brief:()=>'',agenda:()=>'',nextEvents:()=>[]});
+  assert.match(html,/Recent verified issuer report/);
+  assert.match(html,/Apple reports source-verified results/);
+  assert.match(html,/Apple posted revenue of \$109 billion/);
+  assert.match(html,/#company\?cik=0000320193&amp;filing=/);
+  assert.match(html,/ex991\.htm/);
+  assert.match(html,/8-K event\/report date 2026-07-30/);
+  assert.doesNotMatch(html,/Report period 2026-07-30/);
 });
 test('search indexed company links resolve to known CIKs and external links remain source links',()=>{
   for(const row of index){assert.ok(row.url.startsWith('#')||row.url.startsWith('https://'));if(row.kind==='company')assert.ok(d.corporate.companies.some(c=>row.url.endsWith(c.cik)));}

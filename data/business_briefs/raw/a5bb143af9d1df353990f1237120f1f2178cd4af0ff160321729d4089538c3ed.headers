@@ -1,0 +1,201 @@
+<HTML><HEAD><TITLE>SEC EDGAR Submission 0001628280-26-028364</TITLE>
+<!--
+<SEC-HEADER>0001628280-26-028364.hdr.sgml : 20260429
+<ACCEPTANCE-DATETIME>20260429160541
+<ACCESSION-NUMBER>0001628280-26-028364
+<TYPE>8-K
+<PUBLIC-DOCUMENT-COUNT>13
+<PERIOD>20260429
+<ITEMS>2.02
+<ITEMS>9.01
+<FILING-DATE>20260429
+<DATE-OF-FILING-DATE-CHANGE>20260429
+<FILER>
+<COMPANY-DATA>
+<CONFORMED-NAME>Meta Platforms, Inc.
+<CIK>0001326801
+<ASSIGNED-SIC>7370
+<ORGANIZATION-NAME>06 Technology
+<IRS-NUMBER>201665019
+<STATE-OF-INCORPORATION>DE
+<FISCAL-YEAR-END>1231
+</COMPANY-DATA>
+<FILING-VALUES>
+<FORM-TYPE>8-K
+<ACT>34
+<FILE-NUMBER>001-35551
+<FILM-NUMBER>26915849
+</FILING-VALUES>
+<BUSINESS-ADDRESS>
+<STREET1>1 META WAY
+<CITY>MENLO PARK
+<STATE>CA
+<ZIP>94025
+<PHONE>650-543-4800
+</BUSINESS-ADDRESS>
+<MAIL-ADDRESS>
+<STREET1>1 META WAY
+<CITY>MENLO PARK
+<STATE>CA
+<ZIP>94025
+</MAIL-ADDRESS>
+<FORMER-COMPANY>
+<FORMER-CONFORMED-NAME>Facebook Inc
+<DATE-CHANGED>20050511
+</FORMER-COMPANY>
+</FILER>
+</SEC-HEADER>
+-->
+</HEAD><BODY>
+<PRE>&lt;SEC-DOCUMENT&gt;0001628280-26-028364-index.html : 20260429
+&lt;SEC-HEADER&gt;0001628280-26-028364.hdr.sgml : 20260429
+&lt;ACCEPTANCE-DATETIME&gt;20260429160541
+ACCESSION NUMBER:		0001628280-26-028364
+CONFORMED SUBMISSION TYPE:	8-K
+PUBLIC DOCUMENT COUNT:		13
+CONFORMED PERIOD OF REPORT:	20260429
+ITEM INFORMATION:		Results of Operations and Financial Condition
+ITEM INFORMATION:		Financial Statements and Exhibits
+FILED AS OF DATE:		20260429
+DATE AS OF CHANGE:		20260429
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			Meta Platforms, Inc.
+		CENTRAL INDEX KEY:			0001326801
+		STANDARD INDUSTRIAL CLASSIFICATION:	SERVICES-COMPUTER PROGRAMMING, DATA PROCESSING, ETC. [7370]
+		ORGANIZATION NAME:           	06 Technology
+		EIN:				201665019
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		8-K
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	001-35551
+		FILM NUMBER:		26915849
+
+	BUSINESS ADDRESS:	
+		STREET 1:		1 META WAY
+		CITY:			MENLO PARK
+		STATE:			CA
+		ZIP:			94025
+		BUSINESS PHONE:		650-543-4800
+
+	MAIL ADDRESS:	
+		STREET 1:		1 META WAY
+		CITY:			MENLO PARK
+		STATE:			CA
+		ZIP:			94025
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	Facebook Inc
+		DATE OF NAME CHANGE:	20050511
+&lt;/SEC-HEADER&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;8-K
+&lt;SEQUENCE&gt;1
+&lt;FILENAME&gt;meta-20260429.htm
+&lt;DESCRIPTION&gt;8-K
+&lt;TEXT&gt;
+<a href="meta-20260429.htm">Document 1 - file: meta-20260429.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-99.1
+&lt;SEQUENCE&gt;2
+&lt;FILENAME&gt;meta-03312026xexhibit991.htm
+&lt;DESCRIPTION&gt;EX-99.1
+&lt;TEXT&gt;
+<a href="meta-03312026xexhibit991.htm">Document 2 - file: meta-03312026xexhibit991.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.SCH
+&lt;SEQUENCE&gt;3
+&lt;FILENAME&gt;meta-20260429.xsd
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION SCHEMA DOCUMENT
+&lt;TEXT&gt;
+<a href="meta-20260429.xsd">Document 3 - file: meta-20260429.xsd</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.LAB
+&lt;SEQUENCE&gt;4
+&lt;FILENAME&gt;meta-20260429_lab.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION LABEL LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="meta-20260429_lab.xml">Document 4 - file: meta-20260429_lab.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.PRE
+&lt;SEQUENCE&gt;5
+&lt;FILENAME&gt;meta-20260429_pre.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="meta-20260429_pre.xml">Document 5 - file: meta-20260429_pre.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;6
+&lt;FILENAME&gt;meta-20260429_g1.jpg
+&lt;TEXT&gt;
+<a href="meta-20260429_g1.jpg">Document 6 - file: meta-20260429_g1.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;8
+&lt;FILENAME&gt;R1.htm
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="R1.htm">Document 8 - file: R1.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;9
+&lt;FILENAME&gt;report.css
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="report.css">Document 9 - file: report.css</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;10
+&lt;FILENAME&gt;Show.js
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="Show.js">Document 10 - file: Show.js</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;12
+&lt;FILENAME&gt;FilingSummary.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/FilingSummary.xml">Document 12 - file: FilingSummary.html</a><br>
+<a href="FilingSummary.xml">Document 12 - RAW XML: FilingSummary.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;JSON
+&lt;SEQUENCE&gt;14
+&lt;FILENAME&gt;MetaLinks.json
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="MetaLinks.json">Document 14 - file: MetaLinks.json</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;ZIP
+&lt;SEQUENCE&gt;15
+&lt;FILENAME&gt;0001628280-26-028364-xbrl.zip
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="0001628280-26-028364-xbrl.zip">Document 15 - file: 0001628280-26-028364-xbrl.zip</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;16
+&lt;FILENAME&gt;meta-20260429_htm.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/meta-20260429_htm.xml">Document 16 - file: meta-20260429_htm.html</a><br>
+<a href="meta-20260429_htm.xml">Document 16 - RAW XML: meta-20260429_htm.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;/SEC-DOCUMENT&gt;</PRE><script type="text/javascript"  src="/_wPxOk28cEV9nzCHB4rN9sbjkGs/ENfEmwfpt48hfXG5/GzM7GGwHGgM/ES/JHClNELCo"></script></BODY></HTML>

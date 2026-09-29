@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+## 1.11.0 — 2026-09-29
+
+- Business company-match spotlight places issuer identity, source-linked financial context and recent relevant filings before the paginated disclosure list. Specialist issuer boundaries appear beside abbreviated numbers, including a direct prior-registrant link and unspliced-history caution for XOM. Mobile Business navigation removes a duplicate global search form while retaining site-wide search access.
+- Bounded SEC Item 2.02 exhibit briefs add exact issuer headlines and short excerpts where a unique EX-99.1 is verified against the accession index. Source bytes and hashes are retained; uncertain or unavailable text falls back to filing metadata. A recent issuer-results lead brings verified reporting above the metadata filing stream; Business and site-wide search index verified exhibit text and lead to the on-site filing detail with the SEC source alongside. This is not independent news coverage or a complete filing feed.
+
 ## 1.10.0 — 2026-09-29
 
 - Philadelphia Fed Survey of Professional Forecasters: six source-cell-reconciled quarterly median measures, target-fixed forecast histories, latest five-quarter paths, shareable measure/target links and distinct release/retrieval clocks. Daily keyless retrieval retains hashed official workbooks; change detection separates new target horizons, same-target forecast moves and corrections to current-edition historical cells. Original-release workbook vintages are not reconstructed.

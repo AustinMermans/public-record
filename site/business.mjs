@@ -87,12 +87,20 @@ function queryMatcher(d,query) {
   if(/^(?:item\s+)?\d\.\d{2}$/i.test(q))return {company:()=>false,story:s=>(s.f.items||[]).includes(q.replace(/^item\s+/i,''))};
   if(/^(?:10-[KQ]|8-K|DEF 14A|[345]|S-[38]|144)(?:\/A)?$/i.test(q))return {company:()=>false,story:s=>s.f.form.toUpperCase()===q.toUpperCase()};
   if(/^\d{10}-\d{2}-\d{6}$/.test(q))return {company:()=>false,story:s=>s.f.id===q};
-  return {company:c=>matches(identity(c),q),story:s=>matches([identity(s.c),s.title,s.summary,s.f.form,s.f.id,...(s.f.item_descriptions||[]),...businessTopics.filter(([id])=>s.topics.includes(id)).map(([,label])=>label)].join(' '),q)};
+  return {company:c=>matches(identity(c),q),story:s=>matches([identity(s.c),s.title,s.summary,s.brief?.headline,s.brief?.excerpt,s.f.form,s.f.id,...(s.f.item_descriptions||[]),...businessTopics.filter(([id])=>s.topics.includes(id)).map(([,label])=>label)].join(' '),q)};
 }
+export function briefFor(d,c,f) {
+  if(!f.items?.includes('2.02')||!/^8-K(?:\/A)?$/.test(f.form))return null;
+  const base=`https://www.sec.gov/Archives/edgar/data/${Number(c.cik)}/${f.id.replaceAll('-','')}/`;
+  const brief=d.business_briefs?.briefs?.find(b=>b.cik===c.cik&&b.accession===f.id&&b.filing_url===f.url);
+  if(!brief||!['ok','stale'].includes(brief.status)||typeof brief.headline!=='string'||!brief.headline.trim()||typeof brief.excerpt!=='string'||!brief.excerpt.trim()||typeof brief.source?.url!=='string'||!brief.source.url.startsWith(base))return null;
+  return brief;
+}
+const storyHeadline=s=>s.brief?.headline||s.title;
 export function businessSelection(d,{q='',topic='reports',page=1}={}) {
   q=String(q).slice(0,160);topic=businessTopics.some(([id])=>id===topic)?topic:'reports';
   const query=queryMatcher(d,q),companies=universe(d).filter(query.company);
-  const stories=universe(d).flatMap(c=>(c.filings||[]).map(f=>filingStory(c,f)))
+  const stories=universe(d).flatMap(c=>(c.filings||[]).map(f=>({...filingStory(c,f),brief:briefFor(d,c,f)})))
     .filter(s=>(topic==='all'||(topic==='reports'?!s.topics.includes('ownership'):s.topics.includes(topic))) && query.story(s))
     .sort((a,b)=>String(b.f.accepted_at||b.f.filed).localeCompare(String(a.f.accepted_at||a.f.filed))||b.f.id.localeCompare(a.f.id)||a.c.cik.localeCompare(b.c.cik));
   const pages=Math.max(1,Math.ceil(stories.length/12));page=Number.isSafeInteger(Number(page))&&Number(page)>0?Math.min(Number(page),pages):1;
@@ -118,11 +126,14 @@ export function financialBrief(d,c,filing=null) {
     }
     return `<div><span>${esc(r.label)}</span> <a class="metric-link" href="${profile(c)}">${esc(nf(p.value/divisor,2)+' '+unit)}</a>${change}</div>`;
   }).join('');
-  return `<div class="business-financial-brief"><p class="meta">${section.period_type==='quarter'?'Reported quarter':'Reported year'} · ${esc(section.start)} → ${esc(section.end)}${financial.status==='stale'?' · Stale financial capture':''}</p>${figures}<p class="meta">${sourceLink(anchor.url,'Financial report')} · Filed ${esc(anchor.filed)} · Financial capture ${esc(financial.last_success||financial.captured_at||'unavailable')}</p></div>`;
+  const specialist=financial.profile_type&&financial.profile_type!=='operating_company'&&typeof financial.boundary==='string';
+  const boundary=specialist?`<p class="meta business-identity-boundary">${esc(financial.boundary)}${financial.profile_type==='successor_registrant'?' Year-over-year values compare periods within the linked current report, not a spliced CIK history.':''}${c.cik==='0002115436'&&universe(d).some(x=>x.cik==='0000034088')?` <a href="#company?cik=0000034088">Prior Exxon registrant →</a>`:''}</p>`:'';
+  return `<div class="business-financial-brief"><p class="meta">${section.period_type==='quarter'?'Reported quarter':'Reported year'} · ${esc(section.start)} → ${esc(section.end)}${financial.status==='stale'?' · Stale financial capture':''}</p>${figures}${boundary}<p class="meta">${sourceLink(anchor.url,'Financial report')} · Filed ${esc(anchor.filed)} · Financial capture ${esc(financial.last_success||financial.captured_at||'unavailable')}</p></div>`;
 }
 
 function storyCard(d,s) {
-  return `<article class="business-story"><div class="meta">${esc(date(s.f.filed))} · ${esc(s.f.form)} · ${esc(s.c.tickers?.[0]||'CIK '+s.c.cik)}</div><h3><a href="${esc(s.url)}">${esc(s.title)}</a></h3><p>${esc(s.summary)}</p>${financialBrief(d,s.c,s.f)}<div class="meta"><a href="${profile(s.c)}">Company profile</a> · ${sourceLink(s.f.url)}${s.c.status!=='ok'?' · '+esc(s.c.status):''}</div></article>`;
+  const brief=s.brief;
+  return `<article class="business-story"><div class="meta">${esc(date(s.f.filed))} · ${esc(s.f.form)} · ${esc(s.c.tickers?.[0]||'CIK '+s.c.cik)}${brief?' · Issuer Item 2.02 exhibit':''}</div><h3><a href="${esc(s.url)}">${esc(storyHeadline(s))}</a></h3>${brief?`<p>${esc(brief.excerpt)}</p><p class="meta">Issuer excerpt · ${sourceLink(brief.source.url,'Exhibit 99.1')} · Retrieved ${esc(brief.captured_at||'unavailable')}${brief.status==='stale'?' · Stale document capture':''}</p>`:`<p>${esc(s.summary)}</p>`}${financialBrief(d,s.c,s.f)}<div class="meta"><a href="${profile(s.c)}">Company profile</a> · ${sourceLink(s.f.url,baseForm(s.f)==='8-K'?'Primary 8-K':'SEC source')}${s.c.status!=='ok'?' · '+esc(s.c.status):''}</div></article>`;
 }
 function companyCard(c) {
   return `<a class="business-company" href="${profile(c)}"><strong>${esc(c.tickers?.join(' / ')||'CIK '+c.cik)}</strong><span>${esc(c.name)}</span><small>${esc(c.industry||'Industry unavailable')}${c.status!=='ok'?' · '+esc(c.status):''}</small></a>`;
@@ -132,17 +143,30 @@ function viewUrl(state,page) {
   return '#business?'+params;
 }
 const statusText=state=>`${state.stories.length} matching filings · ${state.companies.length} matching companies · Page ${state.page} of ${state.pages}`;
+function companySpotlight(d,state) {
+  if(!state.q.trim()||state.companies.length!==1)return '';
+  const c=state.companies[0],headlines=state.stories.filter(s=>s.c.cik===c.cik).slice(0,3);
+  return `<section class="business-spotlight" aria-label="Matching company"><div><div class="section-no">Company match · ${esc(c.tickers?.join(' / ')||'CIK '+c.cik)}</div><h2><a href="${profile(c)}">${esc(c.name)}</a></h2><p class="meta">${esc(c.industry||'Industry unavailable')} · CIK ${esc(c.cik)} · ${esc(c.status)} · ${sourceLink(c.url,'SEC submissions')}</p>${financialBrief(d,c)}</div><div><h3>Recent matching filings</h3>${headlines.length?`<ul>${headlines.map(s=>`<li><a href="${esc(s.url)}">${esc(storyHeadline(s))}</a><small>${esc(date(s.f.filed))} · ${esc(s.f.form)}</small></li>`).join('')}</ul>`:'<p class="meta">No filings match this topic. The company profile remains available.</p>'}<p><a href="${profile(c)}">Full company profile →</a></p></div></section>`;
+}
+function issuerLead(state) {
+  if(state.q.trim()||state.topic!=='reports'||state.page!==1)return '';
+  const featured=state.stories.filter(s=>s.brief?.status==='ok').slice(0,3);
+  if(!featured.length)return '';
+  return `<section class="business-issuer-lead" aria-label="Recent verified issuer reports"><div class="section-head"><h2>From issuer results</h2><span class="meta">Recent verified Item 2.02 exhibits</span></div><div class="business-issuer-grid">${featured.map(s=>`<article><div class="meta">${esc(date(s.f.filed))} · ${esc(s.c.tickers?.[0]||s.c.name)}</div><h3><a href="${esc(s.url)}">${esc(s.brief.headline)}</a></h3><p>${esc(s.brief.excerpt)}</p><div class="meta">${sourceLink(s.brief.source.url,'Original exhibit')} · <a href="${profile(s.c)}">Company profile</a></div></article>`).join('')}</div></section>`;
+}
 export function businessResults(d,options={}) {
   const state=businessSelection(d,options),offset=(state.page-1)*12;
-  const financialCompanies=state.companies.filter(c=>financialBrief(d,c)).sort((a,b)=>{
+  const financialCompanies=(state.q.trim()&&state.companies.length===1?[]:state.companies.filter(c=>financialBrief(d,c))).sort((a,b)=>{
     const anchors=d.financials.companies;return String(anchors.find(c=>c.cik===b.cik)?.anchor?.filed).localeCompare(String(anchors.find(c=>c.cik===a.cik)?.anchor?.filed));
   }).slice(0,6);
-  return `<div class="business-layout"><section id="business-headlines" tabindex="-1"><div class="section-head"><h2>${state.q?'Matching headlines':'Latest disclosures'}</h2><a href="#corporate">Filing browser →</a></div>${state.stories.slice(offset,offset+12).map(s=>storyCard(d,s)).join('')||'<p class="empty-day">No captured filings match. Try a company name, ticker, CIK or disclosure topic.</p>'}${state.pages>1?`<div class="business-pagination">${state.page>1?`<a href="${esc(viewUrl(state,state.page-1))}">← Previous</a>`:'<span>← Previous</span>'}<span>${state.page} / ${state.pages}</span>${state.page<state.pages?`<a href="${esc(viewUrl(state,state.page+1))}">Next →</a>`:'<span>Next →</span>'}</div>`:''}</section><aside><div class="section-head"><h2>${state.q?'Matching companies':'Company profiles'}</h2></div>${state.companies.slice(0,6).map(companyCard).join('')||'<p class="meta">No company identity matches this query. Headlines may still match a disclosure topic.</p>'}${state.companies.length>6?`<details class="business-directory"><summary>All ${state.companies.length} matching companies</summary>${state.companies.slice(6).map(companyCard).join('')}</details>`:''}<p class="meta business-scope">${universe(d).length} selected SEC registrants. Headlines describe filing forms and reported items; company announcements and independent news coverage are not yet collected.</p></aside></div>${financialCompanies.length?`<section class="section"><div class="section-head"><h2>Reported financials</h2><span class="meta">Most recently filed reports among matching companies</span></div><div class="business-financial-grid">${financialCompanies.map(c=>`<article><h3><a href="${profile(c)}">${esc(c.name)}</a></h3>${financialBrief(d,c)}</article>`).join('')}</div></section>`:''}`;
+  const sidebarCompanies=state.q.trim()&&state.companies.length===1?[]:state.companies;
+  const briefCount=d.business_briefs?.briefs?.filter(b=>['ok','stale'].includes(b.status)).length||0;
+  return `${companySpotlight(d,state)}${issuerLead(state)}<div class="business-layout"><section id="business-headlines" tabindex="-1"><div class="section-head"><h2>${state.q?'Matching headlines':'Latest selected filings'}</h2><a href="#corporate">Filing browser →</a></div>${state.stories.slice(offset,offset+12).map(s=>storyCard(d,s)).join('')||'<p class="empty-day">No captured filings match. Try a company name, ticker, CIK or disclosure topic.</p>'}${state.pages>1?`<div class="business-pagination">${state.page>1?`<a href="${esc(viewUrl(state,state.page-1))}">← Previous</a>`:'<span>← Previous</span>'}<span>${state.page} / ${state.pages}</span>${state.page<state.pages?`<a href="${esc(viewUrl(state,state.page+1))}">Next →</a>`:'<span>Next →</span>'}</div>`:''}</section><aside>${sidebarCompanies.length?`<div class="section-head"><h2>${state.q?'Matching companies':'Company profiles'}</h2></div>${sidebarCompanies.slice(0,6).map(companyCard).join('')}${sidebarCompanies.length>6?`<details class="business-directory"><summary>All ${sidebarCompanies.length} matching companies</summary>${sidebarCompanies.slice(6).map(companyCard).join('')}</details>`:''}`:state.companies.length?'':`<p class="meta">No company identity matches this query. Headlines may still match a disclosure topic.</p>`}<p class="meta business-scope">${universe(d).length} selected SEC registrants. ${briefCount?`${briefCount} recent Item 2.02 exhibits have issuer-text headlines and excerpts; other headlines describe filing metadata.`:'Headlines describe filing forms and reported items.'} Independent news coverage is not yet collected.</p></aside></div>${financialCompanies.length?`<section class="section"><div class="section-head"><h2>Reported financials</h2><span class="meta">Most recently filed reports among matching companies</span></div><div class="business-financial-grid">${financialCompanies.map(c=>`<article><h3><a href="${profile(c)}">${esc(c.name)}</a></h3>${financialBrief(d,c)}</article>`).join('')}</div></section>`:''}`;
 }
 
 export function businessPage(d,options={}) {
   const state=businessSelection(d,options);
-  return `<div class="page-title"><div><div class="section-no">Business desk</div><h1>Companies & disclosures</h1></div></div><form id="business-search" class="filters business-search" role="search"><label class="search">Company or disclosure<input id="business-q" type="search" maxlength="160" value="${esc(state.q)}" placeholder="AAPL, Microsoft, acquisition, earnings…"></label><label>Headlines<select id="business-topic">${businessTopics.map(([id,label])=>`<option value="${id}"${state.topic===id?' selected':''}>${label}</option>`).join('')}</select></label><button type="submit">Search</button></form><p id="business-status" class="meta" role="status" aria-atomic="true">${esc(statusText(state))}</p><div id="business-results" data-page="${state.page}">${businessResults(d,state)}</div>`;
+  return `<div class="page-title"><div><div class="section-no">Business desk</div><h1>Companies & disclosures</h1></div></div><form id="business-search" class="filters business-search" role="search"><label class="search">Company or disclosure<input id="business-q" type="search" maxlength="160" value="${esc(state.q)}" placeholder="AAPL, Microsoft, acquisition, earnings…"></label><label>Headlines<select id="business-topic">${businessTopics.map(([id,label])=>`<option value="${id}"${state.topic===id?' selected':''}>${label}</option>`).join('')}</select></label><button type="submit">Search</button></form><p id="business-status" class="meta" role="status" aria-atomic="true">${esc(statusText(state))}</p><p class="meta business-front-scope">Selected filings from ${universe(d).length} SEC registrants; issuer exhibit text appears only where its source could be verified. Not a complete filings or news feed.</p><div id="business-results" data-page="${state.page}">${businessResults(d,state)}</div>`;
 }
 
 export function bindBusiness(root,d) {
@@ -166,5 +190,6 @@ export function filingDetail(d,c,accession) {
   const f=c.filings.find(f=>f.id===accession);
   if(!f)return '<section id="company-filing-detail" class="section"><h2>Filing outside this capture</h2><p>The requested accession is not in this company’s selected filings.</p></section>';
   const s=filingStory(c,f);
-  return `<section id="company-filing-detail" class="section business-filing-detail"><div class="section-no">Selected disclosure · ${esc(f.form)}${f.amendment?' · Amendment':''}</div><h2>${esc(s.title)}</h2><p>${esc(s.summary)}</p><p class="meta">Filed ${esc(f.filed)}${f.report_period?' · Report date '+esc(f.report_period):''} · Accession ${esc(f.id)} · ${sourceLink(f.url,'Original filing')}</p>${(f.items||[]).length?`<p class="meta">Reported items: ${esc(f.items.join(', '))}</p>`:''}${financialBrief(d,c,f)}<p class="meta">Based on SEC submission metadata. ${f.amendment?'Read the amendment with the original filing. ':''}Captured ${esc(c.captured_at||'unavailable')}${c.status!=='ok'?' · '+esc(c.status):''}</p></section>`;
+  const brief=briefFor(d,c,f);
+  return `<section id="company-filing-detail" class="section business-filing-detail"><div class="section-no">Selected disclosure · ${esc(f.form)}${f.amendment?' · Amendment':''}</div><h2>${esc(storyHeadline({...s,brief}))}</h2>${brief?`<p>${esc(brief.excerpt)}</p><p class="meta">Issuer text from Exhibit 99.1 · ${sourceLink(brief.source.url,'Original exhibit')} · Retrieved ${esc(brief.captured_at||'unavailable')}${brief.status==='stale'?' · Stale document capture':''}</p>`:`<p>${esc(s.summary)}</p>`}<p class="meta">Filed ${esc(f.filed)}${f.report_period?' · Report date '+esc(f.report_period):''} · Accession ${esc(f.id)} · ${sourceLink(f.url,'Primary filing')}</p>${(f.items||[]).length?`<p class="meta">Reported items: ${esc(f.items.join(', '))}</p>`:''}${financialBrief(d,c,f)}<p class="meta">${brief?'Headline and excerpt reproduced from the linked issuer exhibit; filing identity from SEC submissions.':'Based on SEC submission metadata.'} ${f.amendment?'Read the amendment with the original filing. ':''}Captured ${esc(c.captured_at||'unavailable')}${c.status!=='ok'?' · '+esc(c.status):''}</p></section>`;
 }

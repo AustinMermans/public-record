@@ -7,12 +7,12 @@ A source-linked observatory for US economic releases, regulation, corporate disc
 ## Read the edition
 
 - **Front page and desks:** cross-section publication front page; separate Economy, Business, Government & Politics, Disclosures, Outlook and Changes landing pages, with deeper tools and breadcrumbs.
-- **Search:** name, ticker, CIK, topic and filing-form search across captured metadata. Company profiles rank ahead of documents; filters, pages and company-name scopes are shareable. This is not full-document or whole-web search.
+- **Search:** name, ticker, CIK, topic and filing-form search across captured metadata, with verified issuer-exhibit headlines/excerpts where available. Company profiles rank ahead of documents; filters, pages and company-name scopes are shareable. This is not full-document or whole-web search.
 - **Calendar:** month grid and selected-day agenda, filters, official schedules and filtered iCalendar exports.
 - **Economy:** 24 series: 13 FRED macro histories, two bounded New York Fed rate histories, and nine OFR index/contribution histories. Transformations and CSV exports; optional sampled ALFRED vintages for GDP, payrolls, unemployment and CPI.
 - **Funding & credit:** same-date SOFR/EFFR comparisons, volumes and rate distributions; global financial stress, recent change and component contributions. FDIC banking conditions add published all-insured loan-performance, earnings, reserves and deposit comparisons with quarterly histories. See [funding methodology](docs/FUNDING.md) and [banking methodology](docs/BANKING.md).
 - **Fiscal:** Treasury receipts, outlays, net interest and the deficit with matched fiscal-year-to-date comparisons; a source-reconciled accounting bridge and interactive monthly history. Exact-dollar inputs and one-edition history, not mixed original-release vintages. See [fiscal methodology](docs/FISCAL.md).
-- **Business:** a [searchable headline desk](https://austinmermans.github.io/public-record/#business), 25 SEC registrant profiles, topic filters and complete pagination through selected filings. Headlines open on-site disclosure details with original sources; financial briefs attach only to the controlling periodic report. Search exact tickers, CIKs, forms, accession numbers or reported 8-K items, plus company names and topics. Ownership forms have their own filter. CIK-linked filings remain separate from unverified name matches; current and prior Exxon registrants stay distinct. Headlines currently describe SEC metadata, not independent news reporting or extracted full-document announcements.
+- **Business:** a [searchable headline desk](https://austinmermans.github.io/public-record/#business), 25 SEC registrant profiles, topic filters and complete pagination through selected filings. A single-company match puts issuer identity and filing-anchored financial context first. Recent Item 2.02 reports show exact issuer exhibit headlines and short source-linked excerpts when reliably extracted; other entries fall back to SEC form/item metadata. Headlines open on-site disclosure details with original sources. Search exact tickers, CIKs, forms, accession numbers or reported 8-K items, plus company names, topics and captured exhibit text. Ownership forms have their own filter. CIK-linked filings remain separate from unverified name matches; current and prior Exxon registrants stay distinct. This is not independent news reporting or full-document coverage.
 - **Government & Politics:** federal fiscal conditions alongside institutional coverage from Federal Reserve communications and Federal Register activity. Politician profiles, votes and political-finance data remain planned.
 - **News & announcements:** captured Federal Reserve press releases; explicitly official communications, not independent reporting or a comprehensive news service.
 - **Disclosures:** government and selected court records, original documents, local reading lists and saved keyword lenses with transparent match reasons.
@@ -32,6 +32,7 @@ python3 scripts/collect.py
 python3 scripts/research.py
 # SEC_USER_AGENT must identify the project and an authorized contact address.
 python3 scripts/corporate.py
+python3 scripts/business_briefs.py
 python3 scripts/collect_financials.py
 python3 scripts/fiscal.py
 python3 scripts/banking.py

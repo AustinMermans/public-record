@@ -1,0 +1,218 @@
+<HTML><HEAD><TITLE>SEC EDGAR Submission 0001045810-26-000051</TITLE>
+<!--
+<SEC-HEADER>0001045810-26-000051.hdr.sgml : 20260520
+<ACCEPTANCE-DATETIME>20260520162119
+<ACCESSION-NUMBER>0001045810-26-000051
+<TYPE>8-K
+<PUBLIC-DOCUMENT-COUNT>14
+<PERIOD>20260520
+<ITEMS>2.02
+<ITEMS>9.01
+<FILING-DATE>20260520
+<DATE-OF-FILING-DATE-CHANGE>20260520
+<FILER>
+<COMPANY-DATA>
+<CONFORMED-NAME>NVIDIA CORP
+<CIK>0001045810
+<ASSIGNED-SIC>3674
+<ORGANIZATION-NAME>04 Manufacturing
+<IRS-NUMBER>943177549
+<STATE-OF-INCORPORATION>DE
+<FISCAL-YEAR-END>0131
+</COMPANY-DATA>
+<FILING-VALUES>
+<FORM-TYPE>8-K
+<ACT>34
+<FILE-NUMBER>000-23985
+<FILM-NUMBER>261004320
+</FILING-VALUES>
+<BUSINESS-ADDRESS>
+<STREET1>2788 SAN TOMAS EXPRESSWAY
+<CITY>SANTA CLARA
+<STATE>CA
+<ZIP>95051
+<PHONE>408-486-2000
+</BUSINESS-ADDRESS>
+<MAIL-ADDRESS>
+<STREET1>2788 SAN TOMAS EXPRESSWAY
+<CITY>SANTA CLARA
+<STATE>CA
+<ZIP>95051
+</MAIL-ADDRESS>
+<FORMER-COMPANY>
+<FORMER-CONFORMED-NAME>NVIDIA CORP/DE
+<DATE-CHANGED>20020612
+</FORMER-COMPANY>
+<FORMER-COMPANY>
+<FORMER-CONFORMED-NAME>NVIDIA CORP/CA
+<DATE-CHANGED>19980303
+</FORMER-COMPANY>
+</FILER>
+</SEC-HEADER>
+-->
+</HEAD><BODY>
+<PRE>&lt;SEC-DOCUMENT&gt;0001045810-26-000051-index.html : 20260520
+&lt;SEC-HEADER&gt;0001045810-26-000051.hdr.sgml : 20260520
+&lt;ACCEPTANCE-DATETIME&gt;20260520162119
+ACCESSION NUMBER:		0001045810-26-000051
+CONFORMED SUBMISSION TYPE:	8-K
+PUBLIC DOCUMENT COUNT:		14
+CONFORMED PERIOD OF REPORT:	20260520
+ITEM INFORMATION:		Results of Operations and Financial Condition
+ITEM INFORMATION:		Financial Statements and Exhibits
+FILED AS OF DATE:		20260520
+DATE AS OF CHANGE:		20260520
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			NVIDIA CORP
+		CENTRAL INDEX KEY:			0001045810
+		STANDARD INDUSTRIAL CLASSIFICATION:	SEMICONDUCTORS &amp; RELATED DEVICES [3674]
+		ORGANIZATION NAME:           	04 Manufacturing
+		EIN:				943177549
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			0131
+
+	FILING VALUES:
+		FORM TYPE:		8-K
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	000-23985
+		FILM NUMBER:		261004320
+
+	BUSINESS ADDRESS:	
+		STREET 1:		2788 SAN TOMAS EXPRESSWAY
+		CITY:			SANTA CLARA
+		STATE:			CA
+		ZIP:			95051
+		BUSINESS PHONE:		408-486-2000
+
+	MAIL ADDRESS:	
+		STREET 1:		2788 SAN TOMAS EXPRESSWAY
+		CITY:			SANTA CLARA
+		STATE:			CA
+		ZIP:			95051
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	NVIDIA CORP/DE
+		DATE OF NAME CHANGE:	20020612
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	NVIDIA CORP/CA
+		DATE OF NAME CHANGE:	19980303
+&lt;/SEC-HEADER&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;8-K
+&lt;SEQUENCE&gt;1
+&lt;FILENAME&gt;nvda-20260520.htm
+&lt;DESCRIPTION&gt;8-K
+&lt;TEXT&gt;
+<a href="nvda-20260520.htm">Document 1 - file: nvda-20260520.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-99.1
+&lt;SEQUENCE&gt;2
+&lt;FILENAME&gt;q1fy27pr.htm
+&lt;DESCRIPTION&gt;EX-99.1
+&lt;TEXT&gt;
+<a href="q1fy27pr.htm">Document 2 - file: q1fy27pr.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-99.2
+&lt;SEQUENCE&gt;3
+&lt;FILENAME&gt;q1fy27cfocommentary.htm
+&lt;DESCRIPTION&gt;EX-99.2
+&lt;TEXT&gt;
+<a href="q1fy27cfocommentary.htm">Document 3 - file: q1fy27cfocommentary.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.SCH
+&lt;SEQUENCE&gt;4
+&lt;FILENAME&gt;nvda-20260520.xsd
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION SCHEMA DOCUMENT
+&lt;TEXT&gt;
+<a href="nvda-20260520.xsd">Document 4 - file: nvda-20260520.xsd</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.LAB
+&lt;SEQUENCE&gt;5
+&lt;FILENAME&gt;nvda-20260520_lab.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION LABEL LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="nvda-20260520_lab.xml">Document 5 - file: nvda-20260520_lab.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.PRE
+&lt;SEQUENCE&gt;6
+&lt;FILENAME&gt;nvda-20260520_pre.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="nvda-20260520_pre.xml">Document 6 - file: nvda-20260520_pre.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;7
+&lt;FILENAME&gt;nvdalogoa19a.jpg
+&lt;DESCRIPTION&gt;NVDA LOGO
+&lt;TEXT&gt;
+<a href="nvdalogoa19a.jpg">Document 7 - file: nvdalogoa19a.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;9
+&lt;FILENAME&gt;R1.htm
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="R1.htm">Document 9 - file: R1.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;10
+&lt;FILENAME&gt;report.css
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="report.css">Document 10 - file: report.css</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;11
+&lt;FILENAME&gt;Show.js
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="Show.js">Document 11 - file: Show.js</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;13
+&lt;FILENAME&gt;FilingSummary.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/FilingSummary.xml">Document 13 - file: FilingSummary.html</a><br>
+<a href="FilingSummary.xml">Document 13 - RAW XML: FilingSummary.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;JSON
+&lt;SEQUENCE&gt;15
+&lt;FILENAME&gt;MetaLinks.json
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="MetaLinks.json">Document 15 - file: MetaLinks.json</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;ZIP
+&lt;SEQUENCE&gt;16
+&lt;FILENAME&gt;0001045810-26-000051-xbrl.zip
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="0001045810-26-000051-xbrl.zip">Document 16 - file: 0001045810-26-000051-xbrl.zip</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;17
+&lt;FILENAME&gt;nvda-20260520_htm.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/nvda-20260520_htm.xml">Document 17 - file: nvda-20260520_htm.html</a><br>
+<a href="nvda-20260520_htm.xml">Document 17 - RAW XML: nvda-20260520_htm.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;/SEC-DOCUMENT&gt;</PRE><script type="text/javascript"  src="/_wPxOk28cEV9nzCHB4rN9sbjkGs/ENfEmwfpt48hfXG5/GzM7GGwHGgM/ES/JHClNELCo"></script></BODY></HTML>

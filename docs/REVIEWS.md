@@ -1,5 +1,13 @@
 # Independent product reviews
 
+## Source-backed Business gate — 1.11.0 candidate, September 29, 2026
+
+Independent content/provenance, UI/UX and portfolio-manager reviewers approved this **bounded increment** with no remaining P0–P2 findings. The capture targets the newest two non-amended Item 2.02 Form 8-Ks per each of 25 selected registrants: 49 exact accessions, 35 source-backed issuer headlines/excerpts, 14 explicit metadata-only fallbacks and zero stale briefs in the 2026-09-29T19:03:05Z edition. The content reviewer independently checked all 35 excerpts, selected retained SEC index and exhibit SHA-256 hashes and the full capture replay against current CIK/accession coverage. Ambiguous or absent EX-99.1 exhibits, dense supplemental decks and text without a defensible quantitative excerpt remain metadata-only. Source-text corrections rejected generic Berkshire prose, a prospective ExxonMobil bullet, Meta/Caterpillar table headers and incomplete Visa quotation fragments; no figures were inferred from exhibit prose.
+
+The UI reviewer browsed the rebuilt site at 320, 390, 768, 1280 and 1920 pixels without horizontal overflow. Business search retains focus/hash/status; an issuer headline opens exact accession detail with direct exhibit and primary 8-K links; pagination preserves query/focus. The verified issuer-results lead is separate from the chronologically selected metadata filing stream. The PM confirmed that company search puts filing-anchored financial context first, specialist boundaries accompany abbreviated numbers, XOM's current/prior registrant CIKs remain separate at the point of use, and the site-wide front page selects a verified issuer report when one is available. The featured 8-K date is labeled as an event/report date, not its earnings period. These views support first-pass triage, **not** a complete company dossier, news feed, consensus/surprise study or final product approval.
+
+P3 follow-ups: some exact issuer bullets retain original footnote markers; dense mobile navigation delays first-fold content; generic non-earnings 8-Ks still describe metadata rather than the document's substance. Source use stays bounded to public SEC material with a configured identifying User-Agent and request pacing; the contact is not written to the public capture. Local tests, build and hosted publication verification are recorded separately below. This independent approval does not establish a successful deployment.
+
 ## Professional-forecaster gate — 1.10.0 candidate, September 29, 2026
 
 ### Verified v1.10.0 publication

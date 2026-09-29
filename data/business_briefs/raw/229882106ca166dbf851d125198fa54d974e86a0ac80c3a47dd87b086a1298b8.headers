@@ -1,0 +1,194 @@
+<HTML><HEAD><TITLE>SEC EDGAR Submission 0001652044-26-000066</TITLE>
+<!--
+<SEC-HEADER>0001652044-26-000066.hdr.sgml : 20260722
+<ACCEPTANCE-DATETIME>20260722160136
+<ACCESSION-NUMBER>0001652044-26-000066
+<TYPE>8-K
+<PUBLIC-DOCUMENT-COUNT>13
+<PERIOD>20260722
+<ITEMS>2.02
+<ITEMS>9.01
+<FILING-DATE>20260722
+<DATE-OF-FILING-DATE-CHANGE>20260722
+<FILER>
+<COMPANY-DATA>
+<CONFORMED-NAME>Alphabet Inc.
+<CIK>0001652044
+<ASSIGNED-SIC>7370
+<ORGANIZATION-NAME>06 Technology
+<IRS-NUMBER>611767919
+<STATE-OF-INCORPORATION>DE
+<FISCAL-YEAR-END>1231
+</COMPANY-DATA>
+<FILING-VALUES>
+<FORM-TYPE>8-K
+<ACT>34
+<FILE-NUMBER>001-37580
+<FILM-NUMBER>261193706
+</FILING-VALUES>
+<BUSINESS-ADDRESS>
+<STREET1>1600 AMPHITHEATRE PARKWAY
+<CITY>MOUNTAIN VIEW
+<STATE>CA
+<ZIP>94043
+<PHONE>650-253-0000
+</BUSINESS-ADDRESS>
+<MAIL-ADDRESS>
+<STREET1>1600 AMPHITHEATRE PARKWAY
+<CITY>MOUNTAIN VIEW
+<STATE>CA
+<ZIP>94043
+</MAIL-ADDRESS>
+</FILER>
+</SEC-HEADER>
+-->
+</HEAD><BODY>
+<PRE>&lt;SEC-DOCUMENT&gt;0001652044-26-000066-index.html : 20260722
+&lt;SEC-HEADER&gt;0001652044-26-000066.hdr.sgml : 20260722
+&lt;ACCEPTANCE-DATETIME&gt;20260722160136
+ACCESSION NUMBER:		0001652044-26-000066
+CONFORMED SUBMISSION TYPE:	8-K
+PUBLIC DOCUMENT COUNT:		13
+CONFORMED PERIOD OF REPORT:	20260722
+ITEM INFORMATION:		Results of Operations and Financial Condition
+ITEM INFORMATION:		Financial Statements and Exhibits
+FILED AS OF DATE:		20260722
+DATE AS OF CHANGE:		20260722
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			Alphabet Inc.
+		CENTRAL INDEX KEY:			0001652044
+		STANDARD INDUSTRIAL CLASSIFICATION:	SERVICES-COMPUTER PROGRAMMING, DATA PROCESSING, ETC. [7370]
+		ORGANIZATION NAME:           	06 Technology
+		EIN:				611767919
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		8-K
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	001-37580
+		FILM NUMBER:		261193706
+
+	BUSINESS ADDRESS:	
+		STREET 1:		1600 AMPHITHEATRE PARKWAY
+		CITY:			MOUNTAIN VIEW
+		STATE:			CA
+		ZIP:			94043
+		BUSINESS PHONE:		650-253-0000
+
+	MAIL ADDRESS:	
+		STREET 1:		1600 AMPHITHEATRE PARKWAY
+		CITY:			MOUNTAIN VIEW
+		STATE:			CA
+		ZIP:			94043
+&lt;/SEC-HEADER&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;8-K
+&lt;SEQUENCE&gt;1
+&lt;FILENAME&gt;goog-20260722.htm
+&lt;DESCRIPTION&gt;8-K
+&lt;TEXT&gt;
+<a href="goog-20260722.htm">Document 1 - file: goog-20260722.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-99.1
+&lt;SEQUENCE&gt;2
+&lt;FILENAME&gt;googexhibit991q22026.htm
+&lt;DESCRIPTION&gt;EX-99.1
+&lt;TEXT&gt;
+<a href="googexhibit991q22026.htm">Document 2 - file: googexhibit991q22026.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.SCH
+&lt;SEQUENCE&gt;3
+&lt;FILENAME&gt;goog-20260722.xsd
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION SCHEMA DOCUMENT
+&lt;TEXT&gt;
+<a href="goog-20260722.xsd">Document 3 - file: goog-20260722.xsd</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.DEF
+&lt;SEQUENCE&gt;4
+&lt;FILENAME&gt;goog-20260722_def.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION DEFINITION LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="goog-20260722_def.xml">Document 4 - file: goog-20260722_def.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.LAB
+&lt;SEQUENCE&gt;5
+&lt;FILENAME&gt;goog-20260722_lab.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION LABEL LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="goog-20260722_lab.xml">Document 5 - file: goog-20260722_lab.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.PRE
+&lt;SEQUENCE&gt;6
+&lt;FILENAME&gt;goog-20260722_pre.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="goog-20260722_pre.xml">Document 6 - file: goog-20260722_pre.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;8
+&lt;FILENAME&gt;R1.htm
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="R1.htm">Document 8 - file: R1.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;9
+&lt;FILENAME&gt;report.css
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="report.css">Document 9 - file: report.css</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;10
+&lt;FILENAME&gt;Show.js
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="Show.js">Document 10 - file: Show.js</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;12
+&lt;FILENAME&gt;FilingSummary.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/FilingSummary.xml">Document 12 - file: FilingSummary.html</a><br>
+<a href="FilingSummary.xml">Document 12 - RAW XML: FilingSummary.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;JSON
+&lt;SEQUENCE&gt;14
+&lt;FILENAME&gt;MetaLinks.json
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="MetaLinks.json">Document 14 - file: MetaLinks.json</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;ZIP
+&lt;SEQUENCE&gt;15
+&lt;FILENAME&gt;0001652044-26-000066-xbrl.zip
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="0001652044-26-000066-xbrl.zip">Document 15 - file: 0001652044-26-000066-xbrl.zip</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;16
+&lt;FILENAME&gt;goog-20260722_htm.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/goog-20260722_htm.xml">Document 16 - file: goog-20260722_htm.html</a><br>
+<a href="goog-20260722_htm.xml">Document 16 - RAW XML: goog-20260722_htm.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;/SEC-DOCUMENT&gt;</PRE><script type="text/javascript"  src="/_wPxOk28cEV9nzCHB4rN9sbjkGs/ENfEmwfpt48hfXG5/GzM7GGwHGgM/ES/JHClNELCo"></script></BODY></HTML>
