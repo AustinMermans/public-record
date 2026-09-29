@@ -11,8 +11,9 @@ A source-linked observatory for US economic releases, regulation, corporate disc
 - **Calendar:** month grid and selected-day agenda, filters, official schedules and filtered iCalendar exports.
 - **Economy:** 24 series: 13 FRED macro histories, two bounded New York Fed rate histories, and nine OFR index/contribution histories. Transformations and CSV exports; optional sampled ALFRED vintages for GDP, payrolls, unemployment and CPI.
 - **Funding & credit:** same-date SOFR/EFFR comparisons, volumes and rate distributions; global financial stress, recent change and component contributions. Interactive histories and source-quality exceptions. See [funding methodology](docs/FUNDING.md).
+- **Fiscal:** Treasury receipts, outlays, net interest and the deficit with matched fiscal-year-to-date comparisons; a source-reconciled accounting bridge and interactive monthly history. Exact-dollar inputs and one-edition history, not mixed original-release vintages. See [fiscal methodology](docs/FISCAL.md).
 - **Business:** 25 SEC registrant profiles and a filing dashboard with annual, quarterly, current-event, proxy and ownership quotas, amendment labels and 8-K item descriptions. CIK-linked filings are separate from unverified name matches. The current and prior Exxon registrants remain distinct.
-- **Government & Politics:** institutional coverage from Federal Reserve communications and Federal Register activity. Politician profiles, votes and political-finance data remain planned.
+- **Government & Politics:** federal fiscal conditions alongside institutional coverage from Federal Reserve communications and Federal Register activity. Politician profiles, votes and political-finance data remain planned.
 - **News & announcements:** captured Federal Reserve press releases; explicitly official communications, not independent reporting or a comprehensive news service.
 - **Disclosures:** government and selected court records, original documents, local reading lists and saved keyword lenses with transparent match reasons.
 - **Changes:** a unified edition across economic data, company filings/financial facts, funding and forecasts. Bounded desk summaries, source-linked values and analytical drill-downs; complete company/desk/type-filtered ledger with shareable pagination. Each channel retains its own successful-capture window.
@@ -32,6 +33,7 @@ python3 scripts/research.py
 # SEC_USER_AGENT must identify the project and an authorized contact address.
 python3 scripts/corporate.py
 python3 scripts/collect_financials.py
+python3 scripts/fiscal.py
 python3 -m unittest discover -s tests
 node --test tests/*.test.mjs
 python3 scripts/build.py

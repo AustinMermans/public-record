@@ -5,6 +5,7 @@ from datetime import datetime
 from versioning import validate_release
 from validate_financials import validate_financials
 from change_edition import assemble_changes
+from fiscal import validate_fiscal
 ROOT=Path(__file__).resolve().parents[1]
 
 def validate(data):
@@ -51,7 +52,18 @@ def main():
                 assert len(dict(v['observations']))==len(v['observations'])
         for f in data['research']['forecasts']:
             if f.get('published_at'):assert f['published_at']<=data['research']['captured_at'][:10]
+    fiscal=ROOT/'data/fiscal/current.json'
+    if fiscal.exists():
+        data['fiscal']=json.loads(fiscal.read_text())
+        validate_fiscal(data['fiscal'], raw_root=ROOT)
     data['changes']=assemble_changes(data)
+    if fiscal.exists():
+        f=data['fiscal']
+        data['sources'].append(dict(id='treasury-mts',name='US Treasury · Monthly Treasury Statement',
+            domain='Fiscal',url=f['url'],status=f['status'],last_success=f.get('captured_at'),
+            attempted_at=f.get('attempted_at'),count=len(f.get('metrics',[])),
+            note='Federal receipts, outlays and net interest; matched fiscal-year-to-date periods. Not debt outstanding.',
+            error=f.get('error')))
     out=ROOT/'dist';out.mkdir(exist_ok=True)
     for p in (ROOT/'site').iterdir():
         if p.is_file(): shutil.copy2(p,out/p.name)

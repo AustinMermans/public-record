@@ -75,6 +75,16 @@ class EditionTests(unittest.TestCase):
                     URL.replace('/000032019326000001/', '/short/')):
             self.assertIsNone(filing_identity(bad))
 
+    def test_fiscal_items_join_economy_summary_and_keep_their_own_clock(self):
+        changes = bundle('treasury-mts', [dict(before='100.00', after='101.00', metric_id='receipts')])
+        data = dict(changes=dict(items=[], channels=[]), fiscal=dict(changes=changes))
+        result = assemble_changes(data)
+        self.assertEqual(result['channels'][0]['domain'], 'Economic data')
+        self.assertEqual(result['items'][0]['detail_url'], '#fiscal?view=fytd')
+        self.assertEqual(result['items'][0]['from_capture'], changes['channels'][0]['from_capture'])
+        changes['items'][0]['period_type'] = 'month'
+        self.assertEqual(assemble_changes(data)['items'][0]['detail_url'], '#fiscal?view=monthly&metric=receipts')
+
     def test_conflicting_sec_identity_fails_closed(self):
         data = dict(changes=bundle('sec', [dict(cik='0000000001')]))
         data['changes']['items'][0]['url'] = URL

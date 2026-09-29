@@ -1,6 +1,6 @@
 # Next increment: a unified change edition
 
-PM recommendation after bounded v1.5 approval. **Implemented and locally reviewed; hosted release gates pending.** Proposed v1.6.0 after the separately requested headline-navigation patch. See REVIEWS.md for scoped evidence.
+PM recommendation after bounded v1.5 approval. **Implemented, reviewed and released as v1.6.0.** Hosted refresh and public-payload verification succeeded; see REVIEWS.md for scoped evidence. The original acceptance plan is retained below.
 
 Reader job: “Since the previous successful edition, what changed in the economic picture, companies I follow, funding conditions and forecasts—and where should I look next?”
 

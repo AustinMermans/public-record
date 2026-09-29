@@ -49,6 +49,7 @@ jobs:
           python scripts/research.py
           python scripts/corporate.py
           python scripts/collect_financials.py
+          python scripts/fiscal.py
       - name: Validate and build the publication
         run: python scripts/build.py
       - name: Preserve the source capture
