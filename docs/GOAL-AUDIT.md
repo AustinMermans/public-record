@@ -1,6 +1,6 @@
 # Investor-hub completion audit
 
-Updated after verified v1.11.0 Business publication, September 29, 2026 (Pacific). **Full goal: not approved.** A reviewed application increment is not proof that the entire product is complete. Publication receipts are recorded separately in REVIEWS.md.
+Updated after verified v1.12.0 adaptive change-edition publication, September 29, 2026 (Pacific). **Full goal: not approved.** A reviewed application increment is not proof that the entire product is complete. Publication receipts are recorded separately in REVIEWS.md.
 
 ## Acceptance requirements
 
@@ -8,9 +8,9 @@ Updated after verified v1.11.0 Business publication, September 29, 2026 (Pacific
 | --- | --- |
 | Data refresh at least daily | Seven-day twice-daily workflow is live. Hosted v1.11 refresh 36617568267 succeeded and its published payload matched the rebuilt capture. Future scheduler execution is not guaranteed by configuration. |
 | At least ten high-value source sites, keyless first | Twelve provider families appear below, grouping Treasury services and repeated endpoints rather than inflating counts. This inventory is not an assertion that the best investor data needs are covered. Broader forecasts remain a material gap. |
-| Useful without opening every source | Macro charts, calendar, extracted FOMC/GDPNow/SPF, plain-language disclosure entries, company filing profiles, filing-anchored financial screens, 35 verified recent issuer-exhibit briefs and funding/stress comparisons are implemented. Financial screens are partial, not complete valuation/credit models; deeper cross-source synthesis remains incomplete. |
+| Useful without opening every source | Macro charts, calendar, extracted FOMC/GDPNow/SPF, plain-language disclosure entries, company filing profiles, filing-anchored financial screens, 35 verified recent issuer-exhibit briefs and funding/stress comparisons are implemented. The v1.12 front now exposes active change desks, including court-feed activity with source-specific counts/windows and filtered ledger links. This is not substantive legal-news coverage. Financial screens are partial, not complete valuation/credit models; deeper cross-source synthesis remains incomplete. |
 | Historical and forward-looking context | Revised macro history and sampled ALFRED vintages; FOMC projections, GDPNow and target-fixed SPF survey histories. Original-release surprise histories, further forecast panels and prediction-market history are incomplete. |
-| Reviewer validation | Independent content/provenance, PM and UI gates approve the bounded v1.11 Business increment; method, PM and UI gates previously approved bounded v1.10 SPF. Fresh final product approval is still required after remaining gaps are resolved. |
+| Reviewer validation | Independent PM, temporal-method and UI gates approve the bounded v1.12 change-edition increment; content/provenance, PM and UI gates previously approved bounded v1.11 Business. Fresh final product approval is still required after remaining gaps are resolved. |
 | Responsive and accessible experience | Browser checks across 320–1920px, keyboard chart controls and resize-state preservation. Physical-device and screen-reader certification are not claimed. |
 | Versioned, attributable publication | Semantic versions, changelog/citation/build consistency, source links and scoped noncommercial licenses. Tags follow verified deployments. |
 
@@ -41,7 +41,7 @@ The [unified change edition](CHANGE-EDITION-PLAN.md), [Treasury fiscal increment
 
 1. **Business reading depth after v1.11:** searchable issuer profiles and exact-filing detail now lead with source-backed text for 35 of 49 selected recent Item 2.02 accessions; 14 deliberately remain metadata-only. The next content gap is item-bounded narrative from other 8-K announcements, alternative exhibits, broader issuer/news coverage and research-grade company dossiers. Verified issuer-specific KPIs, segments and debt context remain valuable; selected standardized facts are not complete coverage. Broader sources below take priority over multiplying generic ratios.
 2. **Banking conditions — bounded increment completed in v1.8:** [FDIC aggregate plan](BANKING-PLAN.md) with verified units, institution population and stock/flow definitions. Treasury budget flows and matched-period bridge shipped in v1.7.0; financing/debt-stock analysis remains separate. Bank ratios cannot be summed or naively averaged.
-3. **Changes across the whole publication — completed for current channels in v1.6:** company filings and research updates join core and issuer-financial differences with independent prior-success baselines. Future providers must adopt the same boundaries.
+3. **Changes across the whole publication — completed for current channels in v1.6, front corrected in v1.12:** company filings and research updates join core and issuer-financial differences with independent prior-success baselines. Active disclosure/calendar desks now surface without arbitrary case promotion; the full ledger remains source-filterable. Future providers must adopt the same boundaries. Individual court-row substance and more readable ledger detail remain gaps.
 4. **Broader outlook and release coverage:** SPF quarterly medians are live. Add an accessible official BLS schedule, additional forecasts and energy/inventory information when source access and publication rights permit; keep original-release vintages and market-implied paths separate.
 5. **Cross-source synthesis and final review:** investor tasks across macro, equity and credit, direct provenance, freshness at the point of use, and fresh PM/econometric/UI approval of the full site.
 
