@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.8.0 — 2026-09-28
+
 - FDIC banking conditions within Funding & credit: six current/prior/year-ago measures, nine source-linked histories, clickable headline drill-downs, published annualized ratios and separate population/observation/capture context.
 - Keyless official-workbook discovery, retained XLSX evidence, exact source-cell binding and current-period reconciliation. Full published history retains explicit missingness and historical accounting/ratio exceptions without repairing source values.
 - Banking joins daily refresh, source health, search and the independent-window change ledger. Responsive charts preserve keyboard focus and pinned observations; missing quarters break trace lines. Subsection navigation retains its own active state.
