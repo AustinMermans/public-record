@@ -1,16 +1,16 @@
 # Investor-hub completion audit
 
-Updated after verified v1.9.0 Business publication, September 29, 2026 (Pacific). **Full goal: not approved.** A reviewed application increment is not proof that the entire product is complete. Publication receipts are recorded separately in REVIEWS.md.
+Updated after verified v1.10.0 SPF publication, September 29, 2026 (Pacific). **Full goal: not approved.** A reviewed application increment is not proof that the entire product is complete. Publication receipts are recorded separately in REVIEWS.md.
 
 ## Acceptance requirements
 
 | Requirement | Current evidence and remaining work |
 | --- | --- |
 | Data refresh at least daily | Seven-day twice-daily workflow is live. Hosted v1.8 refresh 36506744022 succeeded and its published payload matched the rebuilt capture. Future scheduler execution is not guaranteed by configuration. |
-| At least ten high-value source sites, keyless first | Eleven provider families appear below, grouping Treasury services and repeated endpoints rather than inflating counts. This inventory is not an assertion that the best investor data needs are covered. Broader forecasts remain a material gap. |
-| Useful without opening every source | Macro charts, calendar, extracted FOMC/GDPNow, plain-language disclosure entries, company filing profiles, filing-anchored financial screens and funding/stress comparisons are implemented. Financial screens are partial, not complete valuation/credit models; deeper cross-source synthesis remains incomplete. |
-| Historical and forward-looking context | Revised macro history and sampled ALFRED vintages; FOMC projections and GDPNow. Original-release surprise histories, broader forecast panels and prediction-market history are incomplete. |
-| Reviewer validation | Independent PM/content and UI gates approve the bounded v1.9 Business increment. Banking and earlier reviews remain scoped to their increments. Fresh final product approval is still required after remaining gaps are resolved. |
+| At least ten high-value source sites, keyless first | Twelve provider families appear below, grouping Treasury services and repeated endpoints rather than inflating counts. This inventory is not an assertion that the best investor data needs are covered. Broader forecasts remain a material gap. |
+| Useful without opening every source | Macro charts, calendar, extracted FOMC/GDPNow/SPF, plain-language disclosure entries, company filing profiles, filing-anchored financial screens and funding/stress comparisons are implemented. Financial screens are partial, not complete valuation/credit models; deeper cross-source synthesis remains incomplete. |
+| Historical and forward-looking context | Revised macro history and sampled ALFRED vintages; FOMC projections, GDPNow and target-fixed SPF survey histories. Original-release surprise histories, further forecast panels and prediction-market history are incomplete. |
+| Reviewer validation | Independent method, PM and UI gates approve the bounded v1.10 SPF increment. Business, banking and earlier reviews remain scoped to their increments. Fresh final product approval is still required after remaining gaps are resolved. |
 | Responsive and accessible experience | Browser checks across 320–1920px, keyboard chart controls and resize-state preservation. Physical-device and screen-reader certification are not claimed. |
 | Versioned, attributable publication | Semantic versions, changelog/citation/build consistency, source links and scoped noncommercial licenses. Tags follow verified deployments. |
 
@@ -31,17 +31,18 @@ This is a dated inventory, not a live status display. The Sources page and raw r
 | New York Fed | newyorkfed.org / markets.newyorkfed.org | Overnight funding levels, distributions, volumes and same-date comparisons. |
 | Office of Financial Research | financialresearch.gov | Global stress history and component contributions; not bond-level pricing. |
 | FDIC | fdic.gov | Six banking measures, nine histories and explicit historical reconciliation exceptions from the official QBP workbook. Institution aggregates, not bank holding-company valuations or original-release vintages. |
+| Philadelphia Fed | philadelphiafed.org | Six SPF median measures by survey and fixed target quarter; current historical workbook edition, not original-release file vintages. |
 
 BLS's direct calendar remains unavailable in the current collection environment and is **not** counted as a successful direct provider. BLS-origin macro history remains available through FRED. Failed access is not evidence that the publisher has no feed.
 
 ## Next high-value iterations
 
-The [unified change edition](CHANGE-EDITION-PLAN.md), [Treasury fiscal increment](FISCAL-PLAN.md) and [FDIC banking increment](BANKING-PLAN.md) are verified live. Banking values were unchanged against their own prior successful capture. Broader forecasts and cross-source synthesis remain completion requirements, not deferred out of scope.
+The [unified change edition](CHANGE-EDITION-PLAN.md), [Treasury fiscal increment](FISCAL-PLAN.md), [FDIC banking increment](BANKING-PLAN.md) and [SPF forecast increment](SPF.md) are verified live. Broader outlook and cross-source synthesis remain completion requirements, not deferred out of scope.
 
 1. **Business reading depth after v1.9:** searchable headlines, issuer profiles and exact-filing detail are live. The next content gap is extracting the specific announcement from documents and integrating source-linked issuer/news feeds. Verified issuer-specific KPIs, segments and debt context remain valuable; selected standardized facts are not complete coverage. Broader sources below take priority over multiplying generic ratios.
 2. **Banking conditions — bounded increment completed in v1.8:** [FDIC aggregate plan](BANKING-PLAN.md) with verified units, institution population and stock/flow definitions. Treasury budget flows and matched-period bridge shipped in v1.7.0; financing/debt-stock analysis remains separate. Bank ratios cannot be summed or naively averaged.
 3. **Changes across the whole publication — completed for current channels in v1.6:** company filings and research updates join core and issuer-financial differences with independent prior-success baselines. Future providers must adopt the same boundaries.
-4. **Broader outlook and release coverage:** Philadelphia Fed forecasts, an accessible official BLS schedule, and energy/inventory information when source access and publication rights permit.
+4. **Broader outlook and release coverage:** SPF quarterly medians are live. Add an accessible official BLS schedule, additional forecasts and energy/inventory information when source access and publication rights permit; keep original-release vintages and market-implied paths separate.
 5. **Cross-source synthesis and final review:** investor tasks across macro, equity and credit, direct provenance, freshness at the point of use, and fresh PM/econometric/UI approval of the full site.
 
 These items are not implemented merely by being listed. Do not mark the persistent goal complete on the basis of a ten-row inventory, a passing unit-test suite or a narrow release approval.

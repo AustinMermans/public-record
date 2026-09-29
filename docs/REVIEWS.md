@@ -2,6 +2,10 @@
 
 ## Professional-forecaster gate — 1.10.0 candidate, September 29, 2026
 
+### Verified v1.10.0 publication
+
+The [initial code deployment](https://github.com/AustinMermans/public-record/actions/runs/36602538027) and [hosted source refresh](https://github.com/AustinMermans/public-record/actions/runs/36602636497) succeeded. The latter committed capture `e5eb5011020b21505bfcd21413821faf73abf71e` and published v1.10.0 with 551 events, 9,017 disclosures, 24 economic series and 3,360 SPF forecast points in six measures. SPF status is `ok` and its own change channel is `compared`; the current capture was taken at 2026-09-29T17:07:25Z. A fresh rebuild from that commit matched the public `data.json`, `release.json`, `spf.mjs`, `app.js` and `style.css` SHA-256 hashes byte-for-byte. The [v1.10.0 release](https://github.com/AustinMermans/public-record/releases/tag/v1.10.0) and immutable tag resolve to that verified capture commit. This establishes the deployed increment, not whole-product completion or future schedule reliability.
+
 The independent source-method reviewer approved the bounded SPF increment at P0=P1=P2=P3=0 after correcting displayed tie-rounding, historical-target survey attribution and missed-survey-cycle change comparisons. It checked source workbook definitions, exact source-cell values and SHA-256 evidence, actual release-date history, fixed calendar targets and 3,360 published points. The 2026 Q3 PCE workbook's 2.35%/2.55% values remain visible to two decimals; the separate one-decimal release summary rounds these to 2.3%/2.6%. The UI explicitly discloses that distinction. A simulated missed Q2 collection still emits Q2 and Q3 survey developments, anchored in sequence.
 
 An independent portfolio-manager reviewer approved at P0=P1=P2=0 after the Outlook teaser gained same-target direction and small changes stopped rendering as signed zero. The panel links the specific workbook, release-date history and methodology PDF. Further investor layers—realized outcomes, uncertainty and market-implied expectations—remain separate future work.
