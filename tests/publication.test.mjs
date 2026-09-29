@@ -6,6 +6,14 @@ const d=JSON.parse(fs.readFileSync(new URL('../data/current.json',import.meta.ur
 d.corporate=JSON.parse(fs.readFileSync(new URL('../data/corporate/current.json',import.meta.url)));
 d.research=JSON.parse(fs.readFileSync(new URL('../data/research/current.json',import.meta.url)));
 const index=buildSearchIndex(d),apple=d.corporate.companies.find(c=>c.cik==='0000320193');
+test('fiscal search leads to the fiscal comparison rather than an unrelated macro series',()=>{
+  const fixture={...d,fiscal:{edition:'2026-08-31',status:'ok',metrics:[{id:'balance',label:'Surplus / deficit'}]}};
+  const hits=searchIndex(buildSearchIndex(fixture),'federal deficit','indicator');
+  assert.equal(hits.length,1);
+  assert.equal(hits[0].url,'#fiscal?view=fytd&metric=balance');
+  const government=deskPage(fixture,'government',{kpi:()=>'',brief:()=>'',agenda:()=>'',nextEvents:()=>[]});
+  assert.match(government,/#fiscal/);
+});
 test('publication dates use Eastern days for timestamps and preserve date-only records',()=>{
   const record={id:'rollover',source_id:'court',domain:'Legal',kind:'Docket entry',title:'Example v. Example',summary:'[Notice of Appearance]',publisher:'Example court',url:'https://court.example/entry',date:'2026-09-28T03:59:18+00:00'};
   const fixture={...d,sources:[],records:[record]};

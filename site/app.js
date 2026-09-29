@@ -5,6 +5,7 @@ import {publicationHome, deskPage, companyPage, companyMentions, buildSearchInde
 import {fundingPage, bindFunding, sourceLabel, sourceNotice, observationCsv} from './funding.mjs';
 import {indicatorHref, metricLink, detailTarget} from './metric-links.mjs';
 import {changeEdition, filterChanges} from './changes.mjs';
+import {fiscalPage, bindFiscal} from './fiscal.mjs';
 const $ = s => document.querySelector(s);
 const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const link = (url,text,cls='') => /^https?:\/\//.test(url||'') ? `<a class="${cls}" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(text)} ↗</a>` : esc(text);
@@ -34,6 +35,7 @@ function brief(sid,heading,mechanism){const s=D.series.find(s=>s.id===sid);if(!s
 const publicationRoutes=['economy-home','business','government','disclosures-home','outlook-home','changes-home','news'];
 const publicationContext=()=>({kpi,brief,agenda,nextEvents});
 function funding(){return fundingPage(D);}
+function fiscal(){const q=new URLSearchParams(location.hash.split('?')[1]||'');return fiscalPage(D,{view:q.get('view')||'fytd',metric:q.get('metric')||'balance'});}
 function overview(){return publicationHome(D,publicationContext());}
 let searchData,searchOffset=0,searchTimer,mentionScope=null;
 function paintSearch(reset=true){
@@ -149,6 +151,7 @@ function writeView(){
  if(route==='search'&&mentionScope)params.set('mentions',mentionScope.cik);
  if(route==='search'&&searchOffset>0)params.set('search-page',String(searchOffset/30+1));
  if(route==='company')params.set('cik',new URLSearchParams(location.hash.split('?')[1]||'').get('cik')||'');
+ if(route==='fiscal'){const panel=$('#fiscal-panel');if(panel){params.set('view',panel.dataset.view);params.set('metric',panel.dataset.metric);}}
  if(route==='funding'||route==='outlook'){const detail=new URLSearchParams(location.hash.split('?')[1]||'');if(detailTarget(route,detail)){const key=route==='funding'?'view':'forecast';params.set(key,detail.get(key));}}
  if(route==='calendar'){params.set('month',calendarMonth);params.set('day',calendarDay);}
  if(route==='economy'&&vintage!=='current')params.set('vintage',vintage);
@@ -165,14 +168,15 @@ async function copyView(){writeView();const btn=$('#copy-view'),localOnly=route=
 
 function render(){
  clearTimeout(searchTimer);route=location.hash.slice(1).split('?')[0]||'overview';
- if(!['funding','overview','calendar','economy','corporate','disclosures','changes','outlook','sources','search','company',...publicationRoutes].includes(route))route='overview';
+ if(!['fiscal','funding','overview','calendar','economy','corporate','disclosures','changes','outlook','sources','search','company',...publicationRoutes].includes(route))route='overview';
  page=1;mode='default';period=5;const query=new URLSearchParams(location.hash.split('?')[1]||'');
  if(D.series.some(s=>s.id===query.get('series')))selected=query.get('series');
- const body=publicationRoutes.includes(route)?deskPage(D,route,publicationContext()):route==='company'?companyPage(D,query.get('cik')):route==='search'?searchPage():({funding,overview,calendar,economy,corporate,disclosures,changes,outlook,sources}[route])();
+ const body=publicationRoutes.includes(route)?deskPage(D,route,publicationContext()):route==='company'?companyPage(D,query.get('cik')):route==='search'?searchPage():({fiscal,funding,overview,calendar,economy,corporate,disclosures,changes,outlook,sources}[route])();
  mentionScope=route==='search'?(D.corporate?.companies||[]).find(c=>c.cik===query.get('mentions'))||null:null;
  $('#main').innerHTML=publicationBreadcrumb()+body;if(mentionScope)$('#record-search').insertAdjacentHTML('beforebegin','<p class="meta">Name matches for '+esc(mentionScope.name)+' · <a href="#search">Clear company-name scope</a></p>');restoreView(query);
  document.querySelectorAll('nav a').forEach(a=>{if(a.hash==='#'+(deskFor[route]||route))a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
- document.title=(deskNames[route]||{funding:'Funding & credit',overview:'Front page',calendar:'Calendar',economy:'Economy',corporate:'Business',company:'Company profile',disclosures:'Disclosures',changes:'Changes',outlook:'Outlook & research',sources:'Sources & method',search:'Search'}[route])+' — Public Record';
+ document.title=(deskNames[route]||{fiscal:'Federal fiscal conditions',funding:'Funding & credit',overview:'Front page',calendar:'Calendar',economy:'Economy',corporate:'Business',company:'Company profile',disclosures:'Disclosures',changes:'Changes',outlook:'Outlook & research',sources:'Sources & method',search:'Search'}[route])+' — Public Record';
+ if(route==='fiscal')bindFiscal($('#main'),D);
  if(route==='funding')bindFunding($('#main'),D);if(route==='calendar')paintCalendar();if(route==='economy')paintChart();if(route==='disclosures')paintRecords();if(route==='corporate')paintCorporate();if(route==='search'){const p=Number(query.get('search-page'));searchOffset=(Number.isSafeInteger(p)&&p>0?p-1:0)*30;paintSearch(false);}
  const targetId=detailTarget(route,query),requestedHash=location.hash;
  if(targetId)requestAnimationFrame(()=>{const target=document.getElementById(targetId);if(target&&location.hash===requestedHash){target.tabIndex=-1;target.focus({preventScroll:true});target.scrollIntoView({block:'start'});}});
@@ -191,7 +195,7 @@ document.addEventListener('click',e=>{if(newClicks(e))return;const b=e.target.cl
 document.addEventListener('submit',e=>{if(e.target.id==='change-filters'){e.preventDefault();applyChangeFilters(document.activeElement?.id);return;}if(e.target.id==='global-search'){e.preventDefault();location.hash='search?q='+encodeURIComponent($('#global-q').value.trim());}if(e.target.id==='record-search'){e.preventDefault();clearTimeout(searchTimer);paintSearch();writeView();}});
 document.addEventListener('input',e=>{if(e.target.id==='q'){clearTimeout(searchTimer);searchTimer=setTimeout(()=>{if(route==='search'){paintSearch();writeView();}},180);return;}if(e.target.id==='search'){page=1;if(route==='calendar')paintCalendar();if(route==='disclosures')paintRecords();writeView();}});
 document.addEventListener('change',e=>{if(route==='changes'&&e.target.closest('#change-filters')){applyChangeFilters(e.target.id);return;}if(route==='search'){paintSearch();writeView();return;}if(route==='corporate'){paintCorporate();writeView();return;}if(e.target.id==='vintage-date'){vintage=e.target.value;paintChart();writeView();$('#vintage-date').focus();return;}if(e.target.id==='lens-select'){activeLens=e.target.value;page=1;paintRecords();return;}if(route==='calendar')paintCalendar();if(route==='disclosures'){page=1;paintRecords();}if(route==='economy'){selected=$('#series').value;mode=$('#transform').value;period=$('#period').value;paintChart();}writeView();});
-let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{if(route==='funding'&&D){bindFunding($('#main'),D,true);return;}if(route!=='economy'||!D)return;const svg=$('#series-chart svg.chart'),width=Math.max(260,Math.round($('#series-chart').clientWidth));if(svg&&svg.viewBox.baseVal.width===width)return;const active=document.activeElement,focus=active?.id==='chart-observation'?'#chart-observation':active?.id==='chart-latest'?'#chart-latest':active?.dataset.chartStep?'[data-chart-step="'+active.dataset.chartStep+'"]':null;paintChart(true);if(focus)$(focus)?.focus({preventScroll:true});},100);});
+let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{if(route==='fiscal'&&D){bindFiscal($('#main'),D,true);return;}if(route==='funding'&&D){bindFunding($('#main'),D,true);return;}if(route!=='economy'||!D)return;const svg=$('#series-chart svg.chart'),width=Math.max(260,Math.round($('#series-chart').clientWidth));if(svg&&svg.viewBox.baseVal.width===width)return;const active=document.activeElement,focus=active?.id==='chart-observation'?'#chart-observation':active?.id==='chart-latest'?'#chart-latest':active?.dataset.chartStep?'[data-chart-step="'+active.dataset.chartStep+'"]':null;paintChart(true);if(focus)$(focus)?.focus({preventScroll:true});},100);});
 document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(!a||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey||e.button!==0)return;e.preventDefault();if(a.hash==='#main'){$('#main').focus();return;}if(location.hash!==a.hash)location.hash=a.hash;else render();});
 window.addEventListener('hashchange',()=>{if(D){render();if(route==='changes'&&pendingChangePageFocus){pendingChangePageFocus=false;const status=$('#change-results-status');status.tabIndex=-1;status.focus({preventScroll:true});status.scrollIntoView({block:'start'});}else{pendingChangePageFocus=false;$('#main').focus({preventScroll:true});window.scrollTo(0,0);}}});
 try{const r=await fetch('data.json',{cache:'no-cache'});if(!r.ok)throw Error('Snapshot request failed');D=await r.json();searchData=buildSearchIndex(D);$('#edition-date').textContent=day(D.captured_at,{weekday:'long',month:'long',day:'numeric',year:'numeric'});$('#version').textContent='v'+D.version;const age=(Date.now()-Date.parse(D.captured_at))/3600000;const bad=D.sources.filter(s=>s.status!=='ok').length;$('#freshness').innerHTML=`<span class="status-dot"></span>Captured ${esc(day(D.captured_at))} · ${esc(time(D.captured_at))}${age>24?' <strong class="warning">· Snapshot more than 24 hours old</strong>':''}<a class="freshness-link" href="#sources">${bad?`${bad} coverage gaps`:'Source coverage'} · ${D.sources.length} core collectors →</a>`;render();}catch(err){$('#main').innerHTML='<div class="empty">The data snapshot could not be loaded.<p>Please reload. If the problem persists, inspect the repository’s latest deployment. No values are substituted.</p></div>';$('#freshness').textContent='Data unavailable';console.error(err);}

@@ -61,3 +61,8 @@ test('all content is escaped and unsafe source or detail URLs never become links
   const html=changeEdition(data([item({title:'<script>alert(1)</script>',id:'"><script>',url:'javascript:alert(1)',previous_url:'javascript:bad()',detail_url:'javascript:bad()',before:'<img onerror=bad()>',summary:'<b>fake</b>'})],[channel({label:'<svg>'})]));
   assert.doesNotMatch(html,/<script>|<img|<svg>|href="javascript:/);assert.match(html,/&lt;script&gt;/);assert.match(html,/&lt;b&gt;fake&lt;\/b&gt;/);
 });
+test('exact decimal dollar strings remain readable without float coercion',()=>{
+  const html=changeEdition({changes:{items:[{id:'dollar',domain:'Economic data',kind:'Revised fiscal value',title:'Treasury receipts',before:'9007199254740993.01',after:'9007199254740993.02',unit:'USD',url:'https://example.gov',from_capture:'2026-01-01',to_capture:'2026-01-02'}],channels:[]}});
+  assert.match(html,/9,007,199,254,740,993\.01 USD/);
+  assert.match(html,/9,007,199,254,740,993\.02 USD/);
+});

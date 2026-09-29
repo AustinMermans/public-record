@@ -18,6 +18,9 @@ test('metric values are accessible links, including zero, but missing values are
   assert.doesNotMatch(metricLink(indicatorHref('X'),'<script>', '<img>'),/<script>|<img>/);
 });
 test('detail routing allows only known report sections',()=>{
+  assert.equal(detailTarget('fiscal',new URLSearchParams('view=monthly')),'fiscal-monthly');
+  assert.equal(detailTarget('fiscal',new URLSearchParams('view=fytd')),'fiscal-fytd');
+  assert.equal(detailTarget('fiscal',new URLSearchParams('view=unknown')),null);
   assert.equal(detailTarget('funding',new URLSearchParams('view=spread')),'funding-comparison');
   assert.equal(detailTarget('outlook',new URLSearchParams('forecast=gdpnow')),'forecast-gdpnow');
   assert.equal(detailTarget('outlook',new URLSearchParams('forecast=sep')),'forecast-sep');

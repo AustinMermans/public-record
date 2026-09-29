@@ -1,6 +1,6 @@
 # Next increment: federal fiscal conditions
 
-Planned after verified v1.6.0; not implemented. Retain VERSION 1.6.0 until a reviewed candidate is ready. The PM's September 29 UTC feasibility probe returned HTTP 200 without a key for MTS tables 1, 3 and 9, latest edition 2026-08-31 (27, 57 and 33 rows). Implementation must repeat the probes and retain hashed raw receipts; the scout's findings are not production data.
+Implemented after verified v1.6.0; local review and genuine retained capture completed, hosted release gates pending. The original scope below is retained as the acceptance record. Source probes were repeated in the collector with content-addressed raw receipts and independently reconciled by the PM reviewer; the scout's findings are not substituted for production evidence.
 
 Reader job: **What changed in the federal deficit, and how much came from receipts, non-interest spending or interest?**
 
