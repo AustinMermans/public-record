@@ -10,7 +10,7 @@ For sorting only, date-only records precede timed records on their Eastern calen
 
 ## Economics
 
-The initial universe is 13 public series from BLS, BEA, Census/HUD, DOL and the Federal Reserve, distributed through FRED. Each carries units, frequency, seasonal adjustment and a preferred transformation. CPI and core CPI growth use seasonally adjusted indices and may differ from headline NSA year-over-year releases. Payroll growth is calculated from latest revised levels; it is not a first-release surprise. GDP uses quarterly real levels and annualized compound growth. No model or analyst consensus is inferred.
+The initial universe is 13 public series from BLS, BEA, Census/HUD, DOL and the Federal Reserve, distributed through FRED. Each carries units, frequency, seasonal adjustment and a preferred transformation. CPI and core CPI growth use seasonally adjusted indices and may differ from headline NSA year-over-year releases. Payroll growth is calculated from latest revised levels; it is not a first-release surprise. GDP uses quarterly real levels and annualized compound growth. No model or analyst consensus is inferred. The separate [BEA GDP release record](BEA-RELEASES.md) binds real-GDP growth to dated official advance/second/third news releases; it is not derived from current-revised FRED levels or calendar dates.
 
 ## Legal and disclosure
 
@@ -38,7 +38,7 @@ Core feeds, each covered SEC issuer's submissions and financial facts, and each 
 
 Corporate identity uses CIK and accession; amendments remain separate filings. Summary references to the same verified SEC archive identity are grouped across feeds without deleting ledger rows or treating them as independent corroboration. Financial recalculations are not issuer-reported changes. Economic revision batches group by series, source, change type and capture pair, led by the newest affected observation. Selection is latest capture, latest affected period, then title, with at most three developments per investor desk; it is not a materiality score. The complete ledger retains disclosure/calendar rows and all grouped items with filters and pagination.
 
-GDPNow compares values only within the same target and definition. SEP aligns measure names and horizons rather than table positions; new measures/horizons and changed definitions are explicit boundaries. A same-publication-date value change is a same-date update, not a proven publisher correction. Cached ALFRED vintage files are excluded from forecast news. Before/after values link to the supplied publisher evidence; a publisher's mutable page is not a historical vintage permalink. Retained comparison baselines and capture receipts provide the historical evidence trail in the repository.
+GDPNow compares values only within the same target and definition. SEP aligns measure names and horizons rather than table positions; new measures/horizons and changed definitions are explicit boundaries. A same-publication-date value change is a same-date update, not a proven publisher correction. Cached ALFRED vintage files are excluded from forecast news. Newly verified BEA GDP stages enter the change edition only after a previous successful BEA release-history capture; a re-poll or schedule entry is not new GDP news. Before/after values link to the supplied publisher evidence; a publisher's mutable page is not a historical vintage permalink. Retained comparison baselines and capture receipts provide the historical evidence trail in the repository.
 
 ## ALFRED and forecasts
 

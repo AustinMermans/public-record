@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## 1.14.0 — 2026-09-29
+
+- BEA GDP release record: keyless verification of recent dated advance, second and third official real-GDP growth estimates, with same-quarter stage comparisons, source hashes, publication/retrieval clocks, pending-stage boundaries and a separate current-revised FRED view. Equal published tenths are not labeled exact zero revisions. Economy, calendar, search and the change edition lead to the on-site record.
+
 ## 1.13.0 — 2026-09-29
 
 - Funding now opens with a dated, source-linked credit-conditions read spanning same-effective-date New York Fed rates, OFR global stress and its credit contribution, and two FDIC quarterly loan-quality measures. A guarded short interpretation preserves independent clocks and counterevidence; missing, stale or invalid comparisons withhold synthesis instead of generating a composite credit score.

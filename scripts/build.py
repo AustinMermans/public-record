@@ -9,6 +9,7 @@ from fiscal import validate_fiscal
 from banking import validate_banking
 from spf import validate_capture as validate_spf
 from business_briefs import validate_capture as validate_business_briefs
+from bea_releases import validate_capture as validate_bea_releases
 from publication_changes import compare_spf
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -77,6 +78,10 @@ def main():
     if banking.exists():
         data['banking']=json.loads(banking.read_text())
         validate_banking(data['banking'], raw_root=ROOT)
+    bea_releases=ROOT/'data/bea_releases/current.json'
+    if bea_releases.exists():
+        data['bea_releases']=json.loads(bea_releases.read_text())
+        validate_bea_releases(data['bea_releases'],ROOT)
     data['changes']=assemble_changes(data)
     if business_briefs.exists():
         b=data['business_briefs']
@@ -100,6 +105,14 @@ def main():
             domain='Banking',url=b['url'],status=b['status'],last_success=b.get('captured_at'),
             attempted_at=b.get('attempted_at'),count=len(b.get('metrics',[])),
             note='FDIC-reported all-insured aggregates; quarterly observations, not bank holding companies.',
+            error=b.get('error')))
+    if bea_releases.exists():
+        b=data['bea_releases']
+        data['sources'].append(dict(id='bea-gdp-releases',name='BEA · dated GDP estimates',
+            domain='Economy',url='https://www.bea.gov/news/schedule/full',status=b['status'],
+            last_success=b.get('last_success'),attempted_at=b.get('attempted_at'),
+            count=len(b.get('releases',[])),
+            note='Verified real GDP growth in dated advance, second and third news releases. Recent targets only; separate from current-revised FRED history.',
             error=b.get('error')))
     if spf.exists():
         f=data['spf']

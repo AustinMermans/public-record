@@ -31,13 +31,13 @@ function shortWindow(x){
 function periodLabel(x){
   const report=x.start&&x.date?`${x.start} → ${x.date}`:x.date||'';
   const target=x.target_period||x.forecast_period||x.target||x.period_label;
-  return [x.form,report,target&&target!==report?`Forecast / target: ${print(target)}`:'',x.report_period?`Report end ${x.report_period}`:'',x.filed?`Filed ${x.filed}`:'',x.accepted_at?`Accepted ${x.accepted_at}`:'',x.published_at?`Published ${x.published_at}`:'',x.previous_published_at?`Prior publication ${x.previous_published_at}`:''].filter(Boolean).join(' · ');
+  return [x.form,report,target&&target!==report?`${x.source_id==='bea-gdp-releases'?'Target quarter':'Forecast / target'}: ${print(target)}`:'',x.report_period?`Report end ${x.report_period}`:'',x.filed?`Filed ${x.filed}`:'',x.accepted_at?`Accepted ${x.accepted_at}`:'',x.published_at?`Published ${x.published_at}`:'',x.previous_published_at?`Prior publication ${x.previous_published_at}`:''].filter(Boolean).join(' · ');
 }
 function changeValues(x){
   if(x.before===undefined&&x.after===undefined)return '<span class="meta">New or changed record metadata</span>';
   return `<span class="change-before">${shown(x.before)?href(x.before_url||x.previous_url||x.url,value(x.before,x.unit)):'Not present'}</span> → <span class="change-after">${shown(x.after)?href(x.after_url||x.url,value(x.after,x.unit)):'Not present'}</span>`;
 }
-function contextLink(x){return x.detail_url?href(x.detail_url,x.cik?'Company profile →':x.domain==='Outlook'?'Forecast →':x.series_id?'Chart →':'Explore →'):'';}
+function contextLink(x){return x.detail_url?href(x.detail_url,x.cik?'Company profile →':x.source_id==='bea-gdp-releases'?'GDP record →':x.domain==='Outlook'?'Forecast →':x.series_id?'Chart →':'Explore →'):'';}
 function route(filters={},page=1){
   const p=new URLSearchParams();for(const k of ['company','domain','source','kind'])if(filters[k])p.set(k,filters[k]);if(page>1)p.set('page',String(page));
   return '#changes'+(p.size?'?'+p.toString():'');
