@@ -34,7 +34,7 @@ function brief(sid,heading,mechanism){const s=D.series.find(s=>s.id===sid);if(!s
 
 const publicationRoutes=['economy-home','business','government','disclosures-home','outlook-home','changes-home','news'];
 const publicationContext=()=>({kpi,brief,agenda,nextEvents});
-function funding(){return fundingPage(D);}
+function funding(){const q=new URLSearchParams(location.hash.split('?')[1]||'');return fundingPage(D,{view:q.get('view'),metric:q.get('metric')||'noncurrent'});}
 function fiscal(){const q=new URLSearchParams(location.hash.split('?')[1]||'');return fiscalPage(D,{view:q.get('view')||'fytd',metric:q.get('metric')||'balance'});}
 function overview(){return publicationHome(D,publicationContext());}
 let searchData,searchOffset=0,searchTimer,mentionScope=null;
@@ -152,7 +152,7 @@ function writeView(){
  if(route==='search'&&searchOffset>0)params.set('search-page',String(searchOffset/30+1));
  if(route==='company')params.set('cik',new URLSearchParams(location.hash.split('?')[1]||'').get('cik')||'');
  if(route==='fiscal'){const panel=$('#fiscal-panel');if(panel){params.set('view',panel.dataset.view);params.set('metric',panel.dataset.metric);}}
- if(route==='funding'||route==='outlook'){const detail=new URLSearchParams(location.hash.split('?')[1]||'');if(detailTarget(route,detail)){const key=route==='funding'?'view':'forecast';params.set(key,detail.get(key));}}
+ if(route==='funding'||route==='outlook'){const detail=new URLSearchParams(location.hash.split('?')[1]||'');if(detailTarget(route,detail)){const key=route==='funding'?'view':'forecast';params.set(key,detail.get(key));if(route==='funding'&&detail.get('view')==='banking'){const panel=$('#banking-panel');if(panel)params.set('metric',panel.dataset.metric);}}}
  if(route==='calendar'){params.set('month',calendarMonth);params.set('day',calendarDay);}
  if(route==='economy'&&vintage!=='current')params.set('vintage',vintage);
  history.replaceState(null,'','#'+route+(params.size?'?'+params.toString():''));
@@ -174,7 +174,7 @@ function render(){
  const body=publicationRoutes.includes(route)?deskPage(D,route,publicationContext()):route==='company'?companyPage(D,query.get('cik')):route==='search'?searchPage():({fiscal,funding,overview,calendar,economy,corporate,disclosures,changes,outlook,sources}[route])();
  mentionScope=route==='search'?(D.corporate?.companies||[]).find(c=>c.cik===query.get('mentions'))||null:null;
  $('#main').innerHTML=publicationBreadcrumb()+body;if(mentionScope)$('#record-search').insertAdjacentHTML('beforebegin','<p class="meta">Name matches for '+esc(mentionScope.name)+' · <a href="#search">Clear company-name scope</a></p>');restoreView(query);
- document.querySelectorAll('nav a').forEach(a=>{if(a.hash==='#'+(deskFor[route]||route))a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+ document.querySelectorAll('nav[aria-label="Main navigation"] a').forEach(a=>{if(a.hash==='#'+(deskFor[route]||route))a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
  document.title=(deskNames[route]||{fiscal:'Federal fiscal conditions',funding:'Funding & credit',overview:'Front page',calendar:'Calendar',economy:'Economy',corporate:'Business',company:'Company profile',disclosures:'Disclosures',changes:'Changes',outlook:'Outlook & research',sources:'Sources & method',search:'Search'}[route])+' — Public Record';
  if(route==='fiscal')bindFiscal($('#main'),D);
  if(route==='funding')bindFunding($('#main'),D);if(route==='calendar')paintCalendar();if(route==='economy')paintChart();if(route==='disclosures')paintRecords();if(route==='corporate')paintCorporate();if(route==='search'){const p=Number(query.get('search-page'));searchOffset=(Number.isSafeInteger(p)&&p>0?p-1:0)*30;paintSearch(false);}

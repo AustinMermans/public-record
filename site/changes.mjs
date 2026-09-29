@@ -13,7 +13,7 @@ const shown=v=>v!==undefined&&v!==null&&v!=='';
 const print=v=>typeof v==='object'?JSON.stringify(v):String(v);
 function value(v,unit){
   if(v===null||v===undefined)return 'Not present';
-  if(typeof v==='string'&&unit==='USD'&&/^-?\d+(?:\.\d+)?$/.test(v)){const [whole,fraction]=v.split('.');return whole.replace(/\B(?=(\d{3})+(?!\d))/g,',')+(fraction===undefined?'':'.'+fraction)+' USD';}
+  if(typeof v==='string'&&['USD','USD millions','Percent','Count'].includes(unit)&&/^-?\d+(?:\.\d+)?$/.test(v)){const [whole,fraction]=v.split('.');return whole.replace(/\B(?=(\d{3})+(?!\d))/g,',')+(fraction===undefined?'':'.'+fraction)+(unit==='Percent'?'%':unit==='Count'?' institutions':' '+unit);}
   if(typeof v!=='number')return print(v);
   if(!Number.isFinite(v))return 'Unavailable';
   const n=new Intl.NumberFormat('en-US',{maximumFractionDigits:6}).format(v);

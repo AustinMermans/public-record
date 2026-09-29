@@ -1,0 +1,27 @@
+{
+  "source_url": "https://www.fdic.gov/data.json",
+  "retrieved_at": "2026-09-29T00:46:37Z",
+  "raw_path": "data/banking/rights/b8b4768cb003705b122b288e270a27dd01edf428abc73e4b17b8bc420e98581c.json",
+  "sha256": "b8b4768cb003705b122b288e270a27dd01edf428abc73e4b17b8bc420e98581c",
+  "bytes": 199793,
+  "license_label": "https://www.usa.gov/publicdomain/label/1.0/",
+  "evidence": [
+    {
+      "dataset_title": "FDIC QBP Graph Book",
+      "dataset_identifier": "0e477c89-1558-4548-b5a1-b67294ab5e26",
+      "distribution_identifier": "90a4d76e-ca58-41b4-81ae-f1272e18460e",
+      "distribution_title": "QBP Graph Book Noncurrent Loan and Quarterly Net Charge-Off Rates for FDIC-Insured Institutions ",
+      "access_url": "https://qbpgraphbook.fdic.gov/#/qtrmslinechart?ty=qtrnclnchoffrates"
+    },
+    {
+      "dataset_title": "Research Information System (RIS)",
+      "dataset_identifier": "3dece014-2363-4181-afaf-21cd00fd68e3",
+      "distribution_identifier": "9f074a04-64ac-4e5f-b53e-aacaed0768e8",
+      "distribution_title": "Research Information System (RIS) API",
+      "access_url": "https://api.fdic.gov/banks/financials"
+    }
+  ],
+  "rights_text": "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license.",
+  "use_restriction": "Unrestricted",
+  "scope": "FDIC's current catalog identifies related QBP data distributions and underlying RIS data as public domain and unrestricted. The exact QBP time-series workbook is not individually enumerated. This evidence supports the numerical source-data reuse statement, not a claim of an XLSX-specific license, permission for third-party content, or FDIC endorsement. Public Record's original-work license does not restrict these source data."
+}

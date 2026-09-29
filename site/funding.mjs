@@ -1,6 +1,7 @@
 import {escapeText as esc} from './editorial.mjs';
 import {chartMarkup, bindChart} from './chart.mjs';
 import {indicatorHref, metricLink} from './metric-links.mjs';
+import {bankingPanel, bindBanking, bankingTeaser} from './banking.mjs';
 
 const nf=(v,n=2)=>Number(v).toLocaleString('en-US',{minimumFractionDigits:n,maximumFractionDigits:n});
 const link=(u,t)=>`<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(t)} ↗</a>`;
@@ -34,7 +35,9 @@ export function receipt(d,s,now=new Date()){
 
 const metric=(label,value,unit,description,href)=>`<div class="kpi"><div class="kpi-label">${esc(label)}</div><div class="kpi-value">${metricLink(href,label,value===undefined?'—':nf(value),unit)}</div><p class="kpi-meta">${esc(description)}</p></div>`;
 
-export function fundingPage(d){
+export function fundingPage(d,options={}){
+  const header=`<div class="page-title"><div><div class="section-no">Funding & credit desk</div><h1>Funding, stress & banking conditions</h1></div></div><nav class="history-ranges funding-sections" aria-label="Funding desk sections"><a href="#funding?view=spread"${options.view!=='banking'?' aria-current="page"':''}>Overnight funding</a><a href="#funding?view=banking"${options.view==='banking'?' aria-current="page"':''}>Banking conditions</a></nav>`;
+  if(options.view==='banking')return header+bankingPanel(d,options);
   const sofr=find(d,'NYFED-SOFR'),effr=find(d,'NYFED-EFFR'),fsi=find(d,'OFR-FSI');
   const spread=alignedSpread(sofr,effr),p=spread.at(-1),prior=spread.at(-2),point=last(fsi);
   const day=p?.[0],sd=sofr?.details.find(x=>x.date===day),ed=effr?.details.find(x=>x.date===day);
@@ -44,7 +47,7 @@ export function fundingPage(d){
     const s=find(d,id),value=s?.observations.find(x=>x[0]===point?.[0]);
     return `<tr><td>${s?`<a href="#economy?series=${s.id}&period=all">${esc(s.name.replace(' contribution to global stress',''))}</a>`:esc(id)}</td><td class="numeric">${value?nf(value[1],3):'—'}</td></tr>`;
   }).join('');
-  return `<div class="page-title"><div><div class="section-no">Funding & credit desk</div><h1>The cost of overnight money</h1><p>Money-market pricing and global financial stress. Not a corporate-bond spread or default-risk model.</p></div></div>
+  return `${header}${bankingTeaser(d,options)}
   <div class="kpis">${metric('SOFR',sd?.rate,'%',day?'Secured overnight funding · '+day:'No common effective date',indicatorHref('NYFED-SOFR'))}${metric('EFFR',ed?.rate,'%',day?'Unsecured federal funds · '+day:'No common effective date',indicatorHref('NYFED-EFFR'))}${metric('SOFR − EFFR',p?.[1],' bp',day?'Same-date comparison · '+day:'No aligned observations','#funding?view=spread')}${metric('Global financial stress',point?.[1],'',point?'Index points · '+point[0]:'Unavailable',indicatorHref('OFR-FSI'))}</div>
   <section class="section" id="funding-comparison"><div class="section-head"><h2>Secured versus unsecured funding</h2>${explore(sofr)}</div>
   ${p?`<p>The secured rate was <strong>${nf(Math.abs(p[1]))} basis points ${p[1]>=0?'above':'below'}</strong> the effective federal funds rate on ${esc(day)}.${delta===null?'':` The spread ${delta===0?'was unchanged':delta>0?'increased by '+nf(delta)+' bp':'decreased by '+nf(-delta)+' bp'} from the previous common observation (${esc(prior[0])}).`}</p>`:'<p class="warning">A same-date comparison is unavailable.</p>'}
@@ -61,6 +64,7 @@ export function fundingPage(d){
 
 const selections=new Map();
 export function bindFunding(root,d,preserve=false){
+  bindBanking(root,d,preserve);
   const spread=alignedSpread(find(d,'NYFED-SOFR'),find(d,'NYFED-EFFR'));
   const stress=find(d,'OFR-FSI')?.observations.slice(-260)||[];
   for(const [id,points,unit] of [['funding-spread-chart',spread,'Basis points'],['funding-stress-chart',stress,'Index points']]){

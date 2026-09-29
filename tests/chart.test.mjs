@@ -30,3 +30,14 @@ test('multiple charts use distinct accessible control IDs',()=>{
   assert.match(a,/for="funding-observation"/);assert.match(b,/aria-describedby="stress-help"/);
   assert.doesNotMatch(a+b,/id="chart-observation"/);
 });
+test('a requested observation gap breaks the trace without inventing a value',()=>{
+  const points=[['2026-03-31',1],['2026-09-30',3],['2026-12-31',4]];
+  const opts={width:400,label:'Quarterly series',unit:'Percent',esc:String,nf:String,tick:String};
+  const html=chartMarkup(points,{...opts,connect:(a,b)=>Date.parse(b[0])-Date.parse(a[0])<100*864e5});
+  const path=html.match(/class="trace" d="([^"]+)"/)[1];
+  assert.equal((path.match(/M/g)||[]).length,2);
+  assert.equal((path.match(/L/g)||[]).length,1);
+  assert.equal((html.match(/<circle class="trace"/g)||[]).length,2);
+  assert.match(html,/max="2"/);
+  assert.equal((chartMarkup(points,opts).match(/class="trace" d="([^"]+)"/)[1].match(/L/g)||[]).length,2);
+});

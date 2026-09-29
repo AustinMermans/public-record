@@ -21,7 +21,7 @@ export function chartGeometry(points, width) {
     y: v => T + (max - v) / (max - min) * (height - T - B)};
 }
 
-export function chartMarkup(points, {width, label, unit, esc, nf, tick, idPrefix='chart'}) {
+export function chartMarkup(points, {width, label, unit, esc, nf, tick, idPrefix='chart', connect=()=>true}) {
   if (points.length < 2) return '<div class="empty">Not enough observations to draw this window.</div>';
   const g = chartGeometry(points, width), {height, L, R, T, B, min, max, x, y} = g;
   let svg = '';
@@ -35,7 +35,10 @@ export function chartMarkup(points, {width, label, unit, esc, nf, tick, idPrefix
     svg += `<text x="${x(ix)}" y="${height - 9}" text-anchor="${i === 0 ? 'start' : i === ticks - 1 ? 'end' : 'middle'}">${esc(tick(points[ix][0]))}</text>`;
   }
   if (min < 0 && max > 0) svg += `<line class="zero" x1="${L}" x2="${width - R}" y1="${y(0)}" y2="${y(0)}"/>`;
-  const path = points.map((p, i) => `${i ? 'L' : 'M'}${x(i).toFixed(2)},${y(p[1]).toFixed(2)}`).join(' ');
+  const path = points.map((p, i) => `${i && connect(points[i-1],p) ? 'L' : 'M'}${x(i).toFixed(2)},${y(p[1]).toFixed(2)}`).join(' ');
+  const gapEnds=new Set();
+  points.forEach((p,i)=>{if(i&&!connect(points[i-1],p)){gapEnds.add(i-1);gapEnds.add(i);}});
+  for(const i of gapEnds)svg+=`<circle class="trace" cx="${x(i).toFixed(2)}" cy="${y(points[i][1]).toFixed(2)}" r="2.5"/>`;
   svg += `<path class="trace" d="${path}"/><g class="chart-cursor" aria-hidden="true"><line class="crosshair" y1="${T}" y2="${height - B}"/><circle r="5"/></g><rect class="chart-hit" x="${L}" y="${T}" width="${width - L - R}" height="${height - T - B}" fill="transparent"/>`;
   return `<svg class="chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="${esc(label)}; ${esc(unit)}. Explore exact values with the observation slider below.">${svg}</svg>
     <div class="chart-inspection"><div class="chart-readout"></div><span class="chart-selection-state meta"></span></div>

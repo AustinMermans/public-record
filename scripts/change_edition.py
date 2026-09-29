@@ -10,6 +10,7 @@ from zoneinfo import ZoneInfo
 from publication_changes import compare_corporate, compare_research
 from financial_changes import compare_financials
 from fiscal import compare_fiscal
+from banking import compare_banking
 
 
 def channel_domain(sid):
@@ -17,7 +18,7 @@ def channel_domain(sid):
         return 'Companies'
     if sid.startswith('research-'):
         return 'Outlook'
-    if sid.startswith(('nyfed-', 'ofr-')):
+    if sid.startswith(('nyfed-', 'ofr-')) or sid == 'fdic-qbp':
         return 'Funding'
     if sid.startswith('fred-') or sid == 'treasury-mts':
         return 'Economic data'
@@ -67,7 +68,7 @@ def assemble_changes(data):
     core = copy.deepcopy(data.get('changes') or dict(items=[], baselines=[], skipped=[]))
     core.setdefault('channels', legacy_channels(core, data.get('sources', [])))
     groups = [core]
-    for key, compare in (('corporate', compare_corporate), ('research', compare_research), ('financials', compare_financials), ('fiscal', compare_fiscal)):
+    for key, compare in (('corporate', compare_corporate), ('research', compare_research), ('financials', compare_financials), ('fiscal', compare_fiscal), ('banking', compare_banking)):
         module = data.get(key)
         if not module:
             continue
@@ -108,6 +109,8 @@ def assemble_changes(data):
             if item.get('cik') in companies:
                 item['company'] = companies[item['cik']].get('name', item['cik'])
                 detail = '#company?' + urlencode({'cik': item['cik']})
+            elif sid == 'fdic-qbp':
+                detail = '#funding?' + urlencode(dict(view='banking',metric=item.get('metric_id','noncurrent')))
             elif sid == 'treasury-mts':
                 monthly = item.get('period_type') == 'month' and item.get('metric_id') in ('receipts','outlays','balance')
                 detail = '#fiscal?' + urlencode(dict(view='monthly',metric=item['metric_id'])) if monthly else '#fiscal?view=fytd'

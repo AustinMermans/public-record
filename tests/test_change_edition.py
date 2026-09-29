@@ -85,6 +85,14 @@ class EditionTests(unittest.TestCase):
         changes['items'][0]['period_type'] = 'month'
         self.assertEqual(assemble_changes(data)['items'][0]['detail_url'], '#fiscal?view=monthly&metric=receipts')
 
+    def test_banking_changes_keep_their_own_window_and_metric_destination(self):
+        changes = bundle('fdic-qbp', [dict(before='0.98', after='0.93', metric_id='noncurrent')])
+        data = dict(changes=dict(items=[], channels=[]), banking=dict(changes=changes))
+        result = assemble_changes(data)
+        self.assertEqual(result['channels'][0]['domain'], 'Funding')
+        self.assertEqual(result['items'][0]['detail_url'], '#funding?view=banking&metric=noncurrent')
+        self.assertEqual(result['items'][0]['from_capture'], changes['channels'][0]['from_capture'])
+
     def test_conflicting_sec_identity_fails_closed(self):
         data = dict(changes=bundle('sec', [dict(cik='0000000001')]))
         data['changes']['items'][0]['url'] = URL

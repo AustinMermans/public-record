@@ -1,6 +1,6 @@
 # Next increment: federal fiscal conditions
 
-Implemented after verified v1.6.0; local review and genuine retained capture completed, hosted release gates pending. The original scope below is retained as the acceptance record. Source probes were repeated in the collector with content-addressed raw receipts and independently reconciled by the PM reviewer; the scout's findings are not substituted for production evidence.
+Released and verified as v1.7.0, including hosted refresh and public-payload equality; publication receipts are in REVIEWS.md. The original scope below is retained as the acceptance record. Source probes were repeated in the collector with content-addressed raw receipts and independently reconciled by the PM reviewer; the scout's findings are not substituted for production evidence.
 
 Reader job: **What changed in the federal deficit, and how much came from receipts, non-interest spending or interest?**
 
