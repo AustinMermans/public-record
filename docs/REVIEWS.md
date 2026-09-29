@@ -1,5 +1,13 @@
 # Independent product reviews
 
+## Unified change edition gate — 1.6.0 candidate, September 28, 2026
+
+Independent PM/content review approved the bounded change edition. Its in-memory fixture using retained source payloads produced exactly four entries: a CPI revision, new Apple accession, revised Apple financial fact and same-target GDPNow update, with independent source windows and correct analytical destinations. No fixture data entered production. Real cached assembly produced 309 disclosure differences and 79 channels, not invented company or forecast developments. Bulk historical revisions now group by series/capture; same-date forecast changes are neutrally labelled rather than asserted to be corrections.
+
+A separate econometric reviewer approved the root-owned assembly, collector integration and build pipeline after two fixes: legacy financial receipts no longer become fictional first baselines, and public-inspection documents route to Disclosures while expected-publication events open the correctly filtered calendar. It verified CIK/accession matching, duplicate guards, individual clocks, Eastern calendar dates and instant-based latest-capture selection. That reviewer authored the forecast/corporate comparators, so did not independently approve them; the PM fixture and root code review supplied separate checks. Both bounded review summaries had no P0/P1/P2/P3 findings remaining.
+
+Root browser verification covered the homepage, Changes front and filtered ledger at 320/768/1280px, all without page overflow. Filter changes preserve control focus; pagination preserves filters and moves focus to the results status; Copy View and reload retain page 2. CPI headline navigation still opens the preferred year-on-year measure with full history. The designer collapsed selection-method prose and kept lead stories ahead of the homepage change summary. Tests: 125 Python and 58 JavaScript pass; syntax, metadata, build and diff checks pass. These are local checks, not physical-device or screen-reader certification; final integrated UI review and hosted publication gates are recorded separately.
+
 ## Headline drill-down gate — 1.5.1, September 28, 2026
 
 Independent UI/code review approved the clickable-number follow-up with no P0/P1/P2 findings. Numerical transformations and source data are unchanged. Native, visibly underlined links with descriptive names connect macro values to the matching preferred-measure full history; funding values to their individual series or spread calculation; and Outlook numbers to their corresponding report. Zero remains clickable, missing values do not become dead links, and modified clicks retain browser behavior.

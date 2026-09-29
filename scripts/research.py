@@ -9,6 +9,7 @@ from datetime import date, datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
+from publication_changes import compare_research
 
 ROOT=Path(__file__).resolve().parents[1]
 STAMP=datetime.now(timezone.utc).isoformat(timespec='seconds')
@@ -111,11 +112,15 @@ def forecast(id,url,parser):
 
 def main():
     DATA.mkdir(parents=True,exist_ok=True)
+    current=DATA/'current.json'
+    previous=json.loads(current.read_text()) if current.exists() else None
+    (DATA/'comparison-baseline.json').write_text(json.dumps(previous,separators=(',',':')))
     dates=['2020-07-30']+[f'{y}-12-31' for y in range(2020,date.today().year)]
     pairs=[(sid,d) for sid in ('GDPC1','UNRATE','PAYEMS','CPIAUCSL') for d in dates]
     with ThreadPoolExecutor(max_workers=3) as pool:vintages=list(pool.map(collect_vintage,pairs))
     forecasts=[forecast('sep','https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm',parse_sep),forecast('gdpnow','https://www.atlantafed.org/research-and-data/data/gdpnow',parse_gdpnow)]
     bundle=dict(captured_at=STAMP,vintages=vintages,forecasts=forecasts)
+    bundle['changes']=compare_research(previous,bundle)
     (DATA/'current.json').write_text(json.dumps(bundle,separators=(',',':')))
     (DATA/('capture-'+STAMP[:19].replace(':','')+'.json')).write_text(json.dumps(bundle,separators=(',',':')))
     print('Vintages:',sum(v['status']=='ok' for v in vintages),'/',len(vintages))

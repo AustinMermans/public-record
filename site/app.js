@@ -4,6 +4,7 @@ import {chartMarkup, bindChart} from './chart.mjs';
 import {publicationHome, deskPage, companyPage, companyMentions, buildSearchIndex, searchIndex, searchPage, searchResults, deskFor, deskNames} from './publication.mjs';
 import {fundingPage, bindFunding, sourceLabel, sourceNotice, observationCsv} from './funding.mjs';
 import {indicatorHref, metricLink, detailTarget} from './metric-links.mjs';
+import {changeEdition, filterChanges} from './changes.mjs';
 const $ = s => document.querySelector(s);
 const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const link = (url,text,cls='') => /^https?:\/\//.test(url||'') ? `<a class="${cls}" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(text)} ↗</a>` : esc(text);
@@ -120,24 +121,31 @@ function saveLens(){
   $('#lens-select').value=name;$('#lens-message').textContent=persisted?'Lens applied. Matches show the term and field.':'Storage unavailable; lens applies only for this session.';page=1;paintRecords();
 }
 function deleteLens(){if(!activeLens)return;const deleted=activeLens;lenses=lenses.filter(x=>x.name!==activeLens);activeLens='';let persisted=true;try{localStorage.setItem('pr-lenses',JSON.stringify(lenses));}catch{persisted=false;}render();$('#lens-select').focus();$('#results-status').textContent=`Deleted lens ${deleted}.${persisted?'':' Storage unavailable; deletion applies only for this session.'} Lens removed; remaining filters still apply.`;}
-function changeSummary(){
- const c=D.changes;if(!c?.from_capture)return '';
- const revised=c.items.filter(x=>x.kind==='Revision to observed value').length;
- const documents=c.items.filter(x=>x.kind==='Newly captured document').length;
- return `<section class="note"><strong>Since the prior capture:</strong> ${documents} newly captured documents; ${revised} revised economic values. <a href="#changes">Inspect the differences →</a><div class="meta">Compared with ${day(c.from_capture)} at ${time(c.from_capture)}. New to this capture does not mean newly published.</div></section>`;
+let changeFilters={},changePage=1,pendingChangePageFocus=false;
+function readChangeView(){
+ const query=new URLSearchParams(location.hash.split('?')[1]||''),items=D.changes?.items||[];
+ const companies=new Set([...(D.financials?.companies||[]),...(D.corporate?.companies||[]),...items].map(x=>x.cik).filter(Boolean));
+ const allowed={company:companies,domain:new Set(['Economic data','Companies','Funding','Outlook','Disclosures','Calendar']),kind:new Set(items.map(x=>x.kind))};
+ changeFilters=Object.fromEntries(['company','domain','kind'].map(k=>[k,allowed[k].has(query.get(k))?query.get(k):'']));
+ const requested=Number(query.get('page')),pages=Math.max(1,Math.ceil(filterChanges(D,changeFilters).length/100));
+ changePage=Math.min(pages,Number.isSafeInteger(requested)&&requested>0?requested:1);
 }
-function changes(){
- const c=D.changes;
- if(!c?.from_capture)return title('05 / Capture changes','What changed?','A comparison begins after the second successful capture.')+'<div class="empty">The first capture establishes a baseline.<p>Later updates will separate new periods, revisions, schedule changes and newly captured documents. Nothing here is a release surprise.</p></div>';
- const priority={'Financial definition changed':-2,'Series definition changed':-1,'Revised reported financial fact':0,'Recalculated financial metric':0,'Revision to observed value':0,'New financial period':1,'New observation period':1,'Schedule changed':2,'Newly available financial fact':3,'Historical observation added':3,'Record metadata changed':4,'Newly captured schedule':5,'Newly captured document':6};
- const items=[...c.items].sort((a,b)=>priority[a.kind]-priority[b.kind]);
- return title('05 / Capture changes','What changed between captures?',`Current: ${day(c.to_capture)} at ${time(c.to_capture)}. Previous collection: ${day(c.from_capture)} at ${time(c.from_capture)}.`)+`<div class="note">Each source is compared with its own prior successful capture. These are observed differences, not first-release surprises. Disappearing feed items are not treated as withdrawals. ${c.skipped.length} unavailable sources were excluded; ${c.baselines.length} sources established a first baseline.</div><div class="change-counts">${Object.keys(priority).map(k=>`<div><strong>${items.filter(x=>x.kind===k).length}</strong><span>${esc(k)}</span></div>`).join('')}</div>${items.length?`<div class="table-wrap"><table><thead><tr><th>Change</th><th>Record / period</th><th>Before → after</th><th>Evidence</th></tr></thead><tbody>${items.slice(0,150).map(x=>`<tr><td>${esc(x.kind)}</td><td>${esc(x.title)}${x.date?`<div class="meta">${esc(x.date)}</div>`:''}<div class="meta">${esc(x.publisher)}</div></td><td>${x.before!==undefined?`${esc(x.before??'Not present')} → ${esc(x.after)}<div class="meta">${esc(x.unit||'')}</div>`:'New or changed metadata'}<div class="meta">${esc(x.from_capture)}<br>→ ${esc(x.to_capture)}</div></td><td>${link(x.url,'Source')}</td></tr>`).join('')}</tbody></table></div><p class="meta">Showing ${Math.min(150,items.length)} of ${items.length} differences. All differences are in the <a href="data.json" download>snapshot download</a>.</p>`:'<div class="empty">No comparable changes were observed.<p>This does not establish that nothing occurred between polls.</p></div>'}`+D.series.filter(s=>s.source_id?.startsWith('nyfed-')&&items.some(x=>x.source_id===s.source_id)).map(sourceNotice).join('');
+function changes(){readChangeView();return changeEdition(D,{filters:changeFilters,page:changePage});}
+function paintChanges(focusId){
+ const x=window.scrollX,y=window.scrollY;
+ $('#main').innerHTML=publicationBreadcrumb()+changeEdition(D,{filters:changeFilters,page:changePage});
+ if(focusId){$('#'+focusId)?.focus({preventScroll:true});window.scrollTo(x,y);}
+}
+function applyChangeFilters(focusId){
+ changeFilters=Object.fromEntries(['company','domain','kind'].map(k=>[k,$('#change-'+k)?.value||'']));
+ changePage=1;paintChanges(focusId);writeView();
 }
 const viewFields={search:['q','search-kind'],corporate:['company','filing-form'],economy:['series','transform','period'],calendar:['search','calendar-layout','event-type'],disclosures:['search','domain','publisher','saved-filter']};
 function writeView(){
  const params=new URLSearchParams();
  for(const id of viewFields[route]||[]){const el=$('#'+id);if(el&&(el.value||el.tagName==='SELECT'))params.set(id,el.value);}
  if(route==='disclosures'&&page>1)params.set('page',page);
+ if(route==='changes'){for(const k of ['company','domain','kind'])if(changeFilters[k])params.set(k,changeFilters[k]);if(changePage>1)params.set('page',String(changePage));}
  if(route==='search'&&mentionScope)params.set('mentions',mentionScope.cik);
  if(route==='search'&&searchOffset>0)params.set('search-page',String(searchOffset/30+1));
  if(route==='company')params.set('cik',new URLSearchParams(location.hash.split('?')[1]||'').get('cik')||'');
@@ -170,6 +178,7 @@ function render(){
  if(targetId)requestAnimationFrame(()=>{const target=document.getElementById(targetId);if(target&&location.hash===requestedHash){target.tabIndex=-1;target.focus({preventScroll:true});target.scrollIntoView({block:'start'});}});
 }
 function newClicks(e){
+ if(route==='changes'&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&!e.altKey&&e.button===0&&e.target.closest('[data-change-page]'))pendingChangePageFocus=true;
  if(e.target.closest('#search-prev,#search-next')){searchOffset+=e.target.closest('#search-prev')?-30:30;paintSearch(false);writeView();$('#search-status').setAttribute('tabindex','-1');$('#search-status').focus();return true;}
  const range=e.target.closest('[data-chart-period]');if(range){period=range.dataset.chartPeriod;$('#period').value=period;paintChart();writeView();return true;}
  const month=e.target.closest('[data-month]'),date=e.target.closest('[data-day]');
@@ -179,10 +188,10 @@ function newClicks(e){
  if(e.target.closest('#vintage-toggle')){vintage=vintage==='current'?(vintageOptions()[0]?.as_of||'current'):'current';paintChart();writeView();$('#vintage-toggle').focus();return true;}
 }
 document.addEventListener('click',e=>{if(newClicks(e))return;const b=e.target.closest('[data-save]');if(b){const id=b.dataset.save;saved.has(id)?saved.delete(id):saved.add(id);try{localStorage.setItem('pr-saved',JSON.stringify([...saved]));}catch{}document.querySelectorAll(`[data-save="${id}"]`).forEach(el=>{el.textContent=saved.has(id)?'Saved':'Save';el.setAttribute('aria-pressed',saved.has(id));el.setAttribute('aria-label',(saved.has(id)?'Unsave ':'Save ')+(D.records.find(r=>r.id===id)?.title||'record'));});if(route==='disclosures')paintRecords();return;}const r=e.target.closest('[data-record]');if(r)openRecord(r.dataset.record);const ser=e.target.closest('[data-open-series]');if(ser){selected=ser.dataset.openSeries;if(route==='economy'){$('#series').value=selected;paintChart();writeView();$('#series-chart').scrollIntoView({behavior:'smooth',block:'start'});}}if(e.target.closest('#prev')){page--;paintRecords();writeView();}if(e.target.closest('#next')){page++;paintRecords();writeView();}if(e.target.closest('#export-ics'))exportCalendar();if(e.target.closest('#export-csv')){const s=historySeries(),t=transformed(s);download(selected+'.csv',observationCsv(s,plotted,t.unit),'text/csv');}if(e.target.closest('#copy-view'))copyView();if(e.target.closest('#save-lens'))saveLens();if(e.target.closest('#delete-lens'))deleteLens();if(e.target.closest('#print'))window.print();if(e.target.closest('.close'))$('#detail').close();});
-document.addEventListener('submit',e=>{if(e.target.id==='global-search'){e.preventDefault();location.hash='search?q='+encodeURIComponent($('#global-q').value.trim());}if(e.target.id==='record-search'){e.preventDefault();clearTimeout(searchTimer);paintSearch();writeView();}});
+document.addEventListener('submit',e=>{if(e.target.id==='change-filters'){e.preventDefault();applyChangeFilters(document.activeElement?.id);return;}if(e.target.id==='global-search'){e.preventDefault();location.hash='search?q='+encodeURIComponent($('#global-q').value.trim());}if(e.target.id==='record-search'){e.preventDefault();clearTimeout(searchTimer);paintSearch();writeView();}});
 document.addEventListener('input',e=>{if(e.target.id==='q'){clearTimeout(searchTimer);searchTimer=setTimeout(()=>{if(route==='search'){paintSearch();writeView();}},180);return;}if(e.target.id==='search'){page=1;if(route==='calendar')paintCalendar();if(route==='disclosures')paintRecords();writeView();}});
-document.addEventListener('change',e=>{if(route==='search'){paintSearch();writeView();return;}if(route==='corporate'){paintCorporate();writeView();return;}if(e.target.id==='vintage-date'){vintage=e.target.value;paintChart();writeView();$('#vintage-date').focus();return;}if(e.target.id==='lens-select'){activeLens=e.target.value;page=1;paintRecords();return;}if(route==='calendar')paintCalendar();if(route==='disclosures'){page=1;paintRecords();}if(route==='economy'){selected=$('#series').value;mode=$('#transform').value;period=$('#period').value;paintChart();}writeView();});
+document.addEventListener('change',e=>{if(route==='changes'&&e.target.closest('#change-filters')){applyChangeFilters(e.target.id);return;}if(route==='search'){paintSearch();writeView();return;}if(route==='corporate'){paintCorporate();writeView();return;}if(e.target.id==='vintage-date'){vintage=e.target.value;paintChart();writeView();$('#vintage-date').focus();return;}if(e.target.id==='lens-select'){activeLens=e.target.value;page=1;paintRecords();return;}if(route==='calendar')paintCalendar();if(route==='disclosures'){page=1;paintRecords();}if(route==='economy'){selected=$('#series').value;mode=$('#transform').value;period=$('#period').value;paintChart();}writeView();});
 let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{if(route==='funding'&&D){bindFunding($('#main'),D,true);return;}if(route!=='economy'||!D)return;const svg=$('#series-chart svg.chart'),width=Math.max(260,Math.round($('#series-chart').clientWidth));if(svg&&svg.viewBox.baseVal.width===width)return;const active=document.activeElement,focus=active?.id==='chart-observation'?'#chart-observation':active?.id==='chart-latest'?'#chart-latest':active?.dataset.chartStep?'[data-chart-step="'+active.dataset.chartStep+'"]':null;paintChart(true);if(focus)$(focus)?.focus({preventScroll:true});},100);});
 document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(!a||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey||e.button!==0)return;e.preventDefault();if(a.hash==='#main'){$('#main').focus();return;}if(location.hash!==a.hash)location.hash=a.hash;else render();});
-window.addEventListener('hashchange',()=>{if(D){render();$('#main').focus({preventScroll:true});window.scrollTo(0,0);}});
+window.addEventListener('hashchange',()=>{if(D){render();if(route==='changes'&&pendingChangePageFocus){pendingChangePageFocus=false;const status=$('#change-results-status');status.tabIndex=-1;status.focus({preventScroll:true});status.scrollIntoView({block:'start'});}else{pendingChangePageFocus=false;$('#main').focus({preventScroll:true});window.scrollTo(0,0);}}});
 try{const r=await fetch('data.json',{cache:'no-cache'});if(!r.ok)throw Error('Snapshot request failed');D=await r.json();searchData=buildSearchIndex(D);$('#edition-date').textContent=day(D.captured_at,{weekday:'long',month:'long',day:'numeric',year:'numeric'});$('#version').textContent='v'+D.version;const age=(Date.now()-Date.parse(D.captured_at))/3600000;const bad=D.sources.filter(s=>s.status!=='ok').length;$('#freshness').innerHTML=`<span class="status-dot"></span>Captured ${esc(day(D.captured_at))} · ${esc(time(D.captured_at))}${age>24?' <strong class="warning">· Snapshot more than 24 hours old</strong>':''}<a class="freshness-link" href="#sources">${bad?`${bad} coverage gaps`:'Source coverage'} · ${D.sources.length} core collectors →</a>`;render();}catch(err){$('#main').innerHTML='<div class="empty">The data snapshot could not be loaded.<p>Please reload. If the problem persists, inspect the repository’s latest deployment. No values are substituted.</p></div>';$('#freshness').textContent='Data unavailable';console.error(err);}

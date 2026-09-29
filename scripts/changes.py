@@ -15,10 +15,14 @@ def definition_label(series,fields):
     return '; '.join(f'{key}: {value(key)}' for key in fields)
 
 def compare(previous,current):
-    result={'from_capture':previous.get('captured_at') if previous else None,'to_capture':current['captured_at'],'items':[],'baselines':[],'skipped':[]}
+    result={'from_capture':previous.get('captured_at') if previous else None,'to_capture':current['captured_at'],'items':[],'baselines':[],'skipped':[],'channels':[]}
     old_sources={s['id']:s for s in (previous or {}).get('sources',[])}
     for s in current['sources']:
         sid=s['id'];old=old_sources.get(sid)
+        state='unavailable' if s['status']!='ok' else 'baseline' if not old or not old.get('last_success') else 'compared'
+        result['channels'].append(dict(id=sid,label=s['name'],status=state,
+            from_capture=(old or {}).get('last_success'),to_capture=s.get('last_success'),
+            attempted_at=s.get('attempted_at'),error=s.get('error') if state=='unavailable' else None))
         if s['status']!='ok':result['skipped'].append(sid);continue
         if not old or not old.get('last_success'):
             result['baselines'].append(sid);continue

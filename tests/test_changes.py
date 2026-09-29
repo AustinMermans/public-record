@@ -7,6 +7,18 @@ def snapshot(stamp,values,records=None,status='ok'):
     return {'captured_at':stamp,'sources':[{'id':'s','name':'Source','last_success':stamp,'status':status}],'records':records or [],'events':[],'series':[{'id':'x','source_id':'s','name':'Series','url':'https://source.gov','unit':'Units','observations':values}]}
 
 class ChangeTests(unittest.TestCase):
+    def test_channel_receipt_uses_success_clocks_not_bundle_time(self):
+        old=snapshot('2026-09-27T11:00:00Z',[['2026-07-01',100]])
+        now=snapshot('2026-09-28T11:00:00Z',[['2026-07-01',100]],status='stale')
+        now['sources'][0]['last_success']=old['sources'][0]['last_success']
+        now['sources'][0]['attempted_at']='2026-09-28T10:30:00Z'
+        receipt=compare(old,now)['channels'][0]
+        self.assertEqual(receipt['status'],'unavailable')
+        self.assertEqual(receipt['to_capture'],'2026-09-27T11:00:00Z')
+        now['sources'][0].update(status='ok',last_success='2026-09-28T10:45:00Z')
+        receipt=compare(old,now)['channels'][0]
+        self.assertEqual(receipt['status'],'compared')
+        self.assertEqual(receipt['to_capture'],'2026-09-28T10:45:00Z')
     def test_revision_and_new_period_are_distinct(self):
         old=snapshot('2026-09-27',[['2026-07-01',100]])
         now=snapshot('2026-09-28',[['2026-07-01',101],['2026-08-01',102]])

@@ -26,11 +26,15 @@ def basis(point):
 
 def compare_financials(previous, current):
     result = dict(from_capture=(previous or {}).get('captured_at'),
-                  to_capture=current['captured_at'], items=[], baselines=[], skipped=[])
+                  to_capture=current['captured_at'], items=[], baselines=[], skipped=[], channels=[])
     before = {c['cik']: c for c in (previous or {}).get('companies', [])}
     for company in current['companies']:
         cik = company['cik']; sid = 'sec-financials-' + cik
         old = before.get(cik)
+        state = 'unavailable' if company.get('status') != 'ok' else 'baseline' if not old or not old.get('captured_at') or not rows(old) else 'compared'
+        result['channels'].append(dict(id=sid,label=company['name']+' financials',status=state,
+            cik=cik,from_capture=(old or {}).get('captured_at'),to_capture=company.get('captured_at'),
+            attempted_at=company.get('attempted_at'),error=company.get('error') if state=='unavailable' else None))
         if company.get('status') != 'ok':
             result['skipped'].append(sid)
             continue

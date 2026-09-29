@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Unified change edition across economic data, company filings/financial facts, funding and forecasts. Compact desk summaries group verified same-filing evidence and same-series revision batches while retaining every ledger entry.
+- Company, desk and change-type filters, complete pagination, shareable URLs and keyboard focus. Numbers retain evidence links alongside analytical company/chart/forecast destinations.
+- Independent per-channel successful-capture receipts; corporate accession and forecast target/definition comparisons. Baseline, stale/unavailable and unchanged states remain separate; legacy missing receipts are not invented.
+
 ## 1.5.1 — 2026-09-28
 
 - Headline-number drill-downs on the publication, Economy, Funding and Outlook fronts. Native links open the corresponding preferred-measure history, funding calculation or forecast panel; keyboard focus, Back/reload and copied detail URLs are preserved. Missing values remain noninteractive.
