@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## 1.9.0 — 2026-09-29
+
+- Searchable Business front page with a paginated disclosure headline feed, company profiles, topic filters and shareable query/page state. Exact ticker, CIK, filing-form, accession and 8-K item searches retain issuer and document identity.
+- On-site selected-filing detail and filing-anchored revenue/net-income briefs with matched prior-year comparisons, reported periods, financial capture clocks and original-source links.
+- Complete bounded 8-K item explanations, explicit unknown-item fallback and proposed-sale wording. Ownership forms remain available separately from the default business-report feed. Responsive layout, persistent result announcements and search-blur click preservation.
+
 ## 1.8.0 — 2026-09-28
 
 - FDIC banking conditions within Funding & credit: six current/prior/year-ago measures, nine source-linked histories, clickable headline drill-downs, published annualized ratios and separate population/observation/capture context.

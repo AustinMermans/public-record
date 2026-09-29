@@ -1,5 +1,13 @@
 # Independent product reviews
 
+## Business desk gate — 1.9.0 candidate, September 29, 2026
+
+Independent portfolio-manager/content and UI/UX reviewers approved the scoped Business increment with P0=P1=P2=P3=0. Content reconciled selected Apple, JPMorgan and ExxonMobil Holdings financial briefs with retained raw SEC companyfacts; checked all 1,375 selected filings, exact ticker/CIK/form/item searches, and specific governance accessions. Review findings corrected incomplete item mapping, substring identity matches and numeric-form/CIK precedence. Proposed-sale Form 144 notices remain explicitly prospective and join the ownership filter: this capture contains 957 default business disclosures and 418 ownership records.
+
+UI review inspected page/headline screenshots at 320/768/1280 and selected-filing detail at 390, along with root browser evidence. Browser checks covered 320/390/768/1280/1920 no page overflow, persistent search input/status, actual headline clicks, page-2 counts/focus, query/page reload, empty results and selected-filing focus/identity. A browser-discovered blur-change redraw was corrected; a binder regression protects the clicked result. The persistent live region is established before status updates. Actual screen-reader speech was not tested.
+
+Validation: 160 Python tests and 100 JavaScript tests pass, including 11 Business tests; application syntax, build and authored diff checks pass. These approvals cover the Business increment, not full-product completion. Headlines remain SEC metadata-based reading aids; full-document announcement extraction, comprehensive issuer/news coverage and broader forecast work remain open. See BUSINESS.md for query and financial-context boundaries.
+
 ### Verified v1.8.0 publication
 
 The [initial deployment](https://github.com/AustinMermans/public-record/actions/runs/36506715067) and [hosted refresh](https://github.com/AustinMermans/public-record/actions/runs/36506744022) succeeded. The immutable v1.8.0 target is hosted capture commit `1af72ad883d94f97dd2b1aa7f6f2837e531b5227`. Public release.json, data.json, app.js, banking.mjs, funding.mjs, chart.mjs, changes.mjs, publication.mjs, style.css, index.html and metric-links.mjs matched the reconstructed build byte-for-byte.
