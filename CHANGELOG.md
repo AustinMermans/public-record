@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## 1.17.0 — 2026-09-29
+
+- Economy gains an EIA Weekly Petroleum Status Report read: source-bound commercial crude excluding SPR, motor gasoline and distillate stock levels; reported weekly and comparable-year changes; and an accessible interactive six-year current-edition crude history. The desk, search and source ledger lead to shareable metric details with direct official files.
+- Two keyless official files per refresh are captured serially with SHA-256 raw receipts and build-time parser replay. JSON thousand-barrel crude levels reconcile to CSV million-barrel stocks; independently rounded published weekly differences have a bounded tolerance. Per-source change tracking distinguishes a new week, same-week Table 4 revisions and crude-history revisions without double-counting the same observation. Failed attempts retain stale prior success.
+- The page distinguishes inventory stocks from production, consumption, demand and price forecasts. It does not claim consensus surprises or reconstructed original weekly vintages. Product histories and holiday-aware calendar integration remain follow-ups.
+
 ## 1.16.0 — 2026-09-29
 
 - Business company profiles now pair a verified latest Item 2.02 issuer exhibit with the same registrant's exact-quarter 10-Q facts when quarter identity, dates and filing accession agree. The filed-quarter read shows current and prior-year revenue/net income, source-calculated changes, a labeled issuer highlight, direct exhibit/filing links and separate publication/capture clocks. Comparatives come from the current 10-Q; original prior-year filing vintages are not silently substituted.
