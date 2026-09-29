@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## 1.13.0 — 2026-09-29
+
+- Funding now opens with a dated, source-linked credit-conditions read spanning same-effective-date New York Fed rates, OFR global stress and its credit contribution, and two FDIC quarterly loan-quality measures. A guarded short interpretation preserves independent clocks and counterevidence; missing, stale or invalid comparisons withhold synthesis instead of generating a composite credit score.
+
 ## 1.12.0 — 2026-09-29
 
 - The compact change edition now leads with whichever desks actually have ledger entries, including Disclosures and Calendar. Court-feed differences are summarized by publisher and distinct docket link rather than promoting arbitrary case names; quiet desks retain their comparison-coverage detail.

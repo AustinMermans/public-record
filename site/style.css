@@ -41,3 +41,8 @@ nav.funding-sections{gap:14px 26px;flex-wrap:wrap}nav.funding-sections a{padding
 .court-change-summary li strong{font-weight:600}.court-change-summary li span.meta{width:100%}
 .change-quiet{border-top:1px solid var(--line);margin-top:18px;padding-top:11px;font-size:12px;color:var(--muted)}
 .change-quiet li{margin:7px 0}.change-quiet a{color:var(--ink)}
+.credit-read>p{max-width:900px}.credit-read>p:first-of-type{font-size:15px;line-height:1.65}
+.credit-table{table-layout:fixed}.credit-table th:first-child{width:22%}.credit-table th:nth-child(2){width:14%}.credit-table th:nth-child(3){width:15%}.credit-table th:last-child{width:49%}
+.credit-table th,.credit-table td{white-space:normal;overflow-wrap:anywhere;vertical-align:top}.credit-table tbody th{color:var(--ink);font-size:14px;font-weight:600;letter-spacing:normal}.credit-table tbody th .meta{display:block;font-weight:400;margin-top:3px}.credit-table td{font-size:13px}
+@media(max-width:650px){.credit-table,.credit-table tbody,.credit-table tr,.credit-table th,.credit-table td{display:block;width:100%}.credit-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.credit-table tr{border-bottom:1px solid var(--line);padding:12px 0}.credit-table tbody th{border:0;padding:4px 0 8px}.credit-table td{border:0;padding:5px 0}.credit-table td:before{content:attr(data-label);display:block;color:var(--muted);font-size:11px;margin-bottom:2px}}
+@media(max-width:650px){.credit-table th:first-child,.credit-table th:nth-child(2),.credit-table th:nth-child(3),.credit-table th:last-child{width:100%}}

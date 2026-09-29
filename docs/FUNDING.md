@@ -2,6 +2,8 @@
 
 This desk provides context for money-market and credit research, not a corporate-bond valuation, default-probability estimate or trading signal.
 
+The [dated credit-conditions read](CREDIT-READ.md) now juxtaposes source-bound New York Fed, OFR and FDIC measures above the detailed charts. It preserves each publisher's effective/observation period and retrieval clock, withholds the cross-source prose on missing, old or definition-mismatched evidence, and does not infer a synchronized daily/quarterly trend.
+
 ## New York Fed
 
 SOFR and EFFR come directly from the [New York Fed reference-rate API](https://markets.newyorkfed.org/static/docs/markets-api.html). Each request is bounded to the latest 400 published effective dates. Rates are percentages; volumes are billions of US dollars. The percentile range describes the transaction-rate distribution, not statistical uncertainty about the median. The markets differ, so their volumes are not summed.
