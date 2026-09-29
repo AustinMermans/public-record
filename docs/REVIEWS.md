@@ -1,10 +1,14 @@
 # Independent product reviews
 
+### Verified v1.17.0 publication
+
+[Pages run 36641690150](https://github.com/AustinMermans/public-record/actions/runs/36641690150) completed successfully at merged commit `dbc72759dd49dd613fe2fcfc25679cad59fb7932`. Public `release.json`, `data.json`, `app.js`, `energy.mjs`, `publication.mjs` and `style.css` SHA-256 hashes matched the reviewed local build byte-for-byte. Live Playwright opened the gasoline deep link at 320px with focus on its on-site detail, readable capture time, no horizontal overflow and no console errors. A desktop-to-mobile resize after the detail was already focused can shift it below the viewport without re-scrolling; direct mobile navigation works. This is a bounded hosted release, not whole-product approval or proof of future scheduled refreshes. An immutable v1.17 tag/GitHub release remains pending because local GitHub authentication is unavailable.
+
 ## Weekly petroleum gate — 1.17.0 candidate, September 29, 2026
 
 Independent portfolio-manager, EIA source/method and UI/UX reviewers approved the bounded energy increment. The PM confirmed the three Table 4 stocks and limited the reading to observed inventories, not a price, shortage or trading signal. The source reviewer replayed the retained Sep 18 report (published Sep 23) from both SHA-256-verified EIA files and required three corrections before approval: tolerate at most 0.001 million barrels of independently rounded displayed difference, bind the comparable-year header to approximately one year, and deduplicate crude JSON/Table 4 revision events. The UI reviewer required a 320px metric-card selection to reveal and focus its detail; this was fixed. Human-readable capture time and an accurate whole-CSV source label followed the UI review. Final source gate: P0=0/P1=0/P2=0; PM and UI gates approve this scope, with future consensus/seasonal context, fuel-product histories and holiday-aware WPSR calendar integration explicitly outstanding.
 
-The candidate passes 215 Python and 145 JavaScript tests, both JS syntax checks, version metadata validation and build. Playwright checked crude chart stepping, gasoline drill-down focus, zero page overflow at 320px and browser console; reviewer checks also covered 768/1920px. This is a **local candidate receipt**; no hosted Pages deployment or immutable tag is asserted here. The full investor-hub goal remains open.
+The candidate passes 215 Python and 145 JavaScript tests, both JS syntax checks, version metadata validation and build. Playwright checked crude chart stepping, gasoline drill-down focus, zero page overflow at 320px and browser console; reviewer checks also covered 768/1920px. The later hosted receipt above verifies publication, not an immutable tag. The full investor-hub goal remains open.
 
 ### Verified v1.16.0 publication
 

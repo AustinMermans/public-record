@@ -1,6 +1,6 @@
 # Investor-hub completion audit
 
-Updated for the v1.17.0 EIA energy candidate, September 29, 2026 (Pacific). **Full goal: not approved.** A reviewed application increment is not proof that the entire product is complete. Hosted publication of this candidate remains to be verified separately in REVIEWS.md.
+Updated for the hosted v1.17.0 EIA energy release, September 29, 2026 (Pacific). **Full goal: not approved.** A reviewed application increment is not proof that the entire product is complete. The hosted publication receipt is in REVIEWS.md.
 
 ## Acceptance requirements
 
@@ -12,7 +12,7 @@ Updated for the v1.17.0 EIA energy candidate, September 29, 2026 (Pacific). **Fu
 | Historical and forward-looking context | Revised macro history and sampled ALFRED vintages; FOMC projections, GDPNow and target-fixed SPF survey histories. Live v1.14 retains eight recent actual BEA GDP release-stage pages across three target quarters, distinct from current-revised FRED history, with four schedule-only future stages. It does not reconstruct a full original-release history or consensus surprises. Further forecast panels and prediction-market history are incomplete. |
 | Reviewer validation | Independent PM, source and UI/UX gates approve the bounded v1.17 energy comparison after corrections to EIA independent rounding, comparison dates, duplicate change events and mobile detail focus. Earlier gates approved bounded v1.11–v1.16 increments. Fresh final product approval is still required after remaining gaps are resolved. |
 | Responsive and accessible experience | Browser checks across 320–1920px, keyboard chart controls and resize-state preservation. Physical-device and screen-reader certification are not claimed. |
-| Versioned, attributable publication | Semantic versions, changelog/citation/build consistency, source links and scoped noncommercial licenses. v1.15 and v1.16 are deployed; v1.17 is a local candidate awaiting hosted verification. The v1.15 and v1.16 immutable tags and GitHub releases remain outstanding because GitHub CLI authentication is invalid. |
+| Versioned, attributable publication | Semantic versions, changelog/citation/build consistency, source links and scoped noncommercial licenses. v1.15, v1.16 and v1.17 are deployed. Their immutable tags and GitHub releases remain outstanding because local GitHub authentication is unavailable. |
 
 ## Ingested provider families
 
