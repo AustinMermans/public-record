@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Latest Filings - Mon, 28 Sep 2026 20:14:04 EDT</title>
+<link rel="alternate" href="/cgi-bin/browse-edgar?action=getcurrent"/>
+<link rel="self" href="/cgi-bin/browse-edgar?action=getcurrent"/>
+<id>https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent</id>
+<author><name>Webmaster</name><email>webmaster@sec.gov</email></author>
+<updated>2026-09-28T20:14:04-04:00</updated>
+<entry>
+<title>8-K - BRILLIANT N.E.V. CORP. (0001681769) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1681769/000152013826000399/0001520138-26-000399-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001520138-26-000399 &lt;b&gt;Size:&lt;/b&gt; 226 KB
+&lt;br&gt;Item 4.01: Changes in Registrant&#39;s Certifying Accountant
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T17:30:34-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001520138-26-000399</id>
+</entry>
+<entry>
+<title>8-K - Glucotrack, Inc. (0001506983) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1506983/000149315226044657/0001493152-26-044657-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001493152-26-044657 &lt;b&gt;Size:&lt;/b&gt; 334 KB
+&lt;br&gt;Item 1.01: Entry into a Material Definitive Agreement
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T17:29:13-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001493152-26-044657</id>
+</entry>
+<entry>
+<title>8-K - Polar Power, Inc. (0001622345) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1622345/000149315226044656/0001493152-26-044656-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001493152-26-044656 &lt;b&gt;Size:&lt;/b&gt; 474 KB
+&lt;br&gt;Item 1.01: Entry into a Material Definitive Agreement
+&lt;br&gt;Item 3.02: Unregistered Sales of Equity Securities
+&lt;br&gt;Item 7.01: Regulation FD Disclosure
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T17:28:58-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001493152-26-044656</id>
+</entry>
+<entry>
+<title>8-K - Newbury Street II Acquisition Corp (0002028027) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/2028027/000118518526004379/0001185185-26-004379-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001185185-26-004379 &lt;b&gt;Size:&lt;/b&gt; 264 KB
+&lt;br&gt;Item 5.08: Shareholder Nominations Pursuant to Exchange Act Rule 14a-11
+&lt;br&gt;Item 8.01: Other Events
+</summary>
+<updated>2026-09-28T17:28:55-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001185185-26-004379</id>
+</entry>
+<entry>
+<title>8-K - Clearway Energy LLC (0001637757) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1637757/000110465926111424/0001104659-26-111424-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001104659-26-111424 &lt;b&gt;Size:&lt;/b&gt; 664 KB
+&lt;br&gt;Item 1.01: Entry into a Material Definitive Agreement
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T17:28:50-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001104659-26-111424</id>
+</entry>
+<entry>
+<title>8-K - Clearway Energy, Inc. (0001567683) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1567683/000110465926111423/0001104659-26-111423-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001104659-26-111423 &lt;b&gt;Size:&lt;/b&gt; 655 KB
+&lt;br&gt;Item 1.01: Entry into a Material Definitive Agreement
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T17:28:34-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001104659-26-111423</id>
+</entry>
+<entry>
+<title>8-K - SURF AIR MOBILITY INC. (0001936224) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1936224/000193622426000010/0001936224-26-000010-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001936224-26-000010 &lt;b&gt;Size:&lt;/b&gt; 617 KB
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T17:28:03-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001936224-26-000010</id>
+</entry>
+<entry>
+<title>8-K - ANAVEX LIFE SCIENCES CORP. (0001314052) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1314052/000173112226001294/0001731122-26-001294-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001731122-26-001294 &lt;b&gt;Size:&lt;/b&gt; 206 KB
+&lt;br&gt;Item 5.01: Changes in Control of Registrant
+&lt;br&gt;Item 5.07: Submission of Matters to a Vote of Security Holders
+</summary>
+<updated>2026-09-28T17:27:47-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001731122-26-001294</id>
+</entry>
+<entry>
+<title>8-K - Viking Therapeutics, Inc. (0001607678) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1607678/000119312526405580/0001193125-26-405580-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001193125-26-405580 &lt;b&gt;Size:&lt;/b&gt; 3 MB
+&lt;br&gt;Item 1.01: Entry into a Material Definitive Agreement
+&lt;br&gt;Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T17:27:17-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001193125-26-405580</id>
+</entry>
+<entry>
+<title>8-K - Sabre Corp (0001597033) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1597033/000119312526405576/0001193125-26-405576-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001193125-26-405576 &lt;b&gt;Size:&lt;/b&gt; 3 MB
+&lt;br&gt;Item 1.01: Entry into a Material Definitive Agreement
+&lt;br&gt;Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant
+&lt;br&gt;Item 3.03: Material Modifications to Rights of Security Holders
+&lt;br&gt;Item 8.01: Other Events
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T17:26:19-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001193125-26-405576</id>
+</entry>
+<entry>
+<title>8-K - AMEREN CORP (0001002910) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1002910/000110465926111420/0001104659-26-111420-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001104659-26-111420 &lt;b&gt;Size:&lt;/b&gt; 295 KB
+&lt;br&gt;Item 8.01: Other Events
+</summary>
+<updated>2026-09-28T17:25:27-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001104659-26-111420</id>
+</entry>
+<entry>
+<title>8-K - UNION ELECTRIC CO (0000100826) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/100826/000110465926111420/0001104659-26-111420-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001104659-26-111420 &lt;b&gt;Size:&lt;/b&gt; 295 KB
+&lt;br&gt;Item 8.01: Other Events
+</summary>
+<updated>2026-09-28T17:25:27-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001104659-26-111420</id>
+</entry>
+<entry>
+<title>8-K - CNL Strategic Residential Credit, Inc. (0002066337) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/2066337/000143774926031394/0001437749-26-031394-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001437749-26-031394 &lt;b&gt;Size:&lt;/b&gt; 196 KB
+&lt;br&gt;Item 8.01: Other Events
+</summary>
+<updated>2026-09-28T17:20:41-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001437749-26-031394</id>
+</entry>
+<entry>
+<title>8-K - AST SpaceMobile, Inc. (0001780312) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1780312/000149315226044647/0001493152-26-044647-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001493152-26-044647 &lt;b&gt;Size:&lt;/b&gt; 296 KB
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T17:20:14-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001493152-26-044647</id>
+</entry>
+<entry>
+<title>8-K/A - Kodiak Gas Services, Inc. (0001767042) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1767042/000176704226000065/0001767042-26-000065-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001767042-26-000065 &lt;b&gt;Size:&lt;/b&gt; 303 KB
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T17:19:48-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K/A"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001767042-26-000065</id>
+</entry>
+<entry>
+<title>8-K - Kodiak Gas Services, Inc. (0001767042) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1767042/000176704226000063/0001767042-26-000063-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001767042-26-000063 &lt;b&gt;Size:&lt;/b&gt; 166 KB
+&lt;br&gt;Item 5.03: Amendments to Articles of Incorporation or Bylaws; Change in Fiscal Year
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T17:18:02-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001767042-26-000063</id>
+</entry>
+<entry>
+<title>8-K - Nexalin Technology, Inc. (0001527352) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1527352/000182912626010495/0001829126-26-010495-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001829126-26-010495 &lt;b&gt;Size:&lt;/b&gt; 193 KB
+&lt;br&gt;Item 3.01: Notice of Delisting or Failure to Satisfy a Continued Listing Rule or Standard; Transfer of Listing
+</summary>
+<updated>2026-09-28T17:15:27-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001829126-26-010495</id>
+</entry>
+<entry>
+<title>8-K - Exascale Labs Holdings Inc. (0002109869) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/2109869/000182912626010494/0001829126-26-010494-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001829126-26-010494 &lt;b&gt;Size:&lt;/b&gt; 314 KB
+&lt;br&gt;Item 2.02: Results of Operations and Financial Condition
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T17:11:44-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001829126-26-010494</id>
+</entry>
+<entry>
+<title>8-K - U S PHYSICAL THERAPY INC /NV (0000885978) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/885978/000088597826000060/0000885978-26-000060-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0000885978-26-000060 &lt;b&gt;Size:&lt;/b&gt; 685 KB
+&lt;br&gt;Item 1.01: Entry into a Material Definitive Agreement
+&lt;br&gt;Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T17:08:53-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0000885978-26-000060</id>
+</entry>
+<entry>
+<title>8-K - CervoMed Inc. (0001053691) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1053691/000143774926031389/0001437749-26-031389-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001437749-26-031389 &lt;b&gt;Size:&lt;/b&gt; 185 KB
+&lt;br&gt;Item 7.01: Regulation FD Disclosure
+&lt;br&gt;Item 8.01: Other Events
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T17:07:31-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001437749-26-031389</id>
+</entry>
+<entry>
+<title>8-K/A - ACCENDRA HEALTH INC/VA/ (0000075252) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/75252/000110465926111408/0001104659-26-111408-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001104659-26-111408 &lt;b&gt;Size:&lt;/b&gt; 274 KB
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T17:06:57-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K/A"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001104659-26-111408</id>
+</entry>
+<entry>
+<title>8-K - FARADAY FUTURE INTELLIGENT ELECTRIC INC. (0001805521) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1805521/000121390026104130/0001213900-26-104130-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001213900-26-104130 &lt;b&gt;Size:&lt;/b&gt; 34 MB
+&lt;br&gt;Item 8.01: Other Events
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T17:05:36-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001213900-26-104130</id>
+</entry>
+<entry>
+<title>8-K - SAN JUAN BASIN ROYALTY TRUST (0000319655) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/319655/000119312526405498/0001193125-26-405498-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001193125-26-405498 &lt;b&gt;Size:&lt;/b&gt; 69 KB
+&lt;br&gt;Item 7.01: Regulation FD Disclosure
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T17:04:26-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001193125-26-405498</id>
+</entry>
+<entry>
+<title>8-K - Inhibrx Biosciences, Inc. (0002007919) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/2007919/000200791926000050/0002007919-26-000050-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0002007919-26-000050 &lt;b&gt;Size:&lt;/b&gt; 7 MB
+&lt;br&gt;Item 7.01: Regulation FD Disclosure
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T17:03:44-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0002007919-26-000050</id>
+</entry>
+<entry>
+<title>8-K - NEONC TECHNOLOGIES HOLDINGS, INC. (0001979414) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1979414/000182912626010493/0001829126-26-010493-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001829126-26-010493 &lt;b&gt;Size:&lt;/b&gt; 210 KB
+&lt;br&gt;Item 7.01: Regulation FD Disclosure
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T17:00:22-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001829126-26-010493</id>
+</entry>
+<entry>
+<title>8-K - AAR CORP (0000001750) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1750/000110465926111403/0001104659-26-111403-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001104659-26-111403 &lt;b&gt;Size:&lt;/b&gt; 471 KB
+&lt;br&gt;Item 2.02: Results of Operations and Financial Condition
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:58:22-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001104659-26-111403</id>
+</entry>
+<entry>
+<title>8-K - RingCentral, Inc. (0001384905) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1384905/000138490526000050/0001384905-26-000050-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001384905-26-000050 &lt;b&gt;Size:&lt;/b&gt; 140 KB
+&lt;br&gt;Item 5.08: Shareholder Nominations Pursuant to Exchange Act Rule 14a-11
+&lt;br&gt;Item 8.01: Other Events
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:56:28-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001384905-26-000050</id>
+</entry>
+<entry>
+<title>8-K - PCB BANCORP (0001423869) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1423869/000142386926000031/0001423869-26-000031-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001423869-26-000031 &lt;b&gt;Size:&lt;/b&gt; 235 KB
+&lt;br&gt;Item 7.01: Regulation FD Disclosure
+&lt;br&gt;Item 8.01: Other Events
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:56:15-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001423869-26-000031</id>
+</entry>
+<entry>
+<title>8-K - Viking Acquisition Corp I (0002080023) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/2080023/000121390026104115/0001213900-26-104115-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001213900-26-104115 &lt;b&gt;Size:&lt;/b&gt; 272 KB
+&lt;br&gt;Item 7.01: Regulation FD Disclosure
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:55:27-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001213900-26-104115</id>
+</entry>
+<entry>
+<title>8-K - StandardAero, Inc. (0002025410) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/2025410/000119312526405454/0001193125-26-405454-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001193125-26-405454 &lt;b&gt;Size:&lt;/b&gt; 160 KB
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+</summary>
+<updated>2026-09-28T16:51:24-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001193125-26-405454</id>
+</entry>
+<entry>
+<title>8-K - Azitra, Inc. (0001701478) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1701478/000149315226044605/0001493152-26-044605-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001493152-26-044605 &lt;b&gt;Size:&lt;/b&gt; 670 KB
+&lt;br&gt;Item 1.01: Entry into a Material Definitive Agreement
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:50:22-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001493152-26-044605</id>
+</entry>
+<entry>
+<title>8-K - Camp4 Therapeutics Corp (0001736730) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1736730/000162828026063740/0001628280-26-063740-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001628280-26-063740 &lt;b&gt;Size:&lt;/b&gt; 9 MB
+&lt;br&gt;Item 7.01: Regulation FD Disclosure
+&lt;br&gt;Item 8.01: Other Events
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:47:56-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001628280-26-063740</id>
+</entry>
+<entry>
+<title>8-K - Jasper Therapeutics, Inc. (0001788028) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1788028/000121390026104101/0001213900-26-104101-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001213900-26-104101 &lt;b&gt;Size:&lt;/b&gt; 188 KB
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+</summary>
+<updated>2026-09-28T16:44:17-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001213900-26-104101</id>
+</entry>
+<entry>
+<title>8-K - Greenland Mines Ltd (0001907223) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1907223/000121390026104099/0001213900-26-104099-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001213900-26-104099 &lt;b&gt;Size:&lt;/b&gt; 474 KB
+&lt;br&gt;Item 1.01: Entry into a Material Definitive Agreement
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:43:24-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001213900-26-104099</id>
+</entry>
+<entry>
+<title>8-K - SilverBox Corp IV (0002015947) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/2015947/000110465926111396/0001104659-26-111396-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001104659-26-111396 &lt;b&gt;Size:&lt;/b&gt; 262 KB
+&lt;br&gt;Item 8.01: Other Events
+</summary>
+<updated>2026-09-28T16:39:59-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001104659-26-111396</id>
+</entry>
+<entry>
+<title>8-K - MCCORMICK &amp; CO INC (0000063754) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/63754/000006375426000322/0000063754-26-000322-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0000063754-26-000322 &lt;b&gt;Size:&lt;/b&gt; 280 KB
+&lt;br&gt;Item 4.01: Changes in Registrant&#39;s Certifying Accountant
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:38:05-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0000063754-26-000322</id>
+</entry>
+<entry>
+<title>8-K - Keurig Dr Pepper Inc. (0001418135) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1418135/000141813526000060/0001418135-26-000060-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001418135-26-000060 &lt;b&gt;Size:&lt;/b&gt; 2 MB
+&lt;br&gt;Item 8.01: Other Events
+</summary>
+<updated>2026-09-28T16:35:44-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001418135-26-000060</id>
+</entry>
+<entry>
+<title>8-K - Marwynn Holdings, Inc. (0002030522) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/2030522/000121390026104086/0001213900-26-104086-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001213900-26-104086 &lt;b&gt;Size:&lt;/b&gt; 375 KB
+&lt;br&gt;Item 5.03: Amendments to Articles of Incorporation or Bylaws; Change in Fiscal Year
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:35:13-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001213900-26-104086</id>
+</entry>
+<entry>
+<title>8-K - IDT CORP (0001005731) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1005731/000143774926031364/0001437749-26-031364-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001437749-26-031364 &lt;b&gt;Size:&lt;/b&gt; 1 MB
+&lt;br&gt;Item 2.02: Results of Operations and Financial Condition
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:31:47-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001437749-26-031364</id>
+</entry>
+<entry>
+<title>8-K - Unicycive Therapeutics, Inc. (0001766140) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1766140/000121390026104076/0001213900-26-104076-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001213900-26-104076 &lt;b&gt;Size:&lt;/b&gt; 198 KB
+&lt;br&gt;Item 8.01: Other Events
+</summary>
+<updated>2026-09-28T16:31:05-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001213900-26-104076</id>
+</entry>
+<entry>
+<title>8-K - Gain Therapeutics, Inc. (0001819411) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1819411/000110465926111391/0001104659-26-111391-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001104659-26-111391 &lt;b&gt;Size:&lt;/b&gt; 193 KB
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+</summary>
+<updated>2026-09-28T16:30:45-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001104659-26-111391</id>
+</entry>
+<entry>
+<title>8-K - Wintergreen Acquisition Corp. (0002053927) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/2053927/000182912626010488/0001829126-26-010488-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001829126-26-010488 &lt;b&gt;Size:&lt;/b&gt; 282 KB
+&lt;br&gt;Item 1.01: Entry into a Material Definitive Agreement
+&lt;br&gt;Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant
+&lt;br&gt;Item 3.02: Unregistered Sales of Equity Securities
+&lt;br&gt;Item 8.01: Other Events
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:30:30-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001829126-26-010488</id>
+</entry>
+<entry>
+<title>8-K - Cambium Networks Corp (0001738177) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1738177/000119312526405403/0001193125-26-405403-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001193125-26-405403 &lt;b&gt;Size:&lt;/b&gt; 774 KB
+&lt;br&gt;Item 1.01: Entry into a Material Definitive Agreement
+&lt;br&gt;Item 2.01: Completion of Acquisition or Disposition of Assets
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:30:15-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001193125-26-405403</id>
+</entry>
+<entry>
+<title>8-K - ISABELLA BANK CORP (0000842517) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/842517/000084251726000224/0000842517-26-000224-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0000842517-26-000224 &lt;b&gt;Size:&lt;/b&gt; 200 KB
+&lt;br&gt;Item 8.01: Other Events
+</summary>
+<updated>2026-09-28T16:30:15-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0000842517-26-000224</id>
+</entry>
+<entry>
+<title>8-K - GRAPHIC PACKAGING HOLDING CO (0001408075) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1408075/000119312526405397/0001193125-26-405397-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001193125-26-405397 &lt;b&gt;Size:&lt;/b&gt; 165 KB
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:30:14-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001193125-26-405397</id>
+</entry>
+<entry>
+<title>8-K - PRECISION OPTICS CORPORATION, INC. (0000867840) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/867840/000168316826007465/0001683168-26-007465-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001683168-26-007465 &lt;b&gt;Size:&lt;/b&gt; 344 KB
+&lt;br&gt;Item 2.02: Results of Operations and Financial Condition
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:30:14-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001683168-26-007465</id>
+</entry>
+<entry>
+<title>8-K - TELEDYNE TECHNOLOGIES INC (0001094285) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1094285/000109428526000050/0001094285-26-000050-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001094285-26-000050 &lt;b&gt;Size:&lt;/b&gt; 197 KB
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:27:53-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001094285-26-000050</id>
+</entry>
+<entry>
+<title>8-K - PETMED EXPRESS INC (0001040130) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1040130/000104013026000057/0001040130-26-000057-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001040130-26-000057 &lt;b&gt;Size:&lt;/b&gt; 336 KB
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:27:25-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001040130-26-000057</id>
+</entry>
+<entry>
+<title>8-K - Kyndryl Holdings, Inc. (0001867072) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1867072/000110465926111380/0001104659-26-111380-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001104659-26-111380 &lt;b&gt;Size:&lt;/b&gt; 1 MB
+&lt;br&gt;Item 8.01: Other Events
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:22:39-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001104659-26-111380</id>
+</entry>
+<entry>
+<title>8-K - Ready Capital Corp (0001527590) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1527590/000162828026063725/0001628280-26-063725-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001628280-26-063725 &lt;b&gt;Size:&lt;/b&gt; 196 KB
+&lt;br&gt;Item 8.01: Other Events
+</summary>
+<updated>2026-09-28T16:21:24-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001628280-26-063725</id>
+</entry>
+<entry>
+<title>8-K - Gen Digital Inc. (0000849399) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/849399/000084939926000071/0000849399-26-000071-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0000849399-26-000071 &lt;b&gt;Size:&lt;/b&gt; 199 KB
+&lt;br&gt;Item 7.01: Regulation FD Disclosure
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:20:51-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0000849399-26-000071</id>
+</entry>
+<entry>
+<title>8-K - NEUROCRINE BIOSCIENCES INC (0000914475) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/914475/000091447526000045/0000914475-26-000045-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0000914475-26-000045 &lt;b&gt;Size:&lt;/b&gt; 191 KB
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+</summary>
+<updated>2026-09-28T16:20:24-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0000914475-26-000045</id>
+</entry>
+<entry>
+<title>8-K - Jefferies Financial Group Inc. (0000096223) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/96223/000009622326000028/0000096223-26-000028-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0000096223-26-000028 &lt;b&gt;Size:&lt;/b&gt; 673 KB
+&lt;br&gt;Item 2.02: Results of Operations and Financial Condition
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:18:58-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0000096223-26-000028</id>
+</entry>
+<entry>
+<title>8-K - DTE ENERGY CO (0000936340) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/936340/000093634026000159/0000936340-26-000159-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0000936340-26-000159 &lt;b&gt;Size:&lt;/b&gt; 4 MB
+&lt;br&gt;Item 7.01: Regulation FD Disclosure
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:18:40-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0000936340-26-000159</id>
+</entry>
+<entry>
+<title>8-K - DTE Electric Co (0000028385) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/28385/000093634026000159/0000936340-26-000159-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0000936340-26-000159 &lt;b&gt;Size:&lt;/b&gt; 4 MB
+&lt;br&gt;Item 7.01: Regulation FD Disclosure
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:18:40-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0000936340-26-000159</id>
+</entry>
+<entry>
+<title>8-K - AZIO AI HOLDINGS, INC. (0001563568) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1563568/000143774926031349/0001437749-26-031349-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001437749-26-031349 &lt;b&gt;Size:&lt;/b&gt; 966 KB
+&lt;br&gt;Item 1.01: Entry into a Material Definitive Agreement
+&lt;br&gt;Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant
+&lt;br&gt;Item 3.02: Unregistered Sales of Equity Securities
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:17:57-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001437749-26-031349</id>
+</entry>
+<entry>
+<title>8-K - VINEBROOK HOMES TRUST, INC. (0001755755) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1755755/000143774926031348/0001437749-26-031348-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001437749-26-031348 &lt;b&gt;Size:&lt;/b&gt; 810 KB
+&lt;br&gt;Item 1.01: Entry into a Material Definitive Agreement
+&lt;br&gt;Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:17:18-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001437749-26-031348</id>
+</entry>
+<entry>
+<title>8-K - Pathfinder Bancorp, Inc. (0001609065) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1609065/000119312526405354/0001193125-26-405354-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001193125-26-405354 &lt;b&gt;Size:&lt;/b&gt; 223 KB
+&lt;br&gt;Item 8.01: Other Events
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:17:11-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001193125-26-405354</id>
+</entry>
+<entry>
+<title>8-K - ADVANCED MICRO DEVICES INC (0000002488) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/2488/000000248826000182/0000002488-26-000182-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0000002488-26-000182 &lt;b&gt;Size:&lt;/b&gt; 149 KB
+&lt;br&gt;Item 3.02: Unregistered Sales of Equity Securities
+</summary>
+<updated>2026-09-28T16:16:47-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0000002488-26-000182</id>
+</entry>
+<entry>
+<title>8-K - Asana, Inc. (0001477720) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1477720/000162828026063720/0001628280-26-063720-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001628280-26-063720 &lt;b&gt;Size:&lt;/b&gt; 178 KB
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:16:13-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001628280-26-063720</id>
+</entry>
+<entry>
+<title>8-K - HAIN CELESTIAL GROUP INC (0000910406) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/910406/000119312526405350/0001193125-26-405350-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001193125-26-405350 &lt;b&gt;Size:&lt;/b&gt; 156 KB
+&lt;br&gt;Item 3.01: Notice of Delisting or Failure to Satisfy a Continued Listing Rule or Standard; Transfer of Listing
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+</summary>
+<updated>2026-09-28T16:16:05-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001193125-26-405350</id>
+</entry>
+<entry>
+<title>8-K - Workhorse Group Inc. (0001425287) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1425287/000162828026063719/0001628280-26-063719-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001628280-26-063719 &lt;b&gt;Size:&lt;/b&gt; 278 KB
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:15:22-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001628280-26-063719</id>
+</entry>
+<entry>
+<title>8-K - OPENLANE, Inc. (0001395942) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1395942/000139594226000033/0001395942-26-000033-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001395942-26-000033 &lt;b&gt;Size:&lt;/b&gt; 218 KB
+&lt;br&gt;Item 1.01: Entry into a Material Definitive Agreement
+</summary>
+<updated>2026-09-28T16:13:33-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001395942-26-000033</id>
+</entry>
+<entry>
+<title>8-K - PARKERVISION INC (0000914139) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/914139/000143774926031339/0001437749-26-031339-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001437749-26-031339 &lt;b&gt;Size:&lt;/b&gt; 157 KB
+&lt;br&gt;Item 5.07: Submission of Matters to a Vote of Security Holders
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:12:42-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001437749-26-031339</id>
+</entry>
+<entry>
+<title>8-K - Eagle Point Trinity Senior Secured Lending Co (0002027033) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/2027033/000110465926111361/0001104659-26-111361-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001104659-26-111361 &lt;b&gt;Size:&lt;/b&gt; 322 KB
+&lt;br&gt;Item 3.02: Unregistered Sales of Equity Securities
+&lt;br&gt;Item 8.01: Other Events
+</summary>
+<updated>2026-09-28T16:12:16-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001104659-26-111361</id>
+</entry>
+<entry>
+<title>8-K - PEOPLES BANCORP INC (0000318300) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/318300/000031830026000202/0000318300-26-000202-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0000318300-26-000202 &lt;b&gt;Size:&lt;/b&gt; 464 KB
+&lt;br&gt;Item 8.01: Other Events
+</summary>
+<updated>2026-09-28T16:11:22-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0000318300-26-000202</id>
+</entry>
+<entry>
+<title>8-K - KIMBERLY CLARK CORP (0000055785) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/55785/000110465926111354/0001104659-26-111354-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001104659-26-111354 &lt;b&gt;Size:&lt;/b&gt; 3 MB
+&lt;br&gt;Item 8.01: Other Events
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:08:32-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001104659-26-111354</id>
+</entry>
+<entry>
+<title>8-K - Voyager Technologies, Inc./TX (0001788060) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1788060/000162828026063717/0001628280-26-063717-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001628280-26-063717 &lt;b&gt;Size:&lt;/b&gt; 3 MB
+&lt;br&gt;Item 1.01: Entry into a Material Definitive Agreement
+&lt;br&gt;Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant
+&lt;br&gt;Item 3.02: Unregistered Sales of Equity Securities
+&lt;br&gt;Item 8.01: Other Events
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:08:30-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001628280-26-063717</id>
+</entry>
+<entry>
+<title>8-K - VAIL RESORTS INC (0000812011) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/812011/000081201126000048/0000812011-26-000048-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0000812011-26-000048 &lt;b&gt;Size:&lt;/b&gt; 714 KB
+&lt;br&gt;Item 2.02: Results of Operations and Financial Condition
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:06:47-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0000812011-26-000048</id>
+</entry>
+<entry>
+<title>8-K - Emmis Acquisition Corp. (0002075816) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/2075816/000121390026104036/0001213900-26-104036-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001213900-26-104036 &lt;b&gt;Size:&lt;/b&gt; 262 KB
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:06:19-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001213900-26-104036</id>
+</entry>
+<entry>
+<title>8-K - Tempest Therapeutics, Inc. (0001544227) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1544227/000121390026104034/0001213900-26-104034-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001213900-26-104034 &lt;b&gt;Size:&lt;/b&gt; 408 KB
+&lt;br&gt;Item 1.01: Entry into a Material Definitive Agreement
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+&lt;br&gt;Item 7.01: Regulation FD Disclosure
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:05:33-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001213900-26-104034</id>
+</entry>
+<entry>
+<title>8-K - MEDICINOVA INC (0001226616) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1226616/000119312526405318/0001193125-26-405318-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001193125-26-405318 &lt;b&gt;Size:&lt;/b&gt; 141 KB
+&lt;br&gt;Item 1.01: Entry into a Material Definitive Agreement
+</summary>
+<updated>2026-09-28T16:05:33-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001193125-26-405318</id>
+</entry>
+<entry>
+<title>8-K - BEAZER HOMES USA INC (0000915840) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/915840/000110465926111345/0001104659-26-111345-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001104659-26-111345 &lt;b&gt;Size:&lt;/b&gt; 204 KB
+&lt;br&gt;Item 8.01: Other Events
+</summary>
+<updated>2026-09-28T16:05:25-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001104659-26-111345</id>
+</entry>
+<entry>
+<title>8-K - SkinHealth Systems Inc. (0001818093) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1818093/000162828026063712/0001628280-26-063712-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001628280-26-063712 &lt;b&gt;Size:&lt;/b&gt; 183 KB
+&lt;br&gt;Item 5.07: Submission of Matters to a Vote of Security Holders
+</summary>
+<updated>2026-09-28T16:05:22-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001628280-26-063712</id>
+</entry>
+<entry>
+<title>8-K - Humacyte, Inc. (0001818382) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1818382/000181838226000011/0001818382-26-000011-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001818382-26-000011 &lt;b&gt;Size:&lt;/b&gt; 311 KB
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+&lt;br&gt;Item 7.01: Regulation FD Disclosure
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:05:14-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001818382-26-000011</id>
+</entry>
+<entry>
+<title>8-K - Adeia Inc. (0001803696) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1803696/000119312526405315/0001193125-26-405315-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001193125-26-405315 &lt;b&gt;Size:&lt;/b&gt; 278 KB
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+&lt;br&gt;Item 8.01: Other Events
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:05:14-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001193125-26-405315</id>
+</entry>
+<entry>
+<title>8-K - Grayscale Bittensor Trust (TAO) (0002029297) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/2029297/000119312526405311/0001193125-26-405311-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001193125-26-405311 &lt;b&gt;Size:&lt;/b&gt; 158 KB
+&lt;br&gt;Item 3.02: Unregistered Sales of Equity Securities
+</summary>
+<updated>2026-09-28T16:04:39-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001193125-26-405311</id>
+</entry>
+<entry>
+<title>8-K - iQSTEL Inc (0001527702) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1527702/000166357726000309/0001663577-26-000309-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001663577-26-000309 &lt;b&gt;Size:&lt;/b&gt; 398 KB
+&lt;br&gt;Item 1.01: Entry into a Material Definitive Agreement
+&lt;br&gt;Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant
+&lt;br&gt;Item 7.01: Regulation FD Disclosure
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:02:21-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001663577-26-000309</id>
+</entry>
+<entry>
+<title>8-K - Phio Pharmaceuticals Corp. (0001533040) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1533040/000143774926031337/0001437749-26-031337-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001437749-26-031337 &lt;b&gt;Size:&lt;/b&gt; 196 KB
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+&lt;br&gt;Item 5.07: Submission of Matters to a Vote of Security Holders
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:01:53-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001437749-26-031337</id>
+</entry>
+<entry>
+<title>8-K - Gossamer Bio, Inc. (0001728117) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1728117/000172811726000106/0001728117-26-000106-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001728117-26-000106 &lt;b&gt;Size:&lt;/b&gt; 138 KB
+&lt;br&gt;Item 8.01: Other Events
+</summary>
+<updated>2026-09-28T16:01:31-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001728117-26-000106</id>
+</entry>
+<entry>
+<title>8-K - PAR PACIFIC HOLDINGS, INC. (0000821483) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/821483/000143774926031335/0001437749-26-031335-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001437749-26-031335 &lt;b&gt;Size:&lt;/b&gt; 177 KB
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+&lt;br&gt;Item 8.01: Other Events
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:01:30-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001437749-26-031335</id>
+</entry>
+<entry>
+<title>8-K - ADARx Pharmaceuticals, Inc. (0001802369) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1802369/000119312526405297/0001193125-26-405297-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001193125-26-405297 &lt;b&gt;Size:&lt;/b&gt; 193 KB
+&lt;br&gt;Item 3.02: Unregistered Sales of Equity Securities
+&lt;br&gt;Item 5.03: Amendments to Articles of Incorporation or Bylaws; Change in Fiscal Year
+&lt;br&gt;Item 8.01: Other Events
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:01:20-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001193125-26-405297</id>
+</entry>
+<entry>
+<title>8-K - SCYNEXIS INC (0001178253) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1178253/000117825326000037/0001178253-26-000037-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001178253-26-000037 &lt;b&gt;Size:&lt;/b&gt; 210 KB
+&lt;br&gt;Item 1.01: Entry into a Material Definitive Agreement
+&lt;br&gt;Item 7.01: Regulation FD Disclosure
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:01:19-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001178253-26-000037</id>
+</entry>
+<entry>
+<title>8-K - Archrock, Inc. (0001389050) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1389050/000138905026000034/0001389050-26-000034-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001389050-26-000034 &lt;b&gt;Size:&lt;/b&gt; 139 KB
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+</summary>
+<updated>2026-09-28T16:00:55-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001389050-26-000034</id>
+</entry>
+<entry>
+<title>8-K - F&amp;M BANK CORP (0000740806) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/740806/000165495426008611/0001654954-26-008611-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001654954-26-008611 &lt;b&gt;Size:&lt;/b&gt; 140 KB
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T16:00:31-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001654954-26-008611</id>
+</entry>
+<entry>
+<title>8-K - M&amp;T BANK CORP (0000036270) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/36270/000003627026000054/0000036270-26-000054-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0000036270-26-000054 &lt;b&gt;Size:&lt;/b&gt; 866 KB
+&lt;br&gt;Item 7.01: Regulation FD Disclosure
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T15:46:42-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0000036270-26-000054</id>
+</entry>
+<entry>
+<title>8-K - Crestline Lending Solutions, LLC (0002035713) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/2035713/000162828026063700/0001628280-26-063700-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001628280-26-063700 &lt;b&gt;Size:&lt;/b&gt; 133 KB
+&lt;br&gt;Item 7.01: Regulation FD Disclosure
+</summary>
+<updated>2026-09-28T14:53:34-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001628280-26-063700</id>
+</entry>
+<entry>
+<title>8-K - Ford Credit Auto Owner Trust 2026-C (0002152109) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/2152109/000110465926111289/0001104659-26-111289-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001104659-26-111289 &lt;b&gt;Size:&lt;/b&gt; 57 KB
+&lt;br&gt;Item 8.01: Other Events
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T14:02:03-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001104659-26-111289</id>
+</entry>
+<entry>
+<title>8-K - FORD CREDIT AUTO RECEIVABLES TWO LLC (0001129987) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1129987/000110465926111289/0001104659-26-111289-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001104659-26-111289 &lt;b&gt;Size:&lt;/b&gt; 57 KB
+&lt;br&gt;Item 8.01: Other Events
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T14:02:03-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001104659-26-111289</id>
+</entry>
+<entry>
+<title>8-K - BA Credit Card Funding, LLC (0001370238) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1370238/000092963826003645/0000929638-26-003645-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0000929638-26-003645 &lt;b&gt;Size:&lt;/b&gt; 492 KB
+&lt;br&gt;Item 8.01: Other Events
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T13:56:52-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0000929638-26-003645</id>
+</entry>
+<entry>
+<title>8-K - BA Credit Card Trust (0001128250) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1128250/000092963826003645/0000929638-26-003645-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0000929638-26-003645 &lt;b&gt;Size:&lt;/b&gt; 492 KB
+&lt;br&gt;Item 8.01: Other Events
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T13:56:52-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0000929638-26-003645</id>
+</entry>
+<entry>
+<title>8-K - BA Master Credit Card Trust II (0000936988) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/936988/000092963826003645/0000929638-26-003645-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0000929638-26-003645 &lt;b&gt;Size:&lt;/b&gt; 492 KB
+&lt;br&gt;Item 8.01: Other Events
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T13:56:52-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0000929638-26-003645</id>
+</entry>
+<entry>
+<title>8-K/A - Exascale Labs Holdings Inc. (0002109869) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/2109869/000182912626010463/0001829126-26-010463-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001829126-26-010463 &lt;b&gt;Size:&lt;/b&gt; 1 MB
+&lt;br&gt;Item 2.01: Completion of Acquisition or Disposition of Assets
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T13:18:44-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K/A"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001829126-26-010463</id>
+</entry>
+<entry>
+<title>8-K - HIGHWATER ETHANOL LLC (0001371451) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1371451/000162828026063690/0001628280-26-063690-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001628280-26-063690 &lt;b&gt;Size:&lt;/b&gt; 480 KB
+&lt;br&gt;Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T13:08:17-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001628280-26-063690</id>
+</entry>
+<entry>
+<title>8-K - Marygold Companies, Inc. (0001005101) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1005101/000149315226044491/0001493152-26-044491-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001493152-26-044491 &lt;b&gt;Size:&lt;/b&gt; 1 MB
+&lt;br&gt;Item 1.01: Entry into a Material Definitive Agreement
+&lt;br&gt;Item 5.03: Amendments to Articles of Incorporation or Bylaws; Change in Fiscal Year
+&lt;br&gt;Item 7.01: Regulation FD Disclosure
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T13:06:02-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001493152-26-044491</id>
+</entry>
+<entry>
+<title>8-K - FRIEDMAN INDUSTRIES INC (0000039092) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/39092/000143774926031305/0001437749-26-031305-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001437749-26-031305 &lt;b&gt;Size:&lt;/b&gt; 191 KB
+&lt;br&gt;Item 5.07: Submission of Matters to a Vote of Security Holders
+</summary>
+<updated>2026-09-28T13:02:46-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001437749-26-031305</id>
+</entry>
+<entry>
+<title>8-K - New Mountain Private Credit Fund (0002037804) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/2037804/000158064226006536/0001580642-26-006536-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001580642-26-006536 &lt;b&gt;Size:&lt;/b&gt; 191 KB
+&lt;br&gt;Item 7.01: Regulation FD Disclosure
+&lt;br&gt;Item 8.01: Other Events
+</summary>
+<updated>2026-09-28T12:32:54-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001580642-26-006536</id>
+</entry>
+<entry>
+<title>8-K - CarMax Select Receivables Trust 2026-C (0002150707) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/2150707/000119312526404717/0001193125-26-404717-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001193125-26-404717 &lt;b&gt;Size:&lt;/b&gt; 2 MB
+&lt;br&gt;Item 8.01: Other Events
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T12:26:45-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001193125-26-404717</id>
+</entry>
+<entry>
+<title>8-K - CARMAX AUTO FUNDING LLC (0001259380) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1259380/000119312526404717/0001193125-26-404717-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001193125-26-404717 &lt;b&gt;Size:&lt;/b&gt; 2 MB
+&lt;br&gt;Item 8.01: Other Events
+&lt;br&gt;Item 9.01: Financial Statements and Exhibits
+</summary>
+<updated>2026-09-28T12:26:45-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001193125-26-404717</id>
+</entry>
+<entry>
+<title>8-K - COASTAL FINANCIAL CORP (0001437958) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1437958/000143795826000065/0001437958-26-000065-index.htm"/>
+<summary type="html">
+ &lt;b&gt;Filed:&lt;/b&gt; 2026-09-28 &lt;b&gt;AccNo:&lt;/b&gt; 0001437958-26-000065 &lt;b&gt;Size:&lt;/b&gt; 145 KB
+&lt;br&gt;Item 8.01: Other Events
+</summary>
+<updated>2026-09-28T11:30:40-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001437958-26-000065</id>
+</entry>
+</feed>
