@@ -2,6 +2,14 @@
 
 ## Business desk gate — 1.9.0 candidate, September 29, 2026
 
+### Verified v1.9.0 publication
+
+The [deployment run 36598550753](https://github.com/AustinMermans/public-record/actions/runs/36598550753) succeeded, including hosted tests and build. Public release.json, data.json, app.js, business.mjs, publication.mjs, metric-links.mjs, style.css and index.html matched the reviewed build byte-for-byte. Live browser verification confirmed v1.9.0, Visa ticker identity and selected-filing navigation/focus. Local browser checks additionally passed keyboard Enter activation, Back restoration and Copy View URL identity for both desk filters and exact filing accession.
+
+The immutable v1.9.0 tag resolves to deployed commit `84937d44f71273380b44a636b7e5d2c25da82dfe`; the [release](https://github.com/AustinMermans/public-record/releases/tag/v1.9.0) is published. This presentation-only release retains the prior successful source captures; it does not imply a new data collection.
+
+### Independent candidate reviews
+
 Independent portfolio-manager/content and UI/UX reviewers approved the scoped Business increment with P0=P1=P2=P3=0. Content reconciled selected Apple, JPMorgan and ExxonMobil Holdings financial briefs with retained raw SEC companyfacts; checked all 1,375 selected filings, exact ticker/CIK/form/item searches, and specific governance accessions. Review findings corrected incomplete item mapping, substring identity matches and numeric-form/CIK precedence. Proposed-sale Form 144 notices remain explicitly prospective and join the ownership filter: this capture contains 957 default business disclosures and 418 ownership records.
 
 UI review inspected page/headline screenshots at 320/768/1280 and selected-filing detail at 390, along with root browser evidence. Browser checks covered 320/390/768/1280/1920 no page overflow, persistent search input/status, actual headline clicks, page-2 counts/focus, query/page reload, empty results and selected-filing focus/identity. A browser-discovered blur-change redraw was corrected; a binder regression protects the clicked result. The persistent live region is established before status updates. Actual screen-reader speech was not tested.
