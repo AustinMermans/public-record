@@ -10,6 +10,7 @@ from banking import validate_banking
 from spf import validate_capture as validate_spf
 from business_briefs import validate_capture as validate_business_briefs
 from bea_releases import validate_capture as validate_bea_releases
+from energy import validate_capture as validate_energy
 from publication_changes import compare_spf
 from research import validate_gdpnow_capture
 from earnings_dossiers import assemble_dossiers
@@ -87,6 +88,10 @@ def main():
     if bea_releases.exists():
         data['bea_releases']=json.loads(bea_releases.read_text())
         validate_bea_releases(data['bea_releases'],ROOT)
+    energy=ROOT/'data/energy/current.json'
+    if energy.exists():
+        data['energy']=json.loads(energy.read_text())
+        validate_energy(data['energy'],ROOT)
     data['changes']=assemble_changes(data)
     if business_briefs.exists():
         b=data['business_briefs']
@@ -119,6 +124,14 @@ def main():
             count=len(b.get('releases',[])),
             note='Verified real GDP growth in dated advance, second and third news releases. Recent targets only; separate from current-revised FRED history.',
             error=b.get('error')))
+    if energy.exists():
+        e=data['energy']
+        data['sources'].append(dict(id='eia-wpsr',name='EIA · Weekly Petroleum Status Report',
+            domain='Economy',url=e['table_url'],status=e['status'],
+            last_success=e.get('captured_at'),attempted_at=e.get('attempted_at'),
+            count=len(e.get('metrics',[])),
+            note='Commercial crude excluding SPR, motor gasoline and distillate stock levels from EIA Table 4. Crude chart is a current rolling edition, not historical report vintages.',
+            error=e.get('error')))
     if spf.exists():
         f=data['spf']
         data['sources'].append(dict(id='research-spf',name='Philadelphia Fed · Survey of Professional Forecasters',

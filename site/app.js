@@ -10,6 +10,7 @@ import {bindBusiness} from './business.mjs';
 import {spfPanel, bindSPF} from './spf.mjs';
 import {gdpReleasePage, releaseState} from './gdp-releases.mjs';
 import {gdpWatchPanel, bindGDPWatch, gdpWatchState} from './gdp-watch.mjs';
+import {energyPage, bindEnergy} from './energy.mjs';
 const $ = s => document.querySelector(s);
 const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const link = (url,text,cls='') => /^https?:\/\//.test(url||'') ? `<a class="${cls}" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(text)} ↗</a>` : esc(text);
@@ -55,7 +56,7 @@ function paintSearch(reset=true){
  $('#search-status').textContent=active?rows.length+' matches in the captured metadata · not full-document search'+(mentionScope?' · Name matches for '+mentionScope.name+'; not verified entity links':''):'Search this snapshot. Company profiles cover the selected SEC registrants only.';
  $('#search-results').innerHTML=!active?'<div class="empty">Try a company name or ticker, a topic, a filing form, or an indicator.</div>':!rows.length?'<div class="empty">No matches in this snapshot. Try fewer words or another result type.</div>':searchResults(rows,searchOffset)+'<div class="pager"><button id="search-prev" '+(searchOffset===0?'disabled':'')+'>← Previous</button><span>'+(searchOffset+1)+'–'+Math.min(searchOffset+30,rows.length)+' of '+rows.length+'</span><button id="search-next" '+(searchOffset+30>=rows.length?'disabled':'')+'>Next →</button></div>';
 }
-function publicationBreadcrumb(){const desk=deskFor[route];return desk&&desk!==route?'<div class="breadcrumb"><a href="#'+desk+'">'+deskNames[desk]+'</a><span aria-hidden="true"> / </span><span>'+({economy:'Charts & history','gdp-releases':'GDP as published',corporate:'Filings dashboard',company:'Company profile',disclosures:'Record browser',outlook:'Forecasts & research',changes:'Change ledger'}[route]||'Explore')+'</span></div>':'';}
+function publicationBreadcrumb(){const desk=deskFor[route];return desk&&desk!==route?'<div class="breadcrumb"><a href="#'+desk+'">'+deskNames[desk]+'</a><span aria-hidden="true"> / </span><span>'+({economy:'Charts & history',energy:'Petroleum inventories','gdp-releases':'GDP as published',corporate:'Filings dashboard',company:'Company profile',disclosures:'Record browser',outlook:'Forecasts & research',changes:'Change ledger'}[route]||'Explore')+'</span></div>':'';}
 
 function diverseRecords(){const ids=['inspection','register','fed','sec','cand','nysd','cacd'];return ids.map(id=>D.records.find(r=>r.source_id===id)).filter(Boolean);}
 function saveBtn(r){return `<button class="save" data-save="${r.id}" aria-pressed="${saved.has(r.id)}" aria-label="${saved.has(r.id)?'Unsave':'Save'} ${esc(r.title)}">${saved.has(r.id)?'Saved':'Save'}</button>`;}
@@ -174,20 +175,22 @@ async function copyView(){writeView();const btn=$('#copy-view'),localOnly=route=
 
 function render(){
  clearTimeout(searchTimer);route=location.hash.slice(1).split('?')[0]||'overview';
- if(!['fiscal','funding','overview','calendar','economy','gdp-releases','corporate','disclosures','changes','outlook','sources','search','company',...publicationRoutes].includes(route))route='overview';
+ if(!['fiscal','funding','overview','calendar','economy','energy','gdp-releases','corporate','disclosures','changes','outlook','sources','search','company',...publicationRoutes].includes(route))route='overview';
  document.body.dataset.route=route;
  page=1;mode='default';period=5;const query=new URLSearchParams(location.hash.split('?')[1]||'');
  if(D.series.some(s=>s.id===query.get('series')))selected=query.get('series');
- const body=publicationRoutes.includes(route)?deskPage(D,route,publicationContext(),{q:query.get('q')||'',topic:query.get('topic')||'reports',page:query.get('page')}):route==='company'?companyPage(D,query.get('cik'),query.get('filing')):route==='search'?searchPage():route==='gdp-releases'?gdpReleasePage(D,query.get('quarter')):({fiscal,funding,overview,calendar,economy,corporate,disclosures,changes,outlook,sources}[route])();
+ const body=publicationRoutes.includes(route)?deskPage(D,route,publicationContext(),{q:query.get('q')||'',topic:query.get('topic')||'reports',page:query.get('page')}):route==='company'?companyPage(D,query.get('cik'),query.get('filing')):route==='search'?searchPage():route==='gdp-releases'?gdpReleasePage(D,query.get('quarter')):route==='energy'?energyPage(D,query.get('metric')):({fiscal,funding,overview,calendar,economy,corporate,disclosures,changes,outlook,sources}[route])();
  mentionScope=route==='search'?(D.corporate?.companies||[]).find(c=>c.cik===query.get('mentions'))||null:null;
  $('#main').innerHTML=publicationBreadcrumb()+body;if(mentionScope)$('#record-search').insertAdjacentHTML('beforebegin','<p class="meta">Name matches for '+esc(mentionScope.name)+' · <a href="#search">Clear company-name scope</a></p>');restoreView(query);
  document.querySelectorAll('nav[aria-label="Main navigation"] a').forEach(a=>{if(a.hash==='#'+(deskFor[route]||route))a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
- document.title=(deskNames[route]||{fiscal:'Federal fiscal conditions',funding:'Funding & credit',overview:'Front page',calendar:'Calendar',economy:'Economy','gdp-releases':'GDP release record',corporate:'Business',company:'Company profile',disclosures:'Disclosures',changes:'Changes',outlook:'Outlook & research',sources:'Sources & method',search:'Search'}[route])+' — Public Record';
+ document.title=(deskNames[route]||{fiscal:'Federal fiscal conditions',funding:'Funding & credit',overview:'Front page',calendar:'Calendar',economy:'Economy',energy:'Petroleum inventories','gdp-releases':'GDP release record',corporate:'Business',company:'Company profile',disclosures:'Disclosures',changes:'Changes',outlook:'Outlook & research',sources:'Sources & method',search:'Search'}[route])+' — Public Record';
  if(route==='fiscal')bindFiscal($('#main'),D);
  if(route==='business')bindBusiness($('#main'),D);
+ if(route==='energy')bindEnergy($('#main'),D);
  if(route==='outlook'){bindGDPWatch($('#main'),D);bindSPF($('#main'),D.spf);}
  if(route==='funding')bindFunding($('#main'),D);if(route==='calendar')paintCalendar();if(route==='economy')paintChart();if(route==='disclosures')paintRecords();if(route==='corporate')paintCorporate();if(route==='search'){const p=Number(query.get('search-page'));searchOffset=(Number.isSafeInteger(p)&&p>0?p-1:0)*30;paintSearch(false);}
- const targetId=detailTarget(route,query),requestedHash=location.hash;
+ const energyMetric=query.get('metric');
+ const targetId=route==='energy'&&D.energy?.metrics?.some(m=>m.id===energyMetric)?'energy-'+energyMetric:detailTarget(route,query),requestedHash=location.hash;
  if(targetId)requestAnimationFrame(()=>{const target=document.getElementById(targetId);if(target&&location.hash===requestedHash){target.tabIndex=-1;target.focus({preventScroll:true});target.scrollIntoView({block:'start'});}});
 }
 function newClicks(e){
