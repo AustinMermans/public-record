@@ -1,5 +1,13 @@
 # Independent product reviews
 
+## Professional-forecaster gate — 1.10.0 candidate, September 29, 2026
+
+The independent source-method reviewer approved the bounded SPF increment at P0=P1=P2=P3=0 after correcting displayed tie-rounding, historical-target survey attribution and missed-survey-cycle change comparisons. It checked source workbook definitions, exact source-cell values and SHA-256 evidence, actual release-date history, fixed calendar targets and 3,360 published points. The 2026 Q3 PCE workbook's 2.35%/2.55% values remain visible to two decimals; the separate one-decimal release summary rounds these to 2.3%/2.6%. The UI explicitly discloses that distinction. A simulated missed Q2 collection still emits Q2 and Q3 survey developments, anchored in sequence.
+
+An independent portfolio-manager reviewer approved at P0=P1=P2=0 after the Outlook teaser gained same-target direction and small changes stopped rendering as signed zero. The panel links the specific workbook, release-date history and methodology PDF. Further investor layers—realized outcomes, uncertainty and market-implied expectations—remain separate future work.
+
+An independent UI/UX reviewer approved at P0=P1=P2=0 after preserving a selected target across measure changes and qualifying the static latest-cell citation while chart-point inspection changes the live readout. It checked 320/390/1280px layouts, no mobile overflow, mouse and keyboard point inspection, path links, official source URLs and no browser-console errors. Nonblocking future refinements: a single-point first-forecast state and faster access to old target quarters than a long native mobile selector. Hosted publication verification is recorded separately; a local review is not proof of a live release.
+
 ## Business desk gate — 1.9.0 candidate, September 29, 2026
 
 ### Verified v1.9.0 publication

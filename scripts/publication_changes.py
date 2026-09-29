@@ -6,6 +6,7 @@ Cached ALFRED vintages are not refreshed publications and are excluded here.
 """
 import json
 import math
+import re
 
 
 def _result(previous, current):
@@ -219,4 +220,97 @@ def compare_research(previous, current):
         sid = 'research-' + fid
         if _channel(result, sid, label, old, forecast, _forecast_valid):
             result['items'].extend(_compare_forecast(old, forecast))
+    return result
+
+
+SPF_MEASURES = ('RGDP', 'UNEMP', 'CPI', 'CORECPI', 'PCE', 'COREPCE')
+
+
+def _spf_valid(capture):
+    series = capture.get('series')
+    if not isinstance(series, dict) or set(series) != set(SPF_MEASURES):
+        return False
+    for metric in SPF_MEASURES:
+        group = series[metric]
+        points = group.get('points') if isinstance(group, dict) else None
+        if not isinstance(group, dict) or not group.get('unit') or not isinstance(points, list) or not points:
+            return False
+        keys = set()
+        for p in points:
+            if not isinstance(p, dict) or not re.fullmatch(r'\d{4}Q[1-4]', p.get('survey', '')) or not re.fullmatch(r'\d{4}Q[1-4]', p.get('target', '')):
+                return False
+            if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', p.get('released', '')) or not re.fullmatch(r'[A-Z]+![A-Z]+\d+', p.get('cell', '')):
+                return False
+            if not _number_or_missing(p.get('value')) or p['value'] is None or p['survey'] > p['target']:
+                return False
+            key = (p['survey'], p['target'])
+            if key in keys:
+                return False
+            keys.add(key)
+    if not isinstance(capture.get('sources'), dict):
+        return False
+    for source in ('medianGrowth', 'medianLevel', 'release_dates'):
+        book = capture['sources'].get(source)
+        if not isinstance(book, dict) or not book.get('url') or not book.get('sha256'):
+            return False
+    return True
+
+
+def compare_spf(previous, current):
+    """SPF survey medians: only comparable fixed-quarter targets are revisions."""
+    result = _result(previous, current)
+    sid = 'research-spf'
+    if not _channel(result, sid, 'Philadelphia Fed · Survey of Professional Forecasters', previous, current, _spf_valid):
+        return result
+    old_series, new_series = previous['series'], current['series']
+    for metric in SPF_MEASURES:
+        old, new = old_series[metric], new_series[metric]
+        old_points = {(p['survey'], p['target']): p for p in old['points']}
+        old_latest = max(p['survey'] for p in old['points'])
+        # The current workbook may correct earlier cells. Use its latest
+        # pre-existing survey for each target as the comparison anchor.
+        prior_by_target = {p['target']: p for p in sorted(new['points'], key=lambda p: p['survey'])
+                           if p['survey'] <= old_latest}
+        new_latest = max(p['survey'] for p in new['points'])
+        definition_changed = old['unit'] != new['unit']
+        if definition_changed:
+            result['items'].append(dict(source_id=sid, publisher='Federal Reserve Bank of Philadelphia',
+                forecast_id='spf', title='SPF · '+metric, metric_id=metric,
+                date=max(p['released'] for p in new['points'] if p['survey'] == new_latest),
+                url=current['sources']['medianGrowth' if metric == 'RGDP' else 'medianLevel']['url'],
+                from_capture=previous['captured_at'], to_capture=current['captured_at'],
+                kind='Forecast definition changed',comparison_boundary=True,before=old['unit'],after=new['unit']))
+            continue
+        for point in sorted(new['points'], key=lambda p: (p['survey'], p['target'])):
+            key = point['survey'], point['target']
+            earlier = old_points.get(key)
+            if earlier and earlier['value'] == point['value']:
+                continue
+            if not earlier and point['survey'] <= old_latest:
+                continue  # A backfilled old cell is an archive extension, not a newly issued survey.
+            context = dict(source_id=sid, publisher='Federal Reserve Bank of Philadelphia',
+                           forecast_id='spf', title='SPF · '+metric, metric_id=metric,
+                           target=point['target'], period_label=point['target'],
+                           survey=point['survey'], cell=point['cell'],
+                           date=point['released'], published_at=point['released'],
+                           url=current['sources']['medianGrowth' if metric == 'RGDP' else 'medianLevel']['url'],
+                           from_capture=previous['captured_at'], to_capture=current['captured_at'],
+                           unit=new['unit'])
+            if earlier:
+                result['items'].append(dict(context, kind='Historical survey value changed',
+                                            before=earlier['value'],after=point['value'],
+                                            summary='The current workbook changed a previously recorded survey value; this is not a new forecaster revision.'))
+            else:
+                prior = prior_by_target.get(point['target'])
+                if prior:
+                    if prior['value'] != point['value']:
+                        result['items'].append(dict(context, kind='Updated forecast projection',
+                                                    before=prior['value'],after=point['value'],
+                                                    previous_survey=prior['survey'],
+                                                    summary='Same measure and calendar target in a later survey.'))
+                else:
+                    result['items'].append(dict(context, kind='New forecast horizon',
+                                                comparison_boundary=True,before=None,after=point['value'],
+                                                summary='First captured survey forecast for this target; no numerical revision.'))
+                prior_by_target[point['target']] = point
     return result

@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## 1.10.0 — 2026-09-29
+
+- Philadelphia Fed Survey of Professional Forecasters: six source-cell-reconciled quarterly median measures, target-fixed forecast histories, latest five-quarter paths, shareable measure/target links and distinct release/retrieval clocks. Daily keyless retrieval retains hashed official workbooks; change detection separates new target horizons, same-target forecast moves and corrections to current-edition historical cells. Original-release workbook vintages are not reconstructed.
+
 ## 1.9.0 — 2026-09-29
 
 - Searchable Business front page with a paginated disclosure headline feed, company profiles, topic filters and shareable query/page state. Exact ticker, CIK, filing-form, accession and 8-K item searches retain issuer and document identity.

@@ -47,6 +47,7 @@ jobs:
         run: |
           python scripts/collect.py
           python scripts/research.py
+          python scripts/spf.py
           python scripts/corporate.py
           python scripts/collect_financials.py
           python scripts/fiscal.py

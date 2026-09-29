@@ -7,7 +7,7 @@ from datetime import datetime
 from urllib.parse import urlencode, urlparse
 from zoneinfo import ZoneInfo
 
-from publication_changes import compare_corporate, compare_research
+from publication_changes import compare_corporate, compare_research, compare_spf
 from financial_changes import compare_financials
 from fiscal import compare_fiscal
 from banking import compare_banking
@@ -68,7 +68,7 @@ def assemble_changes(data):
     core = copy.deepcopy(data.get('changes') or dict(items=[], baselines=[], skipped=[]))
     core.setdefault('channels', legacy_channels(core, data.get('sources', [])))
     groups = [core]
-    for key, compare in (('corporate', compare_corporate), ('research', compare_research), ('financials', compare_financials), ('fiscal', compare_fiscal), ('banking', compare_banking)):
+    for key, compare in (('corporate', compare_corporate), ('research', compare_research), ('spf', compare_spf), ('financials', compare_financials), ('fiscal', compare_fiscal), ('banking', compare_banking)):
         module = data.get(key)
         if not module:
             continue
@@ -115,7 +115,11 @@ def assemble_changes(data):
                 monthly = item.get('period_type') == 'month' and item.get('metric_id') in ('receipts','outlays','balance')
                 detail = '#fiscal?' + urlencode(dict(view='monthly',metric=item['metric_id'])) if monthly else '#fiscal?view=fytd'
             elif item.get('forecast_id'):
-                detail = '#outlook?' + urlencode({'forecast': item['forecast_id']})
+                params={'forecast': item['forecast_id']}
+                if item['forecast_id']=='spf':
+                    if item.get('metric_id'):params['metric']=item['metric_id']
+                    if item.get('target'):params['target']=item['target']
+                detail = '#outlook?' + urlencode(params)
             elif item.get('series_id'):
                 detail = '#economy?' + urlencode({'series': item['series_id'], 'transform': 'level', 'period': 'all'})
             elif domain == 'Calendar':

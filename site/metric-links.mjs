@@ -14,6 +14,6 @@ export function detailTarget(route, query) {
   if (route === 'funding' && query.get('view') === 'banking') return 'banking-panel';
   if (route === 'fiscal' && ['fytd','monthly'].includes(query.get('view'))) return 'fiscal-'+query.get('view');
   if (route === 'funding' && query.get('view') === 'spread') return 'funding-comparison';
-  if (route === 'outlook' && ['gdpnow','sep'].includes(query.get('forecast'))) return 'forecast-'+query.get('forecast');
+  if (route === 'outlook' && ['gdpnow','sep','spf'].includes(query.get('forecast'))) return 'forecast-'+query.get('forecast');
   return null;
 }

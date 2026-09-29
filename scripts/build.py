@@ -7,6 +7,8 @@ from validate_financials import validate_financials
 from change_edition import assemble_changes
 from fiscal import validate_fiscal
 from banking import validate_banking
+from spf import validate_capture as validate_spf
+from publication_changes import compare_spf
 ROOT=Path(__file__).resolve().parents[1]
 
 def validate(data):
@@ -53,6 +55,13 @@ def main():
                 assert len(dict(v['observations']))==len(v['observations'])
         for f in data['research']['forecasts']:
             if f.get('published_at'):assert f['published_at']<=data['research']['captured_at'][:10]
+    spf=ROOT/'data/spf/current.json'
+    if spf.exists():
+        data['spf']=json.loads(spf.read_text())
+        validate_spf(data['spf'],ROOT)
+        baseline=ROOT/'data/spf/comparison-baseline.json'
+        previous=json.loads(baseline.read_text()) if baseline.exists() else None
+        data['spf']['changes']=compare_spf(previous,data['spf'])
     fiscal=ROOT/'data/fiscal/current.json'
     if fiscal.exists():
         data['fiscal']=json.loads(fiscal.read_text())
@@ -76,6 +85,14 @@ def main():
             attempted_at=b.get('attempted_at'),count=len(b.get('metrics',[])),
             note='FDIC-reported all-insured aggregates; quarterly observations, not bank holding companies.',
             error=b.get('error')))
+    if spf.exists():
+        f=data['spf']
+        data['sources'].append(dict(id='research-spf',name='Philadelphia Fed · Survey of Professional Forecasters',
+            domain='Outlook',url='https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/median-forecasts',
+            status=f['status'],last_success=f.get('captured_at'),attempted_at=f.get('attempted_at'),
+            count=sum(len(x['points']) for x in f.get('series',{}).values()),
+            note='Survey medians for released quarterly targets; historical workbook cells are not original-release file vintages.',
+            error=f.get('error')))
     out=ROOT/'dist';out.mkdir(exist_ok=True)
     for p in (ROOT/'site').iterdir():
         if p.is_file(): shutil.copy2(p,out/p.name)
