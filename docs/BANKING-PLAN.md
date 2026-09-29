@@ -1,6 +1,6 @@
 # Next increment: banking conditions
 
-Implemented after verified v1.7.0. Real source capture, raw-bound validation and local tests are complete; final reviewer and hosted publication gates remain separate. Retain application version 1.7.0 until the next reviewed candidate. The scope below is preserved as the acceptance record.
+Shipped in verified v1.8.0. Independent bounded review, real source capture, raw-bound validation, browser checks, hosted refresh and public-payload equality gates passed; receipts are in REVIEWS.md. The scope below is preserved as the acceptance record, not an assertion of full-product completion.
 
 Reader job: Are problem loans and realized credit losses improving or worsening, and how do reserves, earnings, capital and deposits compare? Add a compact panel within Funding & credit, not an institution directory or bank ranking.
 

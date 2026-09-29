@@ -1,5 +1,13 @@
 # Independent product reviews
 
+### Verified v1.8.0 publication
+
+The [initial deployment](https://github.com/AustinMermans/public-record/actions/runs/36506715067) and [hosted refresh](https://github.com/AustinMermans/public-record/actions/runs/36506744022) succeeded. The immutable v1.8.0 target is hosted capture commit `1af72ad883d94f97dd2b1aa7f6f2837e531b5227`. Public release.json, data.json, app.js, banking.mjs, funding.mjs, chart.mjs, changes.mjs, publication.mjs, style.css, index.html and metric-links.mjs matched the reconstructed build byte-for-byte.
+
+Core capture at 2026-09-29T01:12:21Z contained 8,453 disclosures, 540 events and 24 series. FDIC collection succeeded at 01:13:19Z, retaining 170 quarters through 2026 Q2; comparison against its own 01:03:10Z success found no changed observations. There are 29 source receipts; these are not 29 independent provider families.
+
+Live browser clicks verified that the homepage CPI figure opens CPIAUCSL with preferred measure and full history, and the Funding front's 0.93% noncurrent-loan figure opens its matching banking history. The latter retained its selected metric and detail focus without page overflow at 320, 768 and 1280px. Source citations remain separate from internal detail links. This verifies the bounded release, not broader Outlook or final whole-product approval.
+
 ## FDIC banking conditions gate — 1.8.0 candidate, September 28, 2026
 
 The independent PM/source-methodology reviewer approved the bounded banking increment with P0=0/P1=0/P2=0/P3=0. Using openpyxl independently of the collector's XML parser, it checked all 3,400 source-cell memberships across nine displayed/context series and eleven supporting series. All three retained discovery/workbook hashes matched. Nine recent ratio calculations and all fifteen required recent-period checks reconcile. It independently reproduced 71 historical exceptions: 24 noncurrent, 24 coverage and 23 balance-sheet identities. Source values remain unchanged; their archival discrepancies have no invented explanation.
