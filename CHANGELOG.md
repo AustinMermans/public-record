@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.7.0 — 2026-09-28
+
 - Treasury fiscal conditions: matched FYTD receipts, outlays, net interest and signed balance; a reconciled deficit-change decomposition; monthly history from one MTS edition, with interactive chart and exact source-linked amounts.
 - Keyless Treasury collection joins the seven-day refresh, source-health view, search, Government/front-page summaries and unified change ledger. Decimal arithmetic, fiscal-year hierarchy, original raw hashes and build-time re-normalization guard against false comparisons and silent evidence drift.
 - Explicit stale/aged-capture warnings, nominal-dollar/modified-cash basis, surplus/deficit conventions and source-data reuse terms. Monthly/FYTD URLs retain selection, focus and responsive chart state.

@@ -33,6 +33,7 @@ python3 scripts/research.py
 # SEC_USER_AGENT must identify the project and an authorized contact address.
 python3 scripts/corporate.py
 python3 scripts/collect_financials.py
+python3 scripts/fiscal.py
 python3 -m unittest discover -s tests
 node --test tests/*.test.mjs
 python3 scripts/build.py
