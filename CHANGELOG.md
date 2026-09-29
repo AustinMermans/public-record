@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+## 1.15.0 — 2026-09-29
+
+- Outlook target-quarter GDP watch aligns Philadelphia Fed SPF real-GDP forecasts, Atlanta Fed GDPNow and BEA's first published or scheduled estimate without blending information dates. A dated, same-target numerical contrast appears only for verified recent forecasts; retrospective errors and consensus/surprise claims remain withheld. Outlook, Economy and search lead to the shareable watch.
+- GDPNow's displayed target, estimate and source date are reconciled against the SHA-256-verified retained Atlanta Fed page at build time. Failed initial captures remain unavailable; they cannot masquerade as stale verified values.
+
 ## 1.14.0 — 2026-09-29
 
 - BEA GDP release record: keyless verification of recent dated advance, second and third official real-GDP growth estimates, with same-quarter stage comparisons, source hashes, publication/retrieval clocks, pending-stage boundaries and a separate current-revised FRED view. Equal published tenths are not labeled exact zero revisions. Economy, calendar, search and the change edition lead to the on-site record.

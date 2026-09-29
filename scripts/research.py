@@ -97,6 +97,39 @@ def parse_gdpnow(body,url):
     if not m:raise ValueError('GDPNow estimate/target/date panel not recognized')
     return dict(id='gdpnow',title='Atlanta Fed GDPNow',value=float(m[1]),target=f'{m[2]} Q{m[3]}',published_at=datetime.strptime(m[4],'%B %d, %Y').date().isoformat(),unit='Percent · quarterly annualized',basis='Model estimate of real GDP growth, not an official Atlanta Fed forecast.')
 
+def validate_gdpnow_capture(bundle, root=ROOT):
+    """Reconcile displayed GDPNow fields to the retained, hash-identified page."""
+    items=[item for item in bundle['forecasts'] if item.get('id')=='gdpnow']
+    if len(items)!=1:raise ValueError('Expected exactly one GDPNow forecast')
+    item=items[0]
+    url='https://www.atlantafed.org/research-and-data/data/gdpnow'
+    if item.get('url')!=url:raise ValueError('Unexpected GDPNow source URL')
+    if item.get('status')=='unavailable':
+        if any(key in item for key in ('value','target','published_at','raw_path','sha256')):
+            raise ValueError('Unavailable GDPNow contains unverified values')
+        return
+    if item.get('status') not in ('ok','stale'):
+        raise ValueError('Unexpected GDPNow status')
+    digest=item.get('sha256','')
+    if not isinstance(digest,str) or not re.fullmatch(r'[0-9a-f]{64}',digest):
+        raise ValueError('Invalid GDPNow source digest')
+    expected=f'data/research/raw/{digest}.txt'
+    if item.get('raw_path')!=expected:raise ValueError('Invalid GDPNow raw path')
+    raw=(Path(root)/expected).read_bytes()
+    if hashlib.sha256(raw).hexdigest()!=digest:raise ValueError('GDPNow source digest mismatch')
+    try:
+        parsed=parse_gdpnow(raw.decode('utf-8-sig'),url)
+    except UnicodeError as exc:
+        raise ValueError('GDPNow source encoding is invalid') from exc
+    if any(item.get(key)!=value for key,value in parsed.items()):
+        raise ValueError('GDPNow displayed fields do not match retained source')
+    captured=datetime.fromisoformat(item['captured_at'])
+    bundle_captured=datetime.fromisoformat(bundle['captured_at'])
+    if captured.tzinfo is None or bundle_captured.tzinfo is None or captured>bundle_captured:
+        raise ValueError('Invalid GDPNow capture clock')
+    if parsed['published_at']>captured.date().isoformat():
+        raise ValueError('GDPNow source date follows capture')
+
 def forecast(id,url,parser):
     file=DATA/(id+'.json');old=json.loads(file.read_text()) if file.exists() else None
     try:
@@ -108,7 +141,10 @@ def forecast(id,url,parser):
             url='https://www.federalreserve.gov/monetarypolicy/'+sorted(set(links))[-1]
         body,receipt=fetch(url);item=dict(parser(body,url),status='ok',**receipt)
         file.write_text(json.dumps(item,separators=(',',':')));return item
-    except Exception as exc:return dict(old or {'id':id,'url':url},status='stale' if old else 'unavailable',error=str(exc),attempted_at=STAMP)
+    except Exception as exc:
+        # A failed first capture is not a stale success on the next attempt.
+        retained=old if old and old.get('id')==id and old.get('status') in ('ok','stale') and all(old.get(key) for key in ('sha256','raw_path','captured_at','published_at')) and (id!='gdpnow' or ('value' in old and old.get('target'))) else None
+        return dict(retained or {'id':id,'url':url},status='stale' if retained else 'unavailable',error=str(exc),attempted_at=STAMP)
 
 def main():
     DATA.mkdir(parents=True,exist_ok=True)

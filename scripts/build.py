@@ -11,6 +11,7 @@ from spf import validate_capture as validate_spf
 from business_briefs import validate_capture as validate_business_briefs
 from bea_releases import validate_capture as validate_bea_releases
 from publication_changes import compare_spf
+from research import validate_gdpnow_capture
 ROOT=Path(__file__).resolve().parents[1]
 
 def validate(data):
@@ -56,6 +57,7 @@ def main():
         validate_financials(data['financials'],data.get('corporate',{}).get('companies',[]))
     if research.exists():
         data['research']=json.loads(research.read_text())
+        validate_gdpnow_capture(data['research'],ROOT)
         for v in data['research']['vintages']:
             if v['status']=='ok':
                 assert v['observations'] and v['observations'][-1][0]<=v['as_of']
