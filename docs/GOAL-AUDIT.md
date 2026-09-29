@@ -1,16 +1,16 @@
 # Investor-hub completion audit
 
-Updated for the reviewed v1.5.0 issuer-financials increment, September 28, 2026. **Full goal: not approved.** A reviewed application increment is not proof that the entire product is complete. Publication receipts are recorded separately in REVIEWS.md.
+Updated after verified v1.6.0 change-edition publication, September 28, 2026 (Pacific). **Full goal: not approved.** A reviewed application increment is not proof that the entire product is complete. Publication receipts are recorded separately in REVIEWS.md.
 
 ## Acceptance requirements
 
 | Requirement | Current evidence and remaining work |
 | --- | --- |
-| Data refresh at least daily | Seven-day twice-daily workflow is live. Hosted expanded-feed refresh 36496725413 succeeded and its published payload matched the rebuilt capture. Future scheduler execution is not guaranteed by configuration. |
+| Data refresh at least daily | Seven-day twice-daily workflow is live. Hosted v1.6 refresh 36502026450 succeeded and its published payload matched the rebuilt capture. Future scheduler execution is not guaranteed by configuration. |
 | At least ten high-value source sites, keyless first | Ten successful provider families appear below, counting repeated endpoints and related feeds once. This inventory is not an assertion that the best ten investor data needs are covered. Fiscal, banking and broader forecasts remain material gaps. |
 | Useful without opening every source | Macro charts, calendar, extracted FOMC/GDPNow, plain-language disclosure entries, company filing profiles, filing-anchored financial screens and funding/stress comparisons are implemented. Financial screens are partial, not complete valuation/credit models; deeper cross-source synthesis remains incomplete. |
 | Historical and forward-looking context | Revised macro history and sampled ALFRED vintages; FOMC projections and GDPNow. Original-release surprise histories, broader forecast panels and prediction-market history are incomplete. |
-| Reviewer validation | PM/source, pipeline correctness and UI reviewers approve the bounded v1.5 issuer-financials increment. Earlier funding/source-rights approval remains scoped to v1.4. Fresh final product approval is still required after remaining gaps are resolved. |
+| Reviewer validation | PM/content, independent integration/methodology and UI gates approve the bounded v1.6 change edition. Earlier financial and funding/source-rights reviews remain scoped to their increments. Fresh final product approval is still required after remaining gaps are resolved. |
 | Responsive and accessible experience | Browser checks across 320–1920px, keyboard chart controls and resize-state preservation. Physical-device and screen-reader certification are not claimed. |
 | Versioned, attributable publication | Semantic versions, changelog/citation/build consistency, source links and scoped noncommercial licenses. Tags follow verified deployments. |
 
@@ -35,11 +35,11 @@ BLS's direct calendar remains unavailable in the current collection environment 
 
 ## Next high-value iterations
 
-After v1.5 approval and the requested v1.5.1 navigation patch, the PM recommended the [unified change edition](CHANGE-EDITION-PLAN.md) as the next bounded minor release. It connects existing channels for a returning reader before adding more sources. Fiscal/banking and broader forecasts below remain completion requirements, not deferred out of scope.
+The [unified change edition](CHANGE-EDITION-PLAN.md) is now verified live as v1.6.0, connecting existing channels for a returning reader. Its hosted refresh produced 79 channel receipts and 182 actual differences. Fiscal/banking and broader forecasts below remain completion requirements, not deferred out of scope.
 
 1. **Issuer depth after the initial financial screen:** verified issuer-specific KPIs, segments and debt context where valuable; do not present the selected standardized facts as complete coverage. Broader sources below take priority over multiplying generic ratios.
 2. **Fiscal and banking conditions:** Treasury financing/deficit/interest flows with fiscal-year alignment; FDIC aggregates with verified units, institution population and stock/flow definitions. Debt-stock changes are not deficits; bank ratios cannot be summed or naively averaged.
-3. **Changes across the whole publication:** company filings and research updates must join the core and issuer-financial comparison ledger, with independent prior-success baselines.
+3. **Changes across the whole publication — completed for current channels in v1.6:** company filings and research updates join core and issuer-financial differences with independent prior-success baselines. Future providers must adopt the same boundaries.
 4. **Broader outlook and release coverage:** Philadelphia Fed forecasts, an accessible official BLS schedule, and energy/inventory information when source access and publication rights permit.
 5. **Cross-source synthesis and final review:** investor tasks across macro, equity and credit, direct provenance, freshness at the point of use, and fresh PM/econometric/UI approval of the full site.
 

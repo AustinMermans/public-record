@@ -1,5 +1,13 @@
 # Independent product reviews
 
+### Verified v1.6.0 publication
+
+The [initial deployment](https://github.com/AustinMermans/public-record/actions/runs/36502009699) succeeded from `706bdb35488b954fca596f30dc5538b8f8ade61f`. The [hosted refresh](https://github.com/AustinMermans/public-record/actions/runs/36502026450) also succeeded, preserving capture commit `91c7c9d284f183aea34cd9188aca8c6deb12be75`. Public data.json, release.json, app.js, changes.mjs, publication.mjs and style.css matched the rebuilt capture byte-for-byte. Immutable v1.6.0 resolves to that capture commit; the [release](https://github.com/AustinMermans/public-record/releases/tag/v1.6.0) links the live site and workflow evidence.
+
+Core capture at 2026-09-29T00:13:59Z contained 7,501 disclosures, 540 events and 24 series. The unified edition contained 182 differences across 79 channels: 77 compared, two unavailable and no first baselines. All item windows matched their channel receipts. BLS remained unavailable and the Central California court feed was stale; the previously stale SEC current-feed and Northern California channels succeeded. Company submissions and financials each compared all 25 issuers, and both forecast channels compared without inventing an update. One actual newly captured Meta Form 4 appeared with its September 24 report date, September 28 filing date, capture window, original source and profile link; no buy/sell interpretation was inferred.
+
+The live browser showed v1.6.0, the exact company-filtered result (one of 182 entries), and a working CPI headline link to preferred-measure full history. The owned QA browser was closed. This verifies the bounded release, not completion of the broader fiscal/banking/outlook goal.
+
 ## Unified change edition gate — 1.6.0 candidate, September 28, 2026
 
 Final integrated UI/content gate: the independent PM reviewer inspected route/query/filter/focus integration, summary/source/detail semantics, homepage placement, responsive CSS and 320/768/1280 ledger screenshots. All ten change-module tests passed independently; no blocking findings remained. Hosted refresh and public-payload verification remain separate gates below.
