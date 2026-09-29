@@ -1,5 +1,17 @@
 # Independent product reviews
 
+## Filed-quarter issuer gate — 1.16.0 candidate, September 29, 2026
+
+Independent source, portfolio-manager and UI/UX reviewers approved this **bounded filing-comparison increment** after corrections. The source reviewer replayed all 48 displayed current/prior values across 12 matched issuers against retained hash-checked SEC companyfacts by CIK, accession, concept, USD unit, dates and filing form. Exact issuer EX-99.1 text supported the release-period identity. A conflicting headline fiscal quarter or ambiguous lead-statement end date now fails closed; a targeted regression covers both. The prior-year numbers are comparatives in the current 10-Q, not original prior-year filing vintages.
+
+The PM initially rejected an unqualified “earnings read”: a revenue/net-income table does not explain earnings drivers, especially Alphabet's exceptional net-income increase. The approved scope is now explicitly “Filed quarterly result” with a labeled source excerpt, a non-causal outlier warning, separate exhibit and 10-Q links, and no claim to full earnings synthesis. Of 25 selected registrants, 12 have matched reads and 13 have explicit source/fact/period fallbacks; metadata-only 8-Ks are not promoted as dossiers. Search indexes only matched reads. Exact-event Changes links are tested with a fixture, but the current change ledger contains no such latest matched event, so a live example is not claimed.
+
+Playwright verified Business search → AAPL result → shareable dossier URL and focus, the Microsoft no-quarter-facts fallback without a table, and no horizontal overflow at 320 and 1920px. The UI reviewer additionally inspected 320, 375, 650, 768 and 1024px source layouts and approved the bounded accessibility/responsiveness gate. Raw ISO capture clocks remain a low-priority editorial refinement. Local checks pass 208 Python tests, 142 JavaScript tests, application syntax, build and source-linked rendering. Hosted publication is a separate gate. This approval does not complete the investor hub or supply issuer-driver/guidance analysis.
+
+### Verified v1.15.0 publication
+
+The [v1.15.0 Pages run](https://github.com/AustinMermans/public-record/actions/runs/36631721585) succeeded at commit `d362b60ab5cd38e03e29ca1251f8b80e2acbfd4d`; public release, data and sampled application asset hashes matched the local reviewed build. Playwright confirmed the live GDP target watch and prior-quarter selection. The version tag and GitHub release could not be created because the local GitHub CLI authentication is invalid; this is an outstanding release-procedure step, not evidence of publication failure.
+
 ## One-quarter GDP watch gate — 1.15.0 candidate, September 29, 2026
 
 Independent portfolio-manager, econometric/source and UI/UX reviewers approved this **bounded increment** at P0=P1=P2=P3=0. It joins Atlanta Fed GDPNow, Philadelphia Fed SPF RGDP and BEA advance-release evidence on an exact real-GDP target quarter while showing their different publication/retrieval clocks. The current September 29 edition shows GDPNow 5.0% (September 25), SPF-derived 2.46% (August 14), and a future October 29 BEA advance schedule for 2026 Q3. The roughly 2.5-percentage-point difference is a dated descriptive contrast, not simultaneous consensus, a release surprise or a forecast-error backtest. Old, stale or mismatched inputs, missing/stale BEA schedule, and the scheduled release day withhold the prominent contrast. Selecting 2026 Q2 displays its SPF cell and verified 1.5% BEA advance but no reconstructed GDPNow value.

@@ -1,4 +1,5 @@
 import {escapeText as esc, easternDay} from './editorial.mjs';
+import {dossierTeaser} from './earnings-dossier.mjs';
 
 const normalize = value => String(value ?? '').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const safe = url => /^https?:\/\//.test(url || '');
@@ -133,7 +134,7 @@ export function financialBrief(d,c,filing=null) {
 
 function storyCard(d,s) {
   const brief=s.brief;
-  return `<article class="business-story"><div class="meta">${esc(date(s.f.filed))} · ${esc(s.f.form)} · ${esc(s.c.tickers?.[0]||'CIK '+s.c.cik)}${brief?' · Issuer Item 2.02 exhibit':''}</div><h3><a href="${esc(s.url)}">${esc(storyHeadline(s))}</a></h3>${brief?`<p>${esc(brief.excerpt)}</p><p class="meta">Issuer excerpt · ${sourceLink(brief.source.url,'Exhibit 99.1')} · Retrieved ${esc(brief.captured_at||'unavailable')}${brief.status==='stale'?' · Stale document capture':''}</p>`:`<p>${esc(s.summary)}</p>`}${financialBrief(d,s.c,s.f)}<div class="meta"><a href="${profile(s.c)}">Company profile</a> · ${sourceLink(s.f.url,baseForm(s.f)==='8-K'?'Primary 8-K':'SEC source')}${s.c.status!=='ok'?' · '+esc(s.c.status):''}</div></article>`;
+  return `<article class="business-story"><div class="meta">${esc(date(s.f.filed))} · ${esc(s.f.form)} · ${esc(s.c.tickers?.[0]||'CIK '+s.c.cik)}${brief?' · Issuer Item 2.02 exhibit':''}</div><h3><a href="${esc(s.url)}">${esc(storyHeadline(s))}</a></h3>${brief?`<p>${esc(brief.excerpt)}</p><p class="meta">Issuer excerpt · ${sourceLink(brief.source.url,'Exhibit 99.1')} · Retrieved ${esc(brief.captured_at||'unavailable')}${brief.status==='stale'?' · Stale document capture':''}</p>`:`<p>${esc(s.summary)}</p>`}${financialBrief(d,s.c,s.f)}<div class="meta"><a href="${profile(s.c)}">Company profile</a>${dossierTeaser(d,s.c.cik,s.f.id)?' · '+dossierTeaser(d,s.c.cik,s.f.id):''} · ${sourceLink(s.f.url,baseForm(s.f)==='8-K'?'Primary 8-K':'SEC source')}${s.c.status!=='ok'?' · '+esc(s.c.status):''}</div></article>`;
 }
 function companyCard(c) {
   return `<a class="business-company" href="${profile(c)}"><strong>${esc(c.tickers?.join(' / ')||'CIK '+c.cik)}</strong><span>${esc(c.name)}</span><small>${esc(c.industry||'Industry unavailable')}${c.status!=='ok'?' · '+esc(c.status):''}</small></a>`;
@@ -146,16 +147,17 @@ const statusText=state=>`${state.stories.length} matching filings · ${state.com
 function companySpotlight(d,state) {
   if(!state.q.trim()||state.companies.length!==1)return '';
   const c=state.companies[0],headlines=state.stories.filter(s=>s.c.cik===c.cik).slice(0,3);
-  return `<section class="business-spotlight" aria-label="Matching company"><div><div class="section-no">Company match · ${esc(c.tickers?.join(' / ')||'CIK '+c.cik)}</div><h2><a href="${profile(c)}">${esc(c.name)}</a></h2><p class="meta">${esc(c.industry||'Industry unavailable')} · CIK ${esc(c.cik)} · ${esc(c.status)} · ${sourceLink(c.url,'SEC submissions')}</p>${financialBrief(d,c)}</div><div><h3>Recent matching filings</h3>${headlines.length?`<ul>${headlines.map(s=>`<li><a href="${esc(s.url)}">${esc(storyHeadline(s))}</a><small>${esc(date(s.f.filed))} · ${esc(s.f.form)}</small></li>`).join('')}</ul>`:'<p class="meta">No filings match this topic. The company profile remains available.</p>'}<p><a href="${profile(c)}">Full company profile →</a></p></div></section>`;
+  return `<section class="business-spotlight" aria-label="Matching company"><div><div class="section-no">Company match · ${esc(c.tickers?.join(' / ')||'CIK '+c.cik)}</div><h2><a href="${profile(c)}">${esc(c.name)}</a></h2><p class="meta">${esc(c.industry||'Industry unavailable')} · CIK ${esc(c.cik)} · ${esc(c.status)} · ${sourceLink(c.url,'SEC submissions')}</p>${financialBrief(d,c)}<p>${dossierTeaser(d,c.cik)}</p></div><div><h3>Recent matching filings</h3>${headlines.length?`<ul>${headlines.map(s=>`<li><a href="${esc(s.url)}">${esc(storyHeadline(s))}</a><small>${esc(date(s.f.filed))} · ${esc(s.f.form)}</small></li>`).join('')}</ul>`:'<p class="meta">No filings match this topic. The company profile remains available.</p>'}<p><a href="${profile(c)}">Full company profile →</a></p></div></section>`;
 }
 function issuerLead(state) {
   if(state.q.trim()||state.topic!=='reports'||state.page!==1)return '';
   const featured=state.stories.filter(s=>s.brief?.status==='ok').slice(0,3);
   if(!featured.length)return '';
-  return `<section class="business-issuer-lead" aria-label="Recent verified issuer reports"><div class="section-head"><h2>From issuer results</h2><span class="meta">Recent verified Item 2.02 exhibits</span></div><div class="business-issuer-grid">${featured.map(s=>`<article><div class="meta">${esc(date(s.f.filed))} · ${esc(s.c.tickers?.[0]||s.c.name)}</div><h3><a href="${esc(s.url)}">${esc(s.brief.headline)}</a></h3><p>${esc(s.brief.excerpt)}</p><div class="meta">${sourceLink(s.brief.source.url,'Original exhibit')} · <a href="${profile(s.c)}">Company profile</a></div></article>`).join('')}</div></section>`;
+  return `<section class="business-issuer-lead" aria-label="Recent verified issuer reports"><div class="section-head"><h2>From issuer results</h2><span class="meta">Recent verified Item 2.02 exhibits</span></div><div class="business-issuer-grid">${featured.map(s=>`<article><div class="meta">${esc(date(s.f.filed))} · ${esc(s.c.tickers?.[0]||s.c.name)}</div><h3><a href="${esc(s.url)}">${esc(s.brief.headline)}</a></h3><p>${esc(s.brief.excerpt)}</p><div class="meta">${sourceLink(s.brief.source.url,'Original exhibit')} · <a href="${profile(s.c)}">Company profile</a>${dossierTeaser(state.data,s.c.cik,s.f.id)?' · '+dossierTeaser(state.data,s.c.cik,s.f.id):''}</div></article>`).join('')}</div></section>`;
 }
 export function businessResults(d,options={}) {
   const state=businessSelection(d,options),offset=(state.page-1)*12;
+  state.data=d;
   const financialCompanies=(state.q.trim()&&state.companies.length===1?[]:state.companies.filter(c=>financialBrief(d,c))).sort((a,b)=>{
     const anchors=d.financials.companies;return String(anchors.find(c=>c.cik===b.cik)?.anchor?.filed).localeCompare(String(anchors.find(c=>c.cik===a.cik)?.anchor?.filed));
   }).slice(0,6);

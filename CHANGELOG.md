@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## 1.16.0 — 2026-09-29
+
+- Business company profiles now pair a verified latest Item 2.02 issuer exhibit with the same registrant's exact-quarter 10-Q facts when quarter identity, dates and filing accession agree. The filed-quarter read shows current and prior-year revenue/net income, source-calculated changes, a labeled issuer highlight, direct exhibit/filing links and separate publication/capture clocks. Comparatives come from the current 10-Q; original prior-year filing vintages are not silently substituted.
+- Twelve of 25 selected registrants have a source-matched read in the release capture. Missing exhibit text, annual-only financials, ambiguous quarter identity and mismatched periods fail closed. An outlying net-income change receives a non-causal warning rather than a fabricated driver explanation. This is a bounded filing comparison, not a complete earnings analysis or independent news report.
+- Business, matched-result search and exact-event Changes links lead to a shareable, keyboard-focused dossier. Responsive checks cover 320–1920px; metadata-only events receive no misleading dossier promotion.
+
 ## 1.15.0 — 2026-09-29
 
 - Outlook target-quarter GDP watch aligns Philadelphia Fed SPF real-GDP forecasts, Atlanta Fed GDPNow and BEA's first published or scheduled estimate without blending information dates. A dated, same-target numerical contrast appears only for verified recent forecasts; retrospective errors and consensus/surprise claims remain withheld. Outlook, Economy and search lead to the shareable watch.

@@ -11,6 +11,7 @@ export function metricLink(href, label, value, suffix='') {
 export function detailTarget(route, query) {
   if (route === 'changes' && ['company','domain','source','kind','page'].some(key => query.get(key))) return 'change-results-status';
   if (route === 'company' && query.get('filing')) return 'company-filing-detail';
+  if (route === 'company' && query.get('dossier') === 'earnings') return 'company-earnings-dossier';
   if (route === 'business' && /^[1-9]\d*$/.test(query.get('page')||'')) return 'business-headlines';
   if (route === 'funding' && query.get('view') === 'banking') return 'banking-panel';
   if (route === 'fiscal' && ['fytd','monthly'].includes(query.get('view'))) return 'fiscal-'+query.get('view');
