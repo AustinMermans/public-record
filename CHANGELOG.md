@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+## 1.18.0 — 2026-09-29
+
+- EIA gasoline and distillate gain interactive, source-reconciled weekly histories and shareable 1Y/5Y/10Y/full ranges, with same-season five-year references and visible early-history gaps. Product-history failures leave current Table 4 stocks usable and make the chart gap explicit.
+- The release calendar gains up to eight expected EIA WPSR entries from the official schedule, including holiday exceptions and qualified “after” time windows. Projection stops before an unsupported future holiday cycle; entries link to the official schedule and latest published inventory read. Raw receipts, build-time replay and independent reviewer checks cover the enrichment.
+
 ## 1.17.0 — 2026-09-29
 
 - Economy gains an EIA Weekly Petroleum Status Report read: source-bound commercial crude excluding SPR, motor gasoline and distillate stock levels; reported weekly and comparable-year changes; and an accessible interactive six-year current-edition crude history. The desk, search and source ledger lead to shareable metric details with direct official files.

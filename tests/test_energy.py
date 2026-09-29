@@ -33,7 +33,87 @@ def fixture():
     return json.dumps(source).encode(), body.encode()
 
 
+def history_fixture(product):
+    title, workbook = e.HISTORY_IDENTITIES[product]
+    end = date(2026, 9, 18)
+    levels = {'gasoline': (207732, 206046), 'distillate': (107859, 107431)}
+    points = [(end - timedelta(weeks=50-index), 200000 + index * 100)
+              for index in range(51)]
+    points[-2:] = [(points[-2][0], levels[product][0]), (end, levels[product][1])]
+    months = {}
+    for day, value in points:
+        months.setdefault(day.strftime('%Y-%b'), []).append((day.strftime('%m/%d'), f'{value:,}'))
+    rows = []
+    for month, values in months.items():
+        pairs = values + [('', '')] * (5 - len(values))
+        rows.append('<tr><td>' + month + '</td>' + ''.join(
+            '<td>' + day + '</td><td>' + value + '</td>' for day, value in pairs) + '</tr>')
+    return (f'<title>{title}</title><a href="../hist_xls/{workbook}">Download</a>'
+        '<table class="FloatTitle"><tbody>' + ''.join(rows) + '</tbody></table>'
+        '<td>Release Date: 9/23/2026</td>' + ' ' * 5100).encode()
+
+
+def schedule_fixture():
+    return ("Weekly Petroleum Status Report Schedule "
+        "after 10:30 a.m. eastern time on Wednesday Holiday Release Schedule "
+        '<table class="schedule"><tr><th>Data for the week ending</th>'
+        '<th>Alternate release date</th><th>Release day</th><th>Release time</th><th>Holiday</th></tr>'
+        '<tr><th>October 9, 2026</th><td>October 15, 2026</td>'
+        '<td>Thursday</td><td>12:00 p.m.</td><td>Columbus Day</td></tr></table>'
+        + ' ' * 5100).encode()
+
+
 class EnergyTests(unittest.TestCase):
+    def test_product_histories_match_current_table_and_reject_wrong_edition(self):
+        bundle = e.parse_sources(*fixture(), STAMP)
+        for product, expected in (('gasoline', 206046), ('distillate', 107431)):
+            rows = e.parse_product_history(history_fixture(product), product, bundle)
+            self.assertEqual(rows[-1], ['2026-09-18', expected])
+            self.assertEqual(len(rows), 51)
+            with self.assertRaisesRegex(e.EnergyError, 'disagrees with Table 4'):
+                e.parse_product_history(history_fixture(product).replace(
+                    f'{expected:,}'.encode(), b'999,999'), product, bundle)
+
+    def test_schedule_holiday_exception_is_source_bound(self):
+        rows = e.parse_schedule(schedule_fixture(), STAMP, '2026-09-18')
+        special = next(row for row in rows if row['report_week'] == '2026-10-09')
+        self.assertEqual(special['date'], '2026-10-15')
+        self.assertEqual(special['time_window'], 'After 12:00 p.m. ET')
+        self.assertEqual(rows[0]['time_window'], 'After 10:30 a.m. ET')
+        with self.assertRaisesRegex(e.EnergyError, 'date, day or time changed'):
+            e.parse_schedule(schedule_fixture().replace(b'Thursday', b'Wednesday'), STAMP, '2026-09-18')
+        late = e.parse_schedule(schedule_fixture(), '2026-12-20T20:00:00+00:00', '2026-12-11')
+        self.assertTrue(late and all(row['report_week'][:4] == '2026' for row in late))
+        with self.assertRaisesRegex(e.EnergyError, 'unsupported'):
+            e.parse_schedule(schedule_fixture(), '2026-12-26T20:00:00+00:00', '2026-12-25')
+
+    def test_independent_history_failure_does_not_stale_current_stock(self):
+        with tempfile.TemporaryDirectory() as folder:
+            bodies = dict(zip((e.JSON_URL, e.TABLE_URL), fixture()))
+            bodies[e.HISTORY_URLS['gasoline']] = history_fixture('gasoline')
+            bodies[e.SCHEDULE_URL] = schedule_fixture()
+            bundle = e.collect(None, STAMP, Path(folder) / 'data' / 'energy',
+                fetch=lambda url: bodies[url])
+            self.assertEqual(bundle['schema_version'], 2)
+            self.assertEqual(bundle['status'], 'ok')
+            self.assertIn('distillate', bundle['history_errors'])
+            self.assertEqual(len(bundle['product_history']['gasoline']), 51)
+            self.assertEqual(bundle['release_schedule'][2]['date'], '2026-10-15')
+            e.validate_capture(bundle, Path(folder))
+            bundle['product_history']['gasoline'][-1][1] = 1
+            with self.assertRaisesRegex(e.EnergyError, 'differs from raw'):
+                e.validate_capture(bundle, Path(folder))
+            lost = copy.deepcopy(bundle)
+            for name in ('product_history', 'history_receipts', 'history_errors'):
+                del lost[name]
+            with self.assertRaisesRegex(e.EnergyError, 'coverage state missing'):
+                e.validate_capture(lost, Path(folder))
+            lost = copy.deepcopy(bundle)
+            for name in ('release_schedule', 'schedule_receipt'):
+                del lost[name]
+            with self.assertRaisesRegex(e.EnergyError, 'success-or-error state missing'):
+                e.validate_capture(lost, Path(folder))
+
     def test_exact_rows_units_reconciliation_and_dates(self):
         bundle = e.parse_sources(*fixture(), STAMP)
         self.assertEqual(bundle['week_end'], '2026-09-18')

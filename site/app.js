@@ -23,6 +23,7 @@ const lens = () => lenses.find(x=>x.name===activeLens);
 const nf = (x,n=1) => Number(x).toLocaleString('en-US',{minimumFractionDigits:n,maximumFractionDigits:n});
 const source = id => D.sources.find(s=>s.id===id);
 const time = v => v?.length>10 ? new Intl.DateTimeFormat('en-US',{hour:'numeric',minute:'2-digit',timeZone:'America/New_York',timeZoneName:'short'}).format(new Date(v)) : 'Time not specified';
+const eventClock = r => r.time_window || time(r.date);
 function day(v,options={month:'short',day:'numeric',year:'numeric'}){if(!v)return 'Date not supplied';return new Intl.DateTimeFormat('en-US',{...options,timeZone:'America/New_York'}).format(new Date(v.length===10?v+'T12:00:00-04:00':v));}
 const today = () => new Intl.DateTimeFormat('en-CA',{timeZone:'America/New_York'}).format(new Date());
 const stampDay = v => !v?'':v.length===10?v:new Intl.DateTimeFormat('en-CA',{timeZone:'America/New_York'}).format(new Date(v));
@@ -35,7 +36,7 @@ function spark(points){const p=points.slice(-36);if(p.length<2)return '';const v
 function kpi(id){const s=D.series.find(s=>s.id===id);if(!s)return `<div class="kpi"><div class="kpi-label">${esc(id)}</div><div class="kpi-value">—</div><div class="kpi-meta">Source unavailable · <a href="#sources">coverage</a></div></div>`;const x=display(s);return `<div class="kpi"><div class="kpi-label">${esc(s.name)}</div><div class="kpi-value">${metricLink(indicatorHref(s.id),s.name+' · '+x.t.label,x.value,x.suffix)}</div><div class="kpi-meta">${esc(x.t.label)} · ${observationLabel(s,x.p?.[0])}${s.id==='CPIAUCSL'?' · SA index':''}${stateNote(s.source_id)}</div>${spark(x.t.points)}<div class="kpi-meta">${link(s.url,sourceLabel(s))} · <a href="${esc(indicatorHref(s.id))}">Explore</a></div></div>`;}
 function nextEvents(limit=6){return D.events.filter(e=>isUpcoming(e.date) && e.kind!=='Expected publication').slice(0,limit);}
 function gdpEventDetail(r){if(r.source_id!=='bea'||!/^GDP \(|^Gross Domestic Product,/.test(r.title||''))return '';const m=r.title.match(/\b([1-4])(?:st|nd|rd|th) Quarter(?: and Year)? (20\d{2})\b/i);if(!m)return '';const q=m[2]+'Q'+m[1];return releaseState(D.bea_releases).grouped.has(q)?` · <a href="#gdp-releases?quarter=${q}">Published GDP estimates →</a>`:'';}
-function agenda(r){return `<div class="agenda-row"><div class="agenda-date">${day(r.date,{month:'short'})}<b>${day(r.date,{day:'2-digit'})}</b></div><div class="agenda-title">${link(r.url,r.title)}<div class="meta">${time(r.date)} · ${esc(r.publisher)}${stateNote(r.source_id)}${gdpEventDetail(r)}</div></div></div>`;}
+function agenda(r){return `<div class="agenda-row"><div class="agenda-date">${day(r.date,{month:'short'})}<b>${day(r.date,{day:'2-digit'})}</b></div><div class="agenda-title">${link(r.url,r.title)}<div class="meta">${esc(eventClock(r))} · ${esc(r.publisher)}${stateNote(r.source_id)}${gdpEventDetail(r)}</div></div></div>`;}
 function brief(sid,heading,mechanism){const s=D.series.find(s=>s.id===sid);if(!s)return '';const x=display(s);const previous=x.prior?`${metricLink(indicatorHref(s.id),s.name+' previous observation',nf(x.prior[1],s.id==='PAYEMS'?0:2),x.suffix)} for ${observationLabel(s,x.prior[0])}`:'';return `<article class="brief"><h3>${esc(heading)}</h3><p><strong>${metricLink(indicatorHref(s.id),s.name+' · '+x.t.label,x.value,x.suffix)}</strong> for ${observationLabel(s,x.p[0])}${previous?`, versus ${previous}`:''}. ${esc(mechanism)}</p><div class="evidence">${esc(x.t.unit)} · ${link(s.url,sourceLabel(s))}${stateNote(s.source_id)}</div></article>`;}
 
 const publicationRoutes=['economy-home','business','government','disclosures-home','outlook-home','changes-home','news'];
@@ -68,7 +69,7 @@ function paintCalendar(){
  const rows=layout==='month'?events.filter(e=>easternDay(e.date)===calendarDay):events;
  const heading=layout==='month'?day(calendarDay,{weekday:'long',month:'long',day:'numeric'}):'This month';
  $('#calendar-status').textContent=heading+': '+rows.length+' matching events.';
- const list=rows.map(r=>`<article class="day-event"><div class="meta">${layout==='agenda'?day(r.date)+' · ':''}${time(r.date)} · ${esc(r.kind)}</div><h3>${link(r.url,r.title)}</h3><p class="meta">${esc(r.publisher)}${stateNote(r.source_id)}${gdpEventDetail(r)}${r.kind==='Treasury auction'?'<br>'+esc(r.summary):''}</p></article>`).join('');
+ const list=rows.map(r=>`<article class="day-event"><div class="meta">${layout==='agenda'?day(r.date)+' · ':''}${esc(eventClock(r))} · ${esc(r.kind)}</div><h3>${link(r.url,r.title)}</h3><p class="meta">${esc(r.publisher)}${stateNote(r.source_id)}${gdpEventDetail(r)}${r.kind==='Treasury auction'||r.source_id==='eia-wpsr'?'<br>'+esc(r.summary):''}${r.source_id==='eia-wpsr'?'<br><a href="#energy">Latest published inventory read →</a>':''}</p></article>`).join('');
  $('#calendar-results').innerHTML=`<div class="calendar-layout ${layout==='agenda'?'agenda-mode':''}"><section>${calendarGrid(events,calendarMonth,calendarDay,today())}<div class="meta">${events.length} matching events · Eastern time</div></section><section class="day-panel" aria-live="polite" aria-label="Selected day events"><h2>${heading}</h2>${list||'<p class="empty-day">No matching events in this capture.</p>'}</section></div>`;
 }
 function download(name,text,type){const url=URL.createObjectURL(new Blob([text],{type}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
@@ -174,24 +175,26 @@ function restoreView(query){
 async function copyView(){writeView();const btn=$('#copy-view'),localOnly=route==='disclosures'&&(activeLens||$('#saved-filter')?.value==='saved');try{await navigator.clipboard.writeText(location.href);btn.textContent=localOnly?'Copied · local saved items / lens not shared':'View link copied';}catch{btn.textContent=localOnly?'Copy address-bar URL · local saved items / lens not shared':'Copy the URL from your address bar';}}
 
 function render(){
+ const energyRangeFocus=route==='energy'&&document.activeElement?.matches('.energy-detail .history-ranges a');
  clearTimeout(searchTimer);route=location.hash.slice(1).split('?')[0]||'overview';
  if(!['fiscal','funding','overview','calendar','economy','energy','gdp-releases','corporate','disclosures','changes','outlook','sources','search','company',...publicationRoutes].includes(route))route='overview';
  document.body.dataset.route=route;
  page=1;mode='default';period=5;const query=new URLSearchParams(location.hash.split('?')[1]||'');
  if(D.series.some(s=>s.id===query.get('series')))selected=query.get('series');
- const body=publicationRoutes.includes(route)?deskPage(D,route,publicationContext(),{q:query.get('q')||'',topic:query.get('topic')||'reports',page:query.get('page')}):route==='company'?companyPage(D,query.get('cik'),query.get('filing')):route==='search'?searchPage():route==='gdp-releases'?gdpReleasePage(D,query.get('quarter')):route==='energy'?energyPage(D,query.get('metric')):({fiscal,funding,overview,calendar,economy,corporate,disclosures,changes,outlook,sources}[route])();
+ const body=publicationRoutes.includes(route)?deskPage(D,route,publicationContext(),{q:query.get('q')||'',topic:query.get('topic')||'reports',page:query.get('page')}):route==='company'?companyPage(D,query.get('cik'),query.get('filing')):route==='search'?searchPage():route==='gdp-releases'?gdpReleasePage(D,query.get('quarter')):route==='energy'?energyPage(D,query.get('metric'),query.get('range')):({fiscal,funding,overview,calendar,economy,corporate,disclosures,changes,outlook,sources}[route])();
  mentionScope=route==='search'?(D.corporate?.companies||[]).find(c=>c.cik===query.get('mentions'))||null:null;
  $('#main').innerHTML=publicationBreadcrumb()+body;if(mentionScope)$('#record-search').insertAdjacentHTML('beforebegin','<p class="meta">Name matches for '+esc(mentionScope.name)+' · <a href="#search">Clear company-name scope</a></p>');restoreView(query);
  document.querySelectorAll('nav[aria-label="Main navigation"] a').forEach(a=>{if(a.hash==='#'+(deskFor[route]||route))a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
  document.title=(deskNames[route]||{fiscal:'Federal fiscal conditions',funding:'Funding & credit',overview:'Front page',calendar:'Calendar',economy:'Economy',energy:'Petroleum inventories','gdp-releases':'GDP release record',corporate:'Business',company:'Company profile',disclosures:'Disclosures',changes:'Changes',outlook:'Outlook & research',sources:'Sources & method',search:'Search'}[route])+' — Public Record';
  if(route==='fiscal')bindFiscal($('#main'),D);
  if(route==='business')bindBusiness($('#main'),D);
- if(route==='energy')bindEnergy($('#main'),D);
+ if(route==='energy')bindEnergy($('#main'),D,query.get('metric'),query.get('range'));
  if(route==='outlook'){bindGDPWatch($('#main'),D);bindSPF($('#main'),D.spf);}
  if(route==='funding')bindFunding($('#main'),D);if(route==='calendar')paintCalendar();if(route==='economy')paintChart();if(route==='disclosures')paintRecords();if(route==='corporate')paintCorporate();if(route==='search'){const p=Number(query.get('search-page'));searchOffset=(Number.isSafeInteger(p)&&p>0?p-1:0)*30;paintSearch(false);}
  const energyMetric=query.get('metric');
  const targetId=route==='energy'&&D.energy?.metrics?.some(m=>m.id===energyMetric)?'energy-'+energyMetric:detailTarget(route,query),requestedHash=location.hash;
- if(targetId)requestAnimationFrame(()=>{const target=document.getElementById(targetId);if(target&&location.hash===requestedHash){target.tabIndex=-1;target.focus({preventScroll:true});target.scrollIntoView({block:'start'});}});
+ if(energyRangeFocus&&route==='energy')requestAnimationFrame(()=>{if(location.hash===requestedHash)document.querySelector('.energy-detail .history-ranges a[aria-current="true"]')?.focus({preventScroll:true});});
+ else if(targetId)requestAnimationFrame(()=>{const target=document.getElementById(targetId);if(target&&location.hash===requestedHash){target.tabIndex=-1;target.focus({preventScroll:true});target.scrollIntoView({block:'start'});}});
 }
 function newClicks(e){
  if(route==='changes'&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&!e.altKey&&e.button===0&&e.target.closest('[data-change-page]'))pendingChangePageFocus=true;

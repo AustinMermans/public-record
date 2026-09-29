@@ -1,7 +1,8 @@
 """Validate and publish only the explicit public website surface."""
-import json, shutil
+import json, re, shutil
 from pathlib import Path
 from datetime import datetime
+from zoneinfo import ZoneInfo
 from versioning import validate_release
 from validate_financials import validate_financials
 from change_edition import assemble_changes
@@ -15,6 +16,18 @@ from publication_changes import compare_spf
 from research import validate_gdpnow_capture
 from earnings_dossiers import assemble_dossiers
 ROOT=Path(__file__).resolve().parents[1]
+EASTERN=ZoneInfo('America/New_York')
+
+def event_order(event):
+    value=event['date']
+    if len(value)>10:
+        instant=datetime.fromisoformat(value.replace('Z','+00:00')).astimezone(EASTERN)
+        return (instant.date().isoformat(),instant.hour*60+instant.minute,event['id'])
+    window=re.match(r'After (\d{1,2}):(\d{2}) ([ap])\.m\. ET',event.get('time_window',''))
+    if window:
+        hour=int(window[1])%12+(12 if window[3]=='p' else 0)
+        return (value,hour*60+int(window[2]),event['id'])
+    return (value,24*60,event['id'])
 
 def validate(data):
     assert data['schema_version']==1
@@ -92,6 +105,34 @@ def main():
     if energy.exists():
         data['energy']=json.loads(energy.read_text())
         validate_energy(data['energy'],ROOT)
+        e=data['energy']
+        product_gaps=', '.join(sorted(e.get('history_errors', {})))
+        partial=bool(product_gaps or e.get('schedule_error'))
+        data['sources'].append(dict(id='eia-wpsr',name='EIA · Weekly Petroleum Status Report',
+            domain='Economy',url=e['table_url'],
+            status='partial' if e['status']=='ok' and partial else e['status'],
+            last_success=e.get('captured_at'),attempted_at=e.get('attempted_at'),
+            count=len(e.get('metrics',[])),
+            note='Three Table 4 stock levels; current-edition histories, not original report vintages.'
+                +(f' Missing history: {product_gaps}.' if product_gaps else '')
+                +(' Release schedule unavailable.' if e.get('schedule_error') else ''),
+            error=e.get('error') or e.get('schedule_error')))
+        if e['status']=='ok':
+            for scheduled in e.get('release_schedule', []):
+                report_day=datetime.fromisoformat(scheduled['report_week']).date()
+                data['events'].append(dict(id='eia-wpsr-'+scheduled['report_week'],
+                    source_id='eia-wpsr',publisher='EIA · Weekly Petroleum Status Report',
+                    domain='Economy',title='Weekly Petroleum Status Report · week ending '
+                    +f'{report_day:%b} {report_day.day}, {report_day.year}',
+                    url=scheduled['url'],date=scheduled['date'],
+                    kind='Scheduled release',captured_at=e['captured_at'],priority=1,
+                    time_window=scheduled['time_window'],report_week=scheduled['report_week'],
+                    summary='Expected release of Tables 1–14 '
+                    +scheduled['time_window'][0].lower()+scheduled['time_window'][1:]
+                    +('; '+scheduled['holiday']+' exception' if scheduled['holiday'] else '')
+                    +'. Schedule only; not confirmation of publication.'))
+        data['events'].sort(key=event_order)
+        validate(data)
     data['changes']=assemble_changes(data)
     if business_briefs.exists():
         b=data['business_briefs']
@@ -124,14 +165,6 @@ def main():
             count=len(b.get('releases',[])),
             note='Verified real GDP growth in dated advance, second and third news releases. Recent targets only; separate from current-revised FRED history.',
             error=b.get('error')))
-    if energy.exists():
-        e=data['energy']
-        data['sources'].append(dict(id='eia-wpsr',name='EIA · Weekly Petroleum Status Report',
-            domain='Economy',url=e['table_url'],status=e['status'],
-            last_success=e.get('captured_at'),attempted_at=e.get('attempted_at'),
-            count=len(e.get('metrics',[])),
-            note='Commercial crude excluding SPR, motor gasoline and distillate stock levels from EIA Table 4. Crude chart is a current rolling edition, not historical report vintages.',
-            error=e.get('error')))
     if spf.exists():
         f=data['spf']
         data['sources'].append(dict(id='research-spf',name='Philadelphia Fed · Survey of Professional Forecasters',
