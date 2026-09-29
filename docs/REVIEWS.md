@@ -1,5 +1,9 @@
 # Independent product reviews
 
+### Verified v1.16.0 publication
+
+The initial v1.16 push [run 36638685463](https://github.com/AustinMermans/public-record/actions/runs/36638685463) failed at the test-before-build gate: the new JavaScript renderer test attempted to read `dist/data.json` before `dist` existed. The self-contained-fixture correction was reviewed in [PR 2](https://github.com/AustinMermans/public-record/pull/2). The subsequent [Pages run 36639033594](https://github.com/AustinMermans/public-record/actions/runs/36639033594) completed successfully at commit `dd85570cc408f4e963dc7870e62f0a60e26efc93`. Public `release.json`, `data.json`, `app.js`, `earnings-dossier.mjs`, `business.mjs`, `publication.mjs`, `changes.mjs` and `style.css` SHA-256 hashes matched the reviewed build byte-for-byte. Playwright confirmed the live v1.16.0 Apple filed-quarter read, direct SEC links, keyboard focus and no page overflow at 320px; the first failed run did not deploy. The v1.15 and v1.16 immutable tags/GitHub releases remain outstanding because local GitHub CLI authentication is invalid. This verifies a bounded hosted release, not the whole investor hub or future source-refresh reliability.
+
 ## Filed-quarter issuer gate — 1.16.0 candidate, September 29, 2026
 
 Independent source, portfolio-manager and UI/UX reviewers approved this **bounded filing-comparison increment** after corrections. The source reviewer replayed all 48 displayed current/prior values across 12 matched issuers against retained hash-checked SEC companyfacts by CIK, accession, concept, USD unit, dates and filing form. Exact issuer EX-99.1 text supported the release-period identity. A conflicting headline fiscal quarter or ambiguous lead-statement end date now fails closed; a targeted regression covers both. The prior-year numbers are comparatives in the current 10-Q, not original prior-year filing vintages.
