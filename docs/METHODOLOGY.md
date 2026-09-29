@@ -12,7 +12,7 @@ For sorting only, date-only records precede timed records on their Eastern calen
 
 The initial universe is 13 public series from BLS, BEA, Census/HUD, DOL and the Federal Reserve, distributed through FRED. Each carries units, frequency, seasonal adjustment and a preferred transformation. CPI and core CPI growth use seasonally adjusted indices and may differ from headline NSA year-over-year releases. Payroll growth is calculated from latest revised levels; it is not a first-release surprise. GDP uses quarterly real levels and annualized compound growth. No model or analyst consensus is inferred. The separate [BEA GDP release record](BEA-RELEASES.md) binds real-GDP growth to dated official advance/second/third news releases; it is not derived from current-revised FRED levels or calendar dates.
 
-The [weekly petroleum read](ENERGY.md) separately binds three US inventory stocks to EIA Table 4 and reconciles the crude rows with EIA's current rolling JSON history. These are stocks in million barrels, not flow or price measures; the JSON history is not a set of original-release vintages.
+The [weekly petroleum read](ENERGY.md) separately binds three US inventory stocks to EIA Table 4 and reconciles their current and prior levels with EIA's current-edition crude, gasoline and distillate histories. These are stocks in million barrels, not flow or price measures; the histories are not original-release vintages. The five-year same-season reference uses one nearest reporting Friday per prior year and is not demand-normalized. Expected EIA release-calendar entries retain the publisher's holiday exceptions and do not certify publication.
 
 ## Legal and disclosure
 

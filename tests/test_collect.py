@@ -4,7 +4,7 @@ from unittest.mock import patch
 from tempfile import TemporaryDirectory
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 import collect as c
-from build import validate
+from build import event_order, validate
 
 class CollectTests(unittest.TestCase):
     def setUp(self): self.s=c.SOURCES[0]
@@ -68,5 +68,11 @@ class CollectTests(unittest.TestCase):
     def test_snapshot_contract(self):
         p=Path(__file__).resolve().parents[1]/'data/current.json'
         if p.exists():validate(json.loads(p.read_text()))
+    def test_eia_release_window_orders_between_timed_events(self):
+        events=[{'id':'treasury','date':'2026-09-30T11:30:00-04:00'},
+            {'id':'eia','date':'2026-09-30','time_window':'After 10:30 a.m. ET'},
+            {'id':'bea','date':'2026-09-30T12:30:00+00:00'}]
+        self.assertEqual([row['id'] for row in sorted(events,key=event_order)],
+            ['bea','eia','treasury'])
 
 if __name__=='__main__':unittest.main()
