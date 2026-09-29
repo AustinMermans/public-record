@@ -1,5 +1,13 @@
 # Independent product reviews
 
+### Verified v1.7.0 publication
+
+The [initial deployment](https://github.com/AustinMermans/public-record/actions/runs/36503728514) and [hosted refresh](https://github.com/AustinMermans/public-record/actions/runs/36503729796) succeeded. Immutable v1.7.0 resolves to hosted capture commit `1e1d5262ab6b60f4e4dd4e9a9d5ff72939ee07d6`; the [release](https://github.com/AustinMermans/public-record/releases/tag/v1.7.0) links the site and workflow evidence. Public release.json, data.json, app.js, fiscal.mjs, publication.mjs, changes.mjs, style.css and index.html matched the rebuilt hosted capture byte-for-byte.
+
+Core capture at 2026-09-29T00:34:54Z contained 8,189 disclosures, 540 events and 24 series. The edition had 80 comparison channels: 79 compared and one unavailable (BLS), with 738 disclosure/calendar differences. Treasury's successful 2026-09-29T00:36:21Z capture retained the August 2026 edition, 23 monthly observations and a zero-residual accounting bridge. Its comparison against the prior successful capture found no new fiscal differences; a daily retrieval does not become a new economic observation.
+
+Live browser verification showed v1.7.0 and the fiscal detail values. A fresh homepage CPI headline click opened CPIAUCSL with the preferred year-on-year measure and full history. The bounded fiscal release is verified; banking, broader outlook and final whole-product approval remain open.
+
 ## Treasury fiscal conditions gate — 1.7.0 candidate, September 28, 2026
 
 Final cross-author gate: the normalizer author independently reviewed only root-owned build/change-ledger/workflow integration. A fresh build produced 80 unique comparison channels and 28 unique source receipts, with treasury-mts correctly establishing its first baseline and no invented fiscal changes. Raw validation precedes artifact writing, source insertion follows assembly, and all five fiscal drill-down cases were checked. The PM separately re-reviewed the root's plain-language follow-up and all 11 fiscal renderer tests; both reviewers returned P0=0/P1=0/P2=0/P3=0.
