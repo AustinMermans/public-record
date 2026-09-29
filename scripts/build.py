@@ -12,6 +12,7 @@ from business_briefs import validate_capture as validate_business_briefs
 from bea_releases import validate_capture as validate_bea_releases
 from publication_changes import compare_spf
 from research import validate_gdpnow_capture
+from earnings_dossiers import assemble_dossiers
 ROOT=Path(__file__).resolve().parents[1]
 
 def validate(data):
@@ -55,6 +56,8 @@ def main():
     if financials.exists():
         data['financials']=json.loads(financials.read_text())
         validate_financials(data['financials'],data.get('corporate',{}).get('companies',[]))
+    if 'corporate' in data and 'business_briefs' in data and 'financials' in data:
+        data['earnings_dossiers']=assemble_dossiers(data['corporate'],data['business_briefs'],data['financials'],ROOT)
     if research.exists():
         data['research']=json.loads(research.read_text())
         validate_gdpnow_capture(data['research'],ROOT)
