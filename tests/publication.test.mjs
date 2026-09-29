@@ -6,6 +6,14 @@ const d=JSON.parse(fs.readFileSync(new URL('../data/current.json',import.meta.ur
 d.corporate=JSON.parse(fs.readFileSync(new URL('../data/corporate/current.json',import.meta.url)));
 d.research=JSON.parse(fs.readFileSync(new URL('../data/research/current.json',import.meta.url)));
 const index=buildSearchIndex(d),apple=d.corporate.companies.find(c=>c.cik==='0000320193');
+test('banking search selects the matching FDIC metric and population',()=>{
+  const fixture={...d,banking:{quarter_end:'2026-06-30',status:'ok',metrics:[{id:'noncurrent',label:'Noncurrent loans / loans',unit:'Percent',definition:'90+ days past due plus nonaccrual'}],context:[{id:'net_income',label:'Quarterly bank net income',unit:'USD millions'}]}};
+  const hits=searchIndex(buildSearchIndex(fixture),'noncurrent','indicator');
+  assert.equal(hits.length,1);
+  assert.equal(hits[0].url,'#funding?view=banking&metric=noncurrent');
+  assert.match(hits[0].summary,/all-insured/);
+  assert.equal(searchIndex(buildSearchIndex(fixture),'bank net income','indicator')[0].url,'#funding?view=banking&metric=net_income');
+});
 test('fiscal search leads to the fiscal comparison rather than an unrelated macro series',()=>{
   const fixture={...d,fiscal:{edition:'2026-08-31',status:'ok',metrics:[{id:'balance',label:'Surplus / deficit'}]}};
   const hits=searchIndex(buildSearchIndex(fixture),'federal deficit','indicator');

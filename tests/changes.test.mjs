@@ -5,6 +5,11 @@ import {changeEdition,filterChanges} from '../site/changes.mjs';
 const item=(overrides={})=>({id:'one',domain:'Economic data',kind:'Revision to observed value',title:'Output',date:'2026-06-30',before:2,after:2.5,unit:'Percent',url:'https://example.gov/current',previous_url:'https://example.gov/prior',detail_url:'#economy?series=GDP',from_capture:'2026-09-26T12:00:00Z',to_capture:'2026-09-28T12:00:00Z',...overrides});
 const data=(items=[],channels=[])=>({changes:{items,channels},series:[],financials:{companies:[{cik:'000001',name:'Example issuer'}]}});
 const channel=(overrides={})=>({id:'gdp',label:'Output',domain:'Economic data',status:'compared',from_capture:'2026-09-26',to_capture:'2026-09-28',...overrides});
+test('banking decimal-string changes retain their percentage, monetary and count units',()=>{
+  for(const [unit,before,after,expected] of [['Percent','0.98','0.93','0.93%'],['USD millions','20000','20722','20,722 USD millions'],['Count','4240','4238','4,238 institutions']]){
+    assert.ok(changeEdition(data([item({unit,before,after})])).includes(expected));
+  }
+});
 
 test('filters are exact, intersect, sort by capture then period, and do not mutate input',()=>{
   const items=[item({id:'old',date:'2026-03-31'}),item({id:'company',domain:'Companies',cik:'000001'}),item({id:'latest'})];

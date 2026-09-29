@@ -1,0 +1,3817 @@
+{
+    "@type": "Catalog",
+    "title": "FDIC Data Catalog",
+    "description": "The FDIC Data Catalog is a comprehensive, dynamic, searchable inventory of FDIC's Enterprise data.",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Federal Deposit Insurance Corporation"
+    },
+    "language": "en",
+    "issued": "2023-08-15",
+    "modified": "2026-09-23",
+    "rights": [
+        "Data within this catalog may be subject to individual dataset licensing terms."
+    ],
+    "conformsTo": {
+        "@type": "Standard",
+        "title": "DCAT-US 3.0"
+    },
+    "dataset": [
+        {
+            "@type": "Dataset",
+            "title": "Bank Application Actions",
+            "description": "Actions taken on selected bank applications received over a rolling 10-year period.",
+            "identifier": "e385cfff-bb74-4497-9540-d2faf7d26e30",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2026-09-30",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-15",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "Bank Application Actions",
+                    "description": "Actions taken on selected bank applications received over a rolling 10-year period.",
+                    "identifier": "62542e90-8bb8-42ab-bba5-3edfebf0fb6b",
+                    "describedBy": {
+                        "@id": "https://www.fdic.gov/regulations/applications/rmsbankapp/document/fdic-bank-data-dictionary.pdf",
+                        "accessURL": "https://www.fdic.gov/regulations/applications/rmsbankapp/document/fdic-bank-data-dictionary.pdf",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/PDF"
+                    },
+                    "accessURL": "https://www.fdic.gov/bank-examinations/bank-application-actions",
+                    "downloadURL": null,
+                    "mediaType": "text/CSV",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-15",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": null
+        },
+        {
+            "@type": "Dataset",
+            "title": "Bank Events and Changes",
+            "description": "Bank Events & Changes provides structural, non-financial activity for a specific date or date range and reflects transactions by either the processed date or the effective date.",
+            "identifier": "e422b30e-56ca-42e6-9721-a2f99da513ec",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2025-10-15",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-08",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "Bank Events and Changes API",
+                    "description": "FDIC's application programming interface (API) for Bank Events & Changes. Bank Events & Changes provides structural, non-financial activity for a specific date or date range and reflects transactions by either the processed date or the effective date.",
+                    "identifier": "13dc4255-94b8-49d1-bfb5-93f751eb0d03",
+                    "describedBy": {
+                        "@id": "https://api.fdic.gov/banks/docs/",
+                        "accessURL": "https://api.fdic.gov/banks/docs/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://api.fdic.gov/banks/history/",
+                    "downloadURL": null,
+                    "mediaType": "application/JSON",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "JSON",
+                    "modified": "2026-09-08",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "Bank Events and Changes",
+                    "description": "Bank Events & Changes provides structural, non-financial activity for a specific date or date range and reflects transactions by either the processed date or the effective date.",
+                    "identifier": "9f416b4e-d185-4e83-818b-77e58477b9ca",
+                    "describedBy": {
+                        "@id": "https://banks.data.fdic.gov/bankfind-suite/help?helpTopic=glossary-and-variable-definitions",
+                        "accessURL": "https://banks.data.fdic.gov/bankfind-suite/help?helpTopic=glossary-and-variable-definitions",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://banks.data.fdic.gov/bankfind-suite/oscr",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-08",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": [
+                "BankFind Suite"
+            ]
+        },
+        {
+            "@type": "Dataset",
+            "title": "Bank Failures and Assistance Data",
+            "description": "Bank Failure and Assistance Data provides a complete look at bank failures and assistance transactions of FDIC-insured institutions from 1934 to the present. The data is updated after a bank failure or assistance transaction.",
+            "identifier": "2daddf83-8098-4fc6-9dd8-e9301cb4c6de",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2025-10-15",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-03",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "Bank Failures and Assistance Data API",
+                    "description": "FDIC's application programming interface (API) for Bank Failure and Assistance Data. Bank Failure and Assistance Data provides a complete look at bank failures and assistance transactions of FDIC-insured institutions from 1934 to the present. The data is updated after a bank failure or assistance transaction.",
+                    "identifier": "9e7a2bf2-8854-44e3-9c9e-f98cfeea6c50",
+                    "describedBy": {
+                        "@id": "https://api.fdic.gov/banks/docs/",
+                        "accessURL": "https://api.fdic.gov/banks/docs/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://api.fdic.gov/banks/failures",
+                    "downloadURL": null,
+                    "mediaType": "application/json",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "JSON",
+                    "modified": "2026-09-16",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "Bank Failures and Assistance Data",
+                    "description": "Bank Failure and Assistance Data provides a complete look at bank failures and assistance transactions of FDIC-insured institutions from 1934 to the present. The data is updated after a bank failure or assistance transaction.",
+                    "identifier": "f6d4cfbf-70e3-413c-80c4-a0abaa1a2959",
+                    "describedBy": {
+                        "@id": "https://banks.data.fdic.gov/bankfind-suite/failures/help",
+                        "accessURL": "https://banks.data.fdic.gov/bankfind-suite/failures/help",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://banks.data.fdic.gov/bankfind-suite/failures",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-03",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": [
+                "BankFind Suite"
+            ]
+        },
+        {
+            "@type": "Dataset",
+            "title": "Branch Office Deposits",
+            "description": "Branch offices and their reported deposits (as of June 30 per year), for both institutions and holding companies.",
+            "identifier": "419557b8-0e6c-48d5-b4ad-62932039987e",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2025-10-15",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-08",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "Branch Office Deposits API",
+                    "description": "FDIC's application programming interface (API) for Branch Office Deposits. Branch offices and their reported deposits (as of June 30 per year), for both institutions and holding companies.",
+                    "identifier": "657b91de-2160-4ba7-baa0-6c6f3d6475ed",
+                    "describedBy": {
+                        "@id": "https://api.fdic.gov/banks/docs/",
+                        "accessURL": "https://api.fdic.gov/banks/docs/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://api.fdic.gov/banks/sod",
+                    "downloadURL": null,
+                    "mediaType": "application/JSON",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "JSON",
+                    "modified": "2026-09-08",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "Branch Office Deposits",
+                    "description": "Branch offices and their reported deposits (as of June 30 per year), for both institutions and holding companies.",
+                    "identifier": "0fc12380-494f-4d07-8e2c-d9b055ff7122",
+                    "describedBy": {
+                        "@id": "https://banks.data.fdic.gov/bankfind-suite/help?helpTopic=glossary-and-variable-definitions",
+                        "accessURL": "https://banks.data.fdic.gov/bankfind-suite/help?helpTopic=glossary-and-variable-definitions",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://banks.data.fdic.gov/bankfind-suite/SOD/branchOffice",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-08",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "Market Share Reports",
+                    "description": "The Deposit Market Share is the percentage of deposits an FDIC-insured institution has within a defined geographic market. This yearly data is based on the annual Summary of Deposits (SOD) survey for FDIC-insured institutions as of June 30.",
+                    "identifier": "aa2ce9de-0d95-49b8-8d10-52917e2cf9b8",
+                    "describedBy": {
+                        "@id": "https://banks.data.fdic.gov/bankfind-suite/help?helpTopic=glossary-and-variable-definitions",
+                        "accessURL": "https://banks.data.fdic.gov/bankfind-suite/help?helpTopic=glossary-and-variable-definitions",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://banks.data.fdic.gov/bankfind-suite/SOD/marketShare",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-08",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": [
+                "Summary of Deposits"
+            ]
+        },
+        {
+            "@type": "Dataset",
+            "title": "Community Banking Study Reference Data",
+            "description": "The FDIC Community Banking Study relies on a comprehensive database, which has been constructed based on quarterly financial reports submitted by federally-insured banks and savings associations. While the formats of these reports differ somewhat over time and across report types, the FDIC database employs standardized definitions that facilitate comparisons. Additionally, the database uses the FDIC's extensive data regarding structural changes in the banking industry since 1984, enabling a full accounting of bank entry, exit, and other events that have reshaped the industry over this period.",
+            "identifier": "61af85ef-79af-4467-8efb-833589366124",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2026-09-30",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-15",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "Community Banking Study Reference Data",
+                    "description": "Reference data for the FDIC Community Banking Study. The comprehensive database,is constructed based on quarterly financial reports submitted by federally-insured banks and savings associations.",
+                    "identifier": "d8a7ed41-5cfa-4f16-825a-4787c448ceec",
+                    "describedBy": {
+                        "@id": "https://www.fdic.gov/community-banking-research-program/reference-data",
+                        "accessURL": "https://www.fdic.gov/community-banking-research-program/reference-data",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": null,
+                    "downloadURL": "https://www.fdic.gov/community-banking-research-program/current-community-banking-reference-data-first-quarter-2026.zip",
+                    "mediaType": "text/CSV",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-10",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "Historical Community Banking Study Reference Data",
+                    "description": "Historical reference data for the FDIC Community Banking Study. The comprehensive database is constructed based on quarterly financial reports submitted by federally-insured banks and savings associations.",
+                    "identifier": "dabe2055-7116-4f02-b96b-04eb632e5998",
+                    "describedBy": {
+                        "@id": "https://www.fdic.gov/community-banking-research-program/reference-data",
+                        "accessURL": "https://www.fdic.gov/community-banking-research-program/reference-data",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://www.fdic.gov/community-banking-research-program/reference-data",
+                    "downloadURL": null,
+                    "mediaType": "text/CSV",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-16",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": null
+        },
+        {
+            "@type": "Dataset",
+            "title": "Community Reinvestment Act (CRA) Performance Ratings ",
+            "description": "Current and past Community Reinvestment Act (CRA) Performance Ratings and Performance Evaluations (PEs) for specific institutions that have been examined by the FDIC since 1990.",
+            "identifier": "77964f23-181b-444a-b898-9ed269d802a9",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2026-09-30",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-18",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "Community Reinvestment Act (CRA) Performance Ratings ",
+                    "description": "Current and past Community Reinvestment Act (CRA) Performance Ratings and Performance Evaluations (PEs) for specific institutions that have been examined by the FDIC since 1990.",
+                    "identifier": "d2d67cf7-d3f1-4610-9234-688a5fdffe0f",
+                    "describedBy": {
+                        "@id": "https://www.fdic.gov/banker-resource-center/community-reinvestment-act-cra",
+                        "accessURL": "https://www.fdic.gov/banker-resource-center/community-reinvestment-act-cra",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://crapes.fdic.gov/",
+                    "downloadURL": null,
+                    "mediaType": "text/html",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "html",
+                    "modified": "2026-09-18",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": null
+        },
+        {
+            "@type": "Dataset",
+            "title": "FDIC Bank Locations",
+            "description": "Listing of FDIC-insured bank branches and locations.",
+            "identifier": "d7346610-eabd-48b7-ab8a-657b4a8cbe93",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2025-10-15",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-08",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "FDIC Bank Locations",
+                    "description": "Listing of FDIC-insured bank branches and locations.",
+                    "identifier": "19c87eab-9a34-4e6d-9d49-2e392a25da15",
+                    "describedBy": {
+                        "@id": "https://banks.data.fdic.gov/bankfind-suite/help?helpTopic=glossary-and-variable-definitions",
+                        "accessURL": "https://banks.data.fdic.gov/bankfind-suite/help?helpTopic=glossary-and-variable-definitions",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": null,
+                    "downloadURL": "https://s3-us-gov-west-1.amazonaws.com/cg-2e5c99a6-e282-42bf-9844-35f5430338a5/downloads/locations.csv",
+                    "mediaType": "text/CSV",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-08",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "FDIC Bank Locations API",
+                    "description": "FDIC's application programming interface (API) for listing of FDIC-insured bank branches and locations.",
+                    "identifier": "77199fd9-3932-4c46-8271-ed126d7074e1",
+                    "describedBy": {
+                        "@id": "https://api.fdic.gov/banks/docs/",
+                        "accessURL": "https://api.fdic.gov/banks/docs/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://api.fdic.gov/banks/locations",
+                    "downloadURL": null,
+                    "mediaType": "application/JSON",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "JSON",
+                    "modified": "2026-09-08",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": null
+        },
+        {
+            "@type": "Dataset",
+            "title": "FDIC Banking Demographic and Headquarter Locations",
+            "description": "Listing of FDIC-insured banking institution demographic and headquarter location data.",
+            "identifier": "209f530e-fa06-4377-afbc-0c8ad9f8073d",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2025-10-15",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-08",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "FDIC Banking Demographic and Headquarter Locations",
+                    "description": "Listing of FDIC-insured banking institution demographic and headquarter location data.",
+                    "identifier": "acc9d69f-09a3-403a-a3cb-504448efa646",
+                    "describedBy": {
+                        "@id": "https://api.fdic.gov/banks/docs//institutions_definitions.csv",
+                        "accessURL": "https://api.fdic.gov/banks/docs//institutions_definitions.csv",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/csv"
+                    },
+                    "accessURL": null,
+                    "downloadURL": "https://s3-us-gov-west-1.amazonaws.com/cg-2e5c99a6-e282-42bf-9844-35f5430338a5/downloads/institutions.csv",
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-08",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "Summary FDIC Banking Demographic API",
+                    "description": "FDIC's application programming interface (API) for summary FDIC Banking Demographic data. ",
+                    "identifier": "0a307318-7a11-4435-a047-4d06d4f36e9a",
+                    "describedBy": {
+                        "@id": "https://api.fdic.gov/banks/docs/",
+                        "accessURL": "https://api.fdic.gov/banks/docs/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://api.fdic.gov/banks/demographics",
+                    "downloadURL": null,
+                    "mediaType": "application/JSON",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "JSON",
+                    "modified": "2026-09-08",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "FDIC Banking Demographic and Headquarter Locations API",
+                    "description": "FDIC's application programming interface (API) for listing of FDIC-insured banking institution demographic and headquarter location data.",
+                    "identifier": "f44c8435-302a-4c76-ba5e-78c8c045073c",
+                    "describedBy": {
+                        "@id": "https://api.fdic.gov/banks/docs/",
+                        "accessURL": "https://api.fdic.gov/banks/docs/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://api.fdic.gov/banks/institutions/",
+                    "downloadURL": null,
+                    "mediaType": "application/JSON",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "JSON",
+                    "modified": "2026-09-08",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": null
+        },
+        {
+            "@type": "Dataset",
+            "title": "FDIC Closed Loan Sales",
+            "description": "Closed loan sales information ranging from January 1, 2010 to present.",
+            "identifier": "0af6838d-d792-4da7-86ff-b28df70e6382",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2026-09-30",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-10",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "FDIC Closed Loan Sales",
+                    "description": "Closed loan sales information ranging from January 1, 2010 to present.",
+                    "identifier": "fe82a13d-ed9b-4e27-ba55-c3afebb90175",
+                    "describedBy": {
+                        "@id": "https://www.fdic.gov/asset-sales/historical-sales",
+                        "accessURL": "https://www.fdic.gov/asset-sales/historical-sales",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://sales.fdic.gov/closedsales/",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "csv",
+                    "modified": "2026-09-23",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": null
+        },
+        {
+            "@type": "Dataset",
+            "title": "FDIC Closed Real Estate Sales",
+            "description": "Closed real estate sales information ranging from January 2010 through end of prior month.",
+            "identifier": "e8108efe-b1b7-4079-ade2-b0fa34dc2faf",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2026-09-30",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-10",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "FDIC Closed Real Estate Sales",
+                    "description": "Closed real estate sales information ranging from January 2010 through end of prior month.",
+                    "identifier": "9db495a5-95aa-4d43-8adf-e2f365e2c535",
+                    "describedBy": {
+                        "@id": "https://www.fdic.gov/asset-sales/historical-sales",
+                        "accessURL": "https://www.fdic.gov/asset-sales/historical-sales",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://sales.fdic.gov/closedrealestate/",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-10",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": null
+        },
+        {
+            "@type": "Dataset",
+            "title": "FDIC Dividends from Failed Banks",
+            "description": "Listing of receivership dividends from Failed banks since September 1, 1999. Receivership dividends are distributions of cash to proven claimants of the failed institution (the receivership). The cash is generated through the liquidation of receivership assets. The intent of the FDIC's receivership dividend policy is to distribute cash in the form of dividends to proven claimants of the receivership as sufficient cash accumulates in the receivership.",
+            "identifier": "f3dac8e9-567c-4958-a27d-a6f74f1fa377",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2026-09-30",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-16",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "FDIC Dividends from Failed Banks",
+                    "description": "Listing of receivership dividends from Failed banks since September 1, 1999. Receivership dividends are distributions of cash to proven claimants of the failed institution (the receivership). The cash is generated through the liquidation of receivership assets. The intent of the FDIC's receivership dividend policy is to distribute cash in the form of dividends to proven claimants of the receivership as sufficient cash accumulates in the receivership.",
+                    "identifier": "2d175178-2dad-4375-8b39-d327d538f228",
+                    "describedBy": {
+                        "@id": "https://closedbanks.fdic.gov/dividends/",
+                        "accessURL": "https://closedbanks.fdic.gov/dividends/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://closedbanks.fdic.gov/dividends/",
+                    "downloadURL": null,
+                    "mediaType": "text/html",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "html",
+                    "modified": "2026-09-16",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": null
+        },
+        {
+            "@type": "Dataset",
+            "title": "FDIC Enforcement Decisions and Orders ",
+            "description": "FDIC Enforcement Decisions and Orders (ED&O) searchable database which contains the full text of the formal enforcement actions against financial institutions that are supervised by the FDIC or against their institution-affiliated parties, including final orders and notices of changes. ED&O is updated every month with the final orders and notices of changes issued the preceding month.",
+            "identifier": "3d72703e-7787-4c46-8ab6-f9a463fcb6bd",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2026-09-30",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-15",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "Recent FDIC Enforcement Decisions and Orders ",
+                    "description": "Last monthly update of FDIC Enforcement Decisions and Orders (ED&O) which contains the full text of the formal enforcement actions against financial institutions that are supervised by the FDIC or against their institution-affiliated parties, including final orders and notices of changes. ED&O is updated every month with the final orders and notices of changes issued the preceding month.",
+                    "identifier": "56e0bc46-eed2-49fc-b3b8-79aa17e7c9d3",
+                    "describedBy": {
+                        "@id": "https://orders.fdic.gov/s/help#usingSearchForm",
+                        "accessURL": "https://orders.fdic.gov/s/help#usingSearchForm",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "http://www.fdic.gov/bank/individual/enforcement/neworders.html",
+                    "downloadURL": null,
+                    "mediaType": "application/pdf",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "PDF",
+                    "modified": "2026-09-15",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "FDIC Enforcement Decisions and Orders ",
+                    "description": "FDIC Enforcement Decisions and Orders (ED&O) searchable database which contains the full text of the formal enforcement actions against financial institutions that are supervised by the FDIC or against their institution-affiliated parties, including final orders and notices of changes. ED&O is updated every month with the final orders and notices of changes issued the preceding month.",
+                    "identifier": "f5f90141-ba2a-4746-b0d3-1378d40eb08f",
+                    "describedBy": {
+                        "@id": "https://orders.fdic.gov/s/help#usingSearchForm",
+                        "accessURL": "https://orders.fdic.gov/s/help#usingSearchForm",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://orders.fdic.gov/s/searchform",
+                    "downloadURL": null,
+                    "mediaType": "application/pdf",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-15",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": null
+        },
+        {
+            "@type": "Dataset",
+            "title": "FDIC Institutions Name and Location",
+            "description": "FDIC Institutions Name and Location provides FDIC-insured banks and branches from today, to last year, and all the way back to 1934.",
+            "identifier": "402bc44f-8544-4c76-ac00-f06e9ff79aca",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2025-10-15",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-08",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "FDIC Institutions Name and Location",
+                    "description": "FDIC Institutions Name and Location provides FDIC-insured banks and branches from today, to last year, and all the way back to 1934.",
+                    "identifier": "ff542f20-8cfe-434f-b71c-9fded05b293c",
+                    "describedBy": {
+                        "@id": "https://api.fdic.gov/banks/docs//institutions_definitions.csv",
+                        "accessURL": "https://api.fdic.gov/banks/docs//institutions_definitions.csv",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/csv"
+                    },
+                    "accessURL": "https://banks.data.fdic.gov/bankfind-suite/bankfind",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-08",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": [
+                "BankFind Suite"
+            ]
+        },
+        {
+            "@type": "Dataset",
+            "title": "FDIC QBP Graph Book",
+            "description": "Quarterly banking highlights, charts, and graphs that accompany the Quarterly Banking Profile beginning with the December 2023 quarter to present.",
+            "identifier": "0e477c89-1558-4548-b5a1-b67294ab5e26",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2026-09-30",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-16",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "QBP Graph Book Quarterly Change in Major Factors Affecting Earnings Contributions to Pretax Earnings Growth",
+                    "description": "Quarterly change in major factors affecting earnings contributions to pretax earnings growth of FDIC-Insured institutions March 1995 to present.",
+                    "identifier": "a798b73f-fea3-4ad1-96c1-7ba326d1cda0",
+                    "describedBy": {
+                        "@id": "https://qbpgraphbook.fdic.gov/#/",
+                        "accessURL": "https://qbpgraphbook.fdic.gov/#/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://qbpgraphbook.fdic.gov/#/cmfaec-peg",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": null,
+                    "modified": "2026-09-11",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "QBP Graph Book Loan Portfolio Composition for FDIC-Insured Institutions ",
+                    "description": "Quarterly capital loan portfolio composition for FDIC-Insured institutions March 1995 to present.",
+                    "identifier": "0781cb7d-cd62-4189-b7be-051affa7dd78",
+                    "describedBy": {
+                        "@id": "https://qbpgraphbook.fdic.gov/#/",
+                        "accessURL": "https://qbpgraphbook.fdic.gov/#/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://qbpgraphbook.fdic.gov/#/loan-portfolio",
+                    "downloadURL": null,
+                    "mediaType": "text/CSV",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-11",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "QBP Graph Book Capital Ratios for FDIC-Insured Institutions ",
+                    "description": "Quarterly capital ratios for FDIC-Insured institutions March 1995 to present.",
+                    "identifier": "051956bc-7632-4ff5-9cd1-9d02ed0284a4",
+                    "describedBy": {
+                        "@id": "https://qbpgraphbook.fdic.gov/#/",
+                        "accessURL": "https://qbpgraphbook.fdic.gov/#/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://qbpgraphbook.fdic.gov/#/qtr-nima?ty=capitalrato",
+                    "downloadURL": null,
+                    "mediaType": "text/CSV",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-11",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "QBP Graph Book Quarterly Cost of Funding Earning Assets Annualized for FDIC-Insured Institutions ",
+                    "description": "Quarterly cost of funding earning assets, annualized for FDIC-Insured institutions March 1995 to present.",
+                    "identifier": "53d8a6f1-ef6f-40f1-a20a-2b7349a895b6",
+                    "describedBy": {
+                        "@id": "https://qbpgraphbook.fdic.gov/#/",
+                        "accessURL": "https://qbpgraphbook.fdic.gov/#/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://qbpgraphbook.fdic.gov/#/qtr-nima?ty=qtrcost",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-16",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "QBP Graph Book Quarterly Net Income Margins Annualized of FDIC-Insured Institutions",
+                    "description": "Quarterly net income margins, annualized of FDIC-Insured institutions March 1995 to present.",
+                    "identifier": "8a51d77f-c712-42a1-b912-4114a6644573",
+                    "describedBy": {
+                        "@id": "https://qbpgraphbook.fdic.gov/#/",
+                        "accessURL": "https://qbpgraphbook.fdic.gov/#/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://qbpgraphbook.fdic.gov/#/qtr-nima?ty=qtrnima",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-16",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "QBP Graph Book Quarterly Yield on Earning Assets Annualized for FDIC-Insured Institutions ",
+                    "description": "Quarterly yield on earning assets, annualized for FDIC-Insured institutions March 1995 to present.",
+                    "identifier": "f13a6ab7-a92d-42fb-a9dd-e648ff606f1a",
+                    "describedBy": {
+                        "@id": "https://qbpgraphbook.fdic.gov/#/",
+                        "accessURL": "https://qbpgraphbook.fdic.gov/#/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://qbpgraphbook.fdic.gov/#/qtr-nima?ty=qtryield",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-16",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "QBP Graph Book Quarterly Net Charge-Offs for FDIC-Insured Institutions ",
+                    "description": "Quarterly net charge-offs for FDIC-Insured institutions March 1995 to present.",
+                    "identifier": "a283f3bd-f7e0-4fe6-abe1-7ed1cca3807a",
+                    "describedBy": {
+                        "@id": "https://qbpgraphbook.fdic.gov/#/",
+                        "accessURL": "https://qbpgraphbook.fdic.gov/#/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://qbpgraphbook.fdic.gov/#/qtrbarchart?ty=chargeoff",
+                    "downloadURL": null,
+                    "mediaType": "text/CSV",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-16",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "QBP Graph Book Quarterly Change in Noncurrent Loans for FDIC-Insured Institutions ",
+                    "description": "Quarterly change in noncurrent loans for FDIC-Insured institutions March 1995 to present.",
+                    "identifier": "64756bcd-550e-4bd6-85d6-4e572db3e731",
+                    "describedBy": {
+                        "@id": "https://qbpgraphbook.fdic.gov/#/",
+                        "accessURL": "https://qbpgraphbook.fdic.gov/#/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://qbpgraphbook.fdic.gov/#/qtrbarchart?ty=noncurrentloans",
+                    "downloadURL": null,
+                    "mediaType": "text/CSV",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-11",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "QBP Graph Book Quarterly Change in Deposits for FDIC-Insured Institutions ",
+                    "description": "Quarterly change in deposits for FDIC-Insured institutions March 1995 to present.",
+                    "identifier": "f7ee2ef8-a442-44cf-9040-7020c797a9c0",
+                    "describedBy": {
+                        "@id": "https://qbpgraphbook.fdic.gov/#/",
+                        "accessURL": "https://qbpgraphbook.fdic.gov/#/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://qbpgraphbook.fdic.gov/#/qtrbarchart?ty=qtrchangeindep",
+                    "downloadURL": null,
+                    "mediaType": "text/CSV",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-11",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "QBP Graph Book Quarterly Net Income of FDIC-Insured Institutions",
+                    "description": "Quarterly net income of FDIC-Insured institutions March 1995 to present.",
+                    "identifier": "94123ffa-246c-483e-a40c-0d14d8121c1a",
+                    "describedBy": {
+                        "@id": "https://qbpgraphbook.fdic.gov/#/",
+                        "accessURL": "https://qbpgraphbook.fdic.gov/#/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://qbpgraphbook.fdic.gov/#/qtrbarchart?ty=qtrnetincome",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-11",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "QBP Graph Book Total Assets for FDIC-Insured Institutions ",
+                    "description": "Quarterly total assets for FDIC-Insured institutions March 1995 to present.",
+                    "identifier": "2f0c4f9d-37a2-41ec-b96a-0376f271b2eb",
+                    "describedBy": {
+                        "@id": "https://qbpgraphbook.fdic.gov/#/",
+                        "accessURL": "https://qbpgraphbook.fdic.gov/#/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://qbpgraphbook.fdic.gov/#/qtrbarchart?ty=totalassets",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-11",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "QBP Graph Book Total Deposits for FDIC-Insured Institutions ",
+                    "description": "Quarterly total deposits for FDIC-Insured institutions March 1995 to present.",
+                    "identifier": "15b360c2-fb0e-47a0-86c1-519e283110e1",
+                    "describedBy": {
+                        "@id": "https://qbpgraphbook.fdic.gov/#/",
+                        "accessURL": "https://qbpgraphbook.fdic.gov/#/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://qbpgraphbook.fdic.gov/#/qtrbarchart?ty=totaldeposits",
+                    "downloadURL": null,
+                    "mediaType": "text/CSV",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-11",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "QBP Graph Book Total Loans and Leases for FDIC-Insured Institutions ",
+                    "description": "Quarterly total loans and leases gross of reserves for FDIC-Insured institutions March 1995 to present.",
+                    "identifier": "c6883ba5-ab0d-4eba-997d-c0fd7888ce22",
+                    "describedBy": {
+                        "@id": "https://qbpgraphbook.fdic.gov/#/",
+                        "accessURL": "https://qbpgraphbook.fdic.gov/#/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://qbpgraphbook.fdic.gov/#/qtrbarchart?ty=totalloans",
+                    "downloadURL": null,
+                    "mediaType": "text/CSV",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-11",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "QBP Graph Book Quarterly Loan Growth Rates for FDIC-Insured Institutions ",
+                    "description": "Quarterly loan growth rates for FDIC-Insured institutions March 1995 to present.",
+                    "identifier": "ba05b927-d70b-41ab-a69c-d90763e6b8d4",
+                    "describedBy": {
+                        "@id": "https://qbpgraphbook.fdic.gov/#/",
+                        "accessURL": "https://qbpgraphbook.fdic.gov/#/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://qbpgraphbook.fdic.gov/#/qtrmslinechart?ty=qtrlgr",
+                    "downloadURL": null,
+                    "mediaType": "text/CSV",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-11",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "QBP Graph Book Noncurrent Loan and Quarterly Net Charge-Off Rates for FDIC-Insured Institutions ",
+                    "description": "Noncurrent loan and quarterly net charge-off rates for FDIC-Insured institutions March 1995 to present.",
+                    "identifier": "90a4d76e-ca58-41b4-81ae-f1272e18460e",
+                    "describedBy": {
+                        "@id": "https://qbpgraphbook.fdic.gov/#/",
+                        "accessURL": "https://qbpgraphbook.fdic.gov/#/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://qbpgraphbook.fdic.gov/#/qtrmslinechart?ty=qtrnclnchoffrates",
+                    "downloadURL": null,
+                    "mediaType": "text/CSV",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-11",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "QBP Graph Book Quarterly Return on Assets Annualized for FDIC-Insured Institutions ",
+                    "description": "Quarterly return on assets, annualized for FDIC-Insured institutions March 1995 to present.",
+                    "identifier": "e2635b1e-a197-4e6a-a034-a91d2740ce1b",
+                    "describedBy": {
+                        "@id": "https://qbpgraphbook.fdic.gov/#/",
+                        "accessURL": "https://qbpgraphbook.fdic.gov/#/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://qbpgraphbook.fdic.gov/#/qtrmslinechart?ty=qtrroa",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-16",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "QBP Graph Book Quarterly Return on Equity Annualized for FDIC-Insured Institutions ",
+                    "description": "Quarterly return on equity, annualized for FDIC-Insured institutions March 1995 to present.",
+                    "identifier": "01520547-7ea8-40c6-a9eb-799c7098f6fa",
+                    "describedBy": {
+                        "@id": "https://qbpgraphbook.fdic.gov/#/",
+                        "accessURL": "https://qbpgraphbook.fdic.gov/#/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://qbpgraphbook.fdic.gov/#/qtrmslinechart?ty=qtrroe",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-16",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "QBP Graph Book Annual Loan Growth Rates for FDIC-Insured Institutions ",
+                    "description": "Annual loan growth rates for FDIC-Insured institutions March 1995 to present.",
+                    "identifier": "cd318b13-f490-4716-9d72-bae0d7acc1f5",
+                    "describedBy": {
+                        "@id": "https://qbpgraphbook.fdic.gov/#/",
+                        "accessURL": "https://qbpgraphbook.fdic.gov/#/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://qbpgraphbook.fdic.gov/#/qtrmslinechart?ty=yearlgr",
+                    "downloadURL": null,
+                    "mediaType": "text/CSV",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-11",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "QBP Graph Book Quarterly Assets of FDIC-Insured Commercial Banks and Savings Institutions",
+                    "description": "Quarterly assets of FDIC-Insured commercial banks and savings institutions March 1995 to present.",
+                    "identifier": "b9ca5e5a-3daa-460d-a12d-d7f5c2c4dcbc",
+                    "describedBy": {
+                        "@id": "https://qbpgraphbook.fdic.gov/#/",
+                        "accessURL": "https://qbpgraphbook.fdic.gov/#/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://qbpgraphbook.fdic.gov/#/yearlyareachart?ty=assets",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-16",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "QBP Graph Book Quarterly Number of FDIC-Insured Institutions",
+                    "description": "Quarterly number of FDIC-Insured institutions March 1995 to present.",
+                    "identifier": "d6530892-3075-49b8-acee-3e191e366084",
+                    "describedBy": {
+                        "@id": "https://qbpgraphbook.fdic.gov/#/",
+                        "accessURL": "https://qbpgraphbook.fdic.gov/#/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://qbpgraphbook.fdic.gov/#/yearlyareachart?ty=inst",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-11",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": [
+                "Quarterly Banking Profile"
+            ]
+        },
+        {
+            "@type": "Dataset",
+            "title": "FDIC Statistics at a Glance",
+            "description": "Statistics at a Glance provides the latest quarterly and historical key data for FDIC-insured institutions, the FDIC insurance fund, and FDIC staffing.",
+            "identifier": "fe4e9202-c470-4b43-9576-7aab38e2a3a2",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2025-10-15",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-09",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "FDIC Statistics at a Glance PDF",
+                    "description": "Statistics at a Glance provides the latest quarterly and historical key data for FDIC-insured institutions, the FDIC insurance fund, and FDIC staffing.",
+                    "identifier": "1e5b6836-baf2-4fb6-ab8e-959990a72130",
+                    "describedBy": {
+                        "@id": "https://www7.fdic.gov/dict/app/templates/Index.html#!/Main",
+                        "accessURL": "https://www7.fdic.gov/dict/app/templates/Index.html#!/Main",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://www.fdic.gov/quarterly-banking-profile/fdic-statistics-glance",
+                    "downloadURL": null,
+                    "mediaType": "application/pdf",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "PDF",
+                    "modified": "2026-09-09",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "FDIC Statistics at a Glance XLSX",
+                    "description": "Statistics at a Glance provides the latest quarterly and historical key data for FDIC-insured institutions, the FDIC insurance fund, and FDIC staffing.",
+                    "identifier": "fec0fc7a-3295-42c5-8895-22cd02ccb7a7",
+                    "describedBy": {
+                        "@id": "https://www7.fdic.gov/dict/app/templates/Index.html#!/Main",
+                        "accessURL": "https://www7.fdic.gov/dict/app/templates/Index.html#!/Main",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://www.fdic.gov/quarterly-banking-profile/fdic-statistics-glance",
+                    "downloadURL": null,
+                    "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": " XLSX",
+                    "modified": "2026-09-11",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": [
+                "Quarterly Banking Profile"
+            ]
+        },
+        {
+            "@type": "Dataset",
+            "title": "FDIC and Financial Regulatory Reform Title I and IDI Resolution Planning Resolution Submissions with Public Sections ",
+            "description": "Public sections of all Title I resolution plans and IDI resolution plans and informational filings submitted over the years, even those submitted by firms that are no longer subject to resolution submission requirements and those based on previous superseded rules or guidance.  The public sections available on the FDIC's website have been provided exactly as submitted by the companies, without any modification.",
+            "identifier": "381f9234-4050-4bcd-9af2-54c5b4dacfa7",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2026-09-30",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-15",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "FDIC and Financial Regulatory Reform Title I and IDI Resolution Planning Resolution Submissions with Public Sections CSV",
+                    "description": "Public sections of all Title I resolution plans and IDI resolution plans and informational filings submitted over the years, even those submitted by firms that are no longer subject to resolution submission requirements and those based on previous superseded rules or guidance.  The public sections available on the FDIC's website have been provided exactly as submitted by the companies, without any modification.",
+                    "identifier": "4ca4313f-ff59-4b7f-9003-5dab9eb87f9d",
+                    "describedBy": {
+                        "@id": "https://www.fdic.gov/resolutions/fdic-and-financial-regulatory-reform-title-i-and-idi-resolution-planning",
+                        "accessURL": "https://www.fdic.gov/resolutions/fdic-and-financial-regulatory-reform-title-i-and-idi-resolution-planning",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://www.fdic.gov/resolutions/fdic-and-financial-regulatory-reform-title-i-and-idi-resolution-planning",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-11",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "FDIC and Financial Regulatory Reform Title I and IDI Resolution Planning Resolution Submissions with Public Sections PDF",
+                    "description": "Public sections of all Title I resolution plans and IDI resolution plans and informational filings submitted over the years, even those submitted by firms that are no longer subject to resolution submission requirements and those based on previous superseded rules or guidance.  The public sections available on the FDIC's website have been provided exactly as submitted by the companies, without any modification.",
+                    "identifier": "9709dff5-b579-4344-9448-5768730b2789",
+                    "describedBy": {
+                        "@id": "https://www.fdic.gov/resolutions/fdic-and-financial-regulatory-reform-title-i-and-idi-resolution-planning",
+                        "accessURL": "https://www.fdic.gov/resolutions/fdic-and-financial-regulatory-reform-title-i-and-idi-resolution-planning",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://www.fdic.gov/resolutions/fdic-and-financial-regulatory-reform-title-i-and-idi-resolution-planning",
+                    "downloadURL": null,
+                    "mediaType": "application/pdf",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "PDF",
+                    "modified": "2026-09-11",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": null
+        },
+        {
+            "@type": "Dataset",
+            "title": "FFIEC Call Reports",
+            "description": "FFIEC Call Reports are quarterly financial reports that U.S. commercial banks, national banks, and other insured banks must file with their primary federal regulators. These reports provide regulators with the bank's balance sheet, income statement, and other detailed financial data to monitor the condition, performance, and risk of individual institutions and the industry as a whole. The data collected includes assets, liabilities, capital, and income and expenses.",
+            "identifier": "6861fe8f-a30b-4b72-856a-6bf16554a3df",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2025-10-15",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-09",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "FFIEC Call Reports Single Period",
+                    "description": "FFIEC Call Reports are quarterly financial reports that U.S. commercial banks, national banks, and other insured banks must file with their primary federal regulators. These reports provide regulators with the bank's balance sheet, income statement, and other detailed financial data to monitor the condition, performance, and risk of individual institutions and the industry as a whole. The data collected includes assets, liabilities, capital, and income and expenses.",
+                    "identifier": "3f1d8e80-35d6-4e9b-b22f-8376830e0c63",
+                    "describedBy": {
+                        "@id": "https://www.federalreserve.gov/apps/mdrm/data-dictionary",
+                        "accessURL": "https://www.federalreserve.gov/apps/mdrm/data-dictionary",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": null,
+                    "downloadURL": "https://cdr.ffiec.gov/public/PWS/DownloadBulkData.aspx",
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-09",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "FFIEC Call Reports Balance Sheet Income Statement Past Due Four Periods",
+                    "description": "FFIEC Call Reports are quarterly financial reports that U.S. commercial banks, national banks, and other insured banks must file with their primary federal regulators. These reports provide regulators with the bank's balance sheet, income statement, and other detailed financial data to monitor the condition, performance, and risk of individual institutions and the industry as a whole. The data collected includes assets, liabilities, capital, and income and expenses.",
+                    "identifier": "f09ab173-72c2-42ca-8e6e-16ac62f706f5",
+                    "describedBy": {
+                        "@id": "https://www.federalreserve.gov/apps/mdrm/data-dictionary",
+                        "accessURL": "https://www.federalreserve.gov/apps/mdrm/data-dictionary",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": null,
+                    "downloadURL": "https://cdr.ffiec.gov/public/PWS/DownloadBulkData.aspx",
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-09",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": [
+                "Central Data Repository"
+            ]
+        },
+        {
+            "@type": "Dataset",
+            "title": "Historical Bank Data",
+            "description": "The annual summary of financial and structure data for all FDIC-insured institutions headquartered in a state, city or US territory. The data can be used to identify and analyze long term trends and to develop benchmarks to evaluate the current conditions of the banking and thrift industries. This annual data is available as of December 31 for the years 1934 to 2025.",
+            "identifier": "64b5e8aa-0f0a-4bd9-bb31-99d6831d267e",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2025-10-15",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-08",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "Historical Bank Data API",
+                    "description": "FDIC's application programming interface (API) for Historical Bank Data. Historical Bank Data is the annual summary of financial and structure data for all FDIC-insured institutions headquartered in a state, city or US territory. The data can be used to identify and analyze long term trends and to develop benchmarks to evaluate the current conditions of the banking and thrift industries. This annual data is available as of December 31 for the years 1934 to 2025.",
+                    "identifier": "09425ccf-f3e3-406f-9638-c27532756baf",
+                    "describedBy": {
+                        "@id": "https://api.fdic.gov/banks/docs/",
+                        "accessURL": "https://api.fdic.gov/banks/docs/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://api.fdic.gov/banks/summary/",
+                    "downloadURL": null,
+                    "mediaType": "application/JSON",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "JSON",
+                    "modified": "2026-09-08",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "Historical Bank Data",
+                    "description": "The annual summary of financial and structure data for all FDIC-insured institutions headquartered in a state, city or US territory. The data can be used to identify and analyze long term trends and to develop benchmarks to evaluate the current conditions of the banking and thrift industries. This annual data is available as of December 31 for the years 1934 to 2025.",
+                    "identifier": "0c42a3eb-ec2a-4b15-8ca1-7ca740baaca9",
+                    "describedBy": {
+                        "@id": "https://banks.data.fdic.gov/bankfind-suite/help?helpTopic=glossary-and-variable-definitions",
+                        "accessURL": "https://banks.data.fdic.gov/bankfind-suite/help?helpTopic=glossary-and-variable-definitions",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://banks.data.fdic.gov/bankfind-suite/historical",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-08",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": [
+                "BankFind Suite"
+            ]
+        },
+        {
+            "@type": "Dataset",
+            "title": "Historical Mortgage Servicing Rights Sales",
+            "description": "Mortgage servicing rights sales from 2009 to 2017. ",
+            "identifier": "1db93cc9-93ba-462c-adaf-e50d5b515371",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2026-09-30",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-10",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "Historical Mortgage Servicing Rights Sales",
+                    "description": "Mortgage servicing rights sales from 2009 to 2017. ",
+                    "identifier": "541593ed-e273-465f-b50a-2e28c4ebbcad",
+                    "describedBy": {
+                        "@id": "https://www.fdic.gov/asset-sales/mortgage-servicing-rights-sales",
+                        "accessURL": "https://www.fdic.gov/asset-sales/mortgage-servicing-rights-sales",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://www.fdic.gov/asset-sales/mortgage-servicing-rights-sales",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-10",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": null
+        },
+        {
+            "@type": "Dataset",
+            "title": "Historical Summary of Deposits Data",
+            "description": "Historical FDIC Summary of Deposits data from 1987 to 1993.",
+            "identifier": "fd705160-0aa7-44ff-866f-37f055838378",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2025-10-15",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-15",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "Historical Summary of Deposits Data SAS",
+                    "description": "Historical FDIC Summary of Deposits data from 1987 to 1993.",
+                    "identifier": "ddfa26b8-81fe-438f-b7f1-32c1396a26b5",
+                    "describedBy": {
+                        "@id": "https://banks.data.fdic.gov/bankfind-suite/help?helpTopic=glossary-and-variable-definitions",
+                        "accessURL": "https://banks.data.fdic.gov/bankfind-suite/help?helpTopic=glossary-and-variable-definitions",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": null,
+                    "downloadURL": "https://www.fdic.gov/foia/sod/soddata/sas/historic-sod-1987-to-1993.zip",
+                    "mediaType": null,
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "SAS",
+                    "modified": "2026-09-08",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "Historical Summary of Deposits Data CSV",
+                    "description": "Historical FDIC Summary of Deposits data from 1987 to 1993.",
+                    "identifier": "58822de1-9ee5-46b0-b052-aa541e354017",
+                    "describedBy": {
+                        "@id": "https://banks.data.fdic.gov/bankfind-suite/help?helpTopic=glossary-and-variable-definitions",
+                        "accessURL": "https://banks.data.fdic.gov/bankfind-suite/help?helpTopic=glossary-and-variable-definitions",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://www.fdic.gov/foia/summary-deposits-data-bulk-download",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-08",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": [
+                "Branch Office Deposits"
+            ]
+        },
+        {
+            "@type": "Dataset",
+            "title": "Institution Financial and Regulatory Data",
+            "description": "Institutions information based on financial, regulatory, and other characteristics.",
+            "identifier": "78c54054-659b-4270-950f-72e67ab22bd7",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2025-10-15",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-09",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "Institution Financial and Regulatory Data",
+                    "description": "Institutions information based on financial, regulatory, and other characteristics.",
+                    "identifier": "34f44e5a-f0bb-4aa6-affa-d9a7d3cf9359",
+                    "describedBy": {
+                        "@id": "https://banks.data.fdic.gov/bankfind-suite/help?helpTopic=glossary-and-variable-definitions",
+                        "accessURL": "https://banks.data.fdic.gov/bankfind-suite/help?helpTopic=glossary-and-variable-definitions",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://banks.data.fdic.gov/bankfind-suite/financialreporting/report",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-09",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": [
+                "BankFind Suite"
+            ]
+        },
+        {
+            "@type": "Dataset",
+            "title": "Institution and Peer Group Comparisons",
+            "description": "Institutions information based on financial, regulatory, and other characteristics.",
+            "identifier": "c81863c6-69e6-416c-9ff3-c23be9d3219e",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2025-10-15",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-09",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "Institution and Peer Group Comparisons",
+                    "description": "Institutions information based on financial, regulatory, and other characteristics.",
+                    "identifier": "be8115f7-8fa3-4efd-8b96-5d39c186837c",
+                    "describedBy": {
+                        "@id": "https://banks.data.fdic.gov/bankfind-suite/help?helpTopic=glossary-and-variable-definitions",
+                        "accessURL": "https://banks.data.fdic.gov/bankfind-suite/help?helpTopic=glossary-and-variable-definitions",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://banks.data.fdic.gov/bankfind-suite/peergroup/standard",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-09",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": [
+                "BankFind Suite"
+            ]
+        },
+        {
+            "@type": "Dataset",
+            "title": "Joint Venture Transactions",
+            "description": "Closed joint venture transactions.",
+            "identifier": "a26ad288-62a3-4151-9f27-8fc2431346da",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2026-09-30",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-15",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "Joint Venture Transactions",
+                    "description": "Closed joint venture transactions.",
+                    "identifier": "192acd7c-220f-4de8-ad64-a6ed369020b2",
+                    "describedBy": {
+                        "@id": "https://www.fdic.gov/asset-sales",
+                        "accessURL": "https://www.fdic.gov/asset-sales",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://www.fdic.gov/asset-sales/joint-venture-transactions",
+                    "downloadURL": null,
+                    "mediaType": "application/pdf",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "PDF",
+                    "modified": "2026-09-11",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": null
+        },
+        {
+            "@type": "Dataset",
+            "title": "Oil and Gas Related Asset Sales",
+            "description": "Closed oil and gas related asset sales.",
+            "identifier": "53291c5d-12a1-4d8b-94c2-72c3b42cc552",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2026-09-30",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-10",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "Oil and Gas Related Asset Sales",
+                    "description": "Closed oil and gas related asset sales.",
+                    "identifier": "c83c054c-d368-429a-9702-d24756e49388",
+                    "describedBy": {
+                        "@id": "https://www.fdic.gov/asset-sales/historical-sales",
+                        "accessURL": "https://www.fdic.gov/asset-sales/historical-sales",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://www.fdic.gov/asset-sales/oil-and-gas-related-assets-sales",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-10",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": null
+        },
+        {
+            "@type": "Dataset",
+            "title": "Receivership Financial Statements",
+            "description": "The receivership financial statements include a Statement of Assets & Liabilities in Liquidation, Statement of Operations and related notes prepared on the modified cash basis of accounting established for all active receiverships. These statements are not audited. The FDIC expects to publish financial statements for March 31, June 30, September 30 and December 31. The December 31 (Annual) will remain on the site until replaced by the next annual release. Quarterly financial statements will remain on the site until replaced by the subsequent quarterly results. Please note that in the first year following failure, the receivership financial statements for that specific receivership will be published as soon as practicable.",
+            "identifier": "d1d14e2d-efc0-4f9e-8f6a-79ad3ec76d7a",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2026-09-30",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-10",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "Receivership Financial Statements",
+                    "description": "The receivership financial statements include a Statement of Assets & Liabilities in Liquidation, Statement of Operations and related notes prepared on the modified cash basis of accounting established for all active receiverships. These statements are not audited. The FDIC expects to publish financial statements for March 31, June 30, September 30 and December 31. The December 31 (Annual) will remain on the site until replaced by the next annual release. Quarterly financial statements will remain on the site until replaced by the subsequent quarterly results. Please note that in the first year following failure, the receivership financial statements for that specific receivership will be published as soon as practicable.",
+                    "identifier": "d5f8c3ac-8dfe-4aa2-954c-718a1c7a2e93",
+                    "describedBy": {
+                        "@id": "https://www.fdic.gov/bank-failures/receivership-financial-statements",
+                        "accessURL": "https://www.fdic.gov/bank-failures/receivership-financial-statements",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://www.fdic.gov/bank-failures/receivership-financial-statements",
+                    "downloadURL": null,
+                    "mediaType": "application/pdf",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "PDF",
+                    "modified": "2026-09-10",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": null
+        },
+        {
+            "@type": "Dataset",
+            "title": "Research Information System (RIS)",
+            "description": "The Research Information System (RIS) is a data warehouse developed and maintained by the Division of Insurance and Research (DIR) within FDIC. The system organizes various types of bank and holding company data used in analyzing industry conditions. RIS information is the basis for DIR publications, which include the Institution Directory, Quarterly Banking Profile, Summary of Deposits, and the Statistics on Banking.",
+            "identifier": "3dece014-2363-4181-afaf-21cd00fd68e3",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2025-10-15",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-08",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "Research Information System (RIS) API",
+                    "description": "FDIC's application programming interface (API) for The Research Information System (RIS). RIS is a data warehouse developed and maintained by the Division of Insurance and Research (DIR) within FDIC. The system organizes various types of bank and holding company data used in analyzing industry conditions. RIS information is the basis for DIR publications, which include the Institution Directory, Quarterly Banking Profile, Summary of Deposits, and the Statistics on Banking.",
+                    "identifier": "9f074a04-64ac-4e5f-b53e-aacaed0768e8",
+                    "describedBy": {
+                        "@id": "https://api.fdic.gov/banks/docs/",
+                        "accessURL": "https://api.fdic.gov/banks/docs/",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://api.fdic.gov/banks/financials",
+                    "downloadURL": null,
+                    "mediaType": "application/JSON",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "JSON",
+                    "modified": "2026-09-08",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "Research Information System (RIS) SAS",
+                    "description": "The Research Information System (RIS) is a data warehouse developed and maintained by the Division of Insurance and Research (DIR) within FDIC. The system organizes various types of bank and holding company data used in analyzing industry conditions. RIS information is the basis for DIR publications, which include the Institution Directory, Quarterly Banking Profile, Summary of Deposits, and the Statistics on Banking.",
+                    "identifier": "2af9e9b6-56ea-4351-a201-e7de3a449d16",
+                    "describedBy": {
+                        "@id": "https://www7.fdic.gov/dict/app/templates/Index.html#!/Main",
+                        "accessURL": "https://www7.fdic.gov/dict/app/templates/Index.html#!/Main",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://www.fdic.gov/foia/ris-data-bulk-download",
+                    "downloadURL": null,
+                    "mediaType": null,
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "SAS",
+                    "modified": "2026-09-08",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "Research Information System (RIS) CSV",
+                    "description": "The Research Information System (RIS) is a data warehouse developed and maintained by the Division of Insurance and Research (DIR) within FDIC. The system organizes various types of bank and holding company data used in analyzing industry conditions. RIS information is the basis for DIR publications, which include the Institution Directory, Quarterly Banking Profile, Summary of Deposits, and the Statistics on Banking.",
+                    "identifier": "48347667-cd3a-494e-87e4-628edda0ab1b",
+                    "describedBy": {
+                        "@id": "https://www7.fdic.gov/dict/app/templates/Index.html#!/Main",
+                        "accessURL": "https://www7.fdic.gov/dict/app/templates/Index.html#!/Main",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://www.fdic.gov/foia/ris-data-bulk-download",
+                    "downloadURL": null,
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-08",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": null
+        },
+        {
+            "@type": "Dataset",
+            "title": "Securities Exchange Act Filings",
+            "description": "The Federal Deposit Insurance Corporation (FDIC), administers two groups of securities disclosure filings: Beneficial ownership report filings on Forms 3, 4, and 5 by directors, officers, and principal shareholders of depository institutions with a class of securities registered with the appropriate federal banking agency under the Securities Exchange Act of 1934 (Exchange Act); and Other securities disclosure documents filed by or pertaining to FDIC-supervised depository institutions with a class of securities registered under the Exchange Act.",
+            "identifier": "f8f400d6-7ed9-438b-bc23-7bb5e5c1a446",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2025-10-15",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-09",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "Securities Exchange Act Filings",
+                    "description": "The Federal Deposit Insurance Corporation (FDIC), administers two groups of securities disclosure filings: Beneficial ownership report filings on Forms 3, 4, and 5 by directors, officers, and principal shareholders of depository institutions with a class of securities registered with the appropriate federal banking agency under the Securities Exchange Act of 1934 (Exchange Act); and Other securities disclosure documents filed by or pertaining to FDIC-supervised depository institutions with a class of securities registered under the Exchange Act.",
+                    "identifier": "077256fc-db17-4fbc-85d9-9712ce04b5da",
+                    "describedBy": {
+                        "@id": "https://www.fdic.gov/analysis/list-fdic-supervised-banks-filing-under-securities-exchange-act",
+                        "accessURL": "https://www.fdic.gov/analysis/list-fdic-supervised-banks-filing-under-securities-exchange-act",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": "https://efr.fdic.gov/fcxweb/efr/index.html",
+                    "downloadURL": null,
+                    "mediaType": "application/pdf",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "PDF",
+                    "modified": "2026-09-11",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": null
+        },
+        {
+            "@type": "Dataset",
+            "title": "Uniform Bank Performance Report Rank",
+            "description": "The Uniform Bank Performance Report (UBPR) is an analytical tool created for bank supervisory, examination, and management purposes. In a concise format, it shows the impact of management decisions and economic conditions on a bank's performance and balance-sheet composition. The performance and composition data contained in the report can be used as an aid in evaluating the adequacy of earnings, liquidity, capital, asset and liability management, and growth management. Bankers and examiners alike can use this report to further their understanding of a bank's financial condition, and through such understanding, perform their duties more effectively. This dataset has UBPR rank data.",
+            "identifier": "6e129e6a-1871-4383-9c13-7254d5496a95",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2025-10-15",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-10",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "Uniform Bank Performance Report Rank Four Periods",
+                    "description": "The Uniform Bank Performance Report (UBPR) is an analytical tool created for bank supervisory, examination, and management purposes. In a concise format, it shows the impact of management decisions and economic conditions on a bank's performance and balance-sheet composition. The performance and composition data contained in the report can be used as an aid in evaluating the adequacy of earnings, liquidity, capital, asset and liability management, and growth management. Bankers and examiners alike can use this report to further their understanding of a bank's financial condition, and through such understanding, perform their duties more effectively.  This distribution has UBPR rank data for four periods.",
+                    "identifier": "5426bb3a-3d62-487d-ba9e-9400b8d94d3c",
+                    "describedBy": {
+                        "@id": "https://www.federalreserve.gov/apps/mdrm/data-dictionary",
+                        "accessURL": "https://www.federalreserve.gov/apps/mdrm/data-dictionary",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": null,
+                    "downloadURL": "https://cdr.ffiec.gov/public/PWS/DownloadBulkData.aspx",
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-10",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": [
+                "Central Data Repository"
+            ]
+        },
+        {
+            "@type": "Dataset",
+            "title": "Uniform Bank Performance Report Ratios",
+            "description": "The Uniform Bank Performance Report (UBPR) is an analytical tool created for bank supervisory, examination, and management purposes. In a concise format, it shows the impact of management decisions and economic conditions on a bank's performance and balance-sheet composition. The performance and composition data contained in the report can be used as an aid in evaluating the adequacy of earnings, liquidity, capital, asset and liability management, and growth management. Bankers and examiners alike can use this report to further their understanding of a bank's financial condition, and through such understanding, perform their duties more effectively. This dataset has UBPR ratio data.",
+            "identifier": "54d34939-14d5-465c-ac4d-3c0c43cdf2b6",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2025-10-15",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-10",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "Uniform Bank Performance Report Ratios Four Periods",
+                    "description": "The Uniform Bank Performance Report (UBPR) is an analytical tool created for bank supervisory, examination, and management purposes. In a concise format, it shows the impact of management decisions and economic conditions on a bank's performance and balance-sheet composition. The performance and composition data contained in the report can be used as an aid in evaluating the adequacy of earnings, liquidity, capital, asset and liability management, and growth management. Bankers and examiners alike can use this report to further their understanding of a bank's financial condition, and through such understanding, perform their duties more effectively.  This distribution has UBPR ratio data for four periods.",
+                    "identifier": "de6d642b-38ee-4ac3-a329-20a838ea2c74",
+                    "describedBy": {
+                        "@id": "https://www.federalreserve.gov/apps/mdrm/data-dictionary",
+                        "accessURL": "https://www.federalreserve.gov/apps/mdrm/data-dictionary",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": null,
+                    "downloadURL": "https://cdr.ffiec.gov/public/PWS/DownloadBulkData.aspx",
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-10",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                },
+                {
+                    "@type": "Distribution",
+                    "title": "Uniform Bank Performance Report Ratios Single Period",
+                    "description": "The Uniform Bank Performance Report (UBPR) is an analytical tool created for bank supervisory, examination, and management purposes. In a concise format, it shows the impact of management decisions and economic conditions on a bank's performance and balance-sheet composition. The performance and composition data contained in the report can be used as an aid in evaluating the adequacy of earnings, liquidity, capital, asset and liability management, and growth management. Bankers and examiners alike can use this report to further their understanding of a bank's financial condition, and through such understanding, perform their duties more effectively. This distribution has UBPR ratio data for a single period.",
+                    "identifier": "5ccf0821-2f70-48b3-9421-c3105fdbd836",
+                    "describedBy": {
+                        "@id": "https://www.federalreserve.gov/apps/mdrm/data-dictionary",
+                        "accessURL": "https://www.federalreserve.gov/apps/mdrm/data-dictionary",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": null,
+                    "downloadURL": "https://cdr.ffiec.gov/public/PWS/DownloadBulkData.aspx",
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-10",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": [
+                "Central Data Repository"
+            ]
+        },
+        {
+            "@type": "Dataset",
+            "title": "Uniform Bank Performance Report Statistics",
+            "description": "The Uniform Bank Performance Report (UBPR) is an analytical tool created for bank supervisory, examination, and management purposes. In a concise format, it shows the impact of management decisions and economic conditions on a bank's performance and balance-sheet composition. The performance and composition data contained in the report can be used as an aid in evaluating the adequacy of earnings, liquidity, capital, asset and liability management, and growth management. Bankers and examiners alike can use this report to further their understanding of a bank's financial condition, and through such understanding, perform their duties more effectively. This dataset has UBPR statistical data.",
+            "identifier": "f14bb8b7-4d62-4026-9d71-816afd47f318",
+            "contactPoint": {
+                "fn": "Chief Data Office",
+                "hasEmail": "mailto:ChiefDataOfficer@FDIC.gov"
+            },
+            "describedBy": null,
+            "license": null,
+            "inventoried": "2025-10-15",
+            "spatial": {
+                "@type": "Location",
+                "prefLabel": "Washington, DC"
+            },
+            "modified": "2026-09-16",
+            "distribution": [
+                {
+                    "@type": "Distribution",
+                    "title": "Uniform Bank Performance Report Statistics Four Periods",
+                    "description": "The Uniform Bank Performance Report (UBPR) is an analytical tool created for bank supervisory, examination, and management purposes. In a concise format, it shows the impact of management decisions and economic conditions on a bank's performance and balance-sheet composition. The performance and composition data contained in the report can be used as an aid in evaluating the adequacy of earnings, liquidity, capital, asset and liability management, and growth management. Bankers and examiners alike can use this report to further their understanding of a bank's financial condition, and through such understanding, perform their duties more effectively.  This distribution has UBPR statistics data for four periods.",
+                    "identifier": "ca3b7882-7429-4d8c-bbd9-e2822e1e6b31",
+                    "describedBy": {
+                        "@id": "https://www.federalreserve.gov/apps/mdrm/data-dictionary",
+                        "accessURL": "https://www.federalreserve.gov/apps/mdrm/data-dictionary",
+                        "@type": "Distribution",
+                        "title": "Data Dictionary",
+                        "mediaType": "text/html"
+                    },
+                    "accessURL": null,
+                    "downloadURL": "https://cdr.ffiec.gov/public/PWS/DownloadBulkData.aspx",
+                    "mediaType": "text/csv",
+                    "license": "https://www.usa.gov/publicdomain/label/1.0/",
+                    "format": "CSV",
+                    "modified": "2026-09-16",
+                    "rights": [
+                        "This distribution is publicly accessible. It may be copied, published, distributed, transmitted, cited, and adapted consistent with the stated license."
+                    ],
+                    "accessRights": "Public",
+                    "accessRestriction": [
+                        {
+                            "@type": "AccessRestriction",
+                            "restrictionStatus": "Unrestricted",
+                            "specificRestriction": null,
+                            "restrictionNote": "Publicly available without access restrictions."
+                        }
+                    ],
+                    "useRestriction": [
+                        {
+                            "@type": "UseRestriction",
+                            "restrictionStatus": "Unrestricted"
+                        }
+                    ],
+                    "cuiRestriction": null
+                }
+            ],
+            "rights": null,
+            "accessRights": null,
+            "accessRestriction": null,
+            "useRestriction": null,
+            "cuiRestriction": null,
+            "rightsHolder": [
+                {
+                    "@type": "Organization",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Federal Deposit Insurance Corporation"
+            },
+            "contributor": [
+                {
+                    "@type": "Agent",
+                    "name": "Federal Deposit Insurance Corporation"
+                }
+            ],
+            "subject": [
+                "Central Data Repository"
+            ]
+        }
+    ]
+}

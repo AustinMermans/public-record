@@ -1,6 +1,6 @@
 # Next increment: banking conditions
 
-Read-only PM feasibility review completed after verified v1.7.0. **Not implemented or approved for publication.** Retain application version 1.7.0 until the next reviewed candidate.
+Implemented after verified v1.7.0. Real source capture, raw-bound validation and local tests are complete; final reviewer and hosted publication gates remain separate. Retain application version 1.7.0 until the next reviewed candidate. The scope below is preserved as the acceptance record.
 
 Reader job: Are problem loans and realized credit losses improving or worsening, and how do reserves, earnings, capital and deposits compare? Add a compact panel within Funding & credit, not an institution directory or bank ranking.
 
