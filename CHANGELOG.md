@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 1.6.0 — 2026-09-28
+
 - Unified change edition across economic data, company filings/financial facts, funding and forecasts. Compact desk summaries group verified same-filing evidence and same-series revision batches while retaining every ledger entry.
 - Company, desk and change-type filters, complete pagination, shareable URLs and keyboard focus. Numbers retain evidence links alongside analytical company/chart/forecast destinations.
 - Independent per-channel successful-capture receipts; corporate accession and forecast target/definition comparisons. Baseline, stale/unavailable and unchanged states remain separate; legacy missing receipts are not invented.
