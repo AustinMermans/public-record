@@ -6,6 +6,8 @@ Reader job: “Since the previous successful edition, what changed in the econom
 
 Use already captured evidence before adding another partially integrated provider. Combine existing macro/funding/financial differences with typed comparisons for company filings and forecasts. Lead with compact Economic data, Companies, Funding and Outlook groups; keep complete disclosure/calendar differences accessible below. Selection must be transparent and bounded, not an invented importance score. Link every item to original evidence and its analytical profile/chart. Group derived recalculations with their input change instead of counting them as independent developments.
 
+Editorial correction in v1.12: the four-desk lead became misleading when the latest comparison contained only court-feed differences. The front now adapts to active desks, including Disclosures and Calendar. Court entries are aggregated by source and distinct linked docket rather than displayed as arbitrary top-case headlines; source-filtered ledger URLs preserve every entry. This changes the compact presentation, not the independent channel baselines or the underlying ledger.
+
 Required boundaries:
 
 - Independent previous-success baselines per channel; stale is not “no change,” and a first capture is only a baseline.

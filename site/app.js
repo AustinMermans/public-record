@@ -129,8 +129,8 @@ let changeFilters={},changePage=1,pendingChangePageFocus=false;
 function readChangeView(){
  const query=new URLSearchParams(location.hash.split('?')[1]||''),items=D.changes?.items||[];
  const companies=new Set([...(D.financials?.companies||[]),...(D.corporate?.companies||[]),...items].map(x=>x.cik).filter(Boolean));
- const allowed={company:companies,domain:new Set(['Economic data','Companies','Funding','Outlook','Disclosures','Calendar']),kind:new Set(items.map(x=>x.kind))};
- changeFilters=Object.fromEntries(['company','domain','kind'].map(k=>[k,allowed[k].has(query.get(k))?query.get(k):'']));
+ const allowed={company:companies,domain:new Set(['Economic data','Companies','Funding','Outlook','Disclosures','Calendar']),source:new Set(items.map(x=>x.source_id).filter(Boolean)),kind:new Set(items.map(x=>x.kind))};
+ changeFilters=Object.fromEntries(['company','domain','source','kind'].map(k=>[k,allowed[k].has(query.get(k))?query.get(k):'']));
  const requested=Number(query.get('page')),pages=Math.max(1,Math.ceil(filterChanges(D,changeFilters).length/100));
  changePage=Math.min(pages,Number.isSafeInteger(requested)&&requested>0?requested:1);
 }
@@ -141,7 +141,7 @@ function paintChanges(focusId){
  if(focusId){$('#'+focusId)?.focus({preventScroll:true});window.scrollTo(x,y);}
 }
 function applyChangeFilters(focusId){
- changeFilters=Object.fromEntries(['company','domain','kind'].map(k=>[k,$('#change-'+k)?.value||'']));
+ changeFilters=Object.fromEntries(['company','domain','source','kind'].map(k=>[k,$('#change-'+k)?.value||'']));
  changePage=1;paintChanges(focusId);writeView();
 }
 const viewFields={search:['q','search-kind'],corporate:['company','filing-form'],economy:['series','transform','period'],calendar:['search','calendar-layout','event-type'],disclosures:['search','domain','publisher','saved-filter']};
@@ -149,7 +149,7 @@ function writeView(){
  const params=new URLSearchParams();
  for(const id of viewFields[route]||[]){const el=$('#'+id);if(el&&(el.value||el.tagName==='SELECT'))params.set(id,el.value);}
  if(route==='disclosures'&&page>1)params.set('page',page);
- if(route==='changes'){for(const k of ['company','domain','kind'])if(changeFilters[k])params.set(k,changeFilters[k]);if(changePage>1)params.set('page',String(changePage));}
+ if(route==='changes'){for(const k of ['company','domain','source','kind'])if(changeFilters[k])params.set(k,changeFilters[k]);if(changePage>1)params.set('page',String(changePage));}
  if(route==='search'&&mentionScope)params.set('mentions',mentionScope.cik);
  if(route==='search'&&searchOffset>0)params.set('search-page',String(searchOffset/30+1));
  if(route==='company'){const query=new URLSearchParams(location.hash.split('?')[1]||'');params.set('cik',query.get('cik')||'');if(query.get('filing'))params.set('filing',query.get('filing'));}
@@ -203,5 +203,5 @@ document.addEventListener('input',e=>{if(e.target.id==='q'){clearTimeout(searchT
 document.addEventListener('change',e=>{if(route==='changes'&&e.target.closest('#change-filters')){applyChangeFilters(e.target.id);return;}if(route==='search'){paintSearch();writeView();return;}if(route==='corporate'){paintCorporate();writeView();return;}if(e.target.id==='vintage-date'){vintage=e.target.value;paintChart();writeView();$('#vintage-date').focus();return;}if(e.target.id==='lens-select'){activeLens=e.target.value;page=1;paintRecords();return;}if(route==='calendar')paintCalendar();if(route==='disclosures'){page=1;paintRecords();}if(route==='economy'){selected=$('#series').value;mode=$('#transform').value;period=$('#period').value;paintChart();}writeView();});
 let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{if(route==='fiscal'&&D){bindFiscal($('#main'),D,true);return;}if(route==='funding'&&D){bindFunding($('#main'),D,true);return;}if(route!=='economy'||!D)return;const svg=$('#series-chart svg.chart'),width=Math.max(260,Math.round($('#series-chart').clientWidth));if(svg&&svg.viewBox.baseVal.width===width)return;const active=document.activeElement,focus=active?.id==='chart-observation'?'#chart-observation':active?.id==='chart-latest'?'#chart-latest':active?.dataset.chartStep?'[data-chart-step="'+active.dataset.chartStep+'"]':null;paintChart(true);if(focus)$(focus)?.focus({preventScroll:true});},100);});
 document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(!a||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey||e.button!==0)return;e.preventDefault();if(a.hash==='#main'){$('#main').focus();return;}if(location.hash!==a.hash)location.hash=a.hash;else render();});
-window.addEventListener('hashchange',()=>{if(D){render();if(route==='changes'&&pendingChangePageFocus){pendingChangePageFocus=false;const status=$('#change-results-status');status.tabIndex=-1;status.focus({preventScroll:true});status.scrollIntoView({block:'start'});}else{pendingChangePageFocus=false;$('#main').focus({preventScroll:true});window.scrollTo(0,0);}}});
+window.addEventListener('hashchange',()=>{if(D){render();if(route==='changes'&&pendingChangePageFocus){pendingChangePageFocus=false;const status=$('#change-results-status');status.tabIndex=-1;status.focus({preventScroll:true});status.scrollIntoView({block:'start'});}else if(route==='changes'&&detailTarget(route,new URLSearchParams(location.hash.split('?')[1]||''))){pendingChangePageFocus=false;}else{pendingChangePageFocus=false;$('#main').focus({preventScroll:true});window.scrollTo(0,0);}}});
 try{const r=await fetch('data.json',{cache:'no-cache'});if(!r.ok)throw Error('Snapshot request failed');D=await r.json();searchData=buildSearchIndex(D);$('#edition-date').textContent=day(D.captured_at,{weekday:'long',month:'long',day:'numeric',year:'numeric'});$('#version').textContent='v'+D.version;const age=(Date.now()-Date.parse(D.captured_at))/3600000;const bad=D.sources.filter(s=>s.status!=='ok').length;$('#freshness').innerHTML=`<span class="status-dot"></span>Captured ${esc(day(D.captured_at))} · ${esc(time(D.captured_at))}${age>24?' <strong class="warning">· Snapshot more than 24 hours old</strong>':''}<a class="freshness-link" href="#sources">${bad?`${bad} coverage gaps`:'Source coverage'} · ${D.sources.length} core collectors →</a>`;render();}catch(err){$('#main').innerHTML='<div class="empty">The data snapshot could not be loaded.<p>Please reload. If the problem persists, inspect the repository’s latest deployment. No values are substituted.</p></div>';$('#freshness').textContent='Data unavailable';console.error(err);}

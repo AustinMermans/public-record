@@ -26,12 +26,47 @@ test('ledger paginates all records with shareable filter-preserving links and cl
   const last=changeEdition(data(items),{page:999});assert.match(last,/Showing 201–251/);assert.equal((last.match(/<tr id="change-/g)||[]).length,51);
   assert.match(changeEdition(data(items),{page:NaN}),/Showing 1–100/);
 });
-test('summary has four bounded desks while disclosure volume remains in the complete ledger',()=>{
-  const items=[...Array.from({length:5},(_,i)=>item({id:'g'+i,title:'Metric '+i})),...Array.from({length:20},(_,i)=>item({id:'court'+i,title:'Court '+i,domain:'Disclosures'}))];
-  const compact=changeEdition(data(items),{compact:true});
-  assert.equal((compact.match(/class="change-desk"/g)||[]).length,4);
-  assert.match(compact,/Showing 3 of 5 developments · 3 of 5 ledger items/);assert.doesNotMatch(compact,/Court 0/);assert.match(compact,/20 additional disclosure \/ calendar/);
-  assert.match(changeEdition(data(items)),/Court 0/);
+test('the front shows active desks, groups court-feed entries by linked docket, and preserves the ledger',()=>{
+  const items=[...Array.from({length:5},(_,i)=>item({id:'g'+i,title:'Metric '+i})),
+    ...Array.from({length:4},(_,i)=>item({id:'court'+i,title:'Court '+i,domain:'Disclosures',source_id:i===3?'nysd':'cand',kind:i===3?'Record metadata changed':'Newly captured document',url:i<3?'https://court.gov/case/1':'https://court.gov/case/2'}))];
+  const channels=[channel(),channel({id:'cand',label:'Northern California',domain:'Disclosures',from_capture:'2026-09-27T13:00:00Z',to_capture:'2026-09-28T14:30:00Z'}),channel({id:'nysd',label:'Southern New York',domain:'Disclosures',from_capture:'2026-09-29T18:51:48Z',to_capture:'2026-09-29T19:12:38Z'})];
+  const compact=changeEdition(data(items,channels),{compact:true});
+  assert.equal((compact.match(/class="change-desk(?: |")/g)||[]).length,2);
+  assert.match(compact,/Showing 3 of 5 developments · 3 of 5 ledger items/);
+  assert.match(compact,/4 ledger differences: 3 newly captured entries, 1 metadata change; 2 distinct docket links/);
+  assert.match(compact,/3 ledger entries · 1 distinct docket link/);
+  assert.match(compact,/Sep 27 9:00 AM EDT → Sep 28 10:30 AM EDT/);
+  assert.match(compact,/Sep 29 · 2:51 PM–3:12 PM EDT/);
+  assert.match(compact,/title="2026-09-29T18:51:48Z → 2026-09-29T19:12:38Z"/);
+  assert.match(compact,/partial rolling feeds, not all filings or rulings/);
+  assert.match(compact,/#changes\?domain=Disclosures&amp;source=cand/);
+  assert.doesNotMatch(compact,/Court 0|Court 1|Court 2|Court 3/);
+  assert.match(compact,/4 other desks without ledger entries · check comparison coverage/);
+  assert.match(changeEdition(data(items,channels)),/Court 0/);
+});
+test('a court-only capture is visible on the front without implying a new ruling',()=>{
+  const items=[item({id:'docket',domain:'Disclosures',source_id:'nysd',url:'https://court.gov/docket',kind:'Newly captured document'})];
+  const html=changeEdition(data(items,[channel({id:'nysd',label:'Southern New York',domain:'Disclosures'})]),{compact:true});
+  assert.match(html,/Court-feed activity/);assert.match(html,/1 ledger difference: 1 newly captured entry, 0 metadata changes/);assert.match(html,/not all filings or rulings/);
+  assert.doesNotMatch(html,/4 other desks/);
+  assert.match(html,/5 other desks without ledger entries/);
+});
+test('source filters are exact and survive ledger pagination links',()=>{
+  const items=Array.from({length:105},(_,i)=>item({id:'d'+i,domain:'Disclosures',source_id:'nysd',url:'https://court.gov/'+i}));
+  items.push(item({id:'other',domain:'Disclosures',source_id:'cand',url:'https://court.gov/other'}));
+  assert.equal(filterChanges(items,{domain:'Disclosures',source:'nysd'}).length,105);
+  const html=changeEdition(data(items,[channel({id:'nysd',label:'Southern New York',domain:'Disclosures'})]),{filters:{domain:'Disclosures',source:'nysd'}});
+  assert.match(html,/#changes\?domain=Disclosures&amp;source=nysd&amp;page=2/);
+  assert.match(html,/<option value="nysd" selected>Southern New York<\/option>/);
+  assert.match(html,/Disclosures · Southern New York · Showing 1–100 of 105 matching items/);
+});
+test('calendar differences become a visible front desk while unavailable channels remain qualified',()=>{
+  const html=changeEdition(data([item({id:'date-change',domain:'Calendar',title:'Release rescheduled',kind:'Schedule changed'})],
+    [channel({id:'calendar',domain:'Calendar'}),channel({id:'bls',domain:'Calendar',status:'unavailable'}),channel({id:'fred',domain:'Economic data',status:'baseline'})]),{compact:true});
+  assert.match(html,/<h3><a href="#changes\?domain=Calendar">Calendar<\/a><\/h3>/);
+  assert.match(html,/Release rescheduled/);
+  assert.match(html,/1 baseline; 0 unavailable/);
+  assert.match(html,/without ledger entries · check comparison coverage/);
 });
 test('verified filing identities group across capture windows without deleting source ledger rows',()=>{
   const items=[item({id:'filing',domain:'Companies',cik:'000001',development_id:'filing:000001:abc',kind:'Newly captured filing',title:'Issuer report',before:undefined,after:undefined,form:'10-Q',report_period:'2026-06-30',filed:'2026-07-30',summary:'Revenue and balance-sheet update.'}),item({id:'financial',domain:'Companies',cik:'000001',development_id:'filing:000001:abc',kind:'Revised reported financial fact',title:'Issuer revenue',from_capture:'2026-09-01T12:00:00Z',before:1000000,after:1100000,unit:'USD'})];

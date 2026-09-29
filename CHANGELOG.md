@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+## 1.12.0 — 2026-09-29
+
+- The compact change edition now leads with whichever desks actually have ledger entries, including Disclosures and Calendar. Court-feed differences are summarized by publisher and distinct docket link rather than promoting arbitrary case names; quiet desks retain their comparison-coverage detail.
+- A source filter and shareable source-specific ledger URLs let readers move from each court summary to its exact captured entries. These are feed observations, not evidence of a new ruling or editorial materiality.
+
 ## 1.11.0 — 2026-09-29
 
 - Business company-match spotlight places issuer identity, source-linked financial context and recent relevant filings before the paginated disclosure list. Specialist issuer boundaries appear beside abbreviated numbers, including a direct prior-registrant link and unspliced-history caution for XOM. Mobile Business navigation removes a duplicate global search form while retaining site-wide search access.

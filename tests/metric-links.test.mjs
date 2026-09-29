@@ -26,6 +26,9 @@ test('detail routing allows only known report sections',()=>{
   assert.equal(detailTarget('outlook',new URLSearchParams('forecast=gdpnow')),'forecast-gdpnow');
   assert.equal(detailTarget('outlook',new URLSearchParams('forecast=sep')),'forecast-sep');
   assert.equal(detailTarget('outlook',new URLSearchParams('forecast=unknown')),null);
+  assert.equal(detailTarget('changes',new URLSearchParams('domain=Disclosures&source=cacd')),'change-results-status');
+  assert.equal(detailTarget('changes',new URLSearchParams('page=2')),'change-results-status');
+  assert.equal(detailTarget('changes',new URLSearchParams()),null);
 });
 test('funding headline links point to each rate, the spread detail, and global stress',()=>{
   const date='2026-09-25';
