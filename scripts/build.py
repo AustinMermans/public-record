@@ -4,6 +4,7 @@ from pathlib import Path
 from datetime import datetime
 from versioning import validate_release
 from validate_financials import validate_financials
+from change_edition import assemble_changes
 ROOT=Path(__file__).resolve().parents[1]
 
 def validate(data):
@@ -41,9 +42,6 @@ def main():
     if financials.exists():
         data['financials']=json.loads(financials.read_text())
         validate_financials(data['financials'],data.get('corporate',{}).get('companies',[]))
-        financial_changes=data['financials'].get('changes',{})
-        for key in ('items','baselines','skipped'):
-            data['changes'][key].extend(financial_changes.get(key,[]))
     if research.exists():
         data['research']=json.loads(research.read_text())
         for v in data['research']['vintages']:
@@ -53,6 +51,7 @@ def main():
                 assert len(dict(v['observations']))==len(v['observations'])
         for f in data['research']['forecasts']:
             if f.get('published_at'):assert f['published_at']<=data['research']['captured_at'][:10]
+    data['changes']=assemble_changes(data)
     out=ROOT/'dist';out.mkdir(exist_ok=True)
     for p in (ROOT/'site').iterdir():
         if p.is_file(): shutil.copy2(p,out/p.name)

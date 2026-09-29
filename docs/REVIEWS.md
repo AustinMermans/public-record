@@ -1,10 +1,24 @@
 # Independent product reviews
 
+## Unified change edition gate — 1.6.0 candidate, September 28, 2026
+
+Final integrated UI/content gate: the independent PM reviewer inspected route/query/filter/focus integration, summary/source/detail semantics, homepage placement, responsive CSS and 320/768/1280 ledger screenshots. All ten change-module tests passed independently; no blocking findings remained. Hosted refresh and public-payload verification remain separate gates below.
+
+Independent PM/content review approved the bounded change edition. Its in-memory fixture using retained source payloads produced exactly four entries: a CPI revision, new Apple accession, revised Apple financial fact and same-target GDPNow update, with independent source windows and correct analytical destinations. No fixture data entered production. Real cached assembly produced 309 disclosure differences and 79 channels, not invented company or forecast developments. Bulk historical revisions now group by series/capture; same-date forecast changes are neutrally labelled rather than asserted to be corrections.
+
+A separate econometric reviewer approved the root-owned assembly, collector integration and build pipeline after two fixes: legacy financial receipts no longer become fictional first baselines, and public-inspection documents route to Disclosures while expected-publication events open the correctly filtered calendar. It verified CIK/accession matching, duplicate guards, individual clocks, Eastern calendar dates and instant-based latest-capture selection. That reviewer authored the forecast/corporate comparators, so did not independently approve them; the PM fixture and root code review supplied separate checks. Both bounded review summaries had no P0/P1/P2/P3 findings remaining.
+
+Root browser verification covered the homepage, Changes front and filtered ledger at 320/768/1280px, all without page overflow. Filter changes preserve control focus; pagination preserves filters and moves focus to the results status; Copy View and reload retain page 2. CPI headline navigation still opens the preferred year-on-year measure with full history. The designer collapsed selection-method prose and kept lead stories ahead of the homepage change summary. Tests: 125 Python and 58 JavaScript pass; syntax, metadata, build and diff checks pass. These are local checks, not physical-device or screen-reader certification; final integrated UI review and hosted publication gates are recorded separately.
+
 ## Headline drill-down gate — 1.5.1, September 28, 2026
 
 Independent UI/code review approved the clickable-number follow-up with no P0/P1/P2 findings. Numerical transformations and source data are unchanged. Native, visibly underlined links with descriptive names connect macro values to the matching preferred-measure full history; funding values to their individual series or spread calculation; and Outlook numbers to their corresponding report. Zero remains clickable, missing values do not become dead links, and modified clicks retain browser behavior.
 
 Host browser verification confirmed the front-page CPI number opens CPIAUCSL at 3.35 percent year-on-year rather than the raw price-index level; Back returns to the front page. Keyboard Enter on the funding spread focuses its calculation/history section, and reloading the detail URL restores that target. GDPNow's number focuses the matching report and preserves its forecast query when copying the view link. All four fronts have no page overflow at 320/768/1280px. The code review also checked guarded post-render focus, forecast-panel targets, native-anchor accessibility and escaping. Validation: 95 Python and 48 JavaScript tests pass; source data and financial normalization are unchanged. Public deployment is a separate gate.
+
+### Verified v1.5.1 publication
+
+The [patch deployment](https://github.com/AustinMermans/public-record/actions/runs/36500351702) succeeded from `7c8f15e42a628f8e176f7d040822bb1da6c44f5c`. Public release.json, data.json, app.js, metric-links.mjs, funding.mjs, publication.mjs, editorial.mjs and style.css matched the reviewed build byte-for-byte. A live front-page click on unemployment opened UNRATE, full history and the correct 4.10 percent current level; the live footer showed v1.5.1. Immutable v1.5.1 points to that deployment commit. The [release notes](https://github.com/AustinMermans/public-record/releases/tag/v1.5.1) link the site and workflow evidence. No new source capture was claimed by this navigation-only patch.
 
 ### Verified v1.5.0 publication
 

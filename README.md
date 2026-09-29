@@ -15,7 +15,7 @@ A source-linked observatory for US economic releases, regulation, corporate disc
 - **Government & Politics:** institutional coverage from Federal Reserve communications and Federal Register activity. Politician profiles, votes and political-finance data remain planned.
 - **News & announcements:** captured Federal Reserve press releases; explicitly official communications, not independent reporting or a comprehensive news service.
 - **Disclosures:** government and selected court records, original documents, local reading lists and saved keyword lenses with transparent match reasons.
-- **Changes:** differences between successful captures, separating new documents, revisions and schedule changes.
+- **Changes:** a unified edition across economic data, company filings/financial facts, funding and forecasts. Bounded desk summaries, source-linked values and analytical drill-downs; complete company/desk/type-filtered ledger with shareable pagination. Each channel retains its own successful-capture window.
 - **Outlook and sources:** extracted FOMC projections and GDPNow figures, further references, collector health and coverage boundaries.
 
 The editorial direction is a newspaper-like research publication, not a directory of APIs. Subject desks connect the existing evidence; full cross-source dossiers and additional reporting feeds remain future work. Keep facts, interpretation and unresolved questions distinct. See [the editorial architecture](docs/EDITORIAL.md) and [company coverage](docs/COMPANY-COVERAGE.md).

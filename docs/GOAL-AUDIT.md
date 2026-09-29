@@ -35,6 +35,8 @@ BLS's direct calendar remains unavailable in the current collection environment 
 
 ## Next high-value iterations
 
+After v1.5 approval and the requested v1.5.1 navigation patch, the PM recommended the [unified change edition](CHANGE-EDITION-PLAN.md) as the next bounded minor release. It connects existing channels for a returning reader before adding more sources. Fiscal/banking and broader forecasts below remain completion requirements, not deferred out of scope.
+
 1. **Issuer depth after the initial financial screen:** verified issuer-specific KPIs, segments and debt context where valuable; do not present the selected standardized facts as complete coverage. Broader sources below take priority over multiplying generic ratios.
 2. **Fiscal and banking conditions:** Treasury financing/deficit/interest flows with fiscal-year alignment; FDIC aggregates with verified units, institution population and stock/flow definitions. Debt-stock changes are not deficits; bank ratios cannot be summed or naively averaged.
 3. **Changes across the whole publication:** company filings and research updates must join the core and issuer-financial comparison ledger, with independent prior-success baselines.

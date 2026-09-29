@@ -4,6 +4,7 @@ import hashlib,json,os,subprocess,time
 from datetime import datetime,timezone
 from pathlib import Path
 from collection_errors import safe_sec_error
+from publication_changes import compare_corporate
 
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'data/corporate'
@@ -40,6 +41,9 @@ def parse_company(data,cik):
 
 def main():
     DATA.mkdir(parents=True,exist_ok=True);agent=os.environ.get('SEC_USER_AGENT','');companies=[]
+    current=DATA/'current.json'
+    previous=json.loads(current.read_text()) if current.exists() else None
+    (DATA/'comparison-baseline.json').write_text(json.dumps(previous,separators=(',',':')))
     for cik in UNIVERSE:
         file=DATA/(cik+'.json');old=json.loads(file.read_text()) if file.exists() else None
         url=f'https://data.sec.gov/submissions/CIK{cik}.json'
@@ -55,7 +59,9 @@ def main():
         except Exception as exc:company=dict(old or {'cik':cik,'url':url,'filings':[]},status='stale' if old else 'unavailable',error=safe_sec_error(exc),attempted_at=STAMP)
         companies.append(company);time.sleep(.6)
         print(cik,company['status'],len(company['filings']))
-    text=json.dumps(dict(captured_at=STAMP,companies=companies),separators=(',',':'))
+    bundle=dict(captured_at=STAMP,companies=companies)
+    bundle['changes']=compare_corporate(previous,bundle)
+    text=json.dumps(bundle,separators=(',',':'))
     (DATA/'current.json').write_text(text)
     (DATA/('capture-'+STAMP[:19].replace(':','')+'.json')).write_text(text)
 

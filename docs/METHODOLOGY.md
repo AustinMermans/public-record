@@ -32,6 +32,14 @@ Exposure lenses are case-insensitive literal substring matches over title, summa
 
 The capture archive currently has no automatic deletion; raw responses are content-addressed. Storage growth must be reviewed before expanding cadence or source volume. Source access, redistribution rights and operational reliability are separate acceptance checks for every new feed.
 
+## Unified change edition
+
+Core feeds, each covered SEC issuer's submissions and financial facts, and each extracted forecast retain independent comparison channels. Each uses its own previous successful capture, not one publication-wide interval. A current failed/stale feed is not compared; a first comparable payload establishes a baseline. Legacy payloads lacking per-channel receipts recover windows from retained items where possible and otherwise remain unavailable for comparison until refreshed. Capture timing is not publication timing, and unseen changes between polls cannot be reconstructed.
+
+Corporate identity uses CIK and accession; amendments remain separate filings. Summary references to the same verified SEC archive identity are grouped across feeds without deleting ledger rows or treating them as independent corroboration. Financial recalculations are not issuer-reported changes. Economic revision batches group by series, source, change type and capture pair, led by the newest affected observation. Selection is latest capture, latest affected period, then title, with at most three developments per investor desk; it is not a materiality score. The complete ledger retains disclosure/calendar rows and all grouped items with filters and pagination.
+
+GDPNow compares values only within the same target and definition. SEP aligns measure names and horizons rather than table positions; new measures/horizons and changed definitions are explicit boundaries. A same-publication-date value change is a same-date update, not a proven publisher correction. Cached ALFRED vintage files are excluded from forecast news. Before/after values link to the supplied publisher evidence; a publisher's mutable page is not a historical vintage permalink. Retained comparison baselines and capture receipts provide the historical evidence trail in the repository.
+
 ## ALFRED and forecasts
 
 Current FRED downloads have no arbitrary 2015 cutoff. Each series begins at its earliest available observation. The optional ALFRED view currently covers GDP, unemployment, payrolls and CPI at July 30, 2020 and year-end dates from 2020 onward. Its selector is the exact collected universe. Each CSV header must identify the requested series and vintage date; future observations, invalid values and duplicate dates are rejected. Historical requests are cached with immutable retrieval receipts. ALFRED as-of data is not a reconstruction of every first release or an intraday information set.
