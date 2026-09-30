@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "reads": [
+    {
+      "cik": "0001018724",
+      "event_accession": "0001018724-26-000024",
+      "period_end": "2026-06-30",
+      "source_sha256": "8891a02eadf51e88c091768e9b25c489fb922b9ca332ec93a1a56f0ff0bbb446",
+      "claims": [
+        {
+          "kind": "driver",
+          "text": "Amazon reported AWS sales up 37% to $42.2 billion and AWS operating income of $16.6 billion, versus $10.2 billion a year earlier.",
+          "source_cue": "AWS segment sales increased 37%",
+          "evidence": [
+            {"line": 13, "sha256": "88f1d2c882274ce9c36074b4355438f136cb2c21061519a31185871abf6edc32"},
+            {"line": 17, "sha256": "c61d0e13256dd1b03e9114440c06a3db1a1551144591c53178ce582229c3e9d1"}
+          ]
+        },
+        {
+          "kind": "exception",
+          "text": "The issuer says its $62.6 billion of quarterly net income includes $53.4 billion of nonoperating pretax other income, primarily from Anthropic investments. That amount is not operating profit.",
+          "source_cue": "non-operating pre-tax other income of $53.4 billion",
+          "evidence": [
+            {"line": 18, "sha256": "2b2c30bff6cf48f562b98a8d8a1f0a23a26dacdbb48d525416d162e89d981358"},
+            {"line": 19, "sha256": "9a418ceb670133c627d55af66a3845ad70adaa80ab18e4947bfe56ee3d672900"}
+          ]
+        },
+        {
+          "kind": "outlook",
+          "text": "Amazon guided third-quarter 2026 net sales to $197–202 billion, or 9–12% year-on-year growth, with roughly 80 basis points of currency headwind. The issuer says growth excluding Prime Day's timing effect in both years would be nearly 400 basis points higher.",
+          "source_cue": "Prime Day in both 2025 and 2026",
+          "evidence": [{"line": 60, "sha256": "f06b356d0705f5d4f9741d174018410f586a62f8071846a935dff8a1a14dc95b"}]
+        }
+      ],
+      "question": "How much of the earnings change reflects recurring operations, given the issuer-described nonoperating investment gain?"
+    },
+    {
+      "cik": "0000059478",
+      "event_accession": "0000059478-26-000077",
+      "period_end": "2026-06-30",
+      "source_sha256": "990413c029ebacd69b6d5b2746edafa9bf1088fad2569f1d947096dc786ccfaa",
+      "claims": [
+        {
+          "kind": "driver",
+          "text": "Lilly attributed 48% year-on-year revenue growth to 60% higher volume, partly offset by a 13% decline in realized prices. Its issuer-defined Key Products basket reached $15.7 billion, led by Mounjaro and Zepbound.",
+          "source_cue": "driven by a 60% increase in volume",
+          "evidence": [
+            {"line": 34, "sha256": "ee60d4d9480e6989635e6b2722edcd7ce12e49334393d9a94d3e2b7aed8c4329"},
+            {"line": 37, "sha256": "69c4a52a60f927392623ec6e931c32debad781d23e3f9a96040d82d992062b1a"}
+          ]
+        },
+        {
+          "kind": "exception",
+          "text": "Lilly says a $2.78 midpoint rise in underlying non-GAAP EPS guidance was more than offset by $3.03 of acquired in-process R&D charges, leaving updated full-year non-GAAP EPS guidance at $35.50–36.50. These are issuer-defined non-GAAP measures.",
+          "source_cue": "acquired IPR&D charges",
+          "evidence": [{"line": 11, "sha256": "6d517a23b4c9193353b5a0f7e31011a939966105542c27e4c4b519fb96fd41a2"}]
+        },
+        {
+          "kind": "outlook",
+          "text": "Lilly raised its full-year 2026 revenue guidance from $82–85 billion to $85–87 billion. This is issuer guidance, not a realized result.",
+          "source_cue": "Revenue $82 to $85 billion $85 to $87 billion",
+          "evidence": [
+            {"line": 11, "sha256": "6d517a23b4c9193353b5a0f7e31011a939966105542c27e4c4b519fb96fd41a2"},
+            {"line": 118, "sha256": "0ac8471b71801cc274a9bc643cc34a9b8fc0ac57f6b40a78746782c07dfe4927"}
+          ]
+        }
+      ],
+      "question": "Will the issuer's reported volume gains continue to outweigh lower realized pricing?"
+    },
+    {
+      "cik": "0000354950",
+      "event_accession": "0000354950-26-000145",
+      "period_end": "2026-08-02",
+      "source_sha256": "c31642dd9e5ad5ff209053b50f7323d3672b746e6d6e5f7240d6acd25b39bbd0",
+      "claims": [
+        {
+          "kind": "driver",
+          "text": "Home Depot reported total sales up 5.7%, while comparable sales rose 1.7% and U.S. comparable sales rose 1.3%. The different growth rates should not be treated as the same measure.",
+          "source_cue": "Comparable sales for the second quarter",
+          "evidence": [{"line": 7, "sha256": "97393eadc05eb91fc21f67687896c7f8362e2c7fd243493ad86d1cee83c70621"}]
+        },
+        {
+          "kind": "outlook",
+          "text": "The company reaffirmed fiscal-2026 guidance for roughly 2.5–4.5% total sales growth and flat-to-2% comparable sales growth. Its guidance assumes IEEPA tariff refunds partly offset higher input costs.",
+          "source_cue": "Guidance includes IEEPA tariff refunds",
+          "evidence": [
+            {"line": 13, "sha256": "abbbc58ec3198520742022a51cdde852fe26b91392040fca83f2b8f0f1017dc0"},
+            {"line": 14, "sha256": "1cae571df579f14f0ed12e2c9bb8dc4fca635b1b7829ca0484f9a2bcbbe52ca7"},
+            {"line": 15, "sha256": "56bdada17b319cc9bae6feb80b86b28c963c73a05453bde7c1c3d67616d40abc"}
+          ]
+        }
+      ],
+      "question": "What explains the gap between total-sales growth and comparable-sales growth, and is that mix durable?"
+    }
+  ]
+}

@@ -70,3 +70,25 @@ test('untrusted issuer and source strings are escaped',()=>{
   assert.doesNotMatch(html,/<script>|<img|href="javascript:/);
   assert.match(html,/&lt;script&gt;/);
 });
+
+test('source-bound issuer read precedes tables and keeps issuer claims separate',()=>{
+  const copy=structuredClone(d),item=dossierFor(copy,cik);
+  item.issuer_read={status:'ok',exhibit_accession:accession,source_url:brief.source.url,
+    claims:[{kind:'driver',text:'Volume drove the issuer result.',source_cue:'volume increased'},
+      {kind:'outlook',text:'Issuer guidance, not realized revenue.',source_cue:'revenue guidance'}],
+    question:'Will volume endure?'};
+  const html=earningsDossier(copy,cik);
+  assert.match(dossierTeaser(copy,cik,accession),/Read drivers & guidance/);
+  assert.match(html,/What matters in the issuer exhibit/);
+  assert.match(html,/Operating read/);
+  assert.match(html,/Issuer outlook/);
+  assert.match(html,/Open question/);
+  assert.match(html,/Exact EX-99\.1/);
+  assert.match(html,/Source cue: “volume increased”/);
+  assert.ok(html.indexOf('Volume drove')<html.indexOf('earnings-table'));
+  assert.doesNotMatch(html,/Issuer highlight/);
+  item.issuer_read.claims[0].text='<img src=x onerror=bad()>';
+  item.issuer_read.claims[0].source_cue='<script>bad()</script>';
+  assert.match(earningsDossier(copy,cik),/&lt;img/);
+  assert.doesNotMatch(earningsDossier(copy,cik),/<script>/);
+});
