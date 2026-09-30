@@ -12,6 +12,7 @@ from financial_changes import compare_financials
 from fiscal import compare_fiscal
 from banking import compare_banking
 from bea_changes import compare_bea_releases
+from bea_pce import compare_bea_pce
 from energy import compare_energy
 from inflation import compare as compare_inflation
 
@@ -25,7 +26,7 @@ def channel_domain(sid):
         return 'Outlook'
     if sid.startswith(('nyfed-', 'ofr-')) or sid == 'fdic-qbp':
         return 'Funding'
-    if sid.startswith('fred-') or sid in ('treasury-mts', 'bea-gdp-releases', 'eia-wpsr'):
+    if sid.startswith('fred-') or sid in ('treasury-mts', 'bea-gdp-releases', 'bea-pce-releases', 'eia-wpsr'):
         return 'Economic data'
     if sid in ('bls', 'bea', 'fomc', 'treasury'):
         return 'Calendar'
@@ -73,7 +74,7 @@ def assemble_changes(data):
     core = copy.deepcopy(data.get('changes') or dict(items=[], baselines=[], skipped=[]))
     core.setdefault('channels', legacy_channels(core, data.get('sources', [])))
     groups = [core]
-    for key, compare in (('corporate', compare_corporate), ('research', compare_research), ('spf', compare_spf), ('financials', compare_financials), ('fiscal', compare_fiscal), ('banking', compare_banking), ('bea_releases', compare_bea_releases), ('energy', compare_energy), ('inflation', compare_inflation)):
+    for key, compare in (('corporate', compare_corporate), ('research', compare_research), ('spf', compare_spf), ('financials', compare_financials), ('fiscal', compare_fiscal), ('banking', compare_banking), ('bea_releases', compare_bea_releases), ('bea_pce', compare_bea_pce), ('energy', compare_energy), ('inflation', compare_inflation)):
         module = data.get(key)
         if not module:
             continue
@@ -121,6 +122,8 @@ def assemble_changes(data):
                 detail = '#fiscal?' + urlencode(dict(view='monthly',metric=item['metric_id'])) if monthly else '#fiscal?view=fytd'
             elif sid == 'bea-gdp-releases':
                 detail = '#gdp-releases?' + urlencode({'quarter': item['target']})
+            elif sid == 'bea-pce-releases':
+                detail = '#pce-releases?' + urlencode({'target': item['target']})
             elif sid == 'eia-wpsr':
                 detail = '#energy?' + urlencode({'metric': item['metric_id']})
             elif sid == 'cleveland-inflation-nowcast':
