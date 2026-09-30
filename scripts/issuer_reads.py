@@ -12,7 +12,7 @@ from pathlib import Path
 
 from business_briefs import _checked_source, visible_lines
 
-KINDS = {'driver', 'exception', 'outlook'}
+KINDS = {'driver', 'exception', 'outlook', 'credit'}
 SHA = re.compile(r'^[0-9a-f]{64}$')
 
 
@@ -21,6 +21,11 @@ def attach_issuer_reads(dossier_bundle, brief_bundle, catalogue, root):
         raise ValueError('Unsupported issuer-read catalogue')
     briefs = {(b['cik'], b['accession']): b for b in brief_bundle.get('briefs', [])}
     dossiers = {d['cik']: d for d in dossier_bundle.get('dossiers', [])}
+    # Reattaching to an already assembled publication must never carry an
+    # earlier editorial read into a newly selected earnings event.
+    for dossier in dossiers.values():
+        dossier.pop('issuer_read', None)
+        dossier.pop('issuer_read_state', None)
     seen = set()
     attached = 0
     for item in catalogue.get('reads', []):
@@ -84,5 +89,10 @@ def attach_issuer_reads(dossier_bundle, brief_bundle, catalogue, root):
                                       exhibit_accession=item['event_accession'],
                                       status=brief['status'])
         attached += 1
+    for dossier in dossiers.values():
+        if dossier.get('status') in ('matched', 'stale_matched'):
+            dossier['issuer_read_state'] = ('reviewed' if dossier.get('issuer_read')
+                                            else 'successor_needs_review' if dossier['cik'] in seen
+                                            else 'not_reviewed')
     dossier_bundle['issuer_reads'] = attached
     return dossier_bundle

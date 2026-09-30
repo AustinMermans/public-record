@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+## 1.21.0 — 2026-09-29
+
+- Business adds reviewed, exact-exhibit issuer reads for JPMorgan, ExxonMobil's current registrant and Caterpillar, extending curated coverage to six companies across banking, energy and industrials. The reads distinguish bank-specific credit costs and significant gains, ExxonMobil's sequential operating drivers and planned capacity, and Caterpillar's sales-volume/price gains and tariff-recovery effect. Each claim has a short source cue and direct SEC exhibit link; management explanations remain issuer-reported.
+- The dossier now states whether a matched result has a current reviewed read, no reviewed read, or a newer result that superseded the prior interpretation. Superseded claims remain hidden while the exact exhibit and 10-Q figures stay available. A new credit-specific claim type avoids presenting bank loss-cost data as industrial operating guidance. The Business teaser uses a result-neutral label rather than promising guidance where none exists.
+
 ## 1.20.0 — 2026-09-29
 
 - Business and company dossiers gain short, source-bound issuer-result reads for Amazon, Lilly and Home Depot. Operating drivers, unusual items and guidance sit before the filed-quarter table, with open investor questions, claim-specific exhibit cues and direct SEC links. A featured Business headline opens the dossier when such a read exists.

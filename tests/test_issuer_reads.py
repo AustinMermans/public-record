@@ -24,13 +24,15 @@ class IssuerReadTests(unittest.TestCase):
     def assembled(self):
         return assemble_dossiers(self.corporate, self.briefs, self.financials, ROOT)
 
-    def test_three_exact_latest_events_are_attached(self):
+    def test_six_exact_latest_events_are_attached(self):
         result = attach_issuer_reads(self.assembled(), self.briefs, self.catalogue, ROOT)
-        self.assertEqual(result['issuer_reads'], 3)
+        self.assertEqual(result['issuer_reads'], 6)
         attached = {d['cik']: d for d in result['dossiers'] if d.get('issuer_read')}
-        self.assertEqual(set(attached), {'0001018724', '0000059478', '0000354950'})
+        self.assertEqual(set(attached), {'0001018724', '0000059478', '0000354950',
+                                         '0000019617', '0002115436', '0000018230'})
         for cik, dossier in attached.items():
             read = dossier['issuer_read']
+            self.assertEqual(dossier['issuer_read_state'], 'reviewed')
             self.assertEqual(read['exhibit_accession'], dossier['event']['accession'])
             self.assertEqual(read['source_url'], dossier['event']['exhibit_url'])
             self.assertTrue(read['source_url'].startswith('https://www.sec.gov/Archives/edgar/data/'+str(int(cik))+'/'))
@@ -41,8 +43,19 @@ class IssuerReadTests(unittest.TestCase):
         target = next(x for x in dossier['dossiers'] if x['cik'] == '0000354950')
         target['event']['accession'] = '0000354950-26-NEWER'
         result = attach_issuer_reads(dossier, self.briefs, self.catalogue, ROOT)
-        self.assertEqual(result['issuer_reads'], 2)
+        self.assertEqual(result['issuer_reads'], 5)
         self.assertNotIn('issuer_read', target)
+        self.assertEqual(target['issuer_read_state'], 'successor_needs_review')
+
+    def test_reattachment_clears_a_prior_read_after_successor_event(self):
+        dossier = attach_issuer_reads(self.assembled(), self.briefs, self.catalogue, ROOT)
+        target = next(x for x in dossier['dossiers'] if x['cik'] == '0000354950')
+        self.assertIn('issuer_read', target)
+        target['event']['accession'] = '0000354950-26-NEWER'
+        result = attach_issuer_reads(dossier, self.briefs, self.catalogue, ROOT)
+        self.assertEqual(result['issuer_reads'], 5)
+        self.assertNotIn('issuer_read', target)
+        self.assertEqual(target['issuer_read_state'], 'successor_needs_review')
 
     def test_changed_source_line_period_or_sha_fail_closed(self):
         for mutation in ('line', 'period', 'source', 'cue'):
@@ -65,8 +78,16 @@ class IssuerReadTests(unittest.TestCase):
         target = next(x for x in dossier['dossiers'] if x['cik'] == '0001018724')
         target['status'] = 'period_mismatch'
         result = attach_issuer_reads(dossier, self.briefs, self.catalogue, ROOT)
-        self.assertEqual(result['issuer_reads'], 2)
+        self.assertEqual(result['issuer_reads'], 5)
         self.assertNotIn('issuer_read', target)
+
+    def test_matched_without_curated_read_is_marked_unreviewed(self):
+        result = attach_issuer_reads(self.assembled(), self.briefs, self.catalogue, ROOT)
+        candidates = [d for d in result['dossiers'] if d.get('status') in ('matched', 'stale_matched')
+                      and d['cik'] not in {r['cik'] for r in self.catalogue['reads']}]
+        self.assertTrue(candidates)
+        self.assertTrue(all(d['issuer_read_state'] == 'not_reviewed' and not d.get('issuer_read')
+                            for d in candidates))
 
     def test_new_raw_bytes_need_the_same_entire_visible_exhibit(self):
         item = next(x for x in self.catalogue['reads'] if x['cik'] == '0001018724')
