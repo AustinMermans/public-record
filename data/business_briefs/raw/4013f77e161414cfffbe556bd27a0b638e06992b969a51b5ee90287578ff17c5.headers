@@ -1,0 +1,216 @@
+<HTML><HEAD><TITLE>SEC EDGAR Submission 0000080424-26-000056</TITLE>
+<!--
+<SEC-HEADER>0000080424-26-000056.hdr.sgml : 20260424
+<ACCEPTANCE-DATETIME>20260424070147
+<ACCESSION-NUMBER>0000080424-26-000056
+<TYPE>8-K
+<PUBLIC-DOCUMENT-COUNT>15
+<PERIOD>20260424
+<ITEMS>2.02
+<ITEMS>9.01
+<FILING-DATE>20260424
+<DATE-OF-FILING-DATE-CHANGE>20260424
+<FILER>
+<COMPANY-DATA>
+<CONFORMED-NAME>PROCTER & GAMBLE Co
+<CIK>0000080424
+<ASSIGNED-SIC>2840
+<ORGANIZATION-NAME>08 Industrial Applications and Services
+<IRS-NUMBER>310411980
+<STATE-OF-INCORPORATION>OH
+<FISCAL-YEAR-END>0630
+</COMPANY-DATA>
+<FILING-VALUES>
+<FORM-TYPE>8-K
+<ACT>34
+<FILE-NUMBER>001-00434
+<FILM-NUMBER>26890438
+</FILING-VALUES>
+<BUSINESS-ADDRESS>
+<STREET1>ONE PROCTER & GAMBLE PLAZA
+<CITY>CINCINNATI
+<STATE>OH
+<ZIP>45202
+<PHONE>5139831100
+</BUSINESS-ADDRESS>
+<MAIL-ADDRESS>
+<STREET1>ONE PROCTER & GAMBLE PLAZA
+<CITY>CINCINNATI
+<STATE>OH
+<ZIP>45202
+</MAIL-ADDRESS>
+<FORMER-COMPANY>
+<FORMER-CONFORMED-NAME>PROCTER & GAMBLE CO
+<DATE-CHANGED>19920703
+</FORMER-COMPANY>
+</FILER>
+</SEC-HEADER>
+-->
+</HEAD><BODY>
+<PRE>&lt;SEC-DOCUMENT&gt;0000080424-26-000056-index.html : 20260424
+&lt;SEC-HEADER&gt;0000080424-26-000056.hdr.sgml : 20260424
+&lt;ACCEPTANCE-DATETIME&gt;20260424070147
+ACCESSION NUMBER:		0000080424-26-000056
+CONFORMED SUBMISSION TYPE:	8-K
+PUBLIC DOCUMENT COUNT:		15
+CONFORMED PERIOD OF REPORT:	20260424
+ITEM INFORMATION:		Results of Operations and Financial Condition
+ITEM INFORMATION:		Financial Statements and Exhibits
+FILED AS OF DATE:		20260424
+DATE AS OF CHANGE:		20260424
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			PROCTER &amp; GAMBLE Co
+		CENTRAL INDEX KEY:			0000080424
+		STANDARD INDUSTRIAL CLASSIFICATION:	SOAP, DETERGENT, CLEANING PREPARATIONS, PERFUMES, COSMETICS [2840]
+		ORGANIZATION NAME:           	08 Industrial Applications and Services
+		EIN:				310411980
+		STATE OF INCORPORATION:			OH
+		FISCAL YEAR END:			0630
+
+	FILING VALUES:
+		FORM TYPE:		8-K
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	001-00434
+		FILM NUMBER:		26890438
+
+	BUSINESS ADDRESS:	
+		STREET 1:		ONE PROCTER &amp; GAMBLE PLAZA
+		CITY:			CINCINNATI
+		STATE:			OH
+		ZIP:			45202
+		BUSINESS PHONE:		5139831100
+
+	MAIL ADDRESS:	
+		STREET 1:		ONE PROCTER &amp; GAMBLE PLAZA
+		CITY:			CINCINNATI
+		STATE:			OH
+		ZIP:			45202
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	PROCTER &amp; GAMBLE CO
+		DATE OF NAME CHANGE:	19920703
+&lt;/SEC-HEADER&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;8-K
+&lt;SEQUENCE&gt;1
+&lt;FILENAME&gt;pg-20260424.htm
+&lt;DESCRIPTION&gt;FY2526 Q3 JFM 8-K
+&lt;TEXT&gt;
+<a href="pg-20260424.htm">Document 1 - file: pg-20260424.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-99.1
+&lt;SEQUENCE&gt;2
+&lt;FILENAME&gt;fy2526q3jfm8-kexhibit991.htm
+&lt;DESCRIPTION&gt;FY2526 Q3 JFM 8-K EXHIBIT 99.1
+&lt;TEXT&gt;
+<a href="fy2526q3jfm8-kexhibit991.htm">Document 2 - file: fy2526q3jfm8-kexhibit991.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.SCH
+&lt;SEQUENCE&gt;3
+&lt;FILENAME&gt;pg-20260424.xsd
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION SCHEMA DOCUMENT
+&lt;TEXT&gt;
+<a href="pg-20260424.xsd">Document 3 - file: pg-20260424.xsd</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.DEF
+&lt;SEQUENCE&gt;4
+&lt;FILENAME&gt;pg-20260424_def.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION DEFINITION LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="pg-20260424_def.xml">Document 4 - file: pg-20260424_def.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.LAB
+&lt;SEQUENCE&gt;5
+&lt;FILENAME&gt;pg-20260424_lab.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION LABEL LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="pg-20260424_lab.xml">Document 5 - file: pg-20260424_lab.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.PRE
+&lt;SEQUENCE&gt;6
+&lt;FILENAME&gt;pg-20260424_pre.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="pg-20260424_pre.xml">Document 6 - file: pg-20260424_pre.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;7
+&lt;FILENAME&gt;pg-20260424_g1.jpg
+&lt;TEXT&gt;
+<a href="pg-20260424_g1.jpg">Document 7 - file: pg-20260424_g1.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;8
+&lt;FILENAME&gt;pglogoa21a.jpg
+&lt;TEXT&gt;
+<a href="pglogoa21a.jpg">Document 8 - file: pglogoa21a.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;10
+&lt;FILENAME&gt;R1.htm
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="R1.htm">Document 10 - file: R1.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;11
+&lt;FILENAME&gt;report.css
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="report.css">Document 11 - file: report.css</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;12
+&lt;FILENAME&gt;Show.js
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="Show.js">Document 12 - file: Show.js</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;14
+&lt;FILENAME&gt;FilingSummary.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/FilingSummary.xml">Document 14 - file: FilingSummary.html</a><br>
+<a href="FilingSummary.xml">Document 14 - RAW XML: FilingSummary.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;JSON
+&lt;SEQUENCE&gt;16
+&lt;FILENAME&gt;MetaLinks.json
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="MetaLinks.json">Document 16 - file: MetaLinks.json</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;ZIP
+&lt;SEQUENCE&gt;17
+&lt;FILENAME&gt;0000080424-26-000056-xbrl.zip
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="0000080424-26-000056-xbrl.zip">Document 17 - file: 0000080424-26-000056-xbrl.zip</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;18
+&lt;FILENAME&gt;pg-20260424_htm.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/pg-20260424_htm.xml">Document 18 - file: pg-20260424_htm.html</a><br>
+<a href="pg-20260424_htm.xml">Document 18 - RAW XML: pg-20260424_htm.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;/SEC-DOCUMENT&gt;</PRE><script type="text/javascript"  src="/NB7sno/xvGjX/Q_ZCq/rw/t5u30XhwmSVLpf/bC4gdQ8CAg/RR1vBhly/V24"></script></BODY></HTML>

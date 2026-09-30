@@ -1,0 +1,194 @@
+<HTML><HEAD><TITLE>SEC EDGAR Submission 0001628280-26-046717</TITLE>
+<!--
+<SEC-HEADER>0001628280-26-046717.hdr.sgml : 20260702
+<ACCEPTANCE-DATETIME>20260702090126
+<ACCESSION-NUMBER>0001628280-26-046717
+<TYPE>8-K
+<PUBLIC-DOCUMENT-COUNT>12
+<PERIOD>20260702
+<ITEMS>2.02
+<ITEMS>9.01
+<FILING-DATE>20260702
+<DATE-OF-FILING-DATE-CHANGE>20260702
+<FILER>
+<COMPANY-DATA>
+<CONFORMED-NAME>Tesla, Inc.
+<CIK>0001318605
+<ASSIGNED-SIC>3711
+<ORGANIZATION-NAME>04 Manufacturing
+<IRS-NUMBER>912197729
+<STATE-OF-INCORPORATION>TX
+<FISCAL-YEAR-END>1231
+</COMPANY-DATA>
+<FILING-VALUES>
+<FORM-TYPE>8-K
+<ACT>34
+<FILE-NUMBER>001-34756
+<FILM-NUMBER>261148032
+</FILING-VALUES>
+<BUSINESS-ADDRESS>
+<STREET1>1 TESLA ROAD
+<CITY>AUSTIN
+<STATE>TX
+<ZIP>78725
+<PHONE>512-516-8177
+</BUSINESS-ADDRESS>
+<MAIL-ADDRESS>
+<STREET1>1 TESLA ROAD
+<CITY>AUSTIN
+<STATE>TX
+<ZIP>78725
+</MAIL-ADDRESS>
+<FORMER-COMPANY>
+<FORMER-CONFORMED-NAME>TESLA MOTORS INC
+<DATE-CHANGED>20050222
+</FORMER-COMPANY>
+</FILER>
+</SEC-HEADER>
+-->
+</HEAD><BODY>
+<PRE>&lt;SEC-DOCUMENT&gt;0001628280-26-046717-index.html : 20260702
+&lt;SEC-HEADER&gt;0001628280-26-046717.hdr.sgml : 20260702
+&lt;ACCEPTANCE-DATETIME&gt;20260702090126
+ACCESSION NUMBER:		0001628280-26-046717
+CONFORMED SUBMISSION TYPE:	8-K
+PUBLIC DOCUMENT COUNT:		12
+CONFORMED PERIOD OF REPORT:	20260702
+ITEM INFORMATION:		Results of Operations and Financial Condition
+ITEM INFORMATION:		Financial Statements and Exhibits
+FILED AS OF DATE:		20260702
+DATE AS OF CHANGE:		20260702
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			Tesla, Inc.
+		CENTRAL INDEX KEY:			0001318605
+		STANDARD INDUSTRIAL CLASSIFICATION:	MOTOR VEHICLES &amp; PASSENGER CAR BODIES [3711]
+		ORGANIZATION NAME:           	04 Manufacturing
+		EIN:				912197729
+		STATE OF INCORPORATION:			TX
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		8-K
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	001-34756
+		FILM NUMBER:		261148032
+
+	BUSINESS ADDRESS:	
+		STREET 1:		1 TESLA ROAD
+		CITY:			AUSTIN
+		STATE:			TX
+		ZIP:			78725
+		BUSINESS PHONE:		512-516-8177
+
+	MAIL ADDRESS:	
+		STREET 1:		1 TESLA ROAD
+		CITY:			AUSTIN
+		STATE:			TX
+		ZIP:			78725
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	TESLA MOTORS INC
+		DATE OF NAME CHANGE:	20050222
+&lt;/SEC-HEADER&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;8-K
+&lt;SEQUENCE&gt;1
+&lt;FILENAME&gt;tsla-20260702.htm
+&lt;DESCRIPTION&gt;8-K
+&lt;TEXT&gt;
+<a href="tsla-20260702.htm">Document 1 - file: tsla-20260702.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-99.1
+&lt;SEQUENCE&gt;2
+&lt;FILENAME&gt;exhibit99111111.htm
+&lt;DESCRIPTION&gt;EX-99.1
+&lt;TEXT&gt;
+<a href="exhibit99111111.htm">Document 2 - file: exhibit99111111.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.SCH
+&lt;SEQUENCE&gt;3
+&lt;FILENAME&gt;tsla-20260702.xsd
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION SCHEMA DOCUMENT
+&lt;TEXT&gt;
+<a href="tsla-20260702.xsd">Document 3 - file: tsla-20260702.xsd</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.LAB
+&lt;SEQUENCE&gt;4
+&lt;FILENAME&gt;tsla-20260702_lab.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION LABEL LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="tsla-20260702_lab.xml">Document 4 - file: tsla-20260702_lab.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.PRE
+&lt;SEQUENCE&gt;5
+&lt;FILENAME&gt;tsla-20260702_pre.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="tsla-20260702_pre.xml">Document 5 - file: tsla-20260702_pre.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;7
+&lt;FILENAME&gt;R1.htm
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="R1.htm">Document 7 - file: R1.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;8
+&lt;FILENAME&gt;report.css
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="report.css">Document 8 - file: report.css</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;9
+&lt;FILENAME&gt;Show.js
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="Show.js">Document 9 - file: Show.js</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;11
+&lt;FILENAME&gt;FilingSummary.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/FilingSummary.xml">Document 11 - file: FilingSummary.html</a><br>
+<a href="FilingSummary.xml">Document 11 - RAW XML: FilingSummary.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;JSON
+&lt;SEQUENCE&gt;13
+&lt;FILENAME&gt;MetaLinks.json
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="MetaLinks.json">Document 13 - file: MetaLinks.json</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;ZIP
+&lt;SEQUENCE&gt;14
+&lt;FILENAME&gt;0001628280-26-046717-xbrl.zip
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="0001628280-26-046717-xbrl.zip">Document 14 - file: 0001628280-26-046717-xbrl.zip</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;15
+&lt;FILENAME&gt;tsla-20260702_htm.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/tsla-20260702_htm.xml">Document 15 - file: tsla-20260702_htm.html</a><br>
+<a href="tsla-20260702_htm.xml">Document 15 - RAW XML: tsla-20260702_htm.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;/SEC-DOCUMENT&gt;</PRE><script type="text/javascript"  src="/NB7sno/xvGjX/Q_ZCq/rw/t5u30XhwmSVLpf/bC4gdQ8CAg/RR1vBhly/V24"></script></BODY></HTML>

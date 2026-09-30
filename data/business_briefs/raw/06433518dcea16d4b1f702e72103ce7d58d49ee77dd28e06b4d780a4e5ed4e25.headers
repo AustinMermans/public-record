@@ -1,0 +1,232 @@
+<HTML><HEAD><TITLE>SEC EDGAR Submission 0001403161-26-000103</TITLE>
+<!--
+<SEC-HEADER>0001403161-26-000103.hdr.sgml : 20260728
+<ACCEPTANCE-DATETIME>20260728160526
+<ACCESSION-NUMBER>0001403161-26-000103
+<TYPE>8-K
+<PUBLIC-DOCUMENT-COUNT>17
+<PERIOD>20260728
+<ITEMS>2.02
+<ITEMS>8.01
+<ITEMS>9.01
+<FILING-DATE>20260728
+<DATE-OF-FILING-DATE-CHANGE>20260728
+<FILER>
+<COMPANY-DATA>
+<CONFORMED-NAME>VISA INC.
+<CIK>0001403161
+<ASSIGNED-SIC>7389
+<ORGANIZATION-NAME>07 Trade & Services
+<IRS-NUMBER>260267673
+<STATE-OF-INCORPORATION>DE
+<FISCAL-YEAR-END>0930
+</COMPANY-DATA>
+<FILING-VALUES>
+<FORM-TYPE>8-K
+<ACT>34
+<FILE-NUMBER>001-33977
+<FILM-NUMBER>261211836
+</FILING-VALUES>
+<BUSINESS-ADDRESS>
+<STREET1>P.O. BOX 8999
+<CITY>SAN FRANCISCO
+<STATE>CA
+<ZIP>94128-8999
+<PHONE>650-432-3200
+</BUSINESS-ADDRESS>
+<MAIL-ADDRESS>
+<STREET1>P.O. BOX 8999
+<CITY>SAN FRANCISCO
+<STATE>CA
+<ZIP>94128-8999
+</MAIL-ADDRESS>
+<FORMER-COMPANY>
+<FORMER-CONFORMED-NAME>Visa Inc.
+<DATE-CHANGED>20070614
+</FORMER-COMPANY>
+</FILER>
+</SEC-HEADER>
+-->
+</HEAD><BODY>
+<PRE>&lt;SEC-DOCUMENT&gt;0001403161-26-000103-index.html : 20260728
+&lt;SEC-HEADER&gt;0001403161-26-000103.hdr.sgml : 20260728
+&lt;ACCEPTANCE-DATETIME&gt;20260728160526
+ACCESSION NUMBER:		0001403161-26-000103
+CONFORMED SUBMISSION TYPE:	8-K
+PUBLIC DOCUMENT COUNT:		17
+CONFORMED PERIOD OF REPORT:	20260728
+ITEM INFORMATION:		Results of Operations and Financial Condition
+ITEM INFORMATION:		Other Events
+ITEM INFORMATION:		Financial Statements and Exhibits
+FILED AS OF DATE:		20260728
+DATE AS OF CHANGE:		20260728
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			VISA INC.
+		CENTRAL INDEX KEY:			0001403161
+		STANDARD INDUSTRIAL CLASSIFICATION:	SERVICES-BUSINESS SERVICES, NEC [7389]
+		ORGANIZATION NAME:           	07 Trade &amp; Services
+		EIN:				260267673
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			0930
+
+	FILING VALUES:
+		FORM TYPE:		8-K
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	001-33977
+		FILM NUMBER:		261211836
+
+	BUSINESS ADDRESS:	
+		STREET 1:		P.O. BOX 8999
+		CITY:			SAN FRANCISCO
+		STATE:			CA
+		ZIP:			94128-8999
+		BUSINESS PHONE:		650-432-3200
+
+	MAIL ADDRESS:	
+		STREET 1:		P.O. BOX 8999
+		CITY:			SAN FRANCISCO
+		STATE:			CA
+		ZIP:			94128-8999
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	Visa Inc.
+		DATE OF NAME CHANGE:	20070614
+&lt;/SEC-HEADER&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;8-K
+&lt;SEQUENCE&gt;1
+&lt;FILENAME&gt;v-20260728.htm
+&lt;DESCRIPTION&gt;8-K
+&lt;TEXT&gt;
+<a href="v-20260728.htm">Document 1 - file: v-20260728.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-99.1
+&lt;SEQUENCE&gt;2
+&lt;FILENAME&gt;q32026earningsrelease.htm
+&lt;DESCRIPTION&gt;EXHIBIT 99.1
+&lt;TEXT&gt;
+<a href="q32026earningsrelease.htm">Document 2 - file: q32026earningsrelease.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.SCH
+&lt;SEQUENCE&gt;3
+&lt;FILENAME&gt;v-20260728.xsd
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION SCHEMA DOCUMENT
+&lt;TEXT&gt;
+<a href="v-20260728.xsd">Document 3 - file: v-20260728.xsd</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.DEF
+&lt;SEQUENCE&gt;4
+&lt;FILENAME&gt;v-20260728_def.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION DEFINITION LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="v-20260728_def.xml">Document 4 - file: v-20260728_def.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.LAB
+&lt;SEQUENCE&gt;5
+&lt;FILENAME&gt;v-20260728_lab.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION LABEL LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="v-20260728_lab.xml">Document 5 - file: v-20260728_lab.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.PRE
+&lt;SEQUENCE&gt;6
+&lt;FILENAME&gt;v-20260728_pre.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="v-20260728_pre.xml">Document 6 - file: v-20260728_pre.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;7
+&lt;FILENAME&gt;bannera.jpg
+&lt;TEXT&gt;
+<a href="bannera.jpg">Document 7 - file: bannera.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;8
+&lt;FILENAME&gt;dividera.jpg
+&lt;TEXT&gt;
+<a href="dividera.jpg">Document 8 - file: dividera.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;9
+&lt;FILENAME&gt;footera.jpg
+&lt;TEXT&gt;
+<a href="footera.jpg">Document 9 - file: footera.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;10
+&lt;FILENAME&gt;v-20260728_g1.gif
+&lt;TEXT&gt;
+<a href="v-20260728_g1.gif">Document 10 - file: v-20260728_g1.gif</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;12
+&lt;FILENAME&gt;R1.htm
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="R1.htm">Document 12 - file: R1.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;13
+&lt;FILENAME&gt;report.css
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="report.css">Document 13 - file: report.css</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;14
+&lt;FILENAME&gt;Show.js
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="Show.js">Document 14 - file: Show.js</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;16
+&lt;FILENAME&gt;FilingSummary.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/FilingSummary.xml">Document 16 - file: FilingSummary.html</a><br>
+<a href="FilingSummary.xml">Document 16 - RAW XML: FilingSummary.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;JSON
+&lt;SEQUENCE&gt;18
+&lt;FILENAME&gt;MetaLinks.json
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="MetaLinks.json">Document 18 - file: MetaLinks.json</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;ZIP
+&lt;SEQUENCE&gt;19
+&lt;FILENAME&gt;0001403161-26-000103-xbrl.zip
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="0001403161-26-000103-xbrl.zip">Document 19 - file: 0001403161-26-000103-xbrl.zip</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;20
+&lt;FILENAME&gt;v-20260728_htm.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/v-20260728_htm.xml">Document 20 - file: v-20260728_htm.html</a><br>
+<a href="v-20260728_htm.xml">Document 20 - RAW XML: v-20260728_htm.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;/SEC-DOCUMENT&gt;</PRE><script type="text/javascript"  src="/NB7sno/xvGjX/Q_ZCq/rw/t5u30XhwmSVLpf/bC4gdQ8CAg/RR1vBhly/V24"></script></BODY></HTML>

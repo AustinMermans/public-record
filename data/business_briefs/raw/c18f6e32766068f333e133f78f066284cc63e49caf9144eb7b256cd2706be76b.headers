@@ -1,0 +1,247 @@
+<HTML><HEAD><TITLE>SEC EDGAR Submission 0001628280-26-024990</TITLE>
+<!--
+<SEC-HEADER>0001628280-26-024990.hdr.sgml : 20260414
+<ACCEPTANCE-DATETIME>20260414063242
+<ACCESSION-NUMBER>0001628280-26-024990
+<TYPE>8-K
+<PUBLIC-DOCUMENT-COUNT>17
+<PERIOD>20260414
+<ITEMS>2.02
+<ITEMS>9.01
+<FILING-DATE>20260414
+<DATE-OF-FILING-DATE-CHANGE>20260414
+<FILER>
+<COMPANY-DATA>
+<CONFORMED-NAME>JPMORGAN CHASE & CO
+<CIK>0000019617
+<ASSIGNED-SIC>6021
+<ORGANIZATION-NAME>02 Finance
+<IRS-NUMBER>132624428
+<STATE-OF-INCORPORATION>DE
+<FISCAL-YEAR-END>1231
+</COMPANY-DATA>
+<FILING-VALUES>
+<FORM-TYPE>8-K
+<ACT>34
+<FILE-NUMBER>001-05805
+<FILM-NUMBER>26859117
+</FILING-VALUES>
+<BUSINESS-ADDRESS>
+<STREET1>270 PARK AVENUE
+<CITY>NEW YORK
+<STATE>NY
+<ZIP>10017
+<PHONE>2122706000
+</BUSINESS-ADDRESS>
+<MAIL-ADDRESS>
+<STREET1>270 PARK AVENUE
+<CITY>NEW YORK
+<STATE>NY
+<ZIP>10017
+</MAIL-ADDRESS>
+<FORMER-COMPANY>
+<FORMER-CONFORMED-NAME>J P MORGAN CHASE & CO
+<DATE-CHANGED>20010102
+</FORMER-COMPANY>
+<FORMER-COMPANY>
+<FORMER-CONFORMED-NAME>CHASE MANHATTAN CORP /DE/
+<DATE-CHANGED>19960402
+</FORMER-COMPANY>
+<FORMER-COMPANY>
+<FORMER-CONFORMED-NAME>CHEMICAL BANKING CORP
+<DATE-CHANGED>19920703
+</FORMER-COMPANY>
+</FILER>
+</SEC-HEADER>
+-->
+</HEAD><BODY>
+<PRE>&lt;SEC-DOCUMENT&gt;0001628280-26-024990-index.html : 20260414
+&lt;SEC-HEADER&gt;0001628280-26-024990.hdr.sgml : 20260414
+&lt;ACCEPTANCE-DATETIME&gt;20260414063242
+ACCESSION NUMBER:		0001628280-26-024990
+CONFORMED SUBMISSION TYPE:	8-K
+PUBLIC DOCUMENT COUNT:		17
+CONFORMED PERIOD OF REPORT:	20260414
+ITEM INFORMATION:		Results of Operations and Financial Condition
+ITEM INFORMATION:		Financial Statements and Exhibits
+FILED AS OF DATE:		20260414
+DATE AS OF CHANGE:		20260414
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			JPMORGAN CHASE &amp; CO
+		CENTRAL INDEX KEY:			0000019617
+		STANDARD INDUSTRIAL CLASSIFICATION:	NATIONAL COMMERCIAL BANKS [6021]
+		ORGANIZATION NAME:           	02 Finance
+		EIN:				132624428
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		8-K
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	001-05805
+		FILM NUMBER:		26859117
+
+	BUSINESS ADDRESS:	
+		STREET 1:		270 PARK AVENUE
+		CITY:			NEW YORK
+		STATE:			NY
+		ZIP:			10017
+		BUSINESS PHONE:		2122706000
+
+	MAIL ADDRESS:	
+		STREET 1:		270 PARK AVENUE
+		CITY:			NEW YORK
+		STATE:			NY
+		ZIP:			10017
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	J P MORGAN CHASE &amp; CO
+		DATE OF NAME CHANGE:	20010102
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	CHASE MANHATTAN CORP /DE/
+		DATE OF NAME CHANGE:	19960402
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	CHEMICAL BANKING CORP
+		DATE OF NAME CHANGE:	19920703
+&lt;/SEC-HEADER&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;8-K
+&lt;SEQUENCE&gt;1
+&lt;FILENAME&gt;jpm-20260414.htm
+&lt;DESCRIPTION&gt;8-K
+&lt;TEXT&gt;
+<a href="jpm-20260414.htm">Document 1 - file: jpm-20260414.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-99.1
+&lt;SEQUENCE&gt;2
+&lt;FILENAME&gt;a1q26erfexhibit991narrative.htm
+&lt;DESCRIPTION&gt;JPMORGAN CHASE &amp; CO. EARNINGS RELEASE - FIRST QUARTER 2026 RESULTS
+&lt;TEXT&gt;
+<a href="a1q26erfexhibit991narrative.htm">Document 2 - file: a1q26erfexhibit991narrative.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-99.2
+&lt;SEQUENCE&gt;3
+&lt;FILENAME&gt;a1q26erfex992supplement.htm
+&lt;DESCRIPTION&gt;JPMORGAN CHASE &amp; CO. EARNINGS RELEASE FINANCIAL SUPPLEMENT - FIRST QUARTER 2026
+&lt;TEXT&gt;
+<a href="a1q26erfex992supplement.htm">Document 3 - file: a1q26erfex992supplement.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.SCH
+&lt;SEQUENCE&gt;4
+&lt;FILENAME&gt;jpm-20260414.xsd
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION SCHEMA DOCUMENT
+&lt;TEXT&gt;
+<a href="jpm-20260414.xsd">Document 4 - file: jpm-20260414.xsd</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.DEF
+&lt;SEQUENCE&gt;5
+&lt;FILENAME&gt;jpm-20260414_def.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION DEFINITION LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="jpm-20260414_def.xml">Document 5 - file: jpm-20260414_def.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.LAB
+&lt;SEQUENCE&gt;6
+&lt;FILENAME&gt;jpm-20260414_lab.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION LABEL LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="jpm-20260414_lab.xml">Document 6 - file: jpm-20260414_lab.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.PRE
+&lt;SEQUENCE&gt;7
+&lt;FILENAME&gt;jpm-20260414_pre.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="jpm-20260414_pre.xml">Document 7 - file: jpm-20260414_pre.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;8
+&lt;FILENAME&gt;image.jpg
+&lt;TEXT&gt;
+<a href="image.jpg">Document 8 - file: image.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;9
+&lt;FILENAME&gt;imageb.jpg
+&lt;TEXT&gt;
+<a href="imageb.jpg">Document 9 - file: imageb.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;10
+&lt;FILENAME&gt;jpmc_logoxstandardxblackxr.jpg
+&lt;TEXT&gt;
+<a href="jpmc_logoxstandardxblackxr.jpg">Document 10 - file: jpmc_logoxstandardxblackxr.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;12
+&lt;FILENAME&gt;R1.htm
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="R1.htm">Document 12 - file: R1.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;13
+&lt;FILENAME&gt;report.css
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="report.css">Document 13 - file: report.css</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;14
+&lt;FILENAME&gt;Show.js
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="Show.js">Document 14 - file: Show.js</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;16
+&lt;FILENAME&gt;FilingSummary.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/FilingSummary.xml">Document 16 - file: FilingSummary.html</a><br>
+<a href="FilingSummary.xml">Document 16 - RAW XML: FilingSummary.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;JSON
+&lt;SEQUENCE&gt;18
+&lt;FILENAME&gt;MetaLinks.json
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="MetaLinks.json">Document 18 - file: MetaLinks.json</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;ZIP
+&lt;SEQUENCE&gt;19
+&lt;FILENAME&gt;0001628280-26-024990-xbrl.zip
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="0001628280-26-024990-xbrl.zip">Document 19 - file: 0001628280-26-024990-xbrl.zip</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;20
+&lt;FILENAME&gt;jpm-20260414_htm.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/jpm-20260414_htm.xml">Document 20 - file: jpm-20260414_htm.html</a><br>
+<a href="jpm-20260414_htm.xml">Document 20 - RAW XML: jpm-20260414_htm.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;/SEC-DOCUMENT&gt;</PRE><script type="text/javascript"  src="/NB7sno/xvGjX/Q_ZCq/rw/t5u30XhwmSVLpf/bC4gdQ8CAg/RR1vBhly/V24"></script></BODY></HTML>

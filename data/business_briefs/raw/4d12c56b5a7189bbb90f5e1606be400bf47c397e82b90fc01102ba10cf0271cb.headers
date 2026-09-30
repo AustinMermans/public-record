@@ -1,0 +1,218 @@
+<HTML><HEAD><TITLE>SEC EDGAR Submission 0002115436-26-000006</TITLE>
+<!--
+<SEC-HEADER>0002115436-26-000006.hdr.sgml : 20260731
+<ACCEPTANCE-DATETIME>20260731063139
+<ACCESSION-NUMBER>0002115436-26-000006
+<TYPE>8-K
+<PUBLIC-DOCUMENT-COUNT>16
+<PERIOD>20260731
+<ITEMS>2.02
+<ITEMS>7.01
+<FILING-DATE>20260731
+<DATE-OF-FILING-DATE-CHANGE>20260731
+<FILER>
+<COMPANY-DATA>
+<CONFORMED-NAME>ExxonMobil Holdings Corp
+<CIK>0002115436
+<ASSIGNED-SIC>2911
+<ORGANIZATION-NAME>01 Energy & Transportation
+<IRS-NUMBER>414104094
+<STATE-OF-INCORPORATION>TX
+<FISCAL-YEAR-END>1231
+</COMPANY-DATA>
+<FILING-VALUES>
+<FORM-TYPE>8-K
+<ACT>34
+<FILE-NUMBER>001-43384
+<FILM-NUMBER>261225330
+</FILING-VALUES>
+<BUSINESS-ADDRESS>
+<STREET1>22777 SPRINGWOODS VILLAGE PARKWAY
+<CITY>SPRING
+<STATE>TX
+<ZIP>77389
+<PHONE>(972) 940-6000
+</BUSINESS-ADDRESS>
+<MAIL-ADDRESS>
+<STREET1>22777 SPRINGWOODS VILLAGE PARKWAY
+<CITY>SPRING
+<STATE>TX
+<ZIP>77389
+</MAIL-ADDRESS>
+</FILER>
+</SEC-HEADER>
+-->
+</HEAD><BODY>
+<PRE>&lt;SEC-DOCUMENT&gt;0002115436-26-000006-index.html : 20260731
+&lt;SEC-HEADER&gt;0002115436-26-000006.hdr.sgml : 20260731
+&lt;ACCEPTANCE-DATETIME&gt;20260731063139
+ACCESSION NUMBER:		0002115436-26-000006
+CONFORMED SUBMISSION TYPE:	8-K
+PUBLIC DOCUMENT COUNT:		16
+CONFORMED PERIOD OF REPORT:	20260731
+ITEM INFORMATION:		Results of Operations and Financial Condition
+ITEM INFORMATION:		Regulation FD Disclosure
+FILED AS OF DATE:		20260731
+DATE AS OF CHANGE:		20260731
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			ExxonMobil Holdings Corp
+		CENTRAL INDEX KEY:			0002115436
+		STANDARD INDUSTRIAL CLASSIFICATION:	PETROLEUM REFINING [2911]
+		ORGANIZATION NAME:           	01 Energy &amp; Transportation
+		EIN:				414104094
+		STATE OF INCORPORATION:			TX
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		8-K
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	001-43384
+		FILM NUMBER:		261225330
+
+	BUSINESS ADDRESS:	
+		STREET 1:		22777 SPRINGWOODS VILLAGE PARKWAY
+		CITY:			SPRING
+		STATE:			TX
+		ZIP:			77389
+		BUSINESS PHONE:		(972) 940-6000
+
+	MAIL ADDRESS:	
+		STREET 1:		22777 SPRINGWOODS VILLAGE PARKWAY
+		CITY:			SPRING
+		STATE:			TX
+		ZIP:			77389
+&lt;/SEC-HEADER&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;8-K
+&lt;SEQUENCE&gt;1
+&lt;FILENAME&gt;xom-20260731.htm
+&lt;DESCRIPTION&gt;FORM 8-K
+&lt;TEXT&gt;
+<a href="xom-20260731.htm">Document 1 - file: xom-20260731.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-99.1
+&lt;SEQUENCE&gt;2
+&lt;FILENAME&gt;livef8k2q26991.htm
+&lt;DESCRIPTION&gt;NEWS RELEASE
+&lt;TEXT&gt;
+<a href="livef8k2q26991.htm">Document 2 - file: livef8k2q26991.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-99.2
+&lt;SEQUENCE&gt;3
+&lt;FILENAME&gt;livef8k2q26992.htm
+&lt;DESCRIPTION&gt;INVESTOR RELATIONS DATA SUMMARY
+&lt;TEXT&gt;
+<a href="livef8k2q26992.htm">Document 3 - file: livef8k2q26992.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;4
+&lt;FILENAME&gt;f8k991001x0x0.gif
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="f8k991001x0x0.gif">Document 4 - file: f8k991001x0x0.gif</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;5
+&lt;FILENAME&gt;f8k991001x0x0a.gif
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="f8k991001x0x0a.gif">Document 5 - file: f8k991001x0x0a.gif</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.SCH
+&lt;SEQUENCE&gt;6
+&lt;FILENAME&gt;xom-20260731.xsd
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION SCHEMA DOCUMENT
+&lt;TEXT&gt;
+<a href="xom-20260731.xsd">Document 6 - file: xom-20260731.xsd</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.DEF
+&lt;SEQUENCE&gt;7
+&lt;FILENAME&gt;xom-20260731_def.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION DEFINITION LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="xom-20260731_def.xml">Document 7 - file: xom-20260731_def.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.LAB
+&lt;SEQUENCE&gt;8
+&lt;FILENAME&gt;xom-20260731_lab.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION LABEL LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="xom-20260731_lab.xml">Document 8 - file: xom-20260731_lab.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.PRE
+&lt;SEQUENCE&gt;9
+&lt;FILENAME&gt;xom-20260731_pre.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="xom-20260731_pre.xml">Document 9 - file: xom-20260731_pre.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;11
+&lt;FILENAME&gt;R1.htm
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="R1.htm">Document 11 - file: R1.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;12
+&lt;FILENAME&gt;report.css
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="report.css">Document 12 - file: report.css</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;13
+&lt;FILENAME&gt;Show.js
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="Show.js">Document 13 - file: Show.js</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;15
+&lt;FILENAME&gt;FilingSummary.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/FilingSummary.xml">Document 15 - file: FilingSummary.html</a><br>
+<a href="FilingSummary.xml">Document 15 - RAW XML: FilingSummary.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;JSON
+&lt;SEQUENCE&gt;17
+&lt;FILENAME&gt;MetaLinks.json
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="MetaLinks.json">Document 17 - file: MetaLinks.json</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;ZIP
+&lt;SEQUENCE&gt;18
+&lt;FILENAME&gt;0002115436-26-000006-xbrl.zip
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="0002115436-26-000006-xbrl.zip">Document 18 - file: 0002115436-26-000006-xbrl.zip</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;19
+&lt;FILENAME&gt;xom-20260731_htm.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/xom-20260731_htm.xml">Document 19 - file: xom-20260731_htm.html</a><br>
+<a href="xom-20260731_htm.xml">Document 19 - RAW XML: xom-20260731_htm.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;/SEC-DOCUMENT&gt;</PRE><script type="text/javascript"  src="/NB7sno/xvGjX/Q_ZCq/rw/t5u30XhwmSVLpf/bC4gdQ8CAg/RR1vBhly/V24"></script></BODY></HTML>
