@@ -91,6 +91,98 @@
         }
       ],
       "question": "What explains the gap between total-sales growth and comparable-sales growth, and is that mix durable?"
+    },
+    {
+      "cik": "0000019617",
+      "event_accession": "0001628280-26-048078",
+      "period_end": "2026-06-30",
+      "source_sha256": "180c7e6a81f34a7e08e6186b515eb97ed46d97a59b1c6c10f6a8d3ba9454d2c8",
+      "claims": [
+        {
+          "kind": "driver",
+          "text": "JPMorgan says net interest income excluding Markets rose 4% to $23.7 billion, with higher deposit, card and wholesale-loan balances largely offset by lower rates. Markets revenue rose 35% to $12.1 billion; these are issuer-defined business lenses, not the 10-Q's reported net revenue.",
+          "source_cue": "Net interest income excluding Markets",
+          "evidence": [
+            {"line": 82, "sha256": "b2204acd1159c7003ed55ecbd9205f41180359645073b5e1cc21f4d17a0facc2"},
+            {"line": 98, "sha256": "fc61284159b0196444140cf96cbb6ce147f3b922b2fdb4a2091faf28578789a6"}
+          ]
+        },
+        {
+          "kind": "exception",
+          "text": "Reported net income rose 41% to $21.2 billion, but the issuer says it rose 13% excluding significant items, to $16.9 billion. The quarter included a $4.6 billion Visa-share gain and $1.0 billion of other investment gains; the excluding-items result is non-GAAP.",
+          "source_cue": "up 13% excluding significant items",
+          "evidence": [
+            {"line": 9, "sha256": "9c79e0972d3070cdd0e41d02884c820afa8764eb23bfd016c09773556ef9d51c"},
+            {"line": 96, "sha256": "35dfe7bd9273c5cc0c602db11e6dcee9b944b7c48927f786ba30970cca29f1dd"},
+            {"line": 174, "sha256": "f3890a9b99969455ee2a4cf57268ff2575c6aadf17b2690a40d65f291df2eeb1"}
+          ]
+        },
+        {
+          "kind": "credit",
+          "text": "Credit costs were $2.5 billion, including $2.4 billion of net charge-offs and a $149 million reserve build, primarily in Wholesale. These are quarterly firmwide credit-cost measures, not a forecast of future losses.",
+          "source_cue": "net reserve build was $149 million",
+          "evidence": [{"line": 100, "sha256": "18b1476ff2d2a3e8742817e1b817f991873f408ed7b3400160bdb439350fb0b1"}]
+        }
+      ],
+      "question": "How much of the earnings gain persists without the investment gains, and do credit costs change as loan balances grow?"
+    },
+    {
+      "cik": "0002115436",
+      "event_accession": "0002115436-26-000006",
+      "period_end": "2026-06-30",
+      "source_sha256": "88538e540c67c0b2071ad68649066bff5600c51ec513f162e162f652e2f22ed2",
+      "claims": [
+        {
+          "kind": "driver",
+          "text": "ExxonMobil says Energy Products earnings improved from the prior quarter on stronger U.S. Gulf Coast utilization and record diesel production, partly offset by scheduled maintenance. This is segment commentary, not a consolidated earnings bridge.",
+          "source_cue": "record diesel production",
+          "evidence": [
+            {"line": 186, "sha256": "a4c96baf8b8be940791d5b19bc8c09b49d7b4a3ca2830a99b05b57aba466b4ce"},
+            {"line": 189, "sha256": "d49a5c2756b585e0fb8722ed600cda578e1e721bb35db17ec44c8871bc29dc83"},
+            {"line": 190, "sha256": "04028cbb7714536259ac1ab6a2fb1a0924a90e0b7c05afbedfde9c03395310ad"}
+          ]
+        },
+        {
+          "kind": "exception",
+          "text": "The issuer says record Permian production above 1.8 million oil-equivalent barrels per day and no Kazakhstan disruption helped Upstream earnings sequentially, while Middle East disruptions partly offset those benefits. Production is not revenue or profit.",
+          "source_cue": "partly offset by the Middle East disruptions",
+          "evidence": [
+            {"line": 187, "sha256": "5d84b3f655bdbca234a506131515a262eb971a7451f7cd75d1c33b83f961e515"},
+            {"line": 188, "sha256": "279433346da844be3f0862b8df18b9c1a9292725738c08817233500da80baa33"}
+          ]
+        },
+        {
+          "kind": "outlook",
+          "text": "ExxonMobil planned a fourth-quarter 2026 startup for its fifth Guyana FPSO, adding 250 thousand barrels per day of capacity. That is a project plan and capacity figure, not realized production or earnings.",
+          "source_cue": "production startup on plan for 4Q26",
+          "evidence": [{"line": 14, "sha256": "45e6d542e64187cca20b1de44d4aa2698473078d3f78806cd84de34810f9e07a"}]
+        }
+      ],
+      "question": "Will production reliability offset disruption and maintenance costs, and will the planned Guyana capacity start in fourth-quarter 2026?"
+    },
+    {
+      "cik": "0000018230",
+      "event_accession": "0000018230-26-000040",
+      "period_end": "2026-06-30",
+      "source_sha256": "45abeac3990d327130ba4d97e34b5e3c4fcadbba3e9b6e47e4868b6af637de00",
+      "claims": [
+        {
+          "kind": "driver",
+          "text": "Caterpillar says second-quarter sales and revenues rose 24% to $20.543 billion, mainly on $3.1 billion of higher volume and $595 million of favorable price realization. Higher equipment sales to end users drove much of the volume gain.",
+          "source_cue": "higher sales of equipment to end users",
+          "evidence": [{"line": 28, "sha256": "426dc0e7ad61c2a43acf3c84b691ade9e2584abb7c819ce65bca5c252124cd57"}]
+        },
+        {
+          "kind": "exception",
+          "text": "The issuer says second-quarter operating profit of $4.295 billion included $392 million of expected IEEPA tariff recoveries. The recovery is in reported operating profit, but this exhibit does not establish how much would recur.",
+          "source_cue": "included $392 million of expected",
+          "evidence": [
+            {"line": 77, "sha256": "fd0db8f1ef5798ef772eff0ed7f8d153d07fda6c1ff4277d96d7245ad815f20a"},
+            {"line": 78, "sha256": "7785cf3e30c858f74233419a2bad645c509539948911b83dde128b555b7aae4e"}
+          ]
+        }
+      ],
+      "question": "Will end-user equipment sales sustain the volume gain without the same tariff recovery in a later quarter?"
     }
   ]
 }

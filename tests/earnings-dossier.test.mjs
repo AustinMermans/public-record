@@ -78,7 +78,7 @@ test('source-bound issuer read precedes tables and keeps issuer claims separate'
       {kind:'outlook',text:'Issuer guidance, not realized revenue.',source_cue:'revenue guidance'}],
     question:'Will volume endure?'};
   const html=earningsDossier(copy,cik);
-  assert.match(dossierTeaser(copy,cik,accession),/Read drivers & guidance/);
+  assert.match(dossierTeaser(copy,cik,accession),/Read result context/);
   assert.match(html,/What matters in the issuer exhibit/);
   assert.match(html,/Operating read/);
   assert.match(html,/Issuer outlook/);
@@ -91,4 +91,17 @@ test('source-bound issuer read precedes tables and keeps issuer claims separate'
   item.issuer_read.claims[0].source_cue='<script>bad()</script>';
   assert.match(earningsDossier(copy,cik),/&lt;img/);
   assert.doesNotMatch(earningsDossier(copy,cik),/<script>/);
+});
+
+test('unreviewed and successor results disclose the editorial boundary',()=>{
+  const copy=structuredClone(d),item=dossierFor(copy,cik);
+  item.issuer_read_state='not_reviewed';
+  assert.match(earningsDossier(copy,cik),/No reviewed operating read for this result/);
+  item.issuer_read_state='successor_needs_review';
+  assert.match(earningsDossier(copy,cik),/prior reviewed read is not carried forward/);
+  item.issuer_read={status:'ok',exhibit_accession:accession,source_url:brief.source.url,
+    claims:[{kind:'credit',text:'Credit costs were measured.',source_cue:'Credit costs'}],question:'What changes next?'};
+  const html=earningsDossier(copy,cik);
+  assert.match(html,/Credit watch/);
+  assert.doesNotMatch(html,/prior reviewed read is not carried forward/);
 });
