@@ -1,0 +1,213 @@
+<HTML><HEAD><TITLE>SEC EDGAR Submission 0000059478-26-000077</TITLE>
+<!--
+<SEC-HEADER>0000059478-26-000077.hdr.sgml : 20260805
+<ACCEPTANCE-DATETIME>20260805070509
+<ACCESSION-NUMBER>0000059478-26-000077
+<TYPE>8-K
+<PUBLIC-DOCUMENT-COUNT>14
+<PERIOD>20260805
+<ITEMS>2.02
+<ITEMS>9.01
+<FILING-DATE>20260805
+<DATE-OF-FILING-DATE-CHANGE>20260805
+<FILER>
+<COMPANY-DATA>
+<CONFORMED-NAME>ELI LILLY & Co
+<CIK>0000059478
+<ASSIGNED-SIC>2834
+<ORGANIZATION-NAME>03 Life Sciences
+<IRS-NUMBER>350470950
+<STATE-OF-INCORPORATION>IN
+<FISCAL-YEAR-END>1231
+</COMPANY-DATA>
+<FILING-VALUES>
+<FORM-TYPE>8-K
+<ACT>34
+<FILE-NUMBER>001-06351
+<FILM-NUMBER>261241293
+</FILING-VALUES>
+<BUSINESS-ADDRESS>
+<STREET1>LILLY CORPORATE CTR
+<STREET2>DROP CODE 1094
+<CITY>INDIANAPOLIS
+<STATE>IN
+<ZIP>46285
+<PHONE>3172762000
+</BUSINESS-ADDRESS>
+<MAIL-ADDRESS>
+<STREET1>LILLY CORPORATE CENTER
+<STREET2>DROP CODE 1094
+<CITY>INDIANAPOLIS
+<STATE>IN
+<ZIP>46285
+</MAIL-ADDRESS>
+<FORMER-COMPANY>
+<FORMER-CONFORMED-NAME>LILLY ELI & CO
+<DATE-CHANGED>19941024
+</FORMER-COMPANY>
+</FILER>
+</SEC-HEADER>
+-->
+</HEAD><BODY>
+<PRE>&lt;SEC-DOCUMENT&gt;0000059478-26-000077-index.html : 20260805
+&lt;SEC-HEADER&gt;0000059478-26-000077.hdr.sgml : 20260805
+&lt;ACCEPTANCE-DATETIME&gt;20260805070509
+ACCESSION NUMBER:		0000059478-26-000077
+CONFORMED SUBMISSION TYPE:	8-K
+PUBLIC DOCUMENT COUNT:		14
+CONFORMED PERIOD OF REPORT:	20260805
+ITEM INFORMATION:		Results of Operations and Financial Condition
+ITEM INFORMATION:		Financial Statements and Exhibits
+FILED AS OF DATE:		20260805
+DATE AS OF CHANGE:		20260805
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			ELI LILLY &amp; Co
+		CENTRAL INDEX KEY:			0000059478
+		STANDARD INDUSTRIAL CLASSIFICATION:	PHARMACEUTICAL PREPARATIONS [2834]
+		ORGANIZATION NAME:           	03 Life Sciences
+		EIN:				350470950
+		STATE OF INCORPORATION:			IN
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		8-K
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	001-06351
+		FILM NUMBER:		261241293
+
+	BUSINESS ADDRESS:	
+		STREET 1:		LILLY CORPORATE CTR
+		STREET 2:		DROP CODE 1094
+		CITY:			INDIANAPOLIS
+		STATE:			IN
+		ZIP:			46285
+		BUSINESS PHONE:		3172762000
+
+	MAIL ADDRESS:	
+		STREET 1:		LILLY CORPORATE CENTER
+		STREET 2:		DROP CODE 1094
+		CITY:			INDIANAPOLIS
+		STATE:			IN
+		ZIP:			46285
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	LILLY ELI &amp; CO
+		DATE OF NAME CHANGE:	19941024
+&lt;/SEC-HEADER&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;8-K
+&lt;SEQUENCE&gt;1
+&lt;FILENAME&gt;lly-20260805.htm
+&lt;DESCRIPTION&gt;8-K
+&lt;TEXT&gt;
+<a href="lly-20260805.htm">Document 1 - file: lly-20260805.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-99.1
+&lt;SEQUENCE&gt;2
+&lt;FILENAME&gt;q226lillysalesandearningsp.htm
+&lt;DESCRIPTION&gt;EX-99.1
+&lt;TEXT&gt;
+<a href="q226lillysalesandearningsp.htm">Document 2 - file: q226lillysalesandearningsp.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.SCH
+&lt;SEQUENCE&gt;3
+&lt;FILENAME&gt;lly-20260805.xsd
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION SCHEMA DOCUMENT
+&lt;TEXT&gt;
+<a href="lly-20260805.xsd">Document 3 - file: lly-20260805.xsd</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.DEF
+&lt;SEQUENCE&gt;4
+&lt;FILENAME&gt;lly-20260805_def.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION DEFINITION LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="lly-20260805_def.xml">Document 4 - file: lly-20260805_def.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.LAB
+&lt;SEQUENCE&gt;5
+&lt;FILENAME&gt;lly-20260805_lab.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION LABEL LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="lly-20260805_lab.xml">Document 5 - file: lly-20260805_lab.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.PRE
+&lt;SEQUENCE&gt;6
+&lt;FILENAME&gt;lly-20260805_pre.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="lly-20260805_pre.xml">Document 6 - file: lly-20260805_pre.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;7
+&lt;FILENAME&gt;logoa31a.jpg
+&lt;TEXT&gt;
+<a href="logoa31a.jpg">Document 7 - file: logoa31a.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;9
+&lt;FILENAME&gt;R1.htm
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="R1.htm">Document 9 - file: R1.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;10
+&lt;FILENAME&gt;report.css
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="report.css">Document 10 - file: report.css</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;11
+&lt;FILENAME&gt;Show.js
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="Show.js">Document 11 - file: Show.js</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;13
+&lt;FILENAME&gt;FilingSummary.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/FilingSummary.xml">Document 13 - file: FilingSummary.html</a><br>
+<a href="FilingSummary.xml">Document 13 - RAW XML: FilingSummary.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;JSON
+&lt;SEQUENCE&gt;15
+&lt;FILENAME&gt;MetaLinks.json
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="MetaLinks.json">Document 15 - file: MetaLinks.json</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;ZIP
+&lt;SEQUENCE&gt;16
+&lt;FILENAME&gt;0000059478-26-000077-xbrl.zip
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="0000059478-26-000077-xbrl.zip">Document 16 - file: 0000059478-26-000077-xbrl.zip</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;17
+&lt;FILENAME&gt;lly-20260805_htm.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/lly-20260805_htm.xml">Document 17 - file: lly-20260805_htm.html</a><br>
+<a href="lly-20260805_htm.xml">Document 17 - RAW XML: lly-20260805_htm.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;/SEC-DOCUMENT&gt;</PRE><script type="text/javascript"  src="/NB7sno/xvGjX/Q_ZCq/rw/t5u30XhwmSVLpf/bC4gdQ8CAg/VAcuGi40/RH4"></script></BODY></HTML>

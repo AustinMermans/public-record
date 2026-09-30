@@ -1,20 +1,44 @@
 {
-  "attempted_at": "2026-09-30T01:52:59+00:00",
-  "captured_at": "2026-09-30T01:52:59+00:00",
+  "attempted_at": "2026-09-30T18:34:27+00:00",
+  "captured_at": "2026-09-30T18:34:27+00:00",
   "changes": {
-    "baselines": [
-      "bea-pce-releases"
-    ],
+    "baselines": [],
     "channels": [
       {
-        "from_capture": null,
+        "from_capture": "2026-09-30T01:52:59+00:00",
         "id": "bea-pce-releases",
         "label": "BEA \u00b7 dated PCE price releases",
-        "status": "baseline",
-        "to_capture": "2026-09-30T01:52:59+00:00"
+        "status": "compared",
+        "to_capture": "2026-09-30T18:34:27+00:00"
       }
     ],
-    "items": [],
+    "items": [
+      {
+        "after": {
+          "core_mom": 0.2,
+          "core_yoy": 3.0,
+          "headline_mom": 0.3,
+          "headline_yoy": 3.4
+        },
+        "before": null,
+        "date": "2026-09-30",
+        "from_capture": "2026-09-30T01:52:59+00:00",
+        "kind": "Newly captured PCE release",
+        "published_at": "2026-09-30",
+        "publisher": "U.S. Bureau of Economic Analysis",
+        "source_id": "bea-pce-releases",
+        "source_locator": {
+          "mom": "News Release body, paragraph 7",
+          "yoy": "News Release body, paragraph 8"
+        },
+        "summary": "Dated official Personal Income and Outlays release; four published price-index rates for the target month, not revisions to an older release.",
+        "target": "2026-08",
+        "title": "BEA PCE prices \u00b7 2026-08",
+        "to_capture": "2026-09-30T18:34:27+00:00",
+        "unit": "Percent \u00b7 monthly and year over year",
+        "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-august-2026"
+      }
+    ],
     "skipped": []
   },
   "discovery_schedules": [
@@ -23,14 +47,21 @@
       "raw_path": "data/bea_pce/raw/effd5d5d60f3c851b8b6a5c7890dac560397bd71d807dd898357b9eb354391f6.html",
       "sha256": "effd5d5d60f3c851b8b6a5c7890dac560397bd71d807dd898357b9eb354391f6",
       "url": "https://www.bea.gov/news/schedule/full"
+    },
+    {
+      "captured_at": "2026-09-30T18:34:27+00:00",
+      "raw_path": "data/bea_pce/raw/32e6e97765ee16449e2352f009618779fa15ec45f621d92a214909274553959c.html",
+      "sha256": "32e6e97765ee16449e2352f009618779fa15ec45f621d92a214909274553959c",
+      "url": "https://www.bea.gov/news/schedule/full"
     }
   ],
   "error": null,
-  "last_success": "2026-09-30T01:52:59+00:00",
+  "last_success": "2026-09-30T18:34:27+00:00",
   "publisher": "U.S. Bureau of Economic Analysis",
   "releases": [
     {
       "captured_at": "2026-09-30T01:49:37+00:00",
+      "discovery_schedule_sha256": "effd5d5d60f3c851b8b6a5c7890dac560397bd71d807dd898357b9eb354391f6",
       "display_values": {
         "core_mom": "0.4",
         "core_yoy": "3.1",
@@ -45,7 +76,6 @@
         "mom": "News Release body, paragraph 7",
         "yoy": "News Release body, paragraph 8"
       },
-      "discovery_schedule_sha256": "effd5d5d60f3c851b8b6a5c7890dac560397bd71d807dd898357b9eb354391f6",
       "target": "2026-01",
       "title": "Personal Income and Outlays, January 2026",
       "unit": "percent",
@@ -59,6 +89,7 @@
     },
     {
       "captured_at": "2026-09-30T01:49:37+00:00",
+      "discovery_schedule_sha256": "effd5d5d60f3c851b8b6a5c7890dac560397bd71d807dd898357b9eb354391f6",
       "display_values": {
         "core_mom": "0.4",
         "core_yoy": "3.0",
@@ -73,7 +104,6 @@
         "mom": "News Release body, paragraph 7",
         "yoy": "News Release body, paragraph 8"
       },
-      "discovery_schedule_sha256": "effd5d5d60f3c851b8b6a5c7890dac560397bd71d807dd898357b9eb354391f6",
       "target": "2026-02",
       "title": "Personal Income and Outlays, February 2026",
       "unit": "percent",
@@ -87,6 +117,7 @@
     },
     {
       "captured_at": "2026-09-30T01:49:37+00:00",
+      "discovery_schedule_sha256": "effd5d5d60f3c851b8b6a5c7890dac560397bd71d807dd898357b9eb354391f6",
       "display_values": {
         "core_mom": "0.3",
         "core_yoy": "3.2",
@@ -101,7 +132,6 @@
         "mom": "News Release body, paragraph 6",
         "yoy": "News Release body, paragraph 7"
       },
-      "discovery_schedule_sha256": "effd5d5d60f3c851b8b6a5c7890dac560397bd71d807dd898357b9eb354391f6",
       "target": "2026-03",
       "title": "Personal Income and Outlays, March 2026",
       "unit": "percent",
@@ -115,6 +145,7 @@
     },
     {
       "captured_at": "2026-09-30T01:49:37+00:00",
+      "discovery_schedule_sha256": "effd5d5d60f3c851b8b6a5c7890dac560397bd71d807dd898357b9eb354391f6",
       "display_values": {
         "core_mom": "0.2",
         "core_yoy": "3.3",
@@ -129,7 +160,6 @@
         "mom": "News Release body, paragraph 6",
         "yoy": "News Release body, paragraph 7"
       },
-      "discovery_schedule_sha256": "effd5d5d60f3c851b8b6a5c7890dac560397bd71d807dd898357b9eb354391f6",
       "target": "2026-04",
       "title": "Personal Income and Outlays, April 2026",
       "unit": "percent",
@@ -143,6 +173,7 @@
     },
     {
       "captured_at": "2026-09-30T01:49:37+00:00",
+      "discovery_schedule_sha256": "effd5d5d60f3c851b8b6a5c7890dac560397bd71d807dd898357b9eb354391f6",
       "display_values": {
         "core_mom": "0.3",
         "core_yoy": "3.4",
@@ -157,7 +188,6 @@
         "mom": "News Release body, paragraph 6",
         "yoy": "News Release body, paragraph 7"
       },
-      "discovery_schedule_sha256": "effd5d5d60f3c851b8b6a5c7890dac560397bd71d807dd898357b9eb354391f6",
       "target": "2026-05",
       "title": "Personal Income and Outlays, May 2026",
       "unit": "percent",
@@ -171,6 +201,7 @@
     },
     {
       "captured_at": "2026-09-30T01:49:37+00:00",
+      "discovery_schedule_sha256": "effd5d5d60f3c851b8b6a5c7890dac560397bd71d807dd898357b9eb354391f6",
       "display_values": {
         "core_mom": "0.1",
         "core_yoy": "3.3",
@@ -185,7 +216,6 @@
         "mom": "News Release body, paragraph 7",
         "yoy": "News Release body, paragraph 8"
       },
-      "discovery_schedule_sha256": "effd5d5d60f3c851b8b6a5c7890dac560397bd71d807dd898357b9eb354391f6",
       "target": "2026-06",
       "title": "Personal Income and Outlays, June 2026",
       "unit": "percent",
@@ -199,6 +229,7 @@
     },
     {
       "captured_at": "2026-09-30T01:49:37+00:00",
+      "discovery_schedule_sha256": "effd5d5d60f3c851b8b6a5c7890dac560397bd71d807dd898357b9eb354391f6",
       "display_values": {
         "core_mom": "0.2",
         "core_yoy": "3.3",
@@ -213,7 +244,6 @@
         "mom": "News Release body, paragraph 7",
         "yoy": "News Release body, paragraph 8"
       },
-      "discovery_schedule_sha256": "effd5d5d60f3c851b8b6a5c7890dac560397bd71d807dd898357b9eb354391f6",
       "target": "2026-07",
       "title": "Personal Income and Outlays, July 2026",
       "unit": "percent",
@@ -224,20 +254,43 @@
         "headline_mom": 0.2,
         "headline_yoy": 3.7
       }
+    },
+    {
+      "captured_at": "2026-09-30T18:34:27+00:00",
+      "discovery_schedule_sha256": "32e6e97765ee16449e2352f009618779fa15ec45f621d92a214909274553959c",
+      "display_values": {
+        "core_mom": "0.2",
+        "core_yoy": "3.0",
+        "headline_mom": "0.3",
+        "headline_yoy": "3.4"
+      },
+      "embargo_at": "2026-09-30T12:30+00:00",
+      "published_at": "2026-09-30",
+      "raw_path": "data/bea_pce/raw/6c207be356d7a4a0023086bfed2c1ea3d6dc33c43be8496a39207d0fd2e2f329.html",
+      "sha256": "6c207be356d7a4a0023086bfed2c1ea3d6dc33c43be8496a39207d0fd2e2f329",
+      "source_locator": {
+        "mom": "News Release body, paragraph 7",
+        "yoy": "News Release body, paragraph 8"
+      },
+      "target": "2026-08",
+      "title": "Personal Income and Outlays, August 2026",
+      "unit": "percent",
+      "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-august-2026",
+      "values": {
+        "core_mom": 0.2,
+        "core_yoy": 3.0,
+        "headline_mom": 0.3,
+        "headline_yoy": 3.4
+      }
     }
   ],
   "schedule": {
-    "captured_at": "2026-09-30T01:52:59+00:00",
-    "raw_path": "data/bea_pce/raw/effd5d5d60f3c851b8b6a5c7890dac560397bd71d807dd898357b9eb354391f6.html",
-    "sha256": "effd5d5d60f3c851b8b6a5c7890dac560397bd71d807dd898357b9eb354391f6",
+    "captured_at": "2026-09-30T18:34:27+00:00",
+    "raw_path": "data/bea_pce/raw/32e6e97765ee16449e2352f009618779fa15ec45f621d92a214909274553959c.html",
+    "sha256": "32e6e97765ee16449e2352f009618779fa15ec45f621d92a214909274553959c",
     "url": "https://www.bea.gov/news/schedule/full"
   },
   "scheduled": [
-    {
-      "date": "2026-09-30",
-      "target": "2026-08",
-      "title": "Personal Income and Outlays, August 2026"
-    },
     {
       "date": "2026-10-29",
       "target": "2026-09",

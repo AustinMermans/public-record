@@ -1,0 +1,696 @@
+<HTML><HEAD><TITLE>SEC EDGAR Submission 0000070858-26-000222</TITLE>
+<!--
+<SEC-HEADER>0000070858-26-000222.hdr.sgml : 20260415
+<ACCEPTANCE-DATETIME>20260415064444
+<ACCESSION-NUMBER>0000070858-26-000222
+<TYPE>8-K
+<PUBLIC-DOCUMENT-COUNT>72
+<PERIOD>20260415
+<ITEMS>2.02
+<ITEMS>7.01
+<ITEMS>9.01
+<FILING-DATE>20260415
+<DATE-OF-FILING-DATE-CHANGE>20260415
+<FILER>
+<COMPANY-DATA>
+<CONFORMED-NAME>BANK OF AMERICA CORP /DE/
+<CIK>0000070858
+<ASSIGNED-SIC>6021
+<ORGANIZATION-NAME>02 Finance
+<IRS-NUMBER>560906609
+<STATE-OF-INCORPORATION>DE
+<FISCAL-YEAR-END>1231
+</COMPANY-DATA>
+<FILING-VALUES>
+<FORM-TYPE>8-K
+<ACT>34
+<FILE-NUMBER>001-06523
+<FILM-NUMBER>26862495
+</FILING-VALUES>
+<BUSINESS-ADDRESS>
+<STREET1>BANK OF AMERICA CORPORATE CENTER
+<STREET2>100 N TRYON ST
+<CITY>CHARLOTTE
+<STATE>NC
+<ZIP>28255
+<PHONE>7043868486
+</BUSINESS-ADDRESS>
+<MAIL-ADDRESS>
+<STREET1>BANK OF AMERICA CORPORATE CENTER
+<STREET2>100 N TRYON ST
+<CITY>CHARLOTTE
+<STATE>NC
+<ZIP>28255
+</MAIL-ADDRESS>
+<FORMER-COMPANY>
+<FORMER-CONFORMED-NAME>BANKAMERICA CORP/DE/
+<DATE-CHANGED>19981022
+</FORMER-COMPANY>
+<FORMER-COMPANY>
+<FORMER-CONFORMED-NAME>NATIONSBANK CORP
+<DATE-CHANGED>19920703
+</FORMER-COMPANY>
+<FORMER-COMPANY>
+<FORMER-CONFORMED-NAME>NCNB CORP
+<DATE-CHANGED>19920107
+</FORMER-COMPANY>
+</FILER>
+</SEC-HEADER>
+-->
+</HEAD><BODY>
+<PRE>&lt;SEC-DOCUMENT&gt;0000070858-26-000222-index.html : 20260415
+&lt;SEC-HEADER&gt;0000070858-26-000222.hdr.sgml : 20260415
+&lt;ACCEPTANCE-DATETIME&gt;20260415064444
+ACCESSION NUMBER:		0000070858-26-000222
+CONFORMED SUBMISSION TYPE:	8-K
+PUBLIC DOCUMENT COUNT:		72
+CONFORMED PERIOD OF REPORT:	20260415
+ITEM INFORMATION:		Results of Operations and Financial Condition
+ITEM INFORMATION:		Regulation FD Disclosure
+ITEM INFORMATION:		Financial Statements and Exhibits
+FILED AS OF DATE:		20260415
+DATE AS OF CHANGE:		20260415
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			BANK OF AMERICA CORP /DE/
+		CENTRAL INDEX KEY:			0000070858
+		STANDARD INDUSTRIAL CLASSIFICATION:	NATIONAL COMMERCIAL BANKS [6021]
+		ORGANIZATION NAME:           	02 Finance
+		EIN:				560906609
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		8-K
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	001-06523
+		FILM NUMBER:		26862495
+
+	BUSINESS ADDRESS:	
+		STREET 1:		BANK OF AMERICA CORPORATE CENTER
+		STREET 2:		100 N TRYON ST
+		CITY:			CHARLOTTE
+		STATE:			NC
+		ZIP:			28255
+		BUSINESS PHONE:		7043868486
+
+	MAIL ADDRESS:	
+		STREET 1:		BANK OF AMERICA CORPORATE CENTER
+		STREET 2:		100 N TRYON ST
+		CITY:			CHARLOTTE
+		STATE:			NC
+		ZIP:			28255
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	BANKAMERICA CORP/DE/
+		DATE OF NAME CHANGE:	19981022
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	NATIONSBANK CORP
+		DATE OF NAME CHANGE:	19920703
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	NCNB CORP
+		DATE OF NAME CHANGE:	19920107
+&lt;/SEC-HEADER&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;8-K
+&lt;SEQUENCE&gt;1
+&lt;FILENAME&gt;bac-20260415.htm
+&lt;DESCRIPTION&gt;8-K
+&lt;TEXT&gt;
+<a href="bac-20260415.htm">Document 1 - file: bac-20260415.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-99.1
+&lt;SEQUENCE&gt;2
+&lt;FILENAME&gt;bac03312026ex991.htm
+&lt;DESCRIPTION&gt;THE PRESS RELEASE
+&lt;TEXT&gt;
+<a href="bac03312026ex991.htm">Document 2 - file: bac03312026ex991.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-99.2
+&lt;SEQUENCE&gt;3
+&lt;FILENAME&gt;bac03312026ex992.htm
+&lt;DESCRIPTION&gt;THE PRESENTATION MATERIALS
+&lt;TEXT&gt;
+<a href="bac03312026ex992.htm">Document 3 - file: bac03312026ex992.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-99.3
+&lt;SEQUENCE&gt;4
+&lt;FILENAME&gt;bac-03312026ex993.htm
+&lt;DESCRIPTION&gt;THE SUPPLEMENTAL INFORMATION
+&lt;TEXT&gt;
+<a href="bac-03312026ex993.htm">Document 4 - file: bac-03312026ex993.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.SCH
+&lt;SEQUENCE&gt;5
+&lt;FILENAME&gt;bac-20260415.xsd
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION SCHEMA DOCUMENT
+&lt;TEXT&gt;
+<a href="bac-20260415.xsd">Document 5 - file: bac-20260415.xsd</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.DEF
+&lt;SEQUENCE&gt;6
+&lt;FILENAME&gt;bac-20260415_def.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION DEFINITION LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="bac-20260415_def.xml">Document 6 - file: bac-20260415_def.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.LAB
+&lt;SEQUENCE&gt;7
+&lt;FILENAME&gt;bac-20260415_lab.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION LABEL LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="bac-20260415_lab.xml">Document 7 - file: bac-20260415_lab.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;EX-101.PRE
+&lt;SEQUENCE&gt;8
+&lt;FILENAME&gt;bac-20260415_pre.xml
+&lt;DESCRIPTION&gt;XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE DOCUMENT
+&lt;TEXT&gt;
+<a href="bac-20260415_pre.xml">Document 8 - file: bac-20260415_pre.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;9
+&lt;FILENAME&gt;bac03312026ex991001.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex991001.jpg">Document 9 - file: bac03312026ex991001.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;10
+&lt;FILENAME&gt;bac03312026ex991002.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex991002.jpg">Document 10 - file: bac03312026ex991002.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;11
+&lt;FILENAME&gt;bac03312026ex991003.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex991003.jpg">Document 11 - file: bac03312026ex991003.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;12
+&lt;FILENAME&gt;bac03312026ex991004.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex991004.jpg">Document 12 - file: bac03312026ex991004.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;13
+&lt;FILENAME&gt;bac03312026ex991005.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex991005.jpg">Document 13 - file: bac03312026ex991005.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;14
+&lt;FILENAME&gt;bac03312026ex991006.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex991006.jpg">Document 14 - file: bac03312026ex991006.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;15
+&lt;FILENAME&gt;bac03312026ex991007.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex991007.jpg">Document 15 - file: bac03312026ex991007.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;16
+&lt;FILENAME&gt;bac03312026ex991008.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex991008.jpg">Document 16 - file: bac03312026ex991008.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;17
+&lt;FILENAME&gt;bac03312026ex991009.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex991009.jpg">Document 17 - file: bac03312026ex991009.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;18
+&lt;FILENAME&gt;bac03312026ex991010.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex991010.jpg">Document 18 - file: bac03312026ex991010.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;19
+&lt;FILENAME&gt;bac03312026ex991011.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex991011.jpg">Document 19 - file: bac03312026ex991011.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;20
+&lt;FILENAME&gt;bac03312026ex991012.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex991012.jpg">Document 20 - file: bac03312026ex991012.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;21
+&lt;FILENAME&gt;bac03312026ex991013.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex991013.jpg">Document 21 - file: bac03312026ex991013.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;22
+&lt;FILENAME&gt;bac03312026ex991014.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex991014.jpg">Document 22 - file: bac03312026ex991014.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;23
+&lt;FILENAME&gt;bac03312026ex991015.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex991015.jpg">Document 23 - file: bac03312026ex991015.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;24
+&lt;FILENAME&gt;bac03312026ex991016.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex991016.jpg">Document 24 - file: bac03312026ex991016.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;25
+&lt;FILENAME&gt;bac03312026ex991017.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex991017.jpg">Document 25 - file: bac03312026ex991017.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;26
+&lt;FILENAME&gt;bac03312026ex991018.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex991018.jpg">Document 26 - file: bac03312026ex991018.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;27
+&lt;FILENAME&gt;bac03312026ex992001.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992001.jpg">Document 27 - file: bac03312026ex992001.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;28
+&lt;FILENAME&gt;bac03312026ex992002.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992002.jpg">Document 28 - file: bac03312026ex992002.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;29
+&lt;FILENAME&gt;bac03312026ex992003.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992003.jpg">Document 29 - file: bac03312026ex992003.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;30
+&lt;FILENAME&gt;bac03312026ex992004.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992004.jpg">Document 30 - file: bac03312026ex992004.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;31
+&lt;FILENAME&gt;bac03312026ex992005.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992005.jpg">Document 31 - file: bac03312026ex992005.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;32
+&lt;FILENAME&gt;bac03312026ex992006.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992006.jpg">Document 32 - file: bac03312026ex992006.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;33
+&lt;FILENAME&gt;bac03312026ex992007.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992007.jpg">Document 33 - file: bac03312026ex992007.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;34
+&lt;FILENAME&gt;bac03312026ex992008.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992008.jpg">Document 34 - file: bac03312026ex992008.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;35
+&lt;FILENAME&gt;bac03312026ex992009.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992009.jpg">Document 35 - file: bac03312026ex992009.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;36
+&lt;FILENAME&gt;bac03312026ex992010.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992010.jpg">Document 36 - file: bac03312026ex992010.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;37
+&lt;FILENAME&gt;bac03312026ex992011.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992011.jpg">Document 37 - file: bac03312026ex992011.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;38
+&lt;FILENAME&gt;bac03312026ex992012.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992012.jpg">Document 38 - file: bac03312026ex992012.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;39
+&lt;FILENAME&gt;bac03312026ex992013.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992013.jpg">Document 39 - file: bac03312026ex992013.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;40
+&lt;FILENAME&gt;bac03312026ex992014.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992014.jpg">Document 40 - file: bac03312026ex992014.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;41
+&lt;FILENAME&gt;bac03312026ex992015.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992015.jpg">Document 41 - file: bac03312026ex992015.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;42
+&lt;FILENAME&gt;bac03312026ex992016.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992016.jpg">Document 42 - file: bac03312026ex992016.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;43
+&lt;FILENAME&gt;bac03312026ex992017.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992017.jpg">Document 43 - file: bac03312026ex992017.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;44
+&lt;FILENAME&gt;bac03312026ex992018.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992018.jpg">Document 44 - file: bac03312026ex992018.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;45
+&lt;FILENAME&gt;bac03312026ex992019.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992019.jpg">Document 45 - file: bac03312026ex992019.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;46
+&lt;FILENAME&gt;bac03312026ex992020.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992020.jpg">Document 46 - file: bac03312026ex992020.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;47
+&lt;FILENAME&gt;bac03312026ex992021.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992021.jpg">Document 47 - file: bac03312026ex992021.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;48
+&lt;FILENAME&gt;bac03312026ex992022.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992022.jpg">Document 48 - file: bac03312026ex992022.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;49
+&lt;FILENAME&gt;bac03312026ex992023.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992023.jpg">Document 49 - file: bac03312026ex992023.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;50
+&lt;FILENAME&gt;bac03312026ex992024.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992024.jpg">Document 50 - file: bac03312026ex992024.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;51
+&lt;FILENAME&gt;bac03312026ex992025.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992025.jpg">Document 51 - file: bac03312026ex992025.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;52
+&lt;FILENAME&gt;bac03312026ex992026.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992026.jpg">Document 52 - file: bac03312026ex992026.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;53
+&lt;FILENAME&gt;bac03312026ex992027.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992027.jpg">Document 53 - file: bac03312026ex992027.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;54
+&lt;FILENAME&gt;bac03312026ex992028.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992028.jpg">Document 54 - file: bac03312026ex992028.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;55
+&lt;FILENAME&gt;bac03312026ex992029.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992029.jpg">Document 55 - file: bac03312026ex992029.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;56
+&lt;FILENAME&gt;bac03312026ex992030.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992030.jpg">Document 56 - file: bac03312026ex992030.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;57
+&lt;FILENAME&gt;bac03312026ex992031.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992031.jpg">Document 57 - file: bac03312026ex992031.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;58
+&lt;FILENAME&gt;bac03312026ex992032.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992032.jpg">Document 58 - file: bac03312026ex992032.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;59
+&lt;FILENAME&gt;bac03312026ex992033.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992033.jpg">Document 59 - file: bac03312026ex992033.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;60
+&lt;FILENAME&gt;bac03312026ex992034.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992034.jpg">Document 60 - file: bac03312026ex992034.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;61
+&lt;FILENAME&gt;bac03312026ex992035.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992035.jpg">Document 61 - file: bac03312026ex992035.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;62
+&lt;FILENAME&gt;bac03312026ex992036.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992036.jpg">Document 62 - file: bac03312026ex992036.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;63
+&lt;FILENAME&gt;bac03312026ex992037.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992037.jpg">Document 63 - file: bac03312026ex992037.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;64
+&lt;FILENAME&gt;bac03312026ex992038.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="bac03312026ex992038.jpg">Document 64 - file: bac03312026ex992038.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;GRAPHIC
+&lt;SEQUENCE&gt;65
+&lt;FILENAME&gt;baclogo2020a.jpg
+&lt;DESCRIPTION&gt;GRAPHIC
+&lt;TEXT&gt;
+<a href="baclogo2020a.jpg">Document 65 - file: baclogo2020a.jpg</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;67
+&lt;FILENAME&gt;R1.htm
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="R1.htm">Document 67 - file: R1.htm</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;68
+&lt;FILENAME&gt;report.css
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="report.css">Document 68 - file: report.css</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;69
+&lt;FILENAME&gt;Show.js
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="Show.js">Document 69 - file: Show.js</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;71
+&lt;FILENAME&gt;FilingSummary.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/FilingSummary.xml">Document 71 - file: FilingSummary.html</a><br>
+<a href="FilingSummary.xml">Document 71 - RAW XML: FilingSummary.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;JSON
+&lt;SEQUENCE&gt;73
+&lt;FILENAME&gt;MetaLinks.json
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="MetaLinks.json">Document 73 - file: MetaLinks.json</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;ZIP
+&lt;SEQUENCE&gt;74
+&lt;FILENAME&gt;0000070858-26-000222-xbrl.zip
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="0000070858-26-000222-xbrl.zip">Document 74 - file: 0000070858-26-000222-xbrl.zip</a><br>
+&lt;/DOCUMENT&gt;
+&lt;DOCUMENT&gt;
+&lt;TYPE&gt;XML
+&lt;SEQUENCE&gt;75
+&lt;FILENAME&gt;bac-20260415_htm.xml
+&lt;DESCRIPTION&gt;IDEA: XBRL DOCUMENT
+&lt;TEXT&gt;
+<a href="xsl/bac-20260415_htm.xml">Document 75 - file: bac-20260415_htm.html</a><br>
+<a href="bac-20260415_htm.xml">Document 75 - RAW XML: bac-20260415_htm.xml</a><br>
+&lt;/DOCUMENT&gt;
+&lt;/SEC-DOCUMENT&gt;</PRE><script type="text/javascript"  src="/NB7sno/xvGjX/Q_ZCq/rw/t5u30XhwmSVLpf/bC4gdQ8CAg/VAcuGi40/RH4"></script></BODY></HTML>
