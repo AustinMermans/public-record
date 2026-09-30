@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## 1.19.0 — 2026-09-29
+
+- Outlook and Economy gain a source-linked Cleveland Fed inflation-nowcast read for CPI, core CPI, PCE and core PCE. Each measure selects its own earliest pending monthly target; year-over-year and quarterly annualized bases remain distinct. Blank forecast cells stay blank after the corresponding actual release.
+- Monthly views plot the publisher's current-edition same-target estimate history, with a separate Public Record collection-era history. Last-movement language compares at the published table's 0.01-percentage-point precision, avoiding signed-zero micro-moves; it is not original daily forecast-vintage reconstruction, official inflation, consensus or a market expectation.
+- Scheduled collection retains only the three source table fragments and two active monthly chart targets, with source-response and excerpt hashes, build-time parser replay, independent stale/partial states and per-target change events. Source, PM and econometric reviewers approved the bounded increment; the broader investor-hub goal remains open.
+
 ## 1.18.0 — 2026-09-29
 
 - EIA gasoline and distillate gain interactive, source-reconciled weekly histories and shareable 1Y/5Y/10Y/full ranges, with same-season five-year references and visible early-history gaps. Product-history failures leave current Table 4 stocks usable and make the chart gap explicit.

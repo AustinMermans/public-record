@@ -55,6 +55,7 @@ jobs:
           python scripts/fiscal.py
           python scripts/banking.py
           python scripts/energy.py
+          python scripts/inflation.py
       - name: Validate and build the publication
         run: python scripts/build.py
       - name: Preserve the source capture

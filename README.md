@@ -17,7 +17,7 @@ A source-linked observatory for US economic releases, regulation, corporate disc
 - **News & announcements:** captured Federal Reserve press releases; explicitly official communications, not independent reporting or a comprehensive news service.
 - **Disclosures:** government and selected court records, original documents, local reading lists and saved keyword lenses with transparent match reasons.
 - **Changes:** a unified edition across economic data, company filings/financial facts, funding, forecasts, disclosures and calendars. Active desks lead; court-feed changes are summarized by publisher and distinct docket links, not promoted as ranked legal news. Source-linked values and analytical drill-downs lead to a complete company/desk/source/type-filtered ledger with shareable pagination. Each channel retains its own successful-capture window.
-- **Outlook and sources:** a [one-quarter GDP watch](https://austinmermans.github.io/public-record/#outlook?forecast=gdp-watch) aligns dated GDPNow, Philadelphia Fed SPF and BEA advance-or-pending evidence for the same real-GDP target without treating them as a single forecast. Select a target quarter to see how its SPF forecast moved across surveys, with workbook-cell and release-date evidence. Extracted FOMC projections and other SPF medians remain separate. Historical SPF cells are from the current official workbook edition, not reconstructed original-release files. See [GDP watch](docs/GDP-WATCH.md), [SPF methodology](docs/SPF.md), further references and collector health.
+- **Outlook and sources:** the [inflation watch](https://austinmermans.github.io/public-record/#inflation-watch) shows dated Cleveland Fed CPI/PCE model estimates, each measure's next pending target and the publisher's current-edition monthly forecast path; it does not reconstruct original daily editions. A [one-quarter GDP watch](https://austinmermans.github.io/public-record/#outlook?forecast=gdp-watch) aligns dated GDPNow, Philadelphia Fed SPF and BEA advance-or-pending evidence for the same real-GDP target without treating them as a single forecast. Select a target quarter to see how its SPF forecast moved across surveys, with workbook-cell and release-date evidence. Extracted FOMC projections and other SPF medians remain separate. Historical SPF cells are from the current official workbook edition, not reconstructed original-release files. See [inflation](docs/INFLATION.md), [GDP watch](docs/GDP-WATCH.md), [SPF methodology](docs/SPF.md), further references and collector health.
 
 The editorial direction is a newspaper-like research publication, not a directory of APIs. The bounded credit read is one cross-source synthesis; broader issuer, macro and legal dossiers and additional reporting feeds remain future work. Keep facts, interpretation and unresolved questions distinct. See [the editorial architecture](docs/EDITORIAL.md) and [company coverage](docs/COMPANY-COVERAGE.md).
 
@@ -39,6 +39,7 @@ python3 scripts/fiscal.py
 python3 scripts/banking.py
 python3 scripts/energy.py
 python3 scripts/spf.py
+python3 scripts/inflation.py
 python3 -m unittest discover -s tests
 node --test tests/*.test.mjs
 python3 scripts/build.py
