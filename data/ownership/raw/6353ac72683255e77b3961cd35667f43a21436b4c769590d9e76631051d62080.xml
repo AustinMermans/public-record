@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<ownershipDocument>
+
+    <schemaVersion>X0609</schemaVersion>
+
+    <documentType>4</documentType>
+
+    <periodOfReport>2026-06-15</periodOfReport>
+
+    <issuer>
+        <issuerCik>0000753308</issuerCik>
+        <issuerName>NEXTERA ENERGY INC</issuerName>
+        <issuerTradingSymbol>NEE</issuerTradingSymbol>
+        <issuerForeignTradingSymbol></issuerForeignTradingSymbol>
+    </issuer>
+
+    <reportingOwner>
+        <reportingOwnerId>
+            <rptOwnerCik>0001240752</rptOwnerCik>
+            <rptOwnerName>PORGES DAVID L</rptOwnerName>
+        </reportingOwnerId>
+        <reportingOwnerAddress>
+            <rptOwnerNonUSAddressFlag>false</rptOwnerNonUSAddressFlag>
+            <rptOwnerStreet1>C/O NEXTERA ENERGY, INC.</rptOwnerStreet1>
+            <rptOwnerStreet2>700 UNIVERSE BLVD</rptOwnerStreet2>
+            <rptOwnerCity>JUNO BEACH</rptOwnerCity>
+            <rptOwnerState>FL</rptOwnerState>
+            <rptOwnerZipCode>33408</rptOwnerZipCode>
+            <rptOwnerStateDescription></rptOwnerStateDescription>
+        </reportingOwnerAddress>
+        <reportingOwnerRelationship>
+            <isDirector>1</isDirector>
+            <isOfficer>0</isOfficer>
+            <isTenPercentOwner>0</isTenPercentOwner>
+            <isOther>0</isOther>
+        </reportingOwnerRelationship>
+    </reportingOwner>
+
+    <aff10b5One>0</aff10b5One>
+
+    <derivativeTable>
+        <derivativeTransaction>
+            <securityTitle>
+                <value>Phantom Stock Units</value>
+            </securityTitle>
+            <conversionOrExercisePrice>
+                <footnoteId id="F1"/>
+            </conversionOrExercisePrice>
+            <transactionDate>
+                <value>2026-06-15</value>
+            </transactionDate>
+            <transactionCoding>
+                <transactionFormType>4</transactionFormType>
+                <transactionCode>A</transactionCode>
+                <equitySwapInvolved>0</equitySwapInvolved>
+            </transactionCoding>
+            <transactionAmounts>
+                <transactionShares>
+                    <value>52</value>
+                </transactionShares>
+                <transactionPricePerShare>
+                    <value>86.12</value>
+                    <footnoteId id="F2"/>
+                </transactionPricePerShare>
+                <transactionAcquiredDisposedCode>
+                    <value>A</value>
+                </transactionAcquiredDisposedCode>
+            </transactionAmounts>
+            <exerciseDate>
+                <footnoteId id="F1"/>
+            </exerciseDate>
+            <expirationDate>
+                <footnoteId id="F1"/>
+            </expirationDate>
+            <underlyingSecurity>
+                <underlyingSecurityTitle>
+                    <value>Common Stock</value>
+                </underlyingSecurityTitle>
+                <underlyingSecurityShares>
+                    <value>0</value>
+                    <footnoteId id="F1"/>
+                </underlyingSecurityShares>
+            </underlyingSecurity>
+            <postTransactionAmounts>
+                <sharesOwnedFollowingTransaction>
+                    <value>6611</value>
+                    <footnoteId id="F3"/>
+                </sharesOwnedFollowingTransaction>
+            </postTransactionAmounts>
+            <ownershipNature>
+                <directOrIndirectOwnership>
+                    <value>D</value>
+                </directOrIndirectOwnership>
+            </ownershipNature>
+        </derivativeTransaction>
+    </derivativeTable>
+
+    <footnotes>
+        <footnote id="F1">Phantom Stock Units approximate the number of phantom shares of the Issuer's common stock attributable to phantom units credited to the reporting person's account under the NextEra Energy, Inc. Deferred Compensation Plan (the &quot;Plan&quot;).  Amounts deferred under the Plan, including amounts attributable to reinvested dividends, are deemed to be invested in a number of unfunded theoretical units equal to the number of units which would have been credited if the deferred amounts had been invested in the Issuer's company stock fund in its Retirement Savings Plan (the &quot;Stock Fund&quot;).  The Stock Fund is accounted for in units of a unitized pool of stock and cash.  Phantom Stock Units are estimated based on the number of theoretical units credited to the reporting person.  Accounts are payable in cash at the end of the deferral period.</footnote>
+        <footnote id="F2">Closing price of Issuer's common stock on NYSE on the relevant date (price used to value units in the Stock Fund).</footnote>
+        <footnote id="F3">Differences in holdings between any given dates may result from varying percentages of cash and stock held in the Stock Fund on those dates.</footnote>
+    </footnotes>
+
+    <ownerSignature>
+        <signatureName>David Flechner, Attorney-in-Fact</signatureName>
+        <signatureDate>2026-06-16</signatureDate>
+    </ownerSignature>
+</ownershipDocument>

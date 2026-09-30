@@ -10,6 +10,7 @@ from fiscal import validate_fiscal
 from banking import validate_banking
 from spf import validate_capture as validate_spf
 from business_briefs import validate_capture as validate_business_briefs
+from ownership import validate_capture as validate_ownership
 from bea_releases import validate_capture as validate_bea_releases
 from bea_pce import validate_capture as validate_bea_pce
 from energy import validate_capture as validate_energy
@@ -70,6 +71,12 @@ def main():
             raise ValueError('Business briefs require corporate coverage')
         data['business_briefs']=json.loads(business_briefs.read_text())
         validate_business_briefs(data['business_briefs'],ROOT,data['corporate'])
+    ownership=ROOT/'data/ownership/current.json'
+    if ownership.exists():
+        if 'corporate' not in data:
+            raise ValueError('SEC ownership rows require corporate coverage')
+        data['ownership']=json.loads(ownership.read_text())
+        validate_ownership(data['ownership'],ROOT,data['corporate'])
     if financials.exists():
         data['financials']=json.loads(financials.read_text())
         validate_financials(data['financials'],data.get('corporate',{}).get('companies',[]))
@@ -166,6 +173,19 @@ def main():
             last_success=max((x['captured_at'] for x in b['briefs'] if x.get('captured_at')),default=None),
             attempted_at=b.get('attempted_at'),count=counts['ok'],
             note=f"Newest two selected Item 2.02 8-Ks per covered issuer; exact EX-99.1 text only. {counts['ok']} current, {counts['stale']} stale, {counts['metadata_only']} metadata-only. Not independent news or a complete filing feed."))
+    if ownership.exists():
+        captured=data['ownership']['forms']
+        good=[item for item in captured if item['status']=='ok']
+        outside=[item for item in captured if item['status']=='other_issuer']
+        missing=len(captured)-len(good)-len(outside)
+        discovery_gaps=sum(company['status']!='ok' for company in data['corporate']['companies'])
+        data['sources'].append(dict(id='sec-form4-rows',name='SEC EDGAR · Form 4 transaction rows',
+            domain='Business',url='https://www.sec.gov/edgar/search/',
+            status='ok' if not missing and not discovery_gaps else 'partial' if good else 'unavailable',
+            last_success=max((item['captured_at'] for item in good),default=None),
+            attempted_at=data['ownership']['attempted_at'],count=sum(len(item['document']['rows']) for item in good),
+            note=f"{len(good)} issuer-matched Forms 4/4-A, {len(outside)} filings about other issuers excluded, {missing} XML unavailable, {discovery_gaps} company-submissions discovery gaps, of {len(captured)} selected SEC XML files; "
+                 'transaction rows, not unique people or unamended events. Purchases include private transactions; venue is not inferred.'))
     if fiscal.exists():
         f=data['fiscal']
         data['sources'].append(dict(id='treasury-mts',name='US Treasury · Monthly Treasury Statement',

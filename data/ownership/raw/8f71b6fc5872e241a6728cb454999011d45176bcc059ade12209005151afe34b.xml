@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<ownershipDocument>
+
+    <schemaVersion>X0609</schemaVersion>
+
+    <documentType>4</documentType>
+
+    <periodOfReport>2026-06-30</periodOfReport>
+
+    <issuer>
+        <issuerCik>0001045609</issuerCik>
+        <issuerName>Prologis, Inc.</issuerName>
+        <issuerTradingSymbol>PLD</issuerTradingSymbol>
+        <issuerForeignTradingSymbol></issuerForeignTradingSymbol>
+    </issuer>
+
+    <reportingOwner>
+        <reportingOwnerId>
+            <rptOwnerCik>0001275853</rptOwnerCik>
+            <rptOwnerName>OCONNOR DAVID P</rptOwnerName>
+        </reportingOwnerId>
+        <reportingOwnerAddress>
+            <rptOwnerNonUSAddressFlag>false</rptOwnerNonUSAddressFlag>
+            <rptOwnerStreet1>C/O PROLOGIS, INC., PIER 1, BAY 1</rptOwnerStreet1>
+            <rptOwnerStreet2></rptOwnerStreet2>
+            <rptOwnerCity>SAN FRANCISCO</rptOwnerCity>
+            <rptOwnerState>CA</rptOwnerState>
+            <rptOwnerZipCode>94111</rptOwnerZipCode>
+            <rptOwnerStateDescription></rptOwnerStateDescription>
+        </reportingOwnerAddress>
+        <reportingOwnerRelationship>
+            <isDirector>true</isDirector>
+            <isOfficer>false</isOfficer>
+            <isTenPercentOwner>false</isTenPercentOwner>
+            <isOther>false</isOther>
+        </reportingOwnerRelationship>
+    </reportingOwner>
+
+    <aff10b5One>false</aff10b5One>
+
+    <derivativeTable>
+        <derivativeTransaction>
+            <securityTitle>
+                <value>Dividend Equivalent Units - NQDC</value>
+            </securityTitle>
+            <conversionOrExercisePrice>
+                <value>0</value>
+                <footnoteId id="F1"/>
+            </conversionOrExercisePrice>
+            <transactionDate>
+                <value>2026-06-30</value>
+            </transactionDate>
+            <deemedExecutionDate>
+                <value>2026-06-30</value>
+            </deemedExecutionDate>
+            <transactionCoding>
+                <transactionFormType>4</transactionFormType>
+                <transactionCode>A</transactionCode>
+                <equitySwapInvolved>false</equitySwapInvolved>
+            </transactionCoding>
+            <transactionAmounts>
+                <transactionShares>
+                    <value>221.2394</value>
+                </transactionShares>
+                <transactionPricePerShare>
+                    <value>0</value>
+                    <footnoteId id="F1"/>
+                </transactionPricePerShare>
+                <transactionAcquiredDisposedCode>
+                    <value>A</value>
+                </transactionAcquiredDisposedCode>
+            </transactionAmounts>
+            <exerciseDate>
+                <footnoteId id="F1"/>
+            </exerciseDate>
+            <expirationDate>
+                <footnoteId id="F1"/>
+            </expirationDate>
+            <underlyingSecurity>
+                <underlyingSecurityTitle>
+                    <value>Common Stock</value>
+                </underlyingSecurityTitle>
+                <underlyingSecurityShares>
+                    <value>221.2394</value>
+                </underlyingSecurityShares>
+            </underlyingSecurity>
+            <postTransactionAmounts>
+                <sharesOwnedFollowingTransaction>
+                    <value>28231.7997</value>
+                </sharesOwnedFollowingTransaction>
+            </postTransactionAmounts>
+            <ownershipNature>
+                <directOrIndirectOwnership>
+                    <value>D</value>
+                </directOrIndirectOwnership>
+            </ownershipNature>
+        </derivativeTransaction>
+    </derivativeTable>
+
+    <footnotes>
+        <footnote id="F1">Represents Dividend Equivalent Units (DEUs) earned on Deferred Stock Units (DSUs) associated with current service on our board that are deferred under the Prologis, Inc. Nonqualified Deferred Compensation Plan (the NQDC Plan). DEUs accrue on outstanding DSUs at the Prologis common stock dividend rate at the time dividends are paid on Prologis common stock. DEUs and the underlying DSUs vest 100% on the earlier of the first anniversary of the grant date or the first annual meeting of the stockholders of Prologis after the grant date (generally in May each year). The receipt of such DEUs is deferred along with the underlying DSUs. DSUs and DEUs are paid in the form of Prologis common stock at the rate of one common share per DSU or DEU. Balance in column 9 includes DSUs and DEUs.</footnote>
+    </footnotes>
+
+    <ownerSignature>
+        <signatureName>/s/ Tammy Colvocoresses, Attorney-In-Fact for David P. O'Connor</signatureName>
+        <signatureDate>2026-07-02</signatureDate>
+    </ownerSignature>
+</ownershipDocument>

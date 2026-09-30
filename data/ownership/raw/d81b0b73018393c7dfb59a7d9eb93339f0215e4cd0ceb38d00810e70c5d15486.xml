@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<ownershipDocument>
+
+    <schemaVersion>X0609</schemaVersion>
+
+    <documentType>4</documentType>
+
+    <periodOfReport>2026-05-27</periodOfReport>
+
+    <notSubjectToSection16>1</notSubjectToSection16>
+
+    <issuer>
+        <issuerCik>0000034088</issuerCik>
+        <issuerName>EXXON MOBIL CORP</issuerName>
+        <issuerTradingSymbol>XOM</issuerTradingSymbol>
+        <issuerForeignTradingSymbol></issuerForeignTradingSymbol>
+    </issuer>
+
+    <reportingOwner>
+        <reportingOwnerId>
+            <rptOwnerCik>0001159187</rptOwnerCik>
+            <rptOwnerName>UBBEN JEFFREY W</rptOwnerName>
+        </reportingOwnerId>
+        <reportingOwnerAddress>
+            <rptOwnerNonUSAddressFlag>false</rptOwnerNonUSAddressFlag>
+            <rptOwnerStreet1>C/O:</rptOwnerStreet1>
+            <rptOwnerStreet2>EXXON MOBIL CORPORATION</rptOwnerStreet2>
+            <rptOwnerCity>SPRING</rptOwnerCity>
+            <rptOwnerState>TX</rptOwnerState>
+            <rptOwnerZipCode>77389</rptOwnerZipCode>
+            <rptOwnerStateDescription></rptOwnerStateDescription>
+        </reportingOwnerAddress>
+        <reportingOwnerRelationship>
+            <isDirector>1</isDirector>
+        </reportingOwnerRelationship>
+    </reportingOwner>
+
+    <aff10b5One>0</aff10b5One>
+
+    <footnotes></footnotes>
+
+    <ownerSignature>
+        <signatureName>/s/ Marsha E. Stewart Schreiner by Power of Attorney</signatureName>
+        <signatureDate>2026-05-27</signatureDate>
+    </ownerSignature>
+</ownershipDocument>
