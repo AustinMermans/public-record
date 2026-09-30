@@ -48,6 +48,7 @@ jobs:
           python scripts/collect.py
           python scripts/research.py
           python scripts/bea_releases.py
+          python scripts/bea_pce.py
           python scripts/spf.py
           python scripts/corporate.py
           python scripts/business_briefs.py

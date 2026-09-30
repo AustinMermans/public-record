@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## 1.22.0 — 2026-09-29
+
+- Economy adds a source-bound PCE price release record: headline and core month-over-month and year-over-year rates from seven dated 2026 BEA Personal Income and Outlays news releases. Calendar, search, Economy, Outlook and the front page link to the on-site read and exact official source. Four future release months remain schedule-only until a linked BEA page is verified.
+- The collector retains each source page, its SHA-256 receipt, publication embargo and original schedule discovery receipt; build-time replay checks source identity and all four published values. Year rollover preserves earlier releases against their original schedule evidence. New-target changes enter the unified edition; a failed refresh retains stale status rather than inventing an actual.
+- The release page pairs an actual with a Cleveland Fed model estimate only when a retained, same-target monthly snapshot predates the BEA embargo. July correctly has no such snapshot; the pending August model remains a model. This is not consensus, a market-implied path or a trading-surprise score. Earlier BEA values were captured retrospectively from dated release pages, not observed at their original release times; current-revised FRED series stay separate.
+
 ## 1.21.0 — 2026-09-29
 
 - Business adds reviewed, exact-exhibit issuer reads for JPMorgan, ExxonMobil's current registrant and Caterpillar, extending curated coverage to six companies across banking, energy and industrials. The reads distinguish bank-specific credit costs and significant gains, ExxonMobil's sequential operating drivers and planned capacity, and Caterpillar's sales-volume/price gains and tariff-recovery effect. Each claim has a short source cue and direct SEC exhibit link; management explanations remain issuer-reported.

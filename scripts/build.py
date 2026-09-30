@@ -11,6 +11,7 @@ from banking import validate_banking
 from spf import validate_capture as validate_spf
 from business_briefs import validate_capture as validate_business_briefs
 from bea_releases import validate_capture as validate_bea_releases
+from bea_pce import validate_capture as validate_bea_pce
 from energy import validate_capture as validate_energy
 from inflation import validate_capture as validate_inflation
 from publication_changes import compare_spf
@@ -108,6 +109,10 @@ def main():
     if bea_releases.exists():
         data['bea_releases']=json.loads(bea_releases.read_text())
         validate_bea_releases(data['bea_releases'],ROOT)
+    bea_pce=ROOT/'data/bea_pce/current.json'
+    if bea_pce.exists():
+        data['bea_pce']=json.loads(bea_pce.read_text())
+        validate_bea_pce(data['bea_pce'],ROOT)
     energy=ROOT/'data/energy/current.json'
     if energy.exists():
         data['energy']=json.loads(energy.read_text())
@@ -182,6 +187,14 @@ def main():
             last_success=b.get('last_success'),attempted_at=b.get('attempted_at'),
             count=len(b.get('releases',[])),
             note='Verified real GDP growth in dated advance, second and third news releases. Recent targets only; separate from current-revised FRED history.',
+            error=b.get('error')))
+    if bea_pce.exists():
+        b=data['bea_pce']
+        data['sources'].append(dict(id='bea-pce-releases',name='BEA · dated PCE price releases',
+            domain='Economy',url='https://www.bea.gov/news/schedule/full',status=b['status'],
+            last_success=b.get('last_success'),attempted_at=b.get('attempted_at'),
+            count=len(b.get('releases',[])),
+            note='Verified headline and core PCE monthly/yearly rates from dated Personal Income and Outlays news releases; separate from revised indexes and Cleveland Fed model estimates.',
             error=b.get('error')))
     if spf.exists():
         f=data['spf']
