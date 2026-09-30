@@ -1,5 +1,9 @@
 # Independent product reviews
 
+### Verified v1.22.0 publication
+
+[PR 11](https://github.com/AustinMermans/public-record/pull/11) was squash-merged at `71b4403136be97747cadfcc7ee59a667a130a145` after the remote tree matched reviewed local tree `4d0cef2b1b0e6634b1591ae3e87081238a3e5b90` exactly. [Pages run 36659596630](https://github.com/AustinMermans/public-record/actions/runs/36659596630) completed successfully. Public `release.json`, `data.json`, `app.js`, `pce-releases.mjs`, `publication.mjs` and `style.css` SHA-256 hashes matched the reviewed local build byte-for-byte. A fresh live-browser visit to the [July release read](https://austinmermans.github.io/public-record/#pce-releases?target=2026-07) showed the source-linked 0.2% headline/core monthly values and distinct 3.7%/3.3% yearly context. Its [pending August view](https://austinmermans.github.io/public-record/#pce-releases?target=2026-08) remained explicitly without a verified BEA actual; at 320px, the page had no horizontal overflow. The push deployment did not itself prove a new source collection or future scheduler reliability. This verifies the bounded hosted edition, not the whole investor hub or an immutable release artifact.
+
 ## Dated BEA PCE release gate — 1.22.0 candidate, September 29, 2026
 
 Independent source/econometric, portfolio-manager and UI/UX reviewers approved this **bounded release-record increment** at P0=P1=P2=0 after corrections. Seven January–July 2026 BEA Personal Income and Outlays pages supply four source-replayed PCE price rates each; four later targets remain schedule-only. The July rates reconciled with the dated BEA news body: 0.2% headline and core monthly, 3.7% and 3.3% yearly. The initial pages were retrieved retrospectively on September 30 UTC, not captured at each original embargo. Current-revised FRED histories and Cleveland Fed models remain separate information sets.
@@ -8,7 +12,7 @@ The method reviewer required a working revised-headline-history link, symmetric 
 
 The PM approved the before/after-release job and placement across the front page, Economy, Outlook, calendar and search after the teaser explicitly labeled rates m/m and the picker said reference month. UI/UX review checked desktop and mobile browser states, picker URL and focus, 320px page overflow, accessible measure headings and selected-region names, and keyboard-operable source receipt. The picker now retains focus and describes the selected target; direct deep links focus the named result. Human dates appear in the visible lead and schedule, while exact timestamps and hash remain in the expandable source receipt. This is not physical-device or screen-reader certification.
 
-The final local gate passed 243 Python and 160 JavaScript tests, application syntax, build and authored-file diff checks. Original BEA HTML receipts retain the publisher's trailing whitespace so their SHA-256 evidence is not modified. The build has 562 calendar events, 8,729 disclosures and 24 series. Hosted deployment, the next scheduled source refresh and full-product approval remain separate checks.
+The final local gate passed 243 Python and 160 JavaScript tests, application syntax, build and authored-file diff checks. Original BEA HTML receipts retain the publisher's trailing whitespace so their SHA-256 evidence is not modified. The build has 562 calendar events, 8,729 disclosures and 24 series. Hosted deployment is verified above; the next scheduled source refresh and full-product approval remain separate checks.
 
 ### Verified v1.21.0 publication
 
