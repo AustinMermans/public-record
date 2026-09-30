@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<ownershipDocument>
+
+    <schemaVersion>X0609</schemaVersion>
+
+    <documentType>4</documentType>
+
+    <periodOfReport>2026-06-24</periodOfReport>
+
+    <issuer>
+        <issuerCik>0000019617</issuerCik>
+        <issuerName>JPMORGAN CHASE &amp; CO</issuerName>
+        <issuerTradingSymbol>JPM</issuerTradingSymbol>
+        <issuerForeignTradingSymbol></issuerForeignTradingSymbol>
+    </issuer>
+
+    <reportingOwner>
+        <reportingOwnerId>
+            <rptOwnerCik>0001775584</rptOwnerCik>
+            <rptOwnerName>Piepszak Jennifer</rptOwnerName>
+        </reportingOwnerId>
+        <reportingOwnerAddress>
+            <rptOwnerNonUSAddressFlag>false</rptOwnerNonUSAddressFlag>
+            <rptOwnerStreet1>270 PARK AVENUE</rptOwnerStreet1>
+            <rptOwnerStreet2></rptOwnerStreet2>
+            <rptOwnerCity>NEW YORK</rptOwnerCity>
+            <rptOwnerState>NY</rptOwnerState>
+            <rptOwnerZipCode>10017-2014</rptOwnerZipCode>
+            <rptOwnerStateDescription></rptOwnerStateDescription>
+        </reportingOwnerAddress>
+        <reportingOwnerRelationship>
+            <isOfficer>1</isOfficer>
+            <officerTitle>Chief Operating Officer</officerTitle>
+        </reportingOwnerRelationship>
+    </reportingOwner>
+
+    <aff10b5One>0</aff10b5One>
+
+    <nonDerivativeTable></nonDerivativeTable>
+
+    <derivativeTable>
+        <derivativeTransaction>
+            <securityTitle>
+                <value>Restricted Stock Units</value>
+            </securityTitle>
+            <conversionOrExercisePrice>
+                <footnoteId id="F1"/>
+            </conversionOrExercisePrice>
+            <transactionDate>
+                <value>2026-06-24</value>
+            </transactionDate>
+            <transactionCoding>
+                <transactionFormType>4</transactionFormType>
+                <transactionCode>A</transactionCode>
+                <equitySwapInvolved>0</equitySwapInvolved>
+                <footnoteId id="F2"/>
+            </transactionCoding>
+            <transactionAmounts>
+                <transactionShares>
+                    <value>60214.0000</value>
+                </transactionShares>
+                <transactionPricePerShare>
+                    <value>0.0000</value>
+                </transactionPricePerShare>
+                <transactionAcquiredDisposedCode>
+                    <value>A</value>
+                </transactionAcquiredDisposedCode>
+            </transactionAmounts>
+            <exerciseDate>
+                <footnoteId id="F3"/>
+            </exerciseDate>
+            <expirationDate>
+                <value>2029-06-24</value>
+            </expirationDate>
+            <underlyingSecurity>
+                <underlyingSecurityTitle>
+                    <value>Common Stock</value>
+                </underlyingSecurityTitle>
+                <underlyingSecurityShares>
+                    <value>60214.0000</value>
+                </underlyingSecurityShares>
+            </underlyingSecurity>
+            <postTransactionAmounts>
+                <sharesOwnedFollowingTransaction>
+                    <value>60214.0000</value>
+                </sharesOwnedFollowingTransaction>
+            </postTransactionAmounts>
+            <ownershipNature>
+                <directOrIndirectOwnership>
+                    <value>D</value>
+                </directOrIndirectOwnership>
+            </ownershipNature>
+        </derivativeTransaction>
+    </derivativeTable>
+
+    <footnotes>
+        <footnote id="F1">Each Restricted Stock Unit (RSU) represents a contingent right to receive one share of JPMC common stock.</footnote>
+        <footnote id="F2">Equity incentives are subject to the JPMorgan Chase Bonus Recoupment Policy which applies in the event of a material restatement of the Firm's financial results. In addition, all equity awards granted in 2026 contain recapture provisions that enable the Firm to cancel outstanding awards and/or recover the value of certain stock distributed under the award in specified circumstances. In addition to recapture provisions, equity awards granted to Operating Committee members are also subject to additional Protection-based Vesting provisions under which portions of awards may be cancelled by the CEO, any determination with respect to which is subject to ratification by the Compensation &amp; Management Development Committee of the Board of Directors.</footnote>
+        <footnote id="F3">The Retention and Continuity Award cliff-vests on June 24, 2029. Vesting is subject to achievement of a Performance Condition; continuous employment with the Firm, with certain limited exceptions; and the other terms and conditions as set forth in the award agreement. Shares delivered, after applicable tax withholding, must be held for an additional two-year period, resulting in a total combined vesting and holding period of five years from the date of grant. Shares are subject to the Firm's stock ownership guideline and retention requirements applicable to the Firm's Operating Committee members. The Firm also reported this Retention and Continuity Award in a Current Report on Form 8-K filed on June 25, 2026.</footnote>
+    </footnotes>
+
+    <remarks>poapiepzsak.txt</remarks>
+
+    <ownerSignature>
+        <signatureName>/s/ Denise G. Connors under POA</signatureName>
+        <signatureDate>2026-06-26</signatureDate>
+    </ownerSignature>
+</ownershipDocument>

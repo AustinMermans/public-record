@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## 1.23.0 — 2026-09-29
+
+- Business adds source-replayed SEC Form 4/4-A transaction rows for the selected company universe, with owner identity, reported security, shares, price, acquisition/disposition code, direct/indirect ownership, filing/transaction dates and footnotes. A shareable ownership reader filters purchase-coded acquisitions separately from sales, awards, exercises and other rows. Company profiles and exact filing detail link to the SEC XML and filing.
+- The ownership reader opens with one latest selected filing for each of six distinct issuers before its chronological transaction-row ledger, so a many-row filing cannot obscure the cross-company view. This overview is not a significance ranking.
+- Purchase code P is labeled as a reported purchase, not automatically an open-market trade. Multiple reporting owners do not multiply rows, amendments are not netted with originals, and filing-level Rule 10b5-1 indicators remain filing-level. Failed XML collection produces explicit partial coverage rather than guessed transactions. See [ownership method](docs/OWNERSHIP.md).
+
 ## 1.22.0 — 2026-09-29
 
 - Economy adds a source-bound PCE price release record: headline and core month-over-month and year-over-year rates from seven dated 2026 BEA Personal Income and Outlays news releases. Calendar, search, Economy, Outlook and the front page link to the on-site read and exact official source. Four future release months remain schedule-only until a linked BEA page is verified.

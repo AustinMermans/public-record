@@ -51,6 +51,7 @@ jobs:
           python scripts/bea_pce.py
           python scripts/spf.py
           python scripts/corporate.py
+          python scripts/ownership.py
           python scripts/business_briefs.py
           python scripts/collect_financials.py
           python scripts/fiscal.py
