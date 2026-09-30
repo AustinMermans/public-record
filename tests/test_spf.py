@@ -5,6 +5,7 @@ import json
 import sys
 import unittest
 import zipfile
+from datetime import datetime, timedelta
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
@@ -137,9 +138,10 @@ class SPFTests(unittest.TestCase):
 
     def test_stale_validation_retains_evidence_and_attempt_clock(self):
         stale = json.loads(json.dumps(CAPTURE))
-        stale.update(status='stale', attempted_at='2026-09-30T00:00:00+00:00', error='source unavailable')
+        captured = datetime.fromisoformat(CAPTURE['captured_at'])
+        stale.update(status='stale', attempted_at=(captured + timedelta(hours=1)).isoformat(), error='source unavailable')
         spf.validate_capture(stale, ROOT)
-        stale['attempted_at'] = '2026-09-01T00:00:00+00:00'
+        stale['attempted_at'] = (captured - timedelta(hours=1)).isoformat()
         with self.assertRaisesRegex(spf.SPFError, 'later attempt'):
             spf.validate_capture(stale, ROOT)
 

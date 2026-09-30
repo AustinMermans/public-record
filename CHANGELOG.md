@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## 1.20.0 — 2026-09-29
+
+- Business and company dossiers gain short, source-bound issuer-result reads for Amazon, Lilly and Home Depot. Operating drivers, unusual items and guidance sit before the filed-quarter table, with open investor questions, claim-specific exhibit cues and direct SEC links. A featured Business headline opens the dossier when such a read exists.
+- Each editorial claim is tied to a retained EX-99.1 accession, quarter, raw SHA-256 and verified visible-text line hashes. The build suppresses an old read when a newer selected earnings event replaces it. Raw-byte changes across SEC recaptures are tolerated only when the complete visible exhibit remains identical to the reviewed edition; changed evidence fails closed. Issuer explanations and forecasts remain distinct from separately sourced 10-Q consolidated facts; the cues are short quotations, not reproduced releases.
+- Independent portfolio-manager, source/content and UI/UX reviewers approved this bounded three-issuer edition after Prime Day timing, non-GAAP EPS, product-basket, source-link and mobile-hierarchy corrections. This does not constitute a quarterly editorial-refresh workflow or full-product approval.
+
 ## 1.19.0 — 2026-09-29
 
 - Outlook and Economy gain a source-linked Cleveland Fed inflation-nowcast read for CPI, core CPI, PCE and core PCE. Each measure selects its own earliest pending monthly target; year-over-year and quarterly annualized bases remain distinct. Blank forecast cells stay blank after the corresponding actual release.

@@ -79,6 +79,9 @@ test('a source-bound earnings exhibit supplies headline and excerpt without inve
   assert.ok(front.indexOf('business-issuer-lead')<front.indexOf('business-layout'));
   assert.match(front,/From issuer results/);
   assert.match(front,/Original exhibit/);
+  const reviewed={...data,earnings_dossiers:{dossiers:[{cik:issuer.cik,status:'matched',event:{accession:id},issuer_read:{claims:[{kind:'driver',text:'Cloud volume lifted the result.'}]}}]}};
+  assert.match(businessPage(reviewed),/href="#company\?cik=0000000001&amp;dossier=earnings">Alpha reports a record quarter<\/a>/);
+  assert.match(businessPage(reviewed),/Cloud volume lifted the result/);
   assert.doesNotMatch(businessPage(data,{q:'ALPH'}),/business-issuer-lead/);
   assert.doesNotMatch(businessPage(data,{topic:'results'}),/business-issuer-lead/);
   assert.match(filingDetail(data,issuer,id),/Headline and excerpt reproduced from the linked issuer exhibit/);

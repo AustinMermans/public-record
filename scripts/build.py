@@ -16,6 +16,7 @@ from inflation import validate_capture as validate_inflation
 from publication_changes import compare_spf
 from research import validate_gdpnow_capture
 from earnings_dossiers import assemble_dossiers
+from issuer_reads import attach_issuer_reads
 ROOT=Path(__file__).resolve().parents[1]
 EASTERN=ZoneInfo('America/New_York')
 
@@ -73,6 +74,11 @@ def main():
         validate_financials(data['financials'],data.get('corporate',{}).get('companies',[]))
     if 'corporate' in data and 'business_briefs' in data and 'financials' in data:
         data['earnings_dossiers']=assemble_dossiers(data['corporate'],data['business_briefs'],data['financials'],ROOT)
+        issuer_catalogue=ROOT/'data/issuer_reads/catalog.json'
+        if issuer_catalogue.exists():
+            data['earnings_dossiers']=attach_issuer_reads(
+                data['earnings_dossiers'],data['business_briefs'],
+                json.loads(issuer_catalogue.read_text()),ROOT)
     if research.exists():
         data['research']=json.loads(research.read_text())
         validate_gdpnow_capture(data['research'],ROOT)

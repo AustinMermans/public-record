@@ -1,5 +1,5 @@
 import {escapeText as esc, easternDay} from './editorial.mjs';
-import {dossierTeaser} from './earnings-dossier.mjs';
+import {dossierFor,dossierTeaser,dossierUrl} from './earnings-dossier.mjs';
 
 const normalize = value => String(value ?? '').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const safe = url => /^https?:\/\//.test(url || '');
@@ -153,7 +153,7 @@ function issuerLead(state) {
   if(state.q.trim()||state.topic!=='reports'||state.page!==1)return '';
   const featured=state.stories.filter(s=>s.brief?.status==='ok').slice(0,3);
   if(!featured.length)return '';
-  return `<section class="business-issuer-lead" aria-label="Recent verified issuer reports"><div class="section-head"><h2>From issuer results</h2><span class="meta">Recent verified Item 2.02 exhibits</span></div><div class="business-issuer-grid">${featured.map(s=>`<article><div class="meta">${esc(date(s.f.filed))} · ${esc(s.c.tickers?.[0]||s.c.name)}</div><h3><a href="${esc(s.url)}">${esc(s.brief.headline)}</a></h3><p>${esc(s.brief.excerpt)}</p><div class="meta">${sourceLink(s.brief.source.url,'Original exhibit')} · <a href="${profile(s.c)}">Company profile</a>${dossierTeaser(state.data,s.c.cik,s.f.id)?' · '+dossierTeaser(state.data,s.c.cik,s.f.id):''}</div></article>`).join('')}</div></section>`;
+  return `<section class="business-issuer-lead" aria-label="Recent verified issuer reports"><div class="section-head"><h2>From issuer results</h2><span class="meta">Recent verified Item 2.02 exhibits</span></div><div class="business-issuer-grid">${featured.map(s=>{const dossier=dossierFor(state.data,s.c.cik);const driver=dossier?.event?.accession===s.f.id?dossier.issuer_read?.claims?.find(c=>c.kind==='driver'):null;return `<article><div class="meta">${esc(date(s.f.filed))} · ${esc(s.c.tickers?.[0]||s.c.name)}</div><h3><a href="${esc(driver?dossierUrl(s.c.cik):s.url)}">${esc(s.brief.headline)}</a></h3><p>${esc(driver?.text||s.brief.excerpt)}</p><div class="meta">${driver?'Source-bound issuer read · ':''}${sourceLink(s.brief.source.url,'Original exhibit')} · <a href="${profile(s.c)}">Company profile</a>${dossierTeaser(state.data,s.c.cik,s.f.id)?' · '+dossierTeaser(state.data,s.c.cik,s.f.id):''}</div></article>`;}).join('')}</div></section>`;
 }
 export function businessResults(d,options={}) {
   const state=businessSelection(d,options),offset=(state.page-1)*12;
