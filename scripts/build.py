@@ -12,6 +12,7 @@ from spf import validate_capture as validate_spf
 from business_briefs import validate_capture as validate_business_briefs
 from bea_releases import validate_capture as validate_bea_releases
 from energy import validate_capture as validate_energy
+from inflation import validate_capture as validate_inflation
 from publication_changes import compare_spf
 from research import validate_gdpnow_capture
 from earnings_dossiers import assemble_dossiers
@@ -133,6 +134,17 @@ def main():
                     +'. Schedule only; not confirmation of publication.'))
         data['events'].sort(key=event_order)
         validate(data)
+    inflation=ROOT/'data/inflation/current.json'
+    if inflation.exists():
+        data['inflation']=json.loads(inflation.read_text())
+        validate_inflation(data['inflation'],ROOT)
+        item=data['inflation']
+        data['sources'].append(dict(id='cleveland-inflation-nowcast',
+            name='Cleveland Fed · Inflation Nowcasting',domain='Outlook',url=item['url'],
+            status='partial' if item['status']=='ok' and item.get('history_error') else item['status'],last_success=item.get('captured_at'),
+            attempted_at=item.get('attempted_at'),count=len(item.get('rows',[])),
+            note='Daily model estimates for CPI and PCE, not official inflation releases or survey consensus. Publisher history is its current edition; our original capture history begins at collection.',
+            error=item.get('error') or item.get('history_error')))
     data['changes']=assemble_changes(data)
     if business_briefs.exists():
         b=data['business_briefs']

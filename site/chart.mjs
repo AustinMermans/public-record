@@ -21,13 +21,13 @@ export function chartGeometry(points, width) {
     y: v => T + (max - v) / (max - min) * (height - T - B)};
 }
 
-export function chartMarkup(points, {width, label, unit, esc, nf, tick, idPrefix='chart', connect=()=>true}) {
+export function chartMarkup(points, {width, label, unit, esc, nf, tick, idPrefix='chart', connect=()=>true, axisPrecision}) {
   if (points.length < 2) return '<div class="empty">Not enough observations to draw this window.</div>';
   const g = chartGeometry(points, width), {height, L, R, T, B, min, max, x, y} = g;
   let svg = '';
   for (let i = 0; i < 5; i++) {
     const v = min + (max - min) * i / 4;
-    svg += `<line class="grid" x1="${L}" x2="${width - R}" y1="${y(v)}" y2="${y(v)}"/><text x="${L - 12}" y="${y(v) + 4}" text-anchor="end">${nf(v, Math.abs(max) > 1000 ? 0 : 1)}</text>`;
+    svg += `<line class="grid" x1="${L}" x2="${width - R}" y1="${y(v)}" y2="${y(v)}"/><text x="${L - 12}" y="${y(v) + 4}" text-anchor="end">${nf(v, axisPrecision ?? (Math.abs(max) > 1000 ? 0 : 1))}</text>`;
   }
   const ticks = width < 500 ? 3 : 5;
   for (let i = 0; i < ticks; i++) {

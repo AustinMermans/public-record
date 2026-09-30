@@ -13,12 +13,15 @@ from fiscal import compare_fiscal
 from banking import compare_banking
 from bea_changes import compare_bea_releases
 from energy import compare_energy
+from inflation import compare as compare_inflation
 
 
 def channel_domain(sid):
     if sid.startswith(('sec-company-', 'sec-financials-')) or sid == 'sec':
         return 'Companies'
     if sid.startswith('research-'):
+        return 'Outlook'
+    if sid == 'cleveland-inflation-nowcast':
         return 'Outlook'
     if sid.startswith(('nyfed-', 'ofr-')) or sid == 'fdic-qbp':
         return 'Funding'
@@ -70,7 +73,7 @@ def assemble_changes(data):
     core = copy.deepcopy(data.get('changes') or dict(items=[], baselines=[], skipped=[]))
     core.setdefault('channels', legacy_channels(core, data.get('sources', [])))
     groups = [core]
-    for key, compare in (('corporate', compare_corporate), ('research', compare_research), ('spf', compare_spf), ('financials', compare_financials), ('fiscal', compare_fiscal), ('banking', compare_banking), ('bea_releases', compare_bea_releases), ('energy', compare_energy)):
+    for key, compare in (('corporate', compare_corporate), ('research', compare_research), ('spf', compare_spf), ('financials', compare_financials), ('fiscal', compare_fiscal), ('banking', compare_banking), ('bea_releases', compare_bea_releases), ('energy', compare_energy), ('inflation', compare_inflation)):
         module = data.get(key)
         if not module:
             continue
@@ -120,6 +123,8 @@ def assemble_changes(data):
                 detail = '#gdp-releases?' + urlencode({'quarter': item['target']})
             elif sid == 'eia-wpsr':
                 detail = '#energy?' + urlencode({'metric': item['metric_id']})
+            elif sid == 'cleveland-inflation-nowcast':
+                detail = '#inflation-watch?' + urlencode({'basis': item['basis'], 'target': item['target'], 'metric': item['metric_id']})
             elif item.get('forecast_id'):
                 params={'forecast': item['forecast_id']}
                 if item['forecast_id']=='spf':
